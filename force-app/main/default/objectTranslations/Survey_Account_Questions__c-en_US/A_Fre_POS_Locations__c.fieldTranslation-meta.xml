@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Select Fre POS Locations --></label>
+    <name>A_Fre_POS_Locations__c</name>
+    <picklistValues>
+        <masterLabel>--None--</masterLabel>
+        <translation><!-- - - None- -  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Counter</masterLabel>
+        <translation><!-- At Counter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Door</masterLabel>
+        <translation><!-- At Door --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Product</masterLabel>
+        <translation><!-- At Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Street / Outside</masterLabel>
+        <translation><!-- At Street / Outside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Window</masterLabel>
+        <translation><!-- In Window --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

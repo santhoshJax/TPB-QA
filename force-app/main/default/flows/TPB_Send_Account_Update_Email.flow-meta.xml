@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>182</locationX>
+        <locationY>2555</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>RecipientEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>chill@tpbi.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Retail Chain Fields Exception</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>emailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Geo_Change_Email</name>
+        <label>Send Geo Change Notification</label>
+        <locationX>600</locationX>
+        <locationY>863</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>RecipientEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>OrgWideEmailAddress</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+            <value>
+                <stringValue>chill@tpbi.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>TBM Store Address Change - Review Required</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>emailBodyIndependent</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_address_row</name>
+        <label>Add address row</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableRowAddress</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Store_Number_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_closure_reason_row</name>
+        <label>Add closure reason row</label>
+        <locationX>50</locationX>
+        <locationY>1847</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableRowClosureReason</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Parent_User_is_null</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_column_to_table</name>
+        <label>Add column to table</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableColumn</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Address_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Name_row</name>
+        <label>Add Name row</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableRowName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Status_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_RSM_To_Independent_Recipients</name>
+        <label>Add RSM to Recipients</label>
+        <locationX>750</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>RecipientEmail</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_RSM_Independent.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Geo_Change_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_RSM_to_Recipient</name>
+        <label>Add RSM to Recipient</label>
+        <locationX>50</locationX>
+        <locationY>2255</locationY>
+        <assignmentItems>
+            <assignToReference>RecipientEmail</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_RSM.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Close_table_and_add_Recipient</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_status_row</name>
+        <label>Add status row</label>
+        <locationX>50</locationX>
+        <locationY>1547</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableRowStatus</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Closure_Reason_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_Store_number_row</name>
+        <label>Add Store number row</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>tableRowStoreNum</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Name_Changed</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Close_table_and_add_Recipient</name>
+        <label>Close table and add Recipient</label>
+        <locationX>182</locationX>
+        <locationY>2447</locationY>
+        <assignmentItems>
+            <assignToReference>table</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>&lt;/table&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecipientEmail</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$User.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RecipientEmail</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Parent.Owner.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Email</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Independent_Recipient</name>
+        <label>Set TBM as Recipient</label>
+        <locationX>600</locationX>
+        <locationY>539</locationY>
+        <assignmentItems>
+            <assignToReference>RecipientEmail</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$User.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_RSM_Exists_Independent</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Geo_Changed_Independent</name>
+        <label>Did Geo Field Change?</label>
+        <locationX>600</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>No Geo Change - End</defaultConnectorLabel>
+        <rules>
+            <name>Geo_Field_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ShippingStreet</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingCity</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingStateCode</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingPostalCode</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Store_County__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.County__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Address_Change_Request</targetReference>
+            </connector>
+            <label>Geo Field Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Address_Changed</name>
+        <label>Check if Address Changed</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Store_Number_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Address_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ShippingCity</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingPostalCode</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingStateCode</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingStreet</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingCountry</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_address_row</targetReference>
+            </connector>
+            <label>Address Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Closure_Reason_Changed</name>
+        <label>Check if Closure Reason Changed</label>
+        <locationX>182</locationX>
+        <locationY>1739</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Parent_User_is_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Closure_Reason_Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Closure_Reason__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_closure_reason_row</targetReference>
+            </connector>
+            <label>Closure Reason Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_If_NAM_Chain</name>
+        <label>Check If NAM Chain</label>
+        <locationX>336</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Check_Geo_Changed_Independent</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not NAM Chain - Check Geo</defaultConnectorLabel>
+        <rules>
+            <name>Is_NAM_Chain_Account</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Ownership__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NAM Chain</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Ownership__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NAM Chain</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_column_to_table</targetReference>
+            </connector>
+            <label>Is NAM Chain Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Name_Changed</name>
+        <label>Check if Name Changed</label>
+        <locationX>182</locationX>
+        <locationY>1139</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Status_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Name_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Name_row</targetReference>
+            </connector>
+            <label>Name Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Parent_User_is_null</name>
+        <label>Check if Parent User is null</label>
+        <locationX>182</locationX>
+        <locationY>2039</locationY>
+        <defaultConnector>
+            <targetReference>Close_table_and_add_Recipient</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Parent_User_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.TPB_Parent_Org_Unit_UserId__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_RSM</targetReference>
+            </connector>
+            <label>Parent User not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Status_Changed</name>
+        <label>Check if Status Changed</label>
+        <locationX>182</locationX>
+        <locationY>1439</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Closure_Reason_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_status_row</targetReference>
+            </connector>
+            <label>Status Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Store_Number_Changed</name>
+        <label>Check if Store Number Changed</label>
+        <locationX>182</locationX>
+        <locationY>839</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Name_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Store_Number_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Store_Number__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_Store_number_row</targetReference>
+            </connector>
+            <label>Store Number Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_RSM_Exists_Independent</name>
+        <label>Check RSM Exists</label>
+        <locationX>600</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Send_Geo_Change_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No RSM - Send to TBM only</defaultConnectorLabel>
+        <rules>
+            <name>RSM_Exists_Independent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$User.TPB_Parent_Org_Unit_UserId__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_RSM_Independent</targetReference>
+            </connector>
+            <label>RSM Exists</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>addressChangeNote</name>
+        <dataType>String</dataType>
+        <expression>&apos;Changed by: &apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} + &apos; | Old Address: &apos; + IF(ISBLANK({!$Record__Prior.ShippingStreet}), &apos;&apos;, {!$Record__Prior.ShippingStreet} + &apos; &apos;) + IF(ISBLANK({!$Record__Prior.ShippingCity}), &apos;&apos;, {!$Record__Prior.ShippingCity} + &apos;, &apos;) + IF(ISBLANK(TEXT({!$Record__Prior.ShippingStateCode})), &apos;&apos;, TEXT({!$Record__Prior.ShippingStateCode}) + &apos; &apos;) + IF(ISBLANK({!$Record__Prior.ShippingPostalCode}), &apos;&apos;, {!$Record__Prior.ShippingPostalCode}) + &apos; | New Address: &apos; + IF(ISBLANK({!$Record.ShippingStreet}), &apos;&apos;, {!$Record.ShippingStreet} + &apos; &apos;) + IF(ISBLANK({!$Record.ShippingCity}), &apos;&apos;, {!$Record.ShippingCity} + &apos;, &apos;) + IF(ISBLANK(TEXT({!$Record.ShippingStateCode})), &apos;&apos;, TEXT({!$Record.ShippingStateCode}) + &apos; &apos;) + IF(ISBLANK({!$Record.ShippingPostalCode}), &apos;&apos;, {!$Record.ShippingPostalCode})</expression>
+    </formulas>
+    <formulas>
+        <name>tableRowAddress</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;Shipping Address&apos; +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record__Prior.ShippingStreet} + &apos; &apos; + {!$Record__Prior.ShippingCity} + &apos;, &apos; + TEXT({!$Record__Prior.ShippingStateCode}) + &apos; &apos; + {!$Record__Prior.ShippingPostalCode} + &apos; &apos; + {!$Record__Prior.ShippingCountry} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.ShippingStreet} + &apos; &apos; + {!$Record.ShippingCity} + &apos;, &apos; + TEXT({!$Record.ShippingStateCode}) + &apos; &apos; + {!$Record.ShippingPostalCode} + &apos; &apos; + {!$Record.ShippingCountry} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} +
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>tableRowClosureReason</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;Closure Reason&apos; +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!$Record__Prior.Closure_Reason__c}) +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!$Record.Closure_Reason__c}) +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} +
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>tableRowName</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;Account Name&apos; +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record__Prior.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} +
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>tableRowStatus</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;Status&apos; +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!$Record__Prior.Status__c}) +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + TEXT({!$Record.Status__c}) +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} +
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>tableRowStoreNum</name>
+        <dataType>String</dataType>
+        <expression>&apos;&lt;tr&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Name} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;Store Number&apos; +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record__Prior.Store_Number__c} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$Record.Store_Number__c} +
+&apos;&lt;/th&gt;&lt;td style=&quot;border: 1px solid black;&quot;&gt;&apos; + {!$User.FirstName} + &apos; &apos; + {!$User.LastName} +
+&apos;&lt;/th&gt;&lt;/tr&gt;&apos;</expression>
+    </formulas>
+    <interviewLabel>TPB_Send_Account_Update_Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TPB_Send_Account_Update_Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Address_Change_Request</name>
+        <label>Create Address Change Request</label>
+        <locationX>600</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Set_Independent_Recipient</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Action_Type__c</field>
+            <value>
+                <stringValue>Geo Address Change</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Admin_Notes__c</field>
+            <value>
+                <elementReference>addressChangeNote</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Submitted for Approval</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Account_Maintenance_Request__c</object>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_RSM</name>
+        <label>Get RSM</label>
+        <locationX>50</locationX>
+        <locationY>2147</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_RSM_to_Recipient</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.TPB_Parent_Org_Unit_UserId__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_RSM_Independent</name>
+        <label>Get RSM Independent</label>
+        <locationX>750</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Add_RSM_To_Independent_Recipients</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.TPB_Parent_Org_Unit_UserId__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_If_NAM_Chain</targetReference>
+        </connector>
+        <filterFormula>(ISCHANGED({!$Record.ShippingCity}) || ISCHANGED({!$Record.ShippingPostalCode}) || ISCHANGED({!$Record.ShippingStateCode}) || ISCHANGED({!$Record.ShippingStreet}) || ISCHANGED({!$Record.ShippingCountry}) || ISCHANGED({!$Record.Store_Number__c}) || ISCHANGED({!$Record.Name}) || ISCHANGED({!$Record.Status__c}) || ISCHANGED({!$Record.Closure_Reason__c}))
+&amp;&amp;
+{!$Profile.Name} == &apos;CG Cloud Mobile - TSM&apos;</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>emailBody</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi,&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Arial, sans-serif; color: rgb(23, 43, 77);&quot;&gt;There have been updates to the following fields of the Account processed by the user in TSM Name field. Please review.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;{!table}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>emailBodyIndependent</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi,&lt;/p&gt;&lt;p&gt;A TBM (&lt;b&gt;{!$User.FirstName} {!$User.LastName}&lt;/b&gt;) has updated the shipping address of a store. An &lt;b&gt;Account Maintenance Request&lt;/b&gt; has been created for your review.&lt;/p&gt;&lt;table style=&quot;width: 100%; border-collapse: collapse; border: 1px solid black;&quot;&gt;&lt;tr&gt;&lt;th style=&quot;border: 1px solid black; padding: 4px; background: #f0f0f0;&quot;&gt;Account Name&lt;/th&gt;&lt;th style=&quot;border: 1px solid black; padding: 4px; background: #f0f0f0;&quot;&gt;Field Changed&lt;/th&gt;&lt;th style=&quot;border: 1px solid black; padding: 4px; background: #f0f0f0;&quot;&gt;Old Value&lt;/th&gt;&lt;th style=&quot;border: 1px solid black; padding: 4px; background: #f0f0f0;&quot;&gt;New Value&lt;/th&gt;&lt;th style=&quot;border: 1px solid black; padding: 4px; background: #f0f0f0;&quot;&gt;Changed By&lt;/th&gt;&lt;/tr&gt;{!tableRowAddress}&lt;/table&gt;&lt;p&gt;Please review the Account Maintenance Request record and take appropriate action.&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>RecipientEmail</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>table</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&lt;table style=&quot;width: 100%; border: 1px solid black;&quot;&gt;</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>tableColumn</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&lt;tr&gt;  &lt;th style=&quot;border: 1px solid black;&quot;&gt;Account Name&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot;&gt;Field Changed&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot;&gt;Old Value&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot;&gt;New Value&lt;/th&gt;  &lt;th style=&quot;border: 1px solid black;&quot;&gt;TSM Name&lt;/th&gt; &lt;/tr&gt;</stringValue>
+        </value>
+    </variables>
+</Flow>

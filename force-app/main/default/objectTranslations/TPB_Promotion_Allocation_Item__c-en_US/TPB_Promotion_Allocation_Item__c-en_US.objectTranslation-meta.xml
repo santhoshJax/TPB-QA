@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promotion Allocation Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promotion Allocation Items</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Org Unit Allocations​ --></label>
+        <name>Org_Unit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Store Allocations​ --></label>
+        <name>Store_Allocations</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only Org units with T endings can be selected. --></errorMessage>
+        <name>TPB_Org_Unit_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The quantity must be greater than or equal to 0. --></errorMessage>
+        <name>TPB_Quantity_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

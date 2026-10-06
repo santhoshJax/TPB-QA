@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>ההפעלה המוצלחת האחרונה של האצווה</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>הפעלת אצווה מוצלחת אחרונה</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>ההפעלות המוצלחות האחרונות של האצוות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>הפעלות אצווה מוצלחות אחרונות</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>שם הפעלה מוצלחת אחרונה של אצווה</nameFieldLabel>
+</CustomObjectTranslation>

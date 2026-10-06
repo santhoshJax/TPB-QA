@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Director_Update</fullName>
+    <active>true</active>
+    <description>Director Profiles can update Campaign Member field</description>
+    <errorConditionFormula>AND( 
+    ISNEW(),
+    AND(
+        $Profile.Name != &apos;System Administrator&apos;
+    ) 
+)</errorConditionFormula>
+    <errorMessage>Only System Administrator Profiles can add Campaign Member</errorMessage>
+</ValidationRule>

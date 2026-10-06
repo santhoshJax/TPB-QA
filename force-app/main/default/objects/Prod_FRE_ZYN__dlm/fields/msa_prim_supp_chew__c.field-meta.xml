@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msa_prim_supp_chew__c</fullName>
+    <label>MSA_PRIM_SUPP_CHEW</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>MSA_PRIM_SUPP_CHEW</labelOverride>
+        <masterLabel>MSA_PRIM_SUPP_CHEW</masterLabel>
+        <refAttrDeveloperName>msa_prim_supp_chew_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

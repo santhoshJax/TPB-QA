@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Count_of_Accounts_HQ_or_Wholesale__c</fullName>
+    <label>Count of Accounts (HQ or Wholesale)</label>
+    <summaryFilterItems>
+        <field>CampaignMember.TPB_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Headquarter,Wholesaler</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CampaignMember.CampaignId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <type>Summary</type>
+</CustomField>

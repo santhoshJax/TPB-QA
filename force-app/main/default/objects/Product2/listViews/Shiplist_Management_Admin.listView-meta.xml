@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shiplist_Management_Admin</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>NTC_Item_Classification__c</columns>
+    <columns>Current_Shiplist_Item__c</columns>
+    <columns>Shiplist_Start__c</columns>
+    <columns>Shiplist_End__c</columns>
+    <columns>TPB_Distribution_Audit__c</columns>
+    <columns>Clearing_House_Flag__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>NTC_Item_Classification__c</field>
+        <operation>equals</operation>
+        <value>Promo</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.RECORD_TYPE</field>
+        <operation>equals</operation>
+        <value>Product2.cgcloud__Product</value>
+    </filters>
+    <filters>
+        <field>cgcloud__Product_Level__c</field>
+        <operation>equals</operation>
+        <value>Product</value>
+    </filters>
+    <label>Shiplist Management - Admin</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

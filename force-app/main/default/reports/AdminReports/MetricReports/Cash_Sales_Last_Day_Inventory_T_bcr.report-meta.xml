@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>cgcloud__Inventory_Transaction__c$cgcloud__Order_Document__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Inventory_Transaction__c$cgcloud__Payment_Method__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Inventory_Transaction__c$Sell_Price__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cgcloud__Inventory_Transaction__c$cgcloud__Inventory__c.cgcloud__Product__c.cgcloud__Criterion_2_Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ALP POUCHES</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Inventory_Transaction__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cash Sales - Last Day</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Inventory_Transaction_Custom_Report__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__Inventory_Transaction__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_YESTERDAY</interval>
+    </timeFrameFilter>
+</Report>

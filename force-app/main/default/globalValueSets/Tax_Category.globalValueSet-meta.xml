@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MST</fullName>
+        <default>false</default>
+        <label>MST</label>
+    </customValue>
+    <customValue>
+        <fullName>OTP</fullName>
+        <default>false</default>
+        <label>OTP</label>
+    </customValue>
+    <customValue>
+        <fullName>LL Chew</fullName>
+        <default>false</default>
+        <label>LL Chew</label>
+    </customValue>
+    <customValue>
+        <fullName>Vapor</fullName>
+        <default>false</default>
+        <label>Vapor</label>
+    </customValue>
+    <customValue>
+        <fullName>Smoking</fullName>
+        <default>false</default>
+        <label>Smoking</label>
+    </customValue>
+    <masterLabel>Tax Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Mass_Prebook_View</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>TPB_HQ_Account__c</columns>
+    <columns>TPB_Mass_Prebook_Product__c</columns>
+    <columns>TPB_Child_Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.Mass_Prebook</value>
+    </filters>
+    <filters>
+        <field>TPB_HQ_Account__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>TPB_Child_Order__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>TPB_Mass_Prebook_Product__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Mass Prebook View</label>
+    <language>en_US</language>
+</ListView>

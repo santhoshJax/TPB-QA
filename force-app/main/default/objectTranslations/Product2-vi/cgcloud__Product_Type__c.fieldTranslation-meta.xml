@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>cgcloud__Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Advertising</masterLabel>
+        <translation>Tài Liệu Quảng Cáo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AssetType</masterLabel>
+        <translation>Loại Tài Sản</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodity</masterLabel>
+        <translation>Hàng Hóa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CountingGroup</masterLabel>
+        <translation>Tính Nhóm</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empty</masterLabel>
+        <translation>Trống</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation>Dịch Vụ</translation>
+    </picklistValues>
+</CustomFieldTranslation>

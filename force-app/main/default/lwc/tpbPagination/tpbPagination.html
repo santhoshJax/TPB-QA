@@ -1,0 +1,66 @@
+<template>
+  <div class="slds-align_absolute-center Pagination">
+    <lightning-button-icon-stateful
+      variant="bare"
+      icon-name="utility:jump_to_left"
+      disabled={isFirstPage}
+      alternative-text="First Page"
+      onclick={handleFirstPageClick}
+    ></lightning-button-icon-stateful>
+
+    <lightning-button-icon-stateful
+      variant="bare"
+      icon-name="utility:chevronleft"
+      disabled={isFirstPage}
+      alternative-text="Previous Page"
+      onclick={handlePrevPageClick}
+      class="slds-m-left_xx-small"
+    ></lightning-button-icon-stateful>
+
+    <div class="slds-m-horizontal_x-small">
+      <template for:each={window} for:item="pageNum">
+        <lightning-button
+          key={pageNum.value}
+          variant="base"
+          label={pageNum.label}
+          title={pageNum.label}
+          disabled={pageNum.isCurrentPage}
+          onclick={pageNum.onClick}
+          class="slds-m-left_xx-small"
+        ></lightning-button>
+      </template>
+    </div>
+
+    <lightning-button-icon-stateful
+      variant="bare"
+      icon-name="utility:chevronright"
+      disabled={isLastPage}
+      alternative-text="Next Page"
+      onclick={handleNextPageClick}
+      class="slds-m-left_xx-small"
+    ></lightning-button-icon-stateful>
+
+    <lightning-button-icon-stateful
+      variant="bare"
+      icon-name="utility:jump_to_right"
+      disabled={isLastPage}
+      alternative-text="Last Page"
+      onclick={handleLastPageClick}
+      class="slds-m-left_xx-small"
+    ></lightning-button-icon-stateful>
+
+    <div class="slds-m-left_x-small">
+      <lightning-combobox
+        name="pageSize"
+        label=""
+        variant="label-hidden"
+        value={pageSize}
+        placeholder="Page size"
+        options={pageSizeOptions}
+        onchange={handlePageSizeChange}
+      ></lightning-combobox>
+    </div>
+
+    <div class="slds-m-left_x-small">{total} records</div>
+  </div>
+</template>

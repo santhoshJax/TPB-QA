@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- A numeric value that represents the size of the zip code. This is loaded when a realignment is requested. It can vary based on need (# of open independents OR # of x opportunities OR cash sales dollars, etc). This helps assess equity of workload across realigned territories.
+What is loaded now:
+AL = Open Independents
+IL = Open Independents -->
+    </help>
+    <label><!-- Realignment Sizing --></label>
+    <name>Realignment_Sizing__c</name>
+</CustomFieldTranslation>

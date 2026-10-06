@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1749994902762_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>ssotAccount2_Unified_SM_174999490062_rel</label>
+    <referenceTo>UnifiedssotAccount2__dlm</referenceTo>
+    <relationshipLabel>ssotAccount2_Unified_SM_174999490062_rel</relationshipLabel>
+    <relationshipName>rel_1749994902762_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

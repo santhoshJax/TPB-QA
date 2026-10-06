@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Product</fullName>
+    <active>true</active>
+    <errorConditionFormula>Product2.IsActive != true</errorConditionFormula>
+    <errorMessage>Inactive products cannot be added as line items.</errorMessage>
+</ValidationRule>

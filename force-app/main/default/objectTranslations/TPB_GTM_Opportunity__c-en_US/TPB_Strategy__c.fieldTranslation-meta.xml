@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Strategy --></label>
+    <name>TPB_Strategy__c</name>
+    <picklistValues>
+        <masterLabel>Defend</masterLabel>
+        <translation><!-- Defend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Develop</masterLabel>
+        <translation><!-- Develop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harvest</masterLabel>
+        <translation><!-- Harvest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manage</masterLabel>
+        <translation><!-- Manage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

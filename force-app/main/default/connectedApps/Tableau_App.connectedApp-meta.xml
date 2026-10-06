@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>rajesh.yeddula@jaxconsult.com</contactEmail>
+    <label>Tableau App</label>
+    <samlConfig>
+        <acsUrl>https://sso.online.tableau.com/public/sp/SSO/e613289e-9b7e-47e1-b9b4-65ed9cc7c6c3/d97302df-c621-4216-acfb-bfb2881589a0</acsUrl>
+        <encryptionType>AES_128</encryptionType>
+        <entityUrl>https://sso.online.tableau.com/public/sp/metadata/e613289e-9b7e-47e1-b9b4-65ed9cc7c6c3/d97302df-c621-4216-acfb-bfb2881589a0</entityUrl>
+        <issuer>https://tpbi.my.salesforce.com</issuer>
+        <samlNameIdFormat>EmailAddress</samlNameIdFormat>
+        <samlSigningAlgoType>SHA256</samlSigningAlgoType>
+        <samlSubjectType>Username</samlSubjectType>
+    </samlConfig>
+    <startUrl>https://us-east-1.online.tableau.com/#/site/tpb/views/Salesforce_17454238467940/SalesPerformanceDashboard?:iid=1</startUrl>
+</ConnectedApp>

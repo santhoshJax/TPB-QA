@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Main Function --></label>
+    <name>cgcloud__Main_Function__c</name>
+    <picklistValues>
+        <masterLabel>BuyingAgent</masterLabel>
+        <translation>Buying Agent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CategoryManager</masterLabel>
+        <translation>Category Manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAM</masterLabel>
+        <translation>Key Account Manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO</masterLabel>
+        <translation>Purchasing Officer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation><!-- Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreManager</masterLabel>
+        <translation>Store Manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation><!-- Tenant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

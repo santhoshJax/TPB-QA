@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When you arrived at the store, which of these price scrolls was used to advertise Stoker&apos;s pricing? --></help>
+    <label><!-- 3. Price Scroll Type upon arrival --></label>
+    <name>A3Pick_Price_Scroll_Type__c</name>
+    <picklistValues>
+        <masterLabel>Long 2-Can Wide</masterLabel>
+        <translation><!-- Long 2-Can Wide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Price Scroll</masterLabel>
+        <translation><!-- No Price Scroll --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short 2-Can Wide</masterLabel>
+        <translation><!-- Short 2-Can Wide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Can Wide</masterLabel>
+        <translation><!-- Single Can Wide --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

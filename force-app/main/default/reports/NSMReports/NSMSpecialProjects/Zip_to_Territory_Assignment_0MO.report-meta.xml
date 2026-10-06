@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$Current_Territory__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$TPB_Zip_Code__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$City__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$TPB_State_Name__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$TPB_State_Abbrev__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$Metro_Area__c</field>
+    </columns>
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$Territory_Name__c</field>
+    </columns>
+    <description>Reference mapping of ZIP Codes to sales territories.</description>
+    <format>Tabular</format>
+    <name>Zip to Territory Assignment</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Org_Unit_Mapping__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TPB_Org_Unit_Mapping__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

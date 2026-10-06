@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Creation Mode --></label>
+    <name>cgcloud__Creation_Mode__c</name>
+    <picklistValues>
+        <masterLabel>Automatically</masterLabel>
+        <translation>Automatiquement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manually</masterLabel>
+        <translation>Manuellement</translation>
+    </picklistValues>
+</CustomFieldTranslation>

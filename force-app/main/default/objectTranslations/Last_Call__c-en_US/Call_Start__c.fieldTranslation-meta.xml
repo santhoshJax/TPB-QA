@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Start --></label>
+    <name>Call_Start__c</name>
+    <picklistValues>
+        <masterLabel>A(Absent)</masterLabel>
+        <translation><!-- A(Absent) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D(Delisted)</masterLabel>
+        <translation><!-- D(Delisted) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I(Intro)</masterLabel>
+        <translation><!-- I(Intro) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O(Out of Stock)</masterLabel>
+        <translation><!-- O(Out of Stock) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P(Present)</masterLabel>
+        <translation><!-- P(Present) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R(Repaired)</masterLabel>
+        <translation><!-- R(Repaired) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

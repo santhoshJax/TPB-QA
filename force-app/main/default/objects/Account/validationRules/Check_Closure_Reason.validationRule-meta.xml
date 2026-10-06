@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Closure_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>(TEXT(Status__c) == &quot;Closed Permanently&quot; || TEXT(Status__c) == &quot;Closed Temporarily&quot;) 
+&amp;&amp; 
+(
+(ISBLANK(TEXT(Closure_Reason__c )) &amp;&amp; !(( TPB_Is_Indirect__c || ISNEW()) &amp;&amp; TPB_RecordTypeName__c == &apos;Wholesaler&apos;)) 
+|| 
+(ISCHANGED(Status__c) &amp;&amp; ParentId != null &amp;&amp; !Parent_Owner__c &amp;&amp; Ownership__c != &apos;Independent&apos; &amp;&amp;  TPB_RecordTypeName__c == &apos;Retailer&apos;)
+)</errorConditionFormula>
+    <errorMessage>1. When the Account status is Closed Permanently/Temporarily, the Closure Reason cannot be empty.
+2. If this is a retailer account, please first ensure you are the Parent Account owner.</errorMessage>
+</ValidationRule>

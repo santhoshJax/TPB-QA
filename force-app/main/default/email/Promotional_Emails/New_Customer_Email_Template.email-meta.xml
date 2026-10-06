@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>New Customer Email Template</name>
+    <style>none</style>
+    <subject>New Customer Email Template</subject>
+    <textOnly>Hello {!Contact.FirstName},
+ 
+Hope you’re well, I just wanted to quickly check-in to see if you’re in need of a re-order to replenish our Zig-Zag and Clipper products. As you know, we continually refresh our product offerings so I’d be happy to discuss our current line-up as well as ongoing monthly promotions you may have missed since your last order.
+
+Please let me know what might be a good time to connect by phone. And in case it’s helpful, I’ve attached our latest brand guide to review.
+ 
+Best Regards,
+Zig-Zag Alternative Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Usage --></label>
+    <name>cgcloud__Usage__c</name>
+    <picklistValues>
+        <masterLabel>Banner</masterLabel>
+        <translation>Biểu Ngữ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FulfilledBadge</masterLabel>
+        <translation>FulfilledBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HurdleRewardLog</masterLabel>
+        <translation>HurdleRewardLog</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Icon</masterLabel>
+        <translation>Biểu Tượng</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InitialBadge</masterLabel>
+        <translation>InitialBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation>Tiếp Thị</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation>Định Giá</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printed Document</masterLabel>
+        <translation>Tài Liệu Đã In</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation>Bán Hàng</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SelectionBar</masterLabel>
+        <translation>SelectionBar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation>Dịch Vụ</translation>
+    </picklistValues>
+</CustomFieldTranslation>

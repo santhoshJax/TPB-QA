@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TOF_Approval_Template</name>
+    <relatedEntityType>cgcloud__User_Document__c</relatedEntityType>
+    <style>none</style>
+    <subject>TOF Record Has Been Approved</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

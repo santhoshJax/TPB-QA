@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Pending_Reimbursements__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>Display (static) field value from user record</description>
+    <label>Reimbursements Pending</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1759309171834_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>MSA_ITEM_MASTER_item_code_map_CHEW_V_rel</label>
+    <referenceTo>CHEW_VOL__dlm</referenceTo>
+    <relationshipLabel>MSA_ITEM_MASTER_item_code_map_CHEW_V_rel</relationshipLabel>
+    <relationshipName>rel_1759309171834_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

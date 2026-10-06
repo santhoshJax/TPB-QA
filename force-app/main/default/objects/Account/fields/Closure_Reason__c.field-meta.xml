@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closure_Reason__c</fullName>
+    <label>Closure Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Account_Closure_Reason</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Closed Permanently</controllingFieldValue>
+            <valueName>Closed Permanently - Out of Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Permanently</controllingFieldValue>
+            <valueName>Closed Permanently - Does Not Sell Tobacco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Permanently</controllingFieldValue>
+            <valueName>Closed Permanently - Duplicate of Another Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Permanently</controllingFieldValue>
+            <valueName>Closed Permanently - Not a Retail Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Permanently</controllingFieldValue>
+            <valueName>Closed Permanently - Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Temporarily</controllingFieldValue>
+            <valueName>Closed Temporarily - Building Damage (Fire, Hurricane, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Temporarily</controllingFieldValue>
+            <valueName>Closed Temporarily - Remodel Underway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Temporarily</controllingFieldValue>
+            <valueName>Closed Temporarily - Seasonal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Temporarily</controllingFieldValue>
+            <valueName>Closed Temporarily - Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

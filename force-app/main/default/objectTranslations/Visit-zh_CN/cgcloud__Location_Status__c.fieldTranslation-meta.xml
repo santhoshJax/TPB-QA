@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Location Status --></label>
+    <name>cgcloud__Location_Status__c</name>
+    <picklistValues>
+        <masterLabel>GPS Inactive</masterLabel>
+        <translation>GPS 不活动</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No GPS Fix</masterLabel>
+        <translation>未修复 GPS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ok</masterLabel>
+        <translation>确定</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<template>
+    <!-- Header Label -->
+    <template if:true={label}>
+        <label class="slds-form-element__label">{label}</label>
+    </template>
+    <div class="slds-combobox_container ">
+        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open " aria-expanded="true"
+            aria-haspopup="listbox" role="combobox">
+            <!-- Search Input -->
+            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                <template if:false={enabled}>
+                    <lightning-input disabled="true" class="inputBox" placeholder="Loading..."
+                        variant="label-hidden"></lightning-input>
+                </template>
+                <template if:true={enabled}>
+
+                    <lightning-input disabled={disabled} type="search" class="inputBox className"
+                        placeholder={placeholder} onblur={blurEvent} onclick={showOptions} onkeyup={filterOptions}
+                        oncommit={handleClear} value={searchString} auto-complete="on" onchange={hanleChangeFilter}
+                        variant="label-hidden" id="combobox-id-1" required
+                        style="height: 33px !important;z-index:0;"></lightning-input>
+
+                </template>
+            </div>
+            <!-- Dropdown List -->
+            <template if:true={showDropdown}>
+                <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+                    onmouseleave={mouseOutHandler}>
+                    <ul class="slds-listbox slds-listbox_vertical recordListBox" role="presentation">
+                        <template if:false={message}>
+                            <template for:each={optionData} for:item="option">
+                                <template if:true={option.isVisible}>
+                                    <li key={option.value} data-id={option.value} onmousedown={selectItem}
+                                        class="slds-listbox__item eachItem" title={option.label}>
+                                        <template if:true={option.selected}>
+                                            <lightning-icon icon-name="utility:check" size="x-small"
+                                                alternative-text="icon"></lightning-icon>
+                                        </template>
+                                        <!-- <div data-value={option.value} data-label={option.label} onclick={selectItem}
+                                            class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                            role="option" title={option.label}>
+                                            <div
+                                                class="slds-media slds-listbox__option_entity verticalAlign slds-truncate"
+                                                title={option.label}>{option.label}</div>
+                                                <div class="slds-text-color_weak slds-text-body_small">{option.phone}</div>
+                                        </div> -->
+                                        <div class="slds-media slds-listbox__option slds-listbox__option_plain" data-value={option.value} data-label={option.label} onclick={selectItem}>
+                                            <div class="slds-media__body">
+                                                <div>{option.label}</div>
+                                                <template if:true={option.sublabel}>
+                                                    <!-- <div class="slds-text-color_weak slds-text-body_small">{option.ShippingStreet}, {option.ShippingCity},
+                                                        {option.ShippingState}</div> -->
+                                                        <div class="slds-text-color_weak slds-text-body_small">{option.sublabel}</div>
+                                                </template>
+                                            </div>      
+                                        </div>
+
+                                    </li>
+                                </template>
+                            </template>
+                        </template>
+                        <template if:true={message}>
+                            <li class="slds-listbox__item">
+                                <span
+                                    class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{message}</span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

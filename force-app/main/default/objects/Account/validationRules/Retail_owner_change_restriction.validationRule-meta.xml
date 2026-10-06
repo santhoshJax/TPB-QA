@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_owner_change_restriction</fullName>
+    <active>false</active>
+    <description>Restricts user from changing record owner if record type is Retailer.</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(OwnerId ),
+ RecordType.DeveloperName = &quot;Retailer&quot;,
+    NOT(
+        OR( 
+            $User.Username = &quot;chill@tpbi.com&quot;,
+$User.Username = &quot;cwiley@tpbi.com&quot;,
+            $User.Username = &quot;agicaro@tpbi.com&quot;,
+            $User.Username = &quot;aparks@tpbi.com&quot;
+          
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Only the record owner or authorized admins can change the owner for this record type.</errorMessage>
+</ValidationRule>

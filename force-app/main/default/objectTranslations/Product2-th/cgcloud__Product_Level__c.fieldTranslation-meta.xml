@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Level --></label>
+    <name>cgcloud__Product_Level__c</name>
+    <picklistValues>
+        <masterLabel>Brand</masterLabel>
+        <translation>แบรนด์</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Category</masterLabel>
+        <translation>หมวดหมู่</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flavor</masterLabel>
+        <translation>แบรนด์ย่อย</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package</masterLabel>
+        <translation>กลุ่มราคาผลิตภัณฑ์</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product</masterLabel>
+        <translation>ผลิตภัณฑ์</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SubCategory</masterLabel>
+        <translation>หมวดหมู่ย่อย</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,278 @@
+<template>
+    <template if:true={isHomePage}>
+        <template if:true={isSpinner}>
+            <div class="spinner-container">
+                <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                    message="Loading data..." size="medium" variant="base"></lightning-spinner>
+            </div>
+        </template>
+        <div class="">
+            <div class="slds-grid slds-grid_align-spread slds-p-left_small slds-p-right_small slds-p-bottom_x-small cockpit-actions">
+                <button class="slds-button backButton action-btn" onclick={navigateToUserCockpit}>
+                    <lightning-icon icon-name="action:back" alternative-text="back" size="xx-small" title="large size"
+                        variant="inverse" class="slds-p-right_x-small"></lightning-icon>
+                    <span> back </span>
+                </button>
+
+                <template if:false={isVisitStarted}>
+                    <button class="slds-button VisitButton action-btn" onclick={startVisit}>
+                        <lightning-icon icon-name="utility:play" alternative-text="start Visit" size="xx-small"
+                            variant="inverse" title="large size"
+                            class="slds-p-right_x-small utility-icon"></lightning-icon>
+                        <span> Start Visit </span>
+                    </button>
+                </template>
+                <template if:true={isVisitStarted}>
+                    <button class="slds-button endButton action-btn" onclick={endVisit}>
+                        <lightning-icon icon-name="utility:wide_mobile" alternative-text="end Visit" size="x-small"
+                            variant="inverse" title="large size" class="slds-p-right_x-small utility-icon"></lightning-icon>
+                        <span> End Visit </span>
+                    </button>
+                </template>
+            </div>
+            <div class="slds-text-heading_medium slds-p-left_small cockpit-title"><strong>Store Cockpit</strong></div>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                    padding="around-small">
+                    <div class="custom-card">
+                        <div class="custom-card-header">
+                            <h2>Your activities for today</h2>
+                        </div>
+                        <template if:true={isVisitStarted}>
+                            <div class="slds-p-around_small">
+                                <div class="card row">
+                                    <button class="slds-button" name="product Distribution"
+                                        onclick={handleNavigateToProductDistribution}>
+                                        <lightning-icon icon-name="utility:search" alternative-text="Product Distribution"
+                                            size="xx-small" title="large size" class="slds-p-right_small"></lightning-icon>
+                                        <span> Product Distribution </span>
+                                    </button>
+                                </div>
+                                <div class="card row">
+                                    <button class="slds-button" name="survey" onclick={handleNavigationToSuvery}>
+                                        <lightning-icon icon-name="utility:survey" alternative-text="Surveys" size="xx-small"
+                                            title="large size" class="slds-p-right_small"></lightning-icon>
+                                        <span> Surveys </span>
+                                    </button>
+                                </div>
+                                <div class="card">
+                                    <button class="slds-button" name="order" onclick={handleCreateOrder} disabled={isDisabled}>
+                                        <lightning-icon icon-name="utility:record_create" alternative-text="Create Order"
+                                            size="xx-small" title="large size" class="slds-p-right_small"></lightning-icon>
+                                        <span> Create Order </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                    padding="around-small">
+                    <div class="custom-card">
+                        <div class="custom-card-header">
+                            <h2>Visit Notes</h2>
+                        </div>
+                        <div class="slds-p-around_xx-small">
+                            <button class="slds-button addVisitcls" onclick={editVisitNotes}>
+                                <lightning-icon icon-name="utility:edit_form" alternative-text="add" size="x-small" title="add"
+                                    variant="base" class="slds-m-right_small utility-icon"></lightning-icon>
+                                <span>Edit Notes</span>
+                            </button>
+                        </div>
+                        <div class="slds-p-around_small">
+                            <div class=" text-column row text-wrap" style="padding: 5px 0px;font-size: 0.9rem;">
+                                <p class="name"><span>{visitNotes}</span></p>
+                                <p class="address"><span>{visitDate} </span><span> - </span><span> {initiatorName} </span></p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3" padding="around-small">
+                
+                <div class="custom-card">
+                    <div class="custom-card-header">
+                        <h2>Wholesale Promotions</h2>
+                    </div>
+                
+                    <template if:false={isWholesalePromotionsData}>
+                        <div class="slds-grid slds-p-around_small">
+                            <lightning-icon icon-name="utility:home" alternative-text="home" size="small"
+                                class="slds-m-right_small"></lightning-icon>
+                            <p><span>No Wholesale Promotions for this customer</span></p>
+                        </div>
+                    </template>
+                
+                    <template if:true={isWholesalePromotionsData}>
+                        <template for:each={wholesalePromotionsData} for:item="promotionData">
+                            <div key={promotionData.value} class="row slds-p-around_small">
+                                <div onclick={previewHandler} data-id={promotionData.value}
+                                    style="cursor: pointer; font-size: 0.9rem;" class="text-wrap ">
+                                    <p><b>{promotionData.label}</b></p>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+
+                </lightning-layout-item>
+               
+               
+                
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                    padding="around-small">
+                    <div class="custom-card">
+                        <div class="custom-card-header">
+                            <h2>Chain Account Overview</h2>
+                        </div>
+                        <template if:false={isChainAccountOverviewData}>
+                            <div class="slds-grid slds-p-around_small">
+                                <lightning-icon icon-name='utility:home' alternative-text='home' size='small' title='home'
+                                    class="slds-m-right_small"></lightning-icon>
+                                <p><span>No Chain Accounts for this customer</span></p>
+                            </div>
+                        </template>
+                        <template if:true={isChainAccountOverviewData}>
+                            <div class="card-body slds-p-around_small">
+                                <div class="slds-grid slds-grid_align-space slds-p-around_xxx-small">
+                                    <div class="icon-container slds-p-right_x-small slds-grid_vertical-align-center">
+                                        <lightning-icon icon-name="utility:store" size="large"></lightning-icon>
+                                    </div>
+                                    <div>
+                                        <template for:each={ChainAccountOverviewData} for:item="chain">
+                                            <div key={chain.value}>
+                                                <div onclick={previewHandler} data-id={chain.value}
+                                                    style="cursor: pointer;padding: 5px 0px;font-size: 0.9rem;" class="row text-wrap">
+                                                    <p><b>{chain.label}</b></p>
+                                                </div>
+                        
+                                            </div>
+                        
+                                        </template>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        
+                        </template>
+                    </div>
+                    
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                    padding="around-small">
+                    <div class="fixed-card-shell">
+                        <c-cg-cloud-store-promotions-list selected-account-id={selectedAccountId}></c-cg-cloud-store-promotions-list>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                    padding="around-small">
+                    <div class="custom-card upload-files-card">
+                        <div class="custom-card-header">
+                            <h2>Upload Files</h2>
+                        </div>
+                        <div class="upload-files-content">
+                            <div class="slds-p-around_small">
+                                <div class="visit-upload-control">
+                                    <button type="button" class="slds-button visit-upload-btn" onclick={handleVisitUploadClick} disabled={isVisitFileUploadInProgress}>Add Files</button>
+                                    <input type="file" class="hidden-visit-file-input" multiple onchange={handleVisitFileSelected} disabled={isVisitFileUploadInProgress} />
+                                </div>
+                            </div>
+                            <div class="slds-p-horizontal_small slds-p-bottom_small">
+                                <template if:true={isVisitFiles}>
+                                    <template for:each={visitFiles} for:item="file">
+                                        <div key={file.contentDocumentId} class="visit-file-row">
+                                            <div class="visit-file-main">
+                                            <div class="visit-file-title text-wrap" onclick={handleVisitFilePreview} data-id={file.contentDocumentId} data-type={file.fileType}>
+                                                <strong>{file.title}</strong>
+                                            </div>
+                                                <div class="visit-file-meta">
+                                                    <span>{file.fileType}</span>
+                                                    <span> | </span>
+                                                    <span>{file.sizeLabel}</span>
+                                                    <span> | </span>
+                                                    <span>{file.createdDateLabel}</span>
+                                                </div>
+                                            </div>
+                                            <lightning-button-icon
+                                                icon-name="utility:delete"
+                                                alternative-text="Delete File"
+                                                title="Delete File"
+                                                data-id={file.contentDocumentId}
+                                                onclick={handleDeleteVisitFile}>
+                                            </lightning-button-icon>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template if:false={isVisitFiles}>
+                                    <p class="slds-text-color_weak"><strong>No files uploaded for this visit</strong></p>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            
+        </div>
+    </template>
+<template if:true={isModalOpen}>
+
+    <section class="slds-modal slds-fade-in-open custom-modal">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <h2 class="slds-text-heading_medium">Visit Notes</h2>
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closeModal} style="top: 14px;right: 15px;">
+                    <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                </button>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium">
+                <template if:true={isLoading}>
+                    <div class="spinner-container">
+                        <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                            message="Loading data..." size="medium" variant="base"></lightning-spinner>
+                    </div>
+                </template>
+
+                <div class=" slds-p-top_small">
+                    <lightning-input type="date" name="Visit Date" label="Date" value={visitDate} disabled="true"></lightning-input>
+                    <lightning-input type="text"  label="Initiator" value={initiatorName} disabled="true"></lightning-input>
+                    <lightning-textarea 
+                      name="inputName" 
+                      label="Notes" 
+                      placeholder="type here..."
+                      value={visitNotes}
+                      variant="standard"
+                      onchange={handleInput}
+                    ></lightning-textarea>
+                </div>
+            </div>
+            <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                <div>
+                    <lightning-button label="Cancel" class="slds-p-right_small" onclick={closeModal}
+                        variant="neutral"></lightning-button>
+                    <lightning-button label="Save" onclick={handleSaveNote} variant="brand"></lightning-button>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+
+    <template if:true={isOrderPage}>
+        <c-cg-cloud-order-page onnavigate={handleReturnToStoreCockpit} onreview={handleReview} visit-id={visitId}
+            order-id={orderId} selected-customer-id={selectedAccountId}></c-cg-cloud-order-page>
+    </template>
+    <template if:true={isReviewPage}>
+        <c-cg-cloud-review-order-page onstorenavigation={handleReturnToOrderPage}
+            oncompleteorder={handleCompleteOrder} order-id={orderId}></c-cg-cloud-review-order-page>
+    </template>
+    <template if:true={isProductDistribution}>
+        <c-cg-cloud-product-distribution onnavigate={handleReturnToStoreCockpit} account-id={selectedAccountId}
+            visit-id={visitId} selected-customer-account={customerAccountName} is-visit-jobs-created={isVisitJobsCreated} onvisitfieldsupdated={handleVisitFieldsUpdated}>
+        </c-cg-cloud-product-distribution>
+    </template>
+    <template if:true={isSurveyPage}>
+        <c-cg-cloud-survey customer-id={selectedAccountId} record-id={visitId} onnavigate={handleReturnToStoreCockpit} ></c-cg-cloud-survey>
+    </template>
+</template>

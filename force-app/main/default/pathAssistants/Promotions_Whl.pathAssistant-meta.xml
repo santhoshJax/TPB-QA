@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Promotions (Whl)</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Meeting_Date__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Loss_Reason__c</fieldNames>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000rG&amp;amp;feoid=Info&amp;amp;refid=0EMPd000002HbV4&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Meeting Scheduled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>TPB_Start_Date__c</fieldNames>
+        <fieldNames>TPB_Target_End_Date__c</fieldNames>
+        <fieldNames>Ship_Date__c</fieldNames>
+        <fieldNames>Flyer_Start_Date__c</fieldNames>
+        <fieldNames>Flyer_End_Date__c</fieldNames>
+        <picklistValueName>Promotion Execution</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Discovery_Completed__c</fieldNames>
+        <fieldNames>ROI_Analysis_Completed__c</fieldNames>
+        <fieldNames>Budget_Confirmed__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Loss_Reason__c</fieldNames>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000rF&amp;amp;feoid=Info&amp;amp;refid=0EMPd000002Hghd&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Promotions_Whl</recordTypeName>
+</PathAssistant>

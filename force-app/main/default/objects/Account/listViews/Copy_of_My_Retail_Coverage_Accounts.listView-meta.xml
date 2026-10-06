@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_My_Retail_Coverage_Accounts</fullName>
+    <columns>Ownership__c</columns>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <columns>Owner_Terr_and_Name__c</columns>
+    <columns>Frequency__c</columns>
+    <columns>Completed_Visit_Count__c</columns>
+    <columns>Visits_Remaining__c</columns>
+    <columns>Visit_Completion__c</columns>
+    <columns>Visit_Frequency_Status__c</columns>
+    <columns>Visit_Timing_Status__c</columns>
+    <columns>Sales_Cycle_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Retailer</value>
+    </filters>
+    <filters>
+        <field>Frequency__c</field>
+        <operation>equals</operation>
+        <value>6</value>
+    </filters>
+    <label>Coverage Accts (Admin View)</label>
+    <sharedTo>
+        <group>Admins_and_BA_s</group>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+        <role>TPB_Executive</role>
+    </sharedTo>
+</ListView>

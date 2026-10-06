@@ -1,0 +1,11 @@
+<template>
+    <template if:false={hidden}>
+        <div class="slds-align_absolute-center">
+            <lightning-button
+            variant={variant}
+            label={label}
+            onclick={handleNavigation}>
+            </lightning-button>
+        </div>
+    </template>
+</template>

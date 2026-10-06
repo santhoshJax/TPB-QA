@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Categories</fullName>
+    <columns>SF_Product_ID__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>cgcloud__Product_Level__c</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>PRODUCT2.ACTIVE</columns>
+    <columns>PRODUCT2.RECORD_TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cgcloud__Product_Level__c</field>
+        <operation>equals</operation>
+        <value>Category</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.RECORD_TYPE</field>
+        <operation>equals</operation>
+        <value>Product2.cgcloud__Product_Group</value>
+    </filters>
+    <label>(L1) Categories (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+    </sharedTo>
+</ListView>

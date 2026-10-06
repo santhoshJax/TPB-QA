@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataConnection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectionMethod>Ingress</connectionMethod>
+    <connectionStatus>ACTIVE</connectionStatus>
+    <connectorName>SNOWFLAKE</connectorName>
+    <credentials>
+        <fullName>Snowflake_3_authenticationOption</fullName>
+        <credentialName>authenticationOption</credentialName>
+        <value>*</value>
+    </credentials>
+    <credentials>
+        <fullName>Snowflake_3privateKey</fullName>
+        <credentialName>privateKey</credentialName>
+        <value>*</value>
+    </credentials>
+    <credentials>
+        <fullName>Snowflake_3user</fullName>
+        <credentialName>user</credentialName>
+        <value>*</value>
+    </credentials>
+    <externalRecordIdentifier>814f44a4-99f0-4661-bf58-f8859a272d16</externalRecordIdentifier>
+    <isActivityEnabled>false</isActivityEnabled>
+    <isSentosEnabled>false</isSentosEnabled>
+    <masterLabel>Snowflake Medium Warehouse</masterLabel>
+    <parameters>
+        <fullName>Snowflake_3accountUrl</fullName>
+        <paramName>accountUrl</paramName>
+        <value>https://GZMOPLG-RY06461.snowflakecomputing.com</value>
+    </parameters>
+    <parameters>
+        <fullName>Snowflake_3region</fullName>
+        <paramName>region</paramName>
+        <value>us-east-2.aws</value>
+    </parameters>
+    <parameters>
+        <fullName>Snowflake_3unloadData</fullName>
+        <paramName>unloadData</paramName>
+        <value>false</value>
+    </parameters>
+    <parameters>
+        <fullName>Snowflake_3warehouse</fullName>
+        <paramName>warehouse</paramName>
+        <value>DIST_MASTER_WAREHOUSE</value>
+    </parameters>
+    <shouldAutoCreatePolicies>false</shouldAutoCreatePolicies>
+</MktDataConnection>

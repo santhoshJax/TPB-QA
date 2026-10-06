@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT 
+  Account_Total_Revenue__cio.account_id__c AS Account_ID__c,
+  MAX(Account_Total_Revenue__cio.Total_Revenue__c) AS Account_Revenue__c,
+  ROW_NUMBER() OVER (
+    ORDER BY MAX(Account_Total_Revenue__cio.Total_Revenue__c) DESC
+  ) AS revenue_rank__c
+FROM Account_Total_Revenue__cio
+GROUP BY Account_Total_Revenue__cio.account_id__c</expression>
+    <masterLabel>Ranked_Account_Revenue</masterLabel>
+</MktCalcInsightObjectDef>

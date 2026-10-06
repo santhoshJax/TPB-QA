@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__User__c.IsActive</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__User__c.Name</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__User__c.TPB_Territory__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__Main__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__User__c.Id</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Org_Unit__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Org_Unit__c$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Org Units with Org Unit Users</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Org_Units_Org_Unit_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>cgcloud__Org_Unit__c.cgcloud__Org_Unit_Users__r$cgcloud__Main__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__Org_Unit__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

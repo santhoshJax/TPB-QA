@@ -1,0 +1,16 @@
+@import 'c/appointmentStyling';
+.search-container {
+    position:relative;
+}
+.search-results {
+    position:absolute;
+    left:14%;
+    bottom:65%;
+    background-color:#FFF;
+    padding:20px;
+    z-index:100;
+}
+.search-results li:hover {
+    background-color:#f3f2f2;
+    cursor:pointer;
+}

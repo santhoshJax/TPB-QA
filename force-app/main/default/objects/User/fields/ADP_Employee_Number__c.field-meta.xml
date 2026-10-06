@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ADP_Employee_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Capturing the employee number connected to ADP. Employee ID is the same as the ADP ID and it is permanent number.</description>
+    <externalId>true</externalId>
+    <label>ADP Employee Number</label>
+    <length>6</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

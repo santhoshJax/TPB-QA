@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Fieldset for Salesforce Files --></label>
+        <name>cgc_sync__Sync_Salesforce_Files_Fieldset</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobility Relevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Content Version Record Type for Visits --></description>
+        <label><!-- Visit Files --></label>
+        <name>cgcloud__Visit_Files</name>
+    </recordTypes>
+</CustomObjectTranslation>

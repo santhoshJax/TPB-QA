@@ -1,0 +1,2768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake</dataSource>
+    <dataSourceObject>DATACLOUD_NTC_TPB_COMBINED</dataSourceObject>
+    <masterLabel>DATACLOUD_NTC_TPB_COMBINED</masterLabel>
+    <mktDataTranFields>
+        <fullName>account_manager</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Account Manager</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Account Manager</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>167</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>account_manager_c_c</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Account Manager C&amp;C.</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Account Manager C&amp;C.</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>79</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_24</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 21-24</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-24</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>21</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_24_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 21-24 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-24 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>22</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_34</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 21-34</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-34</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>23</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_34_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 21-34 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-34 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>24</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_44</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 21-44</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-44</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>25</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_21_44_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 21-44 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 21-44 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>26</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_25_34</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 25-34</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 25-34</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>27</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_25_34_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 25-34 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 25-34 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>28</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_35_44</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 35-44</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 35-44</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>29</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_35_44_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 35-44 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 35-44 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>30</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_45_64</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 45-64</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 45-64</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>31</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_45_64_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 45-64 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 45-64 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>32</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_65_plus</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Age 65 Plus</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 65 Plus</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>33</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>age_65_plus_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Age 65 Plus Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Age 65 Plus Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>34</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>average_age</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Average Age</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Average Age</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>35</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>average_education</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Average Education</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Average Education</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>36</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>average_income</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Average Income</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Average Income</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>37</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>call_store_indicator</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Call Store Indicator</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Call Store Indicator</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>105</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>census_division</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Census Division</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Census Division</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>38</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>census_region</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Census Region</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Census Region</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>39</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>census_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Census State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Census State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>40</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>205</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cogs_per_latest_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>COGS_PER_LATEST_COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>COGS_PER_LATEST_COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>209</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>combined_account</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Combined Account</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Combined Account</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>168</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cu_vol</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>CU VOL</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>CU VOL</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dark_indicator</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dark Indicator</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dark Indicator</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>80</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>database_store_indicator</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Database Store Indicator</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Database Store Indicator</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>81</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>description</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>DESCRIPTION</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>DESCRIPTION</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>188</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>did</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>DID</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>DID</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>166</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dist_lat</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Dist Lat</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dist Lat</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>169</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dist_long</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Dist Long</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dist Long</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>170</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dist_store_transaction_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dist Store Transaction Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dist Store Transaction Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>82</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>171</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>172</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_customer_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Customer Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Customer Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>178</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_customer_ship_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Customer Ship Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Customer Ship Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>179</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_headquarters</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Headquarters</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Headquarters</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>173</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>174</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>DISTRIBUTOR NUMBER</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>DISTRIBUTOR NUMBER</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>175</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_warehouse</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Distributor Warehouse</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Warehouse</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>176</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>distributor_zip</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Distributor Zip</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Distributor Zip</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>177</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dollarizing_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>12</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dollarizing_volume_usage</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Volume Usage</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Volume Usage</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>11</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_bachelors_degree</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Education - Bachelors Degree</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Bachelors Degree</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>41</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_bachelors_degree_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Education - Bachelors Degree Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Bachelors Degree Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>42</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_high_school_or_less</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Education - High School or Less</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - High School or Less</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>43</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_post_bachelors</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Education - Post Bachelors</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Post Bachelors</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>45</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_post_bachelors_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Education - Post Bachelors Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Post Bachelors Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>46</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_some_college</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Education - Some College</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Some College</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>47</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>education_some_college_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Education - Some College Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Education - Some College Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>48</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>enrolled_distributors</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Enrolled Distributors</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Enrolled Distributors</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>181</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>eorder</fullName>
+        <creationType>Custom</creationType>
+        <datatype>B</datatype>
+        <externalName>EORDER</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>EORDER</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>180</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>eq_vol</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>EQ VOL</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>EQ VOL</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>final_qty</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Final Qty</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Final Qty</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>13</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>fips_county_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>FIPS County Code</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>FIPS County Code</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>83</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>fips_county_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>FIPS County Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>FIPS County Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>84</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>fips_state_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>FIPS State Code</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>FIPS State Code</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>85</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>gender_female</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Gender - Female</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Gender - Female</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>49</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>gender_female_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Gender - Female Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Gender - Female Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>50</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>gender_male</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Gender - Male</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Gender - Male</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>51</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>gender_male_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Gender - Male Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Gender - Male Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>52</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_100k_plus</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 100K Plus</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 100K Plus</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>53</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_100k_plus_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 100K Plus Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 100K Plus Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>54</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_24999_and_less</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 24999 and Less</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 24999 and Less</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>55</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_25k_34999</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 25K-34999</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 25K-34999</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>57</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_25k_34999_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 25K-34999 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 25K-34999 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>58</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_25k_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 25K Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 25K Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>56</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_35k_49999</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 35K-49999</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 35K-49999</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>59</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_35k_49999_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 35K-49999 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 35K-49999 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>60</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_50k_74999</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 50K-74999</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 50K-74999</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>61</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_50k_74999_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 50K-74999 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 50K-74999 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>62</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_75k_99999_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 75K-99999 Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 75K-99999 Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>65</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_75k_plus</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>HH Income 75K Plus</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 75K Plus</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>63</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>hh_income_75k_plus_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>HH Income 75K Plus Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>HH Income 75K Plus Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>64</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>household_total</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Household Total</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Household Total</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>66</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>item</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>ITEM</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>ITEM</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>193</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>item_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>ITEM CODE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>ITEM CODE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>10</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>item_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>ITEM NAME</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>ITEM NAME</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>9</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>latest_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>LATEST_COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>LATEST_COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>207</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>latest_date</fullName>
+        <creationType>Custom</creationType>
+        <datatype>D</datatype>
+        <dateFormat>MM/dd/yyyy</dateFormat>
+        <externalName>Latest Date</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Latest Date</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>212</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>latest_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>LATEST_PRICE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>LATEST_PRICE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>206</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>metro_areas</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Metro Areas</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Metro Areas</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>67</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_industry_breaks_mst</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Industry Breaks - MST</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Industry Breaks - MST</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>86</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_lat</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>MSA Lat</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Lat</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>87</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_long</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>MSA Long</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Long</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>88</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_chew</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Chew</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Chew</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>89</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_cigarillos_nt_htl</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Cigarillos NT HTL</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Cigarillos NT HTL</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>90</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_cigars</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Cigars</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Cigars</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>91</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_ecigs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Ecigs</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Ecigs</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>92</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_mst</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - MST</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - MST</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>93</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_papers</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Papers</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Papers</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>94</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_total</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Total</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Total</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>95</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_prim_supp_wraps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Prim Supp - Wraps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Prim Supp - Wraps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>96</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_second_supp_chew</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Second Supp - Chew</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Second Supp - Chew</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>97</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_second_supp_cigars</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Second Supp - Cigars</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Second Supp - Cigars</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>98</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_second_supp_mst</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Second Supp - MST</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Second Supp - MST</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>99</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_second_supp_total</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Second Supp - Total</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Second Supp - Total</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>100</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_sku_id</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>MSA_SKU_ID</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA_SKU_ID</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>187</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_tert_supp_chew</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Tert Supp - Chew</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Tert Supp - Chew</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>101</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_tert_supp_cigars</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Tert Supp - Cigars</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Tert Supp - Cigars</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>102</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_tert_supp_mst</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Tert Supp - MST</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Tert Supp - MST</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>103</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>msa_tert_supp_total</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>MSA Tert Supp - Total</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MSA Tert Supp - Total</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>104</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_call_id</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Call ID</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Call ID</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>106</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_chain</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>107</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_chain_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>108</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_chain_owner_region</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain Owner Region</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain Owner Region</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>109</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_chain_owner_territory</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain Owner Territory</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain Owner Territory</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>110</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_chain_owner_zone</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain Owner Zone</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain Owner Zone</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>111</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_class_of_trade</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Class of Trade</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Class of Trade</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>112</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_customer_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Customer Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Customer Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>182</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_distributor_class_of_trade</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Distributor Class of Trade</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Distributor Class of Trade</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>183</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_finished_calls_last_52_weeks</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Finished Calls Last 52 Weeks</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Finished Calls Last 52 Weeks</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>113</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_frequency</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Frequency</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Frequency</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>114</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_last_call_date</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Last Call Date</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Last Call Date</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>115</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_ownership_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Ownership Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Ownership Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>116</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_region</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Region</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Region</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>118</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_routing</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Routing</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Routing</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>119</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_rsm_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC RSM Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC RSM Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>117</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_selling_influence</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Selling Influence</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Selling Influence</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>120</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_state_license_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC State License Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC State License Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>121</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_sub_class_of_trade</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Sub-Class of Trade</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Sub-Class of Trade</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>122</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_supplier_region</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Supplier Region</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Supplier Region</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>184</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_supplier_territory</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Supplier Territory</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Supplier Territory</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>185</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_supplier_zone</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>NTC Supplier Zone</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Supplier Zone</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>186</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_td_store_id</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC TD Store ID</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC TD Store ID</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>123</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_territory</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Territory</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Territory</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>125</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_tsm_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC TSM Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC TSM Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>124</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_zone</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Zone</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Zone</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>126</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_brand</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_BRAND</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_BRAND</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>197</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_brand_extension</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_BRAND_EXTENSION</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_BRAND_EXTENSION</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>196</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_brand_family</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_BRAND_FAMILY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_BRAND_FAMILY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>195</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_CATEGORY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_CATEGORY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>190</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_cigar_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_CIGAR_TYPE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_CIGAR_TYPE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>198</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_cone</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_CONE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_CONE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>199</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_date</fullName>
+        <creationType>Custom</creationType>
+        <datatype>D</datatype>
+        <dateFormat>MM/dd/yyyy</dateFormat>
+        <externalName>PRICE_DATE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_DATE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>201</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_flavor</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_FLAVOR</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_FLAVOR</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>200</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_master_brand_family</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_MASTER_BRAND_FAMILY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_MASTER_BRAND_FAMILY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>194</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_sub_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_SUB_CATEGORY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_SUB_CATEGORY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>192</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_usage_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRICE_USAGE_CATEGORY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRICE_USAGE_CATEGORY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>191</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>product_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>PRODUCT_GROUP</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PRODUCT_GROUP</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>189</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>profit</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>PROFIT</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PROFIT</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>210</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>profit_per_latest_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>PROFIT_PER_LATEST_PRICE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>PROFIT_PER_LATEST_PRICE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>211</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_african_american</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Race - African American</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - African American</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>68</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_african_american_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Race - African American Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - African American Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>69</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_asian</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Race - Asian</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Asian</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>70</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_asian_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Race - Asian Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Asian Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>71</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_caucasian</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Race - Caucasian</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Caucasian</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>72</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_caucasian_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Race - Caucasian Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Caucasian Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>73</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_hispanic</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Race - Hispanic</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Hispanic</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>74</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_hispanic_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Race - Hispanic Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Hispanic Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>75</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_other</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Race - Other</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Other</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>76</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>race_other_race_pct_group</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Race - Other Race Pct Group</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Race - Other Race Pct Group</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>77</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>RETAIL NUMBER</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>RETAIL NUMBER</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>revenue</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>REVENUE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>REVENUE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>204</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>revenue_per_latest_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>REVENUE_PER_LATEST_PRICE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>REVENUE_PER_LATEST_PRICE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>208</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sku_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>SKU CODE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>SKU CODE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sku_date_key</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>SKU_DATE_KEY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>SKU_DATE_KEY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sku_title</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>SKU TITLE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>SKU TITLE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>7</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>14</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>15</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_did</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>STORE_DID</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>STORE_DID</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>163</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_distributor_customer_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>STORE_Distributor Customer Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>STORE_Distributor Customer Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>164</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_distributor_customer_ship_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>STORE_Distributor Customer Ship Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>STORE_Distributor Customer Ship Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>165</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>16</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>17</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>18</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_zip</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Zip</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Zip</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>19</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_zip_4</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Zip +4</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Zip +4</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>20</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sub_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Sub Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Sub Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>8</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>127</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_banner</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Banner</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Banner</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>128</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_banner_total_store_count</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Banner Total Store Count</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Banner Total Store Count</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>129</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_chain_ind</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Chain Ind</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Chain Ind</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>130</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>131</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_company_size</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Company Size</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Company Size</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>132</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_county_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD County Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD County Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>133</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_county_size</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD County Size</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD County Size</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>134</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_dma_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD DMA Code</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD DMA Code</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>135</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_dma_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD DMA Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD DMA Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>136</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_fips_state_county</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD FIPS State/County</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD FIPS State/County</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>137</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_franchise</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Franchise</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Franchise</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>138</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_immediate_account</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Immediate Account</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Immediate Account</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>139</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_immediate_account_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Immediate Account City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Immediate Account City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>140</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_immediate_account_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Immediate Account State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Immediate Account State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>141</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_immediate_total_store_count</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Immediate Total Store Count</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Immediate Total Store Count</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>142</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_latitude</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Latitude</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Latitude</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>143</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_linx_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Linx Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Linx Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>144</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_longitude</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Longitude</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Longitude</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>145</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>146</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_outlet_status</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Outlet Status</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Outlet Status</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>147</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Owner Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>148</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Owner City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>149</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Owner Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>150</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Owner State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>151</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_total_store_count</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Owner Total Store Count</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner Total Store Count</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>152</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_owner_zip</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Owner Zip</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Owner Zip</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>153</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>154</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_sub_trade_class</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Sub Trade Class</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Sub Trade Class</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>155</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_trade_class</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Trade Class</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Trade Class</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>156</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_ultimate_parent</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Ultimate Parent</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Ultimate Parent</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>157</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_ultimate_parent_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Ultimate Parent City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Ultimate Parent City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>158</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_ultimate_parent_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Ultimate Parent State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Ultimate Parent State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>159</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_ultimate_parent_total_store_count</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TD Ultimate Parent Total Store Count</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Ultimate Parent Total Store Count</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>160</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_zip</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Zip</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Zip</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>161</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_zip_5_digit</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD Zip 5-digit</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD Zip 5-digit</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>162</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>time</fullName>
+        <creationType>Custom</creationType>
+        <datatype>D</datatype>
+        <dateFormat>MM/dd/yyyy</dateFormat>
+        <externalName>TIME</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TIME</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>trending_cu_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TRENDING_CU_COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TRENDING_CU_COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>203</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>trending_cu_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>TRENDING_CU_PRICE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TRENDING_CU_PRICE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>202</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ttl_population_21_over</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Ttl Population 21 &amp; Over</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Ttl Population 21 &amp; Over</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>78</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Profile</objectCategory>
+</MktDataTranObject>

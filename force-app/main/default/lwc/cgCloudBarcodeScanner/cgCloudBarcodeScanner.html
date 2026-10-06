@@ -1,0 +1,296 @@
+<template>
+
+    <lightning-button label="Scan Products" variant="brand"
+                            class="slds-button greenBackgroundButton" onclick={openScannerModel}>
+                        </lightning-button>
+    
+    <template if:true={isScannerModalOpen}>
+
+
+        <section class="slds-modal slds-fade-in-open custom-modal" > <!-- For SAL-248 widen modal -->
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Scan Products</h2>
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        title="Close" onclick={closeScannerModel} style="top: 14px;right: 15px;">
+                        <lightning-icon icon-name="utility:close" alternative-text="close"
+                            size="small"></lightning-icon>
+                    </button>
+                </header>
+                <!-- style="min-height:35%;" For SAL-248 -->
+                <div class="slds-modal__content slds-p-around_medium" style="min-height:45%;"> <!-- For SAL-248 -->
+                    <template if:true={ScannerSpinner}>
+                        <div class="spinner-container">
+                            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                                message="Loading data..." size="medium" variant="base"></lightning-spinner>
+                        </div>
+                    </template>
+                    <div class="slds-p-around_small">
+                        <template if:true={actionButtons}>
+                            <div class="slds-m-top_small">
+                                <template if:true={scanning}>
+                                <lightning-formatted-text value="Scanning active — please scan barcodes."></lightning-formatted-text>
+                                </template>
+                                <template if:false={scanning}>
+                                <lightning-formatted-text value="Scanner inactive. Click 'Start scanning' and scan barcodes."></lightning-formatted-text>
+                                </template>
+                            </div>
+                            <!-- Hidden input that receives HID keyboard input from scanner -->
+                            <input data-id="scannerInput"
+                                    type="text"
+                                    onkeydown={handleKeyDown}
+                                    onpaste={handlePaste}
+                                    style="opacity:0; height:1px; width:1px; position: absolute; left:-9999px;" />
+
+                            <lightning-textarea label="Scanned GTINs" value={scannedText} class="slds-m-top_small" readonly></lightning-textarea>
+                            <lightning-input label="Order Id" value={orderId} onchange={handleOrderIdChange} class="slds-m-top_small" style="display:none"></lightning-input>
+                            <lightning-input label="Visit Id" value={visitId} class="slds-m-top_small" style="display:none"></lightning-input>
+                        </template>
+
+                        
+                        <template if:true={closeButtons}>
+                            <!-- <template if:true={showEndOfScanReview}>
+                                <div class="slds-m-bottom_small">
+                                    <lightning-button label="Review Products" variant="brand" onclick={openReviewModal}></lightning-button>
+                                </div>
+                            </template> -->
+                            <template if:true={orderItemResult}>
+                                <lightning-card title="Scan Result" icon-name="utility:success">
+                                    <div class="slds-p-around_small">
+                                        <template if:true={orderItemResult.addedItems}>
+                                            <div class="slds-text-heading_small slds-text-color_success">
+                                                Successfully Created Line Items
+                                            </div>
+                                            <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                <template for:each={orderItemResult.addedItems} for:item="item">
+                                                    <li key={item.gtin}>
+                                                        <span class="slds-text-title_bold">{item.productName}</span>
+                                                        <span class="slds-text-color_weak"> ({item.gtin}) </span>
+                                                        — Qty: <strong>{item.quantity}</strong>
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </template>
+
+                                        <template if:true={orderItemResult.failedItems}>
+                                            <div class="slds-m-top_medium slds-text-heading_small slds-text-color_error">
+                                                Unmatched GTINs
+                                            </div>
+                                            <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                <template for:each={orderItemResult.failedItems} for:item="fail">
+                                                    <li key={fail.gtin} class="slds-text-color_error">
+                                                        {fail.gtin} — Qty: <strong>{fail.quantity}</strong>
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </template>
+                                    </div>
+                                </lightning-card>
+                            </template>
+
+    
+                            <template if:true={visitJobResult}>
+                                <template if:false={isReviewMode}>
+                                    <lightning-card title="Scan Products Result" icon-name="utility:check">
+                                        <div class="slds-p-around_small">
+                                            
+                                            <!-- Successfully Processed Products -->
+                                            <template if:true={visitJobResult.addedItems}>
+                                                <div class="slds-text-heading_small slds-text-color_success">
+                                                    Products Marked as Distributed
+                                                </div>
+                                                <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                    <template for:each={visitJobResult.addedItems} for:item="item">
+                                                        <li key={item.gtin}>
+                                                            <span class="slds-text-title_bold">{item.productName}</span>
+                                                        </li>
+                                                    </template>
+                                                </ul>
+                                            </template>
+
+                                            <!-- Failed or Unmatched GTINs -->
+                                            <template if:true={visitJobResult.failedItems}>
+                                                <div class="slds-m-top_medium slds-text-heading_small slds-text-color_error">
+                                                    Unmatched GTINs
+                                                </div>
+                                                <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                    <template for:each={visitJobResult.failedItems} for:item="fail">
+                                                        <li key={fail.gtin} class="slds-text-color_error">
+                                                            {fail.gtin}
+                                                        </li>
+                                                    </template>
+                                                </ul>
+                                            </template>
+                                            <!-- <template if:true={showEndOfScanReview}>
+                                                <div class="slds-m-top_medium">
+                                                    <lightning-button label="Review Products" variant="brand" onclick={openReviewModal}></lightning-button>
+                                                </div>
+                                            </template> -->
+
+                                        </div>
+                                    </lightning-card>
+                                </template>
+                                <!-- For SAL-248: End of Scan Review inline -->
+                                <template if:true={isReviewMode}>
+                                    <template if:true={reviewSubmitResult}>
+                                        <lightning-card title="Review Submission Result" icon-name="utility:success">
+                                            <div class="slds-p-around_small">
+                                                <template if:true={reviewSubmitResult.distributed}>
+                                                    <div class="slds-text-heading_small slds-text-color_success">
+                                                        Products Marked as Distributed
+                                                    </div>
+                                                    <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                        <template for:each={reviewSubmitResult.distributed} for:item="item">
+                                                            <li key={item.productName}>
+                                                                <span class="slds-text-title_bold">{item.productName}</span>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </template>
+                                                <template if:true={reviewSubmitResult.outOfStock}>
+                                                    <div class="slds-m-top_medium slds-text-heading_small slds-text-color_error">
+                                                        Products Marked as Out Of Stock
+                                                    </div>
+                                                    <ul class="slds-list_dotted slds-m-left_large slds-m-top_x-small">
+                                                        <template for:each={reviewSubmitResult.outOfStock} for:item="item">
+                                                            <li key={item.productName} class="slds-text-color_error">
+                                                                {item.productName}
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </template>
+                                            </div>
+                                        </lightning-card>
+                                    </template>
+                                    <template if:false={reviewSubmitResult}>
+                                        <lightning-card title="Review Products" icon-name="utility:preview">
+                                            <div class="slds-p-around_small">
+                                                <div class="slds-m-bottom_small slds-grid slds-grid_align-spread slds-wrap">
+                                                    <div>Scanned: <strong>{scannedCount}</strong></div>
+                                                    <div>Already OOS: <strong>{alreadyOosCount}</strong></div>
+                                                    <div>Need Review: <strong>{needReviewCount}</strong></div>
+                                                </div>
+                                                <template if:true={reviewItems}>
+                                                    <div style="max-height: 240px; overflow-y: auto; width: 100%;"> <!-- For SAL-248 responsive -->
+                                                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered" style="width: 100%; table-layout: fixed;"> <!-- For SAL-248 full width -->
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" style="width: 65%;"><div class="slds-truncate" title="Product">Product</div></th>
+                                                                    <th scope="col" style="width: 35%;"><div class="slds-truncate" title="Review Status">Review Status</div></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <template for:each={reviewItems} for:item="row">
+                                                                    <tr key={row.productId}>
+                                                                        <td data-label="Product">
+                                                                            <!-- <div class="slds-truncate" title={row.productName}>{row.productName}</div> -->
+                                                                            <div title={row.productName} style="white-space: normal; word-break: break-word; line-height: 1.2;">{row.productName}</div> <!-- For SAL-248 wrap product name -->
+                                                                        </td>
+                                                                        <td data-label="Review Status">
+                                                                            <lightning-combobox
+                                                                                style="width: 100%;"
+                                                                                data-id={row.productId}
+                                                                                data-name={row.productName}
+                                                                                value={row.reviewStatus}
+                                                                                options={reviewStatusOptions}
+                                                                                onchange={handleReviewStatusChange}>
+                                                                            </lightning-combobox>
+                                                                        </td>
+                                                                    </tr>
+                                                                </template>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </lightning-card>
+                                    </template>
+                                </template>
+                            </template>
+                        </template>
+
+                    </div>
+                </div>
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <div>
+                        <template if:true={actionButtons}>
+                        <lightning-button label={scanButtonLabel} onclick={toggleScanning} class="slds-m-right_small"></lightning-button>
+                        <lightning-button label="Submit" variant="brand" onclick={handleSubmit} disabled={isSubmitDisabled}></lightning-button>
+                         <!-- <lightning-button label="Submit" variant="brand" onclick={handleSubmit} ></lightning-button> -->
+                        </template>
+                        <template if:true={closeButtons}>
+                            <template if:true={showEndOfScanReview}>
+                                <template if:true={isReviewMode}>
+                                    <template if:true={reviewSubmitResult}>
+                                        <lightning-button label="Close" variant="brand" onclick={closeScannerModel}></lightning-button>
+                                    </template>
+                                    <template if:false={reviewSubmitResult}>
+                                        <lightning-button label="Go Back" class="slds-m-right_small" onclick={handleReviewBack}></lightning-button>
+                                        <lightning-button variant="brand" label="Submit Review" onclick={handleReviewSubmit}></lightning-button>
+                                    </template>
+                                </template>
+                                <template if:false={isReviewMode}>
+                                    <lightning-button label="Review Products" variant="brand" onclick={openReviewModal}></lightning-button>
+                                </template>
+                            </template>
+                            <template if:false={showEndOfScanReview}>
+                                <lightning-button label="Close" variant="brand" onclick={closeScannerModel}></lightning-button>
+                            </template>
+                        </template>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+
+
+
+  <!-- <lightning-card title="GTIN Scanner">
+    <div class="slds-p-around_small">
+      <lightning-button label={scanButtonLabel} onclick={toggleScanning} class="slds-m-right_small"></lightning-button>
+      <lightning-button label="Submit" variant="brand" onclick={handleSubmit} disabled={isSubmitDisabled}></lightning-button>
+      <lightning-button label="Close" variant="brand" onclick={closeScannerModel} ></lightning-button>
+
+      <div class="slds-m-top_small">
+        <template if:true={scanning}>
+          <lightning-formatted-text value="Scanning active — please scan barcodes."></lightning-formatted-text>
+        </template>
+        <template if:false={scanning}>
+          <lightning-formatted-text value="Scanner inactive. Click 'Start scanning' and scan barcodes."></lightning-formatted-text>
+        </template>
+      </div>
+
+
+      <input data-id="scannerInput"
+             type="text"
+             onkeydown={handleKeyDown}
+             onpaste={handlePaste}
+             style="opacity:0; height:1px; width:1px; position: absolute; left:-9999px;" />
+
+      <lightning-textarea label="Scanned GTINs" value={scannedText} readonly class="slds-m-top_small"></lightning-textarea> 
+
+
+      <div class="slds-m-top_small">
+        <template for:each={scannedList} for:item="g">
+          <div key={g} class="slds-box slds-m-bottom_x-small">
+            <span>{g}</span>
+            <button class="slds-button slds-button_neutral slds-m-left_small" data-gtin={g} onclick={removeGtin}>Remove</button>
+          </div>
+        </template>
+      </div>
+
+      <lightning-input label="Order Id (or bind via @api)" value={orderId} onchange={handleOrderIdChange} class="slds-m-top_small"></lightning-input>
+
+      <template if:true={lastResult}>
+        <div class="slds-m-top_small slds-text-color_success">
+          <strong>Result:</strong>
+          <div>Created Lines: {lastResult.created}</div>
+          <template if:true={hasUnmatched}>
+            <div class="slds-text-color_error">Unmatched GTINs: </div>
+          </template>
+        </div>
+      </template>
+    </div>
+  </lightning-card> -->
+  </template>
+</template>

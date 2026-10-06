@@ -1,0 +1,39 @@
+.product-table {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    background-color: white;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    /* border-bottom: 1px solid #ddd; */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.selectable-row[aria-selected="true"] {
+    background-color: #bdddf173;
+    border-radius: 10px;
+}
+
+.selectable-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.product-table-container {
+    max-height: calc(100vh - 200px); /* Adjust 200px to match header/footer height */
+    overflow-y: auto;
+    padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .product-table-container {
+        width: auto;
+    }
+}
+.group-header {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSM_Visit</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Status</columns>
+    <columns>ActualVisitStartTime</columns>
+    <columns>ActualVisitEndTime</columns>
+    <columns>PlannedVisitStartTime</columns>
+    <columns>PlannedVisitEndTime</columns>
+    <columns>CreatedDate</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>Owner</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>Call_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner</field>
+        <operation>contains</operation>
+        <value>cherst</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>cgcloud__Completed_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>9/3/2024</value>
+    </filters>
+    <filters>
+        <field>Call_Type__c</field>
+        <operation>equals</operation>
+        <value>In-Store Visit</value>
+    </filters>
+    <label>My Retail Visits (NSM Initiative)</label>
+    <sharedTo>
+        <role>Region_1101_RSM</role>
+    </sharedTo>
+</ListView>

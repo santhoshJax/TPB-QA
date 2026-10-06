@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Level --></label>
+    <name>TPB_Tax_Level__c</name>
+    <picklistValues>
+        <masterLabel>City</masterLabel>
+        <translation><!-- City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>County</masterLabel>
+        <translation><!-- County --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jurisdiction</masterLabel>
+        <translation><!-- Jurisdiction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State</masterLabel>
+        <translation><!-- State --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

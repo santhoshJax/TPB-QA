@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>item_code1__c</fullName>
+    <label>Key Qualifier ITEM_CODE</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>Key Qualifier ITEM_CODE</labelOverride>
+        <masterLabel>Key Qualifier ITEM_CODE</masterLabel>
+        <refAttrDeveloperName>item_code1_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

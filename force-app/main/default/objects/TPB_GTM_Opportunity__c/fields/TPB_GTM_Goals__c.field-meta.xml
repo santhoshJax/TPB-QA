@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_GTM_Goals__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>TPB GTM Goals</label>
+    <referenceTo>TPB_GTM_Goals__c</referenceTo>
+    <relationshipLabel>TPB Account Opportunities</relationshipLabel>
+    <relationshipName>TPB_Account_Opportunities</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#1EA2B1</headerColor>
+        <logo>Conga_Template_App</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>ADVANCED- Build by/for those who build Conga Templates and Solutions</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Conga Template Admin</label>
+    <navType>Standard</navType>
+    <tabs>standard-WorkOrder</tabs>
+    <tabs>standard-Order</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Invoice_Term__c</tabs>
+    <tabs>Account_Maintenance_Request__c</tabs>
+    <tabs>TPB_Distributor_License__c</tabs>
+    <tabs>cgcloud__Tactic_Product__c</tabs>
+    <tabs>Ideal_Kit__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Conga_Template_Admin_UtilityBar</utilityBar>
+</CustomApplication>

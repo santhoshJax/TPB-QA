@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Stock__c</fullName>
+    <formula>OR(
+In_Stock__c,
+ISPICKVAL(Item_Type__c, &quot;Cash Sale&quot;) &amp;&amp; UnitPrice &gt; 0,
+ISPICKVAL(Item_Type__c, &quot;Bill Thru&quot;) &amp;&amp; NOT(ISBLANK(Related_Account__c)),
+ISPICKVAL(Item_Type__c, &quot;POS Placement&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Stocked at Close of Call</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,159 @@
+<template>
+  <div class="slds-grid slds-wrap">
+    <!-- spinner has overlay and centralized based on the container component-->
+    <lightning-spinner
+      alternative-text="Loading"
+      size="medium"
+      if:true={loading}
+    ></lightning-spinner>
+
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <!--Visit -->
+      <lightning-record-edit-form object-api-name="Order">
+        <lightning-input-field
+          disabled={isDisabled}
+          class="business-required"
+          field-name="Related_Visit__c"
+          data-id="Related_Visit__c"
+          value={coreParams.strVisitId}
+          onchange={handleVisitChange}
+          required
+        >
+        </lightning-input-field>
+      </lightning-record-edit-form>
+    </div>
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <!--State -->
+      <lightning-combobox
+        disabled={isDisabled}
+        name="State"
+        label="State"
+        value={coreParams.stateOptionsValue}
+        data-id="StateId"
+        placeholder="Select State"
+        options={stateInformationList}
+        onchange={handleOptionsChange}
+        required
+      ></lightning-combobox>
+    </div>
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <div class="divButton">
+        <!--save-->
+        <lightning-button
+          if:false={isDisabled}
+          class="slds-var-m-around_small"
+          variant="brand"
+          type="submit"
+          label="Save"
+          onclick={submitEvent}
+        ></lightning-button>
+      </div>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-wrap">
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <!--Invoice Number-->
+      <lightning-input
+        name="invoiceNumber"
+        class="business-required"
+        disabled={isHeaderDisabled}
+        type="text"
+        onchange={onInputChange}
+        label="Invoice Number"
+        value={coreParams.strInvoiceNumber}
+        if:false={isShow}
+        maxlength="30"
+        required
+        autocomplete
+        data-validation-required="true"
+      ></lightning-input>
+    </div>
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <!--Dollar Amount Of Invoice-->
+      <lightning-input
+        name="dollarAmountOfInvoice"
+        class="business-required"
+        type="number"
+        disabled={isHeaderDisabled}
+        onchange={onInputChange}
+        label="Dollar Amount Of Invoice"
+        value={coreParams.strDollarAmountOfInvoice}
+        if:false={isShow}
+        maxlength="12"
+        required
+        autocomplete
+        formatter="currency"
+        step="0.01"
+        data-validation-required="true"
+      ></lightning-input>
+    </div>
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12"
+    >
+      <lightning-input
+        if:false={isShow}
+        name="runningSubtotal"
+        class="business-required"
+        type="number"
+        label="Total Difference from Invoice"
+        value={total}
+        maxlength="12"
+        disabled
+        formatter="currency"
+        step="0.01"
+      ></lightning-input>
+    </div>
+  </div>
+
+  <lightning-layout multiple-rows>
+    <lightning-layout-item flexibility="auto" padding="around-small">
+      <!--Invoice file Uploader -->
+      <lightning-file-upload
+        disabled={isHeaderDisabled}
+        class="business-required"
+        label="Attach receipt"
+        name="fileUploader"
+        accept={acceptedFormats}
+        record-id={orderId}
+        if:false={isShow}
+        required
+        onuploadfinished={handleUploadFinished}
+        multiple
+      >
+      </lightning-file-upload>
+      <template
+        for:each={lstAllFiles}
+        for:item="item"
+        for:index="index"
+        if:false={isShow}
+      >
+        <tr class="slds-hint-parent" key={item}>
+          <td data-label="Files Message">
+            <a
+              if:false={isDeleteFileShow}
+              onclick={handleDeleteFilesChange}
+              target="_blank"
+              data-index={index}
+              data-id={item.documentId}
+              >Delete</a
+            >
+          </td>
+          <td data-label="Files Name" class="slds-hint-parent-td">
+            {item.name}
+          </td>
+        </tr>
+      </template>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

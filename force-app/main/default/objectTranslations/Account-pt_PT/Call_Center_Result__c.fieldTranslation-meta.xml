@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Remote Sales Result --></label>
+    <name>Call_Center_Result__c</name>
+    <picklistValues>
+        <masterLabel>Did not reach DM</masterLabel>
+        <translation><!-- Did not reach DM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispatch TBM to Visit</masterLabel>
+        <translation><!-- Dispatch TBM to Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Has Inventory</masterLabel>
+        <translation><!-- Has Inventory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Has Placed Marketplace Order</masterLabel>
+        <translation><!-- Has Placed Marketplace Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Left VM/Email</masterLabel>
+        <translation><!-- Left VM/Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer</masterLabel>
+        <translation><!-- No Answer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested</masterLabel>
+        <translation><!-- Not Interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not in Service</masterLabel>
+        <translation><!-- Not in Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Will Place Marketplace Order</masterLabel>
+        <translation><!-- Will Place Marketplace Order --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

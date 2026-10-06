@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mailing Country --></label>
+    <name>cgcloud__Mailing_Country__c</name>
+    <picklistValues>
+        <masterLabel>de</masterLabel>
+        <translation><!-- de --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>en</masterLabel>
+        <translation><!-- en --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT COUNT(*) AS total_retail_count__c FROM Account_Total_Revenue__cio
+WHERE Account_Total_Revenue__cio.Total_Revenue__c IS NOT NULL</expression>
+    <masterLabel>Account_Count__cio</masterLabel>
+</MktCalcInsightObjectDef>

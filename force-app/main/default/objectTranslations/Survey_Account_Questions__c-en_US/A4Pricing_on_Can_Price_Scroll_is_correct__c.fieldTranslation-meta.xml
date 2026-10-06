@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the price scroll was present when you arrived, was the pricing for Stokers Cans correct?  This should be the scanned price. --></help>
+    <label><!-- 4. Can Price on Scroll is correct? --></label>
+    <name>A4Pricing_on_Can_Price_Scroll_is_correct__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Scroll Present</masterLabel>
+        <translation><!-- No Scroll Present --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

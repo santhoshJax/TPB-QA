@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Type__c</fullName>
+    <label>Action Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closed_Temporarily</fullName>
+                <default>false</default>
+                <label>Closed Temporarily</label>
+            </value>
+            <value>
+                <fullName>Closed_Permanently</fullName>
+                <default>false</default>
+                <label>Closed Permanently</label>
+            </value>
+            <value>
+                <fullName>Transfer to another Territory</fullName>
+                <default>false</default>
+                <label>Transfer Acct to another Territory</label>
+            </value>
+            <value>
+                <fullName>Ownership change from Independent to Chain</fullName>
+                <default>false</default>
+                <label>Ownership change from Independent to Chain</label>
+            </value>
+            <value>
+                <fullName>Ownership change from Chain to Independent</fullName>
+                <default>false</default>
+                <label>Ownership change from Chain to Independent</label>
+            </value>
+            <value>
+                <fullName>Geo Address Change</fullName>
+                <default>false</default>
+                <label>Geo Address Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

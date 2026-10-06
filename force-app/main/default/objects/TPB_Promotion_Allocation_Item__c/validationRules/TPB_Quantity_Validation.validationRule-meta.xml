@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Quantity_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( TPB_Max_Quantity__c &lt; 0,  TPB_Quantity_Planned__c &lt; 0, TPB_Total_Max_Allocation__c &lt; 0,  TPB_Total_QTY_Ordered__c &lt;0)</errorConditionFormula>
+    <errorMessage>The quantity must be greater than or equal to 0.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- MobilityRelevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Record type for default visit --></description>
+        <label><!-- Default Visit --></label>
+        <name>cgcloud__Default</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type for DSD calls --></description>
+        <label><!-- Delivery Visit --></label>
+        <name>cgcloud__Delivery_Visit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Editable --></label>
+        <name>cgcloud__Editable</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Read Only --></label>
+        <name>cgcloud__Read_Only</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Notes cannot be blank for in-store visit. --></errorMessage>
+        <name>Notes_should_not_be_blank_for_instore_vi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Visits cannot be edited after completion. --></errorMessage>
+        <name>TPB_CanNotEditAfterEnd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value of HQ Visit Type must be Virtual, Sales Appointment or Maintenance. --></errorMessage>
+        <name>TPB_CheckHQVisitType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Retail visit type cannot be blank. --></errorMessage>
+        <name>TPB_RetailVisitTypeNotBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please create visits to headquarter accounts within your territory --></errorMessage>
+        <name>TPB_TSMSameTerritoryRightRecordType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wholesale Visit Type cannot be blank. --></errorMessage>
+        <name>TPB_WholesaleVisitTypeNotBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start Date Time can&apos;t be later than End Date Time. --></errorMessage>
+        <name>cgcloud__Date_From_Has_To_Be_Before_Date_To</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Customer and the Tour must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same_as_tour</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Customer and the Visit must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same_for_all_lookups</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Complete_Visit --></label>
+        <name>cgcloud__Complete_Visit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- JobList_Planning --></label>
+        <name>cgcloud__JobList_Planning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Multiple_new_visits --></label>
+        <name>cgcloud__Multiple_new_visits</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Order --></label>
+        <name>cgcloud__New_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Template_Visit --></label>
+        <name>cgcloud__Template_Visit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Trip_List_Planning --></label>
+        <name>cgcloud__Trip_List_Planning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Assets --></label>
+        <name>cgcloud__View_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Calendar --></label>
+        <name>cgcloud__View_Calendar</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Deliveries --></label>
+        <name>cgcloud__View_Deliveries</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Orders --></label>
+        <name>cgcloud__View_Orders</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Promotions --></label>
+        <name>cgcloud__View_Promotions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Questions --></label>
+        <name>cgcloud__View_Questions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Surveys --></label>
+        <name>cgcloud__View_Surveys</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Visit_Planning --></label>
+        <name>cgcloud__Visit_Planning</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+.slds-card__header-title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.slds-illustration_small {
+    padding: 2rem 0;
+}
+
+lightning-datatable {
+    border: 0;
+}
+
+.slds-is-relative {
+    min-height: 100px;
+}

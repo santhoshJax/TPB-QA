@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_OrderItemAddProduct_VR</fullName>
+    <active>true</active>
+    <description>When OrderItem adds a product, it must be the underlying Product data.</description>
+    <errorConditionFormula>NOT( ISPICKVAL(Product2.cgcloud__Product_Level__c ,&apos;Product&apos;)) &amp;&amp; OR(ISCHANGED( Product2Id ), ISNEW())</errorConditionFormula>
+    <errorMessage>Please select an individual item.</errorMessage>
+</ValidationRule>

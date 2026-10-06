@@ -1,0 +1,158 @@
+<template>
+    <template if:true={isMainSpinner}>
+        <div class="spinner-container">
+            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner" message="Loading data..."
+                size="medium" variant="base"></lightning-spinner>
+        </div>
+    </template>
+    <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+        <div class="slds-p-right_small slds-p-left_xxx-small slds-size_12-of-12">
+            <div onkeyup={handleKeyUp} class="slds-p-around_xx-small" style="width: 100%;">
+                <lightning-input type="search" name="enter-search" label="Search Product"
+                    onchange={handleSearchChange}></lightning-input>
+            </div>
+        </div>
+        <!-- <template if:true={isRewardsButton}>
+                <div class="rewards-button-container">
+                    <button class="rewards-button slds-button slds-button_neutral" onclick={handlePrmotionRewards}>
+                        <lightning-icon icon-name="utility:gift" alternative-text="Gift" size="x-small"
+                            class="slds-p-right_x-small">
+                        </lightning-icon>
+                        <span class="label-text">Rewards</span>
+                        <span class="badge">{rewardsApplied}/{totalRewards}</span>
+                    </button>
+                </div>
+            </template> -->
+    </div>
+    <div class="slds-grid slds-wrap slds-p-top_small">
+        <div class="slds-col slds-size_1-of-1 slds-large-size_8-of-12 slds-card" style="overflow-y: auto;">
+            <template if:true={isselectedProductsArray}>
+                <div class="product-table-container">
+                    <template for:each={suggestedOrderPrebook} for:item="group">
+                        <div key={group.label} class="group-section">
+                            <div class="group-header slds-p-around_xx-small slds-theme_shade slds-text-title_bold">
+                                {group.label}
+                            </div>
+    
+                            <!-- Product Rows -->
+                            <template for:each={group.items} for:item="item">
+                                <div key={item.productId} aria-selected={item.ariaSelected}
+                                    class="product-row slds-grid slds-p-around_x-small slds-border_bottom selectable-row"
+                                    data-id={item.productId} onclick={handleSelectRecord} style="cursor: pointer;">
+    
+                                    <div class="slds-col slds-size_8-of-12 product-name">
+                                        {item.productName}
+                                    </div>
+    
+                                    <div class="slds-col slds-grid slds-size_4-of-12 ">
+                                        <div class="slds-p-right_small">
+                                            <p><Span>{item.typeLabel}</Span></p>
+                                        </div>
+                                        <div class="slds-p-left_small">
+                                            <p><Span>Carton </Span><span>{item.Carton}</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template if:false={isselectedProductsArray}>
+                <lightning-card class="slds-text-align_center ">
+                    <p class="slds-text-color_weak"><span><strong>No Products are available</strong></span>
+                    </p>
+                </lightning-card>
+    
+            </template>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            <template if:true={isSelectedProduct}>
+                <div class="slds-card slds-p-around_small" data-id={selectedProduct}>
+                    <h3 class="slds-section__title slds-theme_shade">
+                        <span class="slds-truncate slds-p-horizontal_small"
+                            title={selectedProductName}>{selectedProductName}</span>
+                    </h3>
+                    <div class="slds-p-top_small ">
+                        <div class="slds-p-left_small">
+                            <p class="slds-p-bottom_x-small">
+                                <span>Number</span>
+                                <span class="slds-p-left_small">{productCode}</span>
+                            </p>    
+                        </div>
+                            <div class="slds-p-top_small slds-p-left_small">
+                                <c-custom-lookup-search label="wholeSaler" onselect={handleWholeSalerChange}
+                                    options={wholeSalerOptions}
+                                    selected-value={selectedWholeSaler}></c-custom-lookup-search>
+                                <p class="slds-p-top_small">
+                                    WholeSale Order Code {wholeSaleOrderCode}
+                                </p>
+                            </div>
+                        <div class="slds-p-left_small">
+                            <p class="slds-p-bottom_small slds-p-top_small">
+                                <span>Suggested Qty</span>
+                                <span class="slds-p-left_small">{suggestedQty}</span>
+                            </p>
+    
+                            <p>
+                                <span>Max. Allocation</span>
+                                <span class="slds-p-left_small">{maxAllocationValue}</span>
+                                <span class="slds-p-left_small"></span>
+                            </p>
+                        </div>
+                        <div class="slds-section slds-is-open">
+                            <h5 class="slds-section__title slds-theme_shade">
+                                <span class="slds-truncate slds-p-horizontal_small">Unit of Measures</span>
+                            </h5>
+                            <div class="slds-section__content">
+                                <!-- Carton -->
+                                <template if:false={isReturn}>
+                                    <div class="slds-p-top_xx-small">
+                                        <div class="slds-m-around_small slds-grid slds-grid_align-spread">
+                                            <div class="slds-size_6-of-12">
+                                                <!-- <span>Carton</span> -->
+                                                <p><span><strong>Carton</strong></span></p>
+                                                <div class="slds-p-top_small slds-grid slds-grid_align-space">
+                                                    <p><span>Unit Price </span>
+                                                        <span>{unitPriceOfCarton}</span>
+                                                    </p>
+                                                    <p><span>Total Price </span>
+                                                        <span>{totalPriceOfCarton}</span>
+                                                    </p>
+                                                </div>
+    
+                                            </div>
+                                            <div class="slds-grid slds-grid_vertical-align-center">
+                                                <lightning-button-icon icon-name="utility:dash" alternative-text="Decrease"
+                                                    onclick={decreaseQuantity} data-name="cartonValue"
+                                                    data-orderitem-id={lineItemId}
+                                                    data-product-id={selectedProduct} data-uom="Carton"
+                                                    size="small" class="toggle-button slds-m-right_x-small"
+                                                    ></lightning-button-icon>
+                                                <lightning-input type="number" name="cartonValue" data-uom="Carton"
+                                                    value={cartonValue} onblur={handleChange}
+                                                    class="quantity-input input-compact"
+                                                    data-orderitem-id={lineItemId}
+                                                    data-product-id={selectedProduct} variant="label-hidden"
+                                                    ></lightning-input>
+                                                <lightning-button-icon icon-name="utility:add" data-uom="Carton"
+                                                    alternative-text="Increase" onclick={increaseQuantity}
+                                                    data-name="cartonValue"
+                                                    data-orderitem-id={lineItemId}
+                                                    data-product-id={selectedProduct} size="small"
+                                                    class="toggle-button slds-m-left_x-small"
+                                                    ></lightning-button-icon>
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

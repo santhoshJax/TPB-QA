@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CGCloud Online App Group</label>
+    <permissionSets>CGCloud_Online_App</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__IndustriesVisit</permissionSets>
+    <permissionSets>force__LightningRetailExecutionPlusPsl</permissionSets>
+    <permissionSets>force__PennyPerfectPricingPsl</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

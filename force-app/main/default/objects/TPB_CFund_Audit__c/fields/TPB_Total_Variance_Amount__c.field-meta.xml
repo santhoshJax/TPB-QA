@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Total_Variance_Amount__c</fullName>
+    <description>Total Variance Amount</description>
+    <label>Total Variance Amount</label>
+    <summarizedField>TPB_CFund_Audit_Product__c.TPB_Total_Variance_Amount__c</summarizedField>
+    <summaryForeignKey>TPB_CFund_Audit_Product__c.TPB_CFund_Audit__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

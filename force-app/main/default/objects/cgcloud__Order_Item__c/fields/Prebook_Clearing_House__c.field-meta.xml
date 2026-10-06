@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prebook_Clearing_House__c</fullName>
+    <formula>If(
+
+IsNULL(Prebook_Wholesaler__c) = FALSE,
+
+
+Prebook_Wholesaler__r.Clearing_House_Participant__c,
+
+TRUE)</formula>
+    <label>Prebook Clearing House</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

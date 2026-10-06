@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Via_Scanner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True when the offline CGCloud app added this order item via barcode scanner (mode addScannedProduct) rather than manual entry. Synced up from the offline modeler datasource (column TPB_Via_Scanner__c). Read by TPB_VisitJobEOVCalcuBatch to split offline distributions into Offline Scanner vs Offline Manual on the Visit Job Distribution_Source__c. SAL-281b.</description>
+    <inlineHelpText>Set by the offline app when the line was added by barcode scan. Drives Offline Scanner vs Offline Manual on the Visit Job.</inlineHelpText>
+    <label>Via Scanner</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

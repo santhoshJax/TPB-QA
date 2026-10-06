@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Competitive</masterLabel>
+        <translation><!-- Competitive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISTO</masterLabel>
+        <translation><!-- ISTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPBi Product</masterLabel>
+        <translation><!-- TPBi Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPR</masterLabel>
+        <translation><!-- TPR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

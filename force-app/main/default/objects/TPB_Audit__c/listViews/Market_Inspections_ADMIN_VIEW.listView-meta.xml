@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Inspections_ADMIN_VIEW</fullName>
+    <columns>NAME</columns>
+    <columns>TPB_Cash_Sale__c</columns>
+    <columns>TPB_Prebook__c</columns>
+    <columns>TPB_AccountId__c</columns>
+    <columns>TPB_TSM_Name__c</columns>
+    <columns>TPB_AuditorId__c</columns>
+    <columns>TPB_Date_of_Audit__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPB_AuditorId__c</field>
+        <operation>contains</operation>
+        <value>bechtel</value>
+    </filters>
+    <label>Market Inspections (ADMIN VIEW)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

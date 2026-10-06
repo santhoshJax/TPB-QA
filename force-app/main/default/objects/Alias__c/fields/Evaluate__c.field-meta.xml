@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evaluate__c</fullName>
+    <defaultValue>true</defaultValue>
+    <inlineHelpText>Default is TRUE for new records added.  Each record marked as TRUE should be reviewed and linked to a product, if applicable.  If the record has been evaluated and determined that there is not a linked product, update to FALSE so the record does not reappear on next data update.</inlineHelpText>
+    <label>Evaluate</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

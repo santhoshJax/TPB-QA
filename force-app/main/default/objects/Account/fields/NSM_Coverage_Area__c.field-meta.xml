@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSM_Coverage_Area__c</fullName>
+    <label>NSM Coverage Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PHILADEPHIA PA</fullName>
+                <default>false</default>
+                <label>PHILADEPHIA PA</label>
+            </value>
+            <value>
+                <fullName>HARTFORD CT</fullName>
+                <default>false</default>
+                <label>HARTFORD CT</label>
+            </value>
+            <value>
+                <fullName>PITTSBURGH PA</fullName>
+                <default>false</default>
+                <label>PITTSBURGH PA</label>
+            </value>
+            <value>
+                <fullName>VA BEACH/RICHMOND VA</fullName>
+                <default>false</default>
+                <label>VA BEACH/RICHMOND VA</label>
+            </value>
+            <value>
+                <fullName>RALEIGH/DURHAM NC</fullName>
+                <default>false</default>
+                <label>RALEIGH/DURHAM NC</label>
+            </value>
+            <value>
+                <fullName>GREENSBORO NC</fullName>
+                <default>false</default>
+                <label>GREENSBORO NC</label>
+            </value>
+            <value>
+                <fullName>ATLANTA GA</fullName>
+                <default>false</default>
+                <label>ATLANTA GA</label>
+            </value>
+            <value>
+                <fullName>MIAMI FL</fullName>
+                <default>false</default>
+                <label>MIAMI FL</label>
+            </value>
+            <value>
+                <fullName>JACKSONVILLE FL</fullName>
+                <default>false</default>
+                <label>JACKSONVILLE FL</label>
+            </value>
+            <value>
+                <fullName>GRAND RAPIDS/LANSING/DETROIT MI</fullName>
+                <default>false</default>
+                <label>GRAND RAPIDS/LANSING/DETROIT MI</label>
+            </value>
+            <value>
+                <fullName>CHICAGO IL</fullName>
+                <default>false</default>
+                <label>CHICAGO IL</label>
+            </value>
+            <value>
+                <fullName>LOUISVILLE KY</fullName>
+                <default>false</default>
+                <label>LOUISVILLE KY</label>
+            </value>
+            <value>
+                <fullName>LEXINGTON KY</fullName>
+                <default>false</default>
+                <label>LEXINGTON KY</label>
+            </value>
+            <value>
+                <fullName>BIRMINGHAM AL</fullName>
+                <default>false</default>
+                <label>BIRMINGHAM AL</label>
+            </value>
+            <value>
+                <fullName>KANSAS CITY MO</fullName>
+                <default>false</default>
+                <label>KANSAS CITY MO</label>
+            </value>
+            <value>
+                <fullName>SPRINGFIELD MO</fullName>
+                <default>false</default>
+                <label>SPRINGFIELD MO</label>
+            </value>
+            <value>
+                <fullName>NEW ORLEANS LA</fullName>
+                <default>false</default>
+                <label>NEW ORLEANS LA</label>
+            </value>
+            <value>
+                <fullName>HOUSTON TX</fullName>
+                <default>false</default>
+                <label>HOUSTON TX</label>
+            </value>
+            <value>
+                <fullName>DALLAS TX</fullName>
+                <default>false</default>
+                <label>DALLAS TX</label>
+            </value>
+            <value>
+                <fullName>AUSTIN TX</fullName>
+                <default>false</default>
+                <label>AUSTIN TX</label>
+            </value>
+            <value>
+                <fullName>PORTLAND OR</fullName>
+                <default>false</default>
+                <label>PORTLAND OR</label>
+            </value>
+            <value>
+                <fullName>LOS ANGELES CA</fullName>
+                <default>false</default>
+                <label>LOS ANGELES CA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

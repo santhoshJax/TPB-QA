@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- MobilityRelevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- User Notification --></label>
+        <name>cgcloud__User_Notification</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- User Task --></label>
+        <name>cgcloud__User_Task</name>
+    </recordTypes>
+</CustomObjectTranslation>

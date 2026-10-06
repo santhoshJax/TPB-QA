@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ServiceAppointment.Generate_Invoice</members>
+        <members>ServiceAppointment.Start_Call</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Sales_Appointment_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>appointmentAccountSection</members>
+        <members>appointmentContainer</members>
+        <members>appointmentEndSection</members>
+        <members>appointmentLineItemSection</members>
+        <members>appointmentNotes</members>
+        <members>appointmentOpportunities</members>
+        <members>appointmentProductSearchSection</members>
+        <members>appointmentScanningSection</members>
+        <members>lastWorkOrder</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>generatInvoice</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>generateInvoice</members>
+        <members>serviceAppointmentLocator</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>62.0</version>
+</Package>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Assortment Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Assortment Customers</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ProductAssortmentAccountDisplayFields --></label>
+        <name>cgcloud__ProductAssortmentAccountDisplayFields</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Customer and the Product Assortment must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From can&apos;t be later than Valid Thru. --></errorMessage>
+        <name>cgcloud__Valid_From_Valid_Thru_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

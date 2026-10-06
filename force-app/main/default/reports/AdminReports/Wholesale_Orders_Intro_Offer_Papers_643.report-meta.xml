@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Order$EffectiveDate</field>
+    </columns>
+    <columns>
+        <field>Order$Account</field>
+    </columns>
+    <columns>
+        <field>Order$Account.ShippingStateCode</field>
+    </columns>
+    <columns>
+        <field>Order$Status</field>
+    </columns>
+    <columns>
+        <field>Order.OrderItems$TPB_Type__c</field>
+    </columns>
+    <columns>
+        <field>Order$OrderNumber</field>
+    </columns>
+    <columns>
+        <field>Order.OrderItems$OrderItemNumber</field>
+    </columns>
+    <columns>
+        <field>Order.OrderItems$Product2.Metric_Report_Group__c</field>
+    </columns>
+    <columns>
+        <field>Order.OrderItems$Product2</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Order.OrderItems$Quantity</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Order.OrderItems$UnitPrice</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF (
+
+  OR (
+
+    TEXT(OrderItem.Product2.Metric_Report_Group__c) == &apos;ZIG-ZAG PREMIUM PAPERS&apos;,
+
+    TEXT(OrderItem.UnitPrice) == &apos;22.00&apos;
+
+  ),
+
+  &apos;OKAY&apos;,
+
+IF (
+
+  OR (
+
+    TEXT(OrderItem.Product2.Metric_Report_Group__c) == &apos;ZIG-ZAG VALUE PAPERS&apos;,
+
+    TEXT(OrderItem.UnitPrice) == &apos;18.00&apos;
+
+  ),
+
+  &apos;OKAY&apos;,
+
+  &apos;ERROR&apos;
+
+)
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Pricing?</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>Order.OrderItems$Product2</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>INTRO OFFER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Order$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Activated</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Order.OrderItems$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Wholesale Orders Intro Offer Papers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Order_Order_Item__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Order.OrderItems$Product2.Metric_Report_Group__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Order$ActivatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visit_Completion__c</fullName>
+    <formula>IF(
+  AND(
+    NOT(ISBLANK(Frequency__c)),
+    VALUE(Frequency__c) &gt; 0
+  ),
+  MIN(
+    1,
+    Completed_Visit_Count__c / VALUE(Frequency__c)
+  ),
+  NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Visit Completion %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

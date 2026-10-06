@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Level --></label>
+    <name>cgcloud__Product_Level__c</name>
+    <picklistValues>
+        <masterLabel>Brand</masterLabel>
+        <translation>Merk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Category</masterLabel>
+        <translation>Categorie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flavor</masterLabel>
+        <translation>Submerk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package</masterLabel>
+        <translation>Productprijsgroep</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product</masterLabel>
+        <translation>Product</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SubCategory</masterLabel>
+        <translation>Subcategorie</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Promotion Waves</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Promotion Waves</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Order Entry Date From must be less than the Wave Period Date From. --></errorMessage>
+        <name>TPB_Order_Entry_Date_Thru_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Order Entry Date From must be less than the Order Entry Date Thru. --></errorMessage>
+        <name>TPB_Order_Entry_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Wave Period Date From must be less than the Wave Period Date Thru. --></errorMessage>
+        <name>TPB_Wave_Period_Date_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

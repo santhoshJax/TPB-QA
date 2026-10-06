@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>TPB Follow Up Lead Email</name>
+    <pageDevName>TPB_Follow_Up_Lead_Email</pageDevName>
+    <relatedEntityType>Lead</relatedEntityType>
+    <style>none</style>
+    <subject>Let’s Talk: Driving More Sales with Zig-Zag, Stoker’s, and FRE</subject>
+    <textOnly>&lt; https://www.tpbmarketplace.com/ &gt; 
+
+Hi {{{Recipient.FirstName}}},
+
+I hope this message finds you well. My name is {{{Sender.Name}}}, and I represent National Tobacco Company (NTC) / Turning Point Brands (TPB)—a trusted name in the industry with a longstanding reputation for delivering quality, consistency, and results.
+
+You may already be familiar with our leading brands—Zig-Zag, Stoker’s, and FRE. These household names have a proven legacy in markets just like yours, helping retailers across the country grow their tobacco and alternative product categories.
+
+You can browse our full selection here: https://www.tpbmarketplace.com/ &lt; https://www.tpbmarketplace.com/collections/fre &gt; 
+
+We understand the unique dynamics of independent gas stations, and we’d love the opportunity to connect with you to explore how our products can support increased foot traffic, higher basket rings, and stronger brand recognition in your store.
+
+Would you be open to a quick conversation about opportunities tailored to your location?
+
+Looking forward to hearing from you.
+
+{{{Sender.Name}}}
+
+{{{Sender.Division}}} 
+
+{{{Sender.CompanyName}}} 
+
+{{{Sender.Address}}} 
+
+{{{Sender.Phone}}} 
+
+{{{Sender.Email}}} &lt; mailto:{{{Sender.Email}}}  &gt; 
+
+tpbmarketplace.com &lt; https://www.tpbmarketplace.com/ &gt; 
+
+[Image alt text: Turning Point Brands]</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

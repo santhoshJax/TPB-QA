@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_TSMSameTerritoryRightRecordType</fullName>
+    <active>true</active>
+    <description>If user and account in different territory, or account record type not equals to &apos;HeadQuarter&apos;, and current profile is not &apos;CG Cloud Mobile - TSM&apos;, Visit can not be created.</description>
+    <errorConditionFormula>AND($Profile.Name =&apos;CG Cloud Mobile - TSM&apos;,AND( Account.RecordType.Name = &apos;Headquarter&apos;, Account.TPB_Account_Territory__c &lt;&gt; $User.TPB_Territory__c))</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Please create visits to headquarter accounts within your territory</errorMessage>
+</ValidationRule>

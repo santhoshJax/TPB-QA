@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Actual_Net_CFund_del__c</fullName>
+    <description>Promotional Discounts + Actual Product on Hand + Actual Cash on Hand + Bank Balance</description>
+    <formula>NULLVALUE(TPB_Promo_Value__c , 0)+ NULLVALUE(TPB_Cash_On_Hand__c , 0) +  NULLVALUE(TPB_Bank_Balance__c , 0)+ NULLVALUE(TPB_Actual_Product_Value__c, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Net C-Fund</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

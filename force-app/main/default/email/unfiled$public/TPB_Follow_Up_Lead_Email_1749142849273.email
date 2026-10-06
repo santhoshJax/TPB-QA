@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initialscale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">@media screen and (max-width: 480px) {slot[style] {margin-right: 0 !important;}.columnDiv {margin-right: 0 !important;}}@media screen and (min-width: 480px) {slot[style] {margin-bottom: 0 !important;}.columnDiv {margin-bottom: 0 !important;}}</style>
+  <style type="text/css">@media screen and (max-width: 480px) {.contentbuilderBaseColumnRow .columnCell {display:inline-block;width:100%}}</style>
+  <style type="text/css">.contentpageDefaultEmailTemplatePageTemplate .contentRoot {width: 600px;}@media only screen and (max-width: 480px) {.contentpageDefaultEmailTemplatePageTemplate .contentRoot {width: 320px;}}</style>
+ </head>
+ <body>
+  <table class="contentpageDefaultEmailTemplatePageTemplate" style="background-color: #FFFFFF;" role="presentation" id="contentpage_emailTemplateBodyContent" width="100%" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="100%" align="center">
+      <table class="contentRoot" style="background-color: #FFFFFF;" role="presentation" width="600" cellpadding="0" cellspacing="0">
+       <tbody>
+        <tr>
+         <td style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+          <table class="contentbuilderBaseColumnRow" style="align-items: flex-start; width: 100%; background-color:;" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+           <tbody>
+            <tr valign="top">
+             <td width="100%" class="columnCell" style="vertical-align: top;display: inline-block; float:left">
+              <table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; word-break:break-word;">
+               <tbody>
+                <tr>
+                 <td>
+                  <table style="width:100%; border-collapse: collapse; word-break:break-word;" id="contentRegion" role="presentation" cellspacing="0" cellpadding="0" locked="0">
+                   <tbody>
+                    <tr>
+                     <td style="padding-top: 10px;padding-bottom: 10px;" align="Center"><a href="https://www.tpbmarketplace.com/" target="_blank"><img style="width: 100%; display: block; border: none; max-width: 100%; object-fit: fill;" src="{[devName:LinkdlnBanners1536x3961092024_Brand]}" alt="" width="600" /></a></td>
+                    </tr>
+                   </tbody>
+                  </table></td>
+                </tr>
+               </tbody>
+              </table></td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="contentbuilderBaseColumnRow" style="align-items: flex-start; width: 100%; background-color:;" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+           <tbody>
+            <tr valign="top">
+             <td width="100%" class="columnCell" style="vertical-align: top;display: inline-block; float:left">
+              <table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; word-break:break-word;">
+               <tbody>
+                <tr>
+                 <td>
+                  <table style="width: 100%; border-collapse: collapse; word-break: break-word; font-size: 14px" id="contentRegion" role="presentation" cellspacing="0" cellpadding="0" locked="0">
+                   <tbody>
+                    <tr>
+                     <td style="font-family: Arial, Helvetica, sans-serif;padding-right: 20px;padding-left: 20px;"><p><span style="font-family:Helvetica,Arial,Helvetica,sans-serif;">Hi {{{Recipient.FirstName}}},</span></p><p>I hope this message finds you well. My name is {{{Sender.Name}}}, and I represent National Tobacco Company (NTC) / Turning Point Brands (TPB)—a trusted name in the industry with a longstanding reputation for delivering quality, consistency, and results.<br /><br /> You may already be familiar with our leading brands—Zig-Zag, Stoker’s, and FRE. These household names have a proven legacy in markets just like yours, helping retailers across the country grow their tobacco and alternative product categories.<br /><br /> You can browse our full selection here: <a href="https://www.tpbmarketplace.com/collections/fre" target="_blank">https://www.tpbmarketplace.com/</a><br /><br /> We understand the unique dynamics of independent gas stations, and we’d love the opportunity to connect with you to explore how our products can support increased foot traffic, higher basket rings, and stronger brand recognition in your store.<br /><br /> Would you be open to a quick conversation about opportunities tailored to your location?<br /><br /> Looking forward to hearing from you.</p></td>
+                    </tr>
+                   </tbody>
+                  </table></td>
+                </tr>
+                <tr>
+                 <td>
+                  <table style="font-size:14px; width: 100%; border-collapse: collapse; word-break: break-word;" role="presentation" cellspacing="0" cellpadding="0" id="contentregion" locked="0">
+                   <tbody>
+                    <tr>
+                     <td class="contentbuilder-html" style="padding: 0;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; margin:auto; font-family:Arial, sans-serif; font-size:14px; color:#333;">
+                       <tbody>
+                        <tr>
+                         <td style="padding:20px;">
+                          <div>
+                           <strong>{{{Sender.Name}}}</strong><br /> {{{Sender.Division}}} <br /> {{{Sender.CompanyName}}} <br /> {{{Sender.Address}}} <br /> {{{Sender.Phone}}} <br /><a href="mailto:{{{Sender.Email}}} " style="color:#1a73e8; text-decoration:none;">{{{Sender.Email}}}</a><br /><a href="https://www.tpbmarketplace.com/" style="color:#1a73e8; text-decoration:none;">tpbmarketplace.com</a>
+                          </div>
+                          <div style="margin-top:15px;">
+                           <img src="https://cdn.shopify.com/s/files/1/0494/8089/2572/files/tpb_logo.png?v=1749066369" alt="Turning Point Brands" style="width:25%; max-width:150px; height:auto; display:block;" />
+                          </div></td>
+                        </tr>
+                       </tbody>
+                      </table></td>
+                    </tr>
+                   </tbody>
+                  </table></td>
+                </tr>
+               </tbody>
+              </table></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+       </tbody>
+      </table></td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

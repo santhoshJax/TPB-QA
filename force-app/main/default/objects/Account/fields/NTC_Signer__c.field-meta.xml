@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NTC_Signer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>NTC Signer</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (NTC Signer)</relationshipLabel>
+    <relationshipName>NTC_Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

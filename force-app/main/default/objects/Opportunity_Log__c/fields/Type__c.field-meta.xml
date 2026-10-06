@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Status Note</fullName>
+                <default>false</default>
+                <label>Status Note</label>
+            </value>
+            <value>
+                <fullName>Meeting Note</fullName>
+                <default>false</default>
+                <label>Meeting Note</label>
+            </value>
+            <value>
+                <fullName>In Person Meeting</fullName>
+                <default>false</default>
+                <label>In Person Meeting</label>
+            </value>
+            <value>
+                <fullName>Virtual Meeting</fullName>
+                <default>false</default>
+                <label>Virtual Meeting</label>
+            </value>
+            <value>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+                <label>Phone Call</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Task</fullName>
+                <default>false</default>
+                <label>Task</label>
+            </value>
+            <value>
+                <fullName>Reminder</fullName>
+                <default>false</default>
+                <label>Reminder</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Send Inventory Review Signal to BI</fullName>
+                <default>false</default>
+                <label>Send Inventory Review Signal to BI</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

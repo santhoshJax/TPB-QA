@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Status_Metrics__c</fullName>
+    <description>This field is loaded each week as provided from weekly GTM Metric report.  This is the status to use for reporting.</description>
+    <externalId>false</externalId>
+    <label>Opp Status (Metrics)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

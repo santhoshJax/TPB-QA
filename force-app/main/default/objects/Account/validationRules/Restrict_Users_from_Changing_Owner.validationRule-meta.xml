@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Users_from_Changing_Owner</fullName>
+    <active>false</active>
+    <errorConditionFormula>$Profile.Id != &quot;00e3i000001DdFK&quot; &amp;&amp; ISCHANGED( OwnerId )</errorConditionFormula>
+    <errorMessage>You are not able to change the owner of this record.  Please contact your system administrator for help with this error.</errorMessage>
+</ValidationRule>

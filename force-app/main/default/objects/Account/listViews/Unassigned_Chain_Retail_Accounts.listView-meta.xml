@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unassigned_Chain_Retail_Accounts</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>HQ_ID__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Retailer</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.OWNERSHIP</field>
+        <operation>equals</operation>
+        <value>NAM Chain,FSO Chain</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>equals</operation>
+        <value>HQ - Unassigned Chain Retailers</value>
+    </filters>
+    <filters>
+        <field>PARENT_NAME</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Unassigned Chain Retail Accounts*</label>
+    <sharedTo>
+        <group>Region_NSM_Group</group>
+    </sharedTo>
+</ListView>

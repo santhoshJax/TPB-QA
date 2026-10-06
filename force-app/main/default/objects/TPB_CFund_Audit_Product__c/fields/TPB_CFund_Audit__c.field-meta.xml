@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_CFund_Audit__c</fullName>
+    <description>C-Fund Audit</description>
+    <label>C-Fund Audit</label>
+    <referenceTo>TPB_CFund_Audit__c</referenceTo>
+    <relationshipLabel>Actual Product on Hand</relationshipLabel>
+    <relationshipName>CFund_Audit_Products</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

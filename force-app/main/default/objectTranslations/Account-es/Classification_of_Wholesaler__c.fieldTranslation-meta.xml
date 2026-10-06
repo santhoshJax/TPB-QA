@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Classification of Wholesaler --></label>
+    <name>Classification_of_Wholesaler__c</name>
+    <picklistValues>
+        <masterLabel>A</masterLabel>
+        <translation><!-- A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMG</masterLabel>
+        <translation><!-- AMG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B</masterLabel>
+        <translation><!-- B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C</masterLabel>
+        <translation><!-- C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC1</masterLabel>
+        <translation><!-- CC1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC1_CA</masterLabel>
+        <translation><!-- CC1_CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC2</masterLabel>
+        <translation><!-- CC2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC2_CA</masterLabel>
+        <translation><!-- CC2_CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC3</masterLabel>
+        <translation><!-- CC3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CC3_CA</masterLabel>
+        <translation><!-- CC3_CA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D</masterLabel>
+        <translation><!-- D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E</masterLabel>
+        <translation><!-- E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX</masterLabel>
+        <translation><!-- EX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F</masterLabel>
+        <translation><!-- F --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOS</masterLabel>
+        <translation><!-- FOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food</masterLabel>
+        <translation><!-- Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MI</masterLabel>
+        <translation><!-- MI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military</masterLabel>
+        <translation><!-- Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ND</masterLabel>
+        <translation><!-- ND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NT</masterLabel>
+        <translation><!-- NT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V</masterLabel>
+        <translation><!-- V --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Variety</masterLabel>
+        <translation><!-- Variety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X</masterLabel>
+        <translation><!-- X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X_CA</masterLabel>
+        <translation><!-- X_CA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

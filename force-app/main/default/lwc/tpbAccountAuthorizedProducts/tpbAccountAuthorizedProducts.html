@@ -1,0 +1,125 @@
+<template>
+  <div class="slds-m-around_small slds-clearfix">
+    <template if:true={isShowSaveButton}>
+      <div class="slds-float_right">
+        <lightning-button
+          variant="brand"
+          label="Save"
+          onclick={saveProducts}
+        ></lightning-button>
+      </div>
+    </template>
+  </div>
+  <lightning-accordion
+    active-section-name={searchToggle}
+    allow-multiple-sections-open
+  >
+    <template if:true={groupedProducts}>
+      <template
+        for:each={groupedProducts}
+        for:item="group"
+        for:index="groupIndex"
+      >
+        <lightning-accordion-section
+          key={group}
+          label={group.family}
+          name="Products"
+        >
+          <template if:true={group.products}>
+            <template
+              for:each={group.products}
+              for:item="product"
+              for:index="productIndex"
+            >
+              <lightning-layout
+                key={product.productId}
+                multiple-rows
+                class="rows"
+              >
+                <lightning-layout-item
+                  size="12"
+                  small-device-size="12"
+                  medium-device-size="8"
+                  large-device-size="4"
+                  padding="around-small"
+                >
+                  <p class="field-title">Name</p>
+                  <p>{product.name}</p>
+                </lightning-layout-item>
+                <lightning-layout-item
+                  size="12"
+                  small-device-size="2"
+                  medium-device-size="2"
+                  large-device-size="1"
+                  padding="around-small"
+                >
+                  <p class="field-title">
+                    <template if:true={wholesaler}> Distribution </template>
+                    <template if:false={wholesaler}> Authorized </template>
+                  </p>
+                  <lightning-input
+                    type="toggle"
+                    variant="label-hidden"
+                    label=""
+                    name="applied"
+                    message-toggle-active=""
+                    message-toggle-inactive=""
+                    checked={product.applied}
+                    onclick={appliedHandler}
+                    data-index1={groupIndex}
+                    data-index2={productIndex}
+                  >
+                  </lightning-input>
+                </lightning-layout-item>
+                <template if:true={wholesaler}>
+                  <lightning-layout-item
+                    size="12"
+                    small-device-size="12"
+                    medium-device-size="6"
+                    large-device-size="3"
+                    padding="around-small"
+                  >
+                    <p class="field-title">Item Code</p>
+                    <lightning-input
+                      type="text"
+                      variant="label-hidden"
+                      label=""
+                      value={product.itemCode}
+                      name="itemCode"
+                      onchange={changeHandler}
+                      data-index1={groupIndex}
+                      data-index2={productIndex}
+                    >
+                    </lightning-input>
+                  </lightning-layout-item>
+                </template>
+              </lightning-layout>
+            </template>
+          </template>
+        </lightning-accordion-section>
+      </template>
+    </template>
+  </lightning-accordion>
+  <!-- <div class="slds-m-around_small slds-clearfix">
+    <template if:true={isShowSaveButton}>
+      <div class="slds-float_right">
+        <lightning-button
+          variant="brand"
+          label="Save"
+          onclick={saveProducts}
+        ></lightning-button>
+      </div>
+    </template>
+  </div> -->
+  <template if:true={spinner}>
+    <div id="spinner" class="slds-spinner_container slds-is-fixed">
+      <div
+        role="status"
+        class="slds-spinner slds-spinner_large slds-spinner_brand"
+      >
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+      </div>
+    </div>
+  </template>
+</template>

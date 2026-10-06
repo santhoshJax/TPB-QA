@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSL_WO_compact_layout</fullName>
+    <fields>EndDate</fields>
+    <fields>WorkOrderNumber</fields>
+    <fields>Status</fields>
+    <fields>Invoice__c</fields>
+    <fields>Subtotal__c</fields>
+    <fields>Total_Discount__c</fields>
+    <fields>Total_Returns__c</fields>
+    <fields>Total_Invoice__c</fields>
+    <label>FSL WO compact layout</label>
+</CompactLayout>

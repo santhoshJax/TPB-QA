@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cycle_Group__c</fullName>
+    <label>Cycle Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ALP POUCHES</fullName>
+                <default>false</default>
+                <label>ALP POUCHES</label>
+            </value>
+            <value>
+                <fullName>FRE - LUSH 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - LUSH 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - LUSH 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - LUSH 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - LUSH 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - LUSH 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - LUSH 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - LUSH 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - LUSH 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - LUSH 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE MEGA PACK</fullName>
+                <default>false</default>
+                <label>FRE MEGA PACK</label>
+            </value>
+            <value>
+                <fullName>FRE - MINT 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - MINT 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MINT 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - MINT 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MINT 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - MINT 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MINT 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - MINT 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MINT 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - MINT 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MOCHA 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - MOCHA 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - MOCHA 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - MOCHA 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - ORIGINAL 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - ORIGINAL 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - ORIGINAL 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - ORIGINAL 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - ORIGINAL 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - ORIGINAL 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - ORIGINAL 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - ORIGINAL 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - ORIGINAL 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - ORIGINAL 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - SWEET 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - SWEET 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - SWEET 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - SWEET 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - SWEET 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - SWEET 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - SWEET 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - SWEET 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - SWEET 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - SWEET 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WATERMELON 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - WATERMELON 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WATERMELON 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - WATERMELON 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WATERMELON 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - WATERMELON 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WATERMELON 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - WATERMELON 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WATERMELON 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - WATERMELON 9 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WINTERGREEN 12 MG</fullName>
+                <default>false</default>
+                <label>FRE - WINTERGREEN 12 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WINTERGREEN 15 MG</fullName>
+                <default>false</default>
+                <label>FRE - WINTERGREEN 15 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WINTERGREEN 3 MG</fullName>
+                <default>false</default>
+                <label>FRE - WINTERGREEN 3 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WINTERGREEN 6 MG</fullName>
+                <default>false</default>
+                <label>FRE - WINTERGREEN 6 MG</label>
+            </value>
+            <value>
+                <fullName>FRE - WINTERGREEN 9 MG</fullName>
+                <default>false</default>
+                <label>FRE - WINTERGREEN 9 MG</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - BLUE DREAM</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - BLUE DREAM</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - GEORGIA FIELDS</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - GEORGIA FIELDS</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - ISLAND VIBES</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - ISLAND VIBES</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - MELLOW HAZE</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - MELLOW HAZE</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - NATURAL</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - NATURAL</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - OG PURP</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - OG PURP</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - SOUR SQUEEZE</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - SOUR SQUEEZE</label>
+            </value>
+            <value>
+                <fullName>HEMP WRAPS - SUMMER SLICE</fullName>
+                <default>false</default>
+                <label>HEMP WRAPS - SUMMER SLICE</label>
+            </value>
+            <value>
+                <fullName>HI-FI HEMP WRAPS</fullName>
+                <default>false</default>
+                <label>HI-FI HEMP WRAPS</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - SIGNATURE BLEND</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - SIGNATURE BLEND</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - SOUTHERN PEACH</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - SOUTHERN PEACH</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - STRAIGHT NATURAL</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - STRAIGHT NATURAL</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - STRAWBERRY RUSH</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - STRAWBERRY RUSH</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - SWEET COGNAC</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - SWEET COGNAC</label>
+            </value>
+            <value>
+                <fullName>NATURAL LEAF FLAT WRAPS - WHITE RUSSIAN RESERVE</fullName>
+                <default>false</default>
+                <label>NATURAL LEAF FLAT WRAPS - WHITE RUSSIAN RESERVE</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 1 1/4</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 1 1/4</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 1 1/4 HEMP</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 1 1/4 HEMP</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 1 1/4 UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 1 1/4 UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 70MM HEMP</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 70MM HEMP</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 70MM ULTRA THIN</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 70MM ULTRA THIN</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 70MM UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 70MM UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 98s ULTRA THIN</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 98s ULTRA THIN</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - 98s UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPER CONES - 98s UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - KING</fullName>
+                <default>false</default>
+                <label>PAPER CONES - KING</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - KING HEMP</fullName>
+                <default>false</default>
+                <label>PAPER CONES - KING HEMP</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - KING SLIM UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPER CONES - KING SLIM UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - KING ULTRA THIN</fullName>
+                <default>false</default>
+                <label>PAPER CONES - KING ULTRA THIN</label>
+            </value>
+            <value>
+                <fullName>PAPER CONES - KING UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPER CONES - KING UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPERS - 1 1/2 BLUE</fullName>
+                <default>false</default>
+                <label>PAPERS - 1 1/2 BLUE</label>
+            </value>
+            <value>
+                <fullName>PAPERS - 1 1/4 BLUE</fullName>
+                <default>false</default>
+                <label>PAPERS - 1 1/4 BLUE</label>
+            </value>
+            <value>
+                <fullName>PAPERS -1 1/4 HEMP</fullName>
+                <default>false</default>
+                <label>PAPERS -1 1/4 HEMP</label>
+            </value>
+            <value>
+                <fullName>PAPERS - 1 1/4 ULTRA THIN</fullName>
+                <default>false</default>
+                <label>PAPERS - 1 1/4 ULTRA THIN</label>
+            </value>
+            <value>
+                <fullName>PAPERS - 1 1/4 UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPERS - 1 1/4 UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPERS - FRENCH ORANGE</fullName>
+                <default>false</default>
+                <label>PAPERS - FRENCH ORANGE</label>
+            </value>
+            <value>
+                <fullName>PAPERS - KING</fullName>
+                <default>false</default>
+                <label>PAPERS - KING</label>
+            </value>
+            <value>
+                <fullName>PAPERS - KING SLIM HEMP</fullName>
+                <default>false</default>
+                <label>PAPERS - KING SLIM HEMP</label>
+            </value>
+            <value>
+                <fullName>PAPERS - KING UNBLEACHED</fullName>
+                <default>false</default>
+                <label>PAPERS - KING UNBLEACHED</label>
+            </value>
+            <value>
+                <fullName>PAPERS - KUTCORNERS</fullName>
+                <default>false</default>
+                <label>PAPERS - KUTCORNERS</label>
+            </value>
+            <value>
+                <fullName>PAPERS - WHITE</fullName>
+                <default>false</default>
+                <label>PAPERS - WHITE</label>
+            </value>
+            <value>
+                <fullName>PREMIUM LOOSE LEAF</fullName>
+                <default>false</default>
+                <label>PREMIUM LOOSE LEAF</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS  -BLACK</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS  -BLACK</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - BLACK</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - BLACK</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - BLUE</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - BLUE</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - BLUEBERRY</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - BLUEBERRY</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - DIAMOND</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - DIAMOND</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - GOLD</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - GOLD</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - GRAPE</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - GRAPE</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - GREEN</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - GREEN</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - PINK</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - PINK</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - PURPLE</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - PURPLE</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - SILVER</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - SILVER</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - STRAIGHT UP</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - STRAIGHT UP</label>
+            </value>
+            <value>
+                <fullName>RILLO WRAPS - SWEET</fullName>
+                <default>false</default>
+                <label>RILLO WRAPS - SWEET</label>
+            </value>
+            <value>
+                <fullName>SEE PRODUCT PARTS</fullName>
+                <default>false</default>
+                <label>SEE PRODUCT PARTS</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - FCN</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - FCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - FCW</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - FCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - LCM</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - LCM</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - LCN</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - LCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - LCS</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - LCS</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN - LCW</fullName>
+                <default>false</default>
+                <label>STOKERS CAN - LCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - FCN</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - FCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - FCW</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - FCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - LCM</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - LCM</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - LCN</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - LCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - LCS</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - LCS</label>
+            </value>
+            <value>
+                <fullName>STOKERS CAN TOWER - LCW</fullName>
+                <default>false</default>
+                <label>STOKERS CAN TOWER - LCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS LOOSE LEAF</fullName>
+                <default>false</default>
+                <label>STOKERS LOOSE LEAF</label>
+            </value>
+            <value>
+                <fullName>STOKERS PROUD - LCS</fullName>
+                <default>false</default>
+                <label>STOKERS PROUD - LCS</label>
+            </value>
+            <value>
+                <fullName>STOKERS PROUD - LCW</fullName>
+                <default>false</default>
+                <label>STOKERS PROUD - LCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - FCN</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - FCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - FCW</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - FCW</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - LCM</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - LCM</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - LCN</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - LCN</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - LCS</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - LCS</label>
+            </value>
+            <value>
+                <fullName>STOKERS TUB - LCW</fullName>
+                <default>false</default>
+                <label>STOKERS TUB - LCW</label>
+            </value>
+            <value>
+                <fullName>TENZ CIGARILLOS</fullName>
+                <default>false</default>
+                <label>TENZ CIGARILLOS</label>
+            </value>
+            <value>
+                <fullName>WOODS CIGARS - CREME ROYALE</fullName>
+                <default>false</default>
+                <label>WOODS CIGARS - CREME ROYALE</label>
+            </value>
+            <value>
+                <fullName>WOODS CIGARS - NATURAL</fullName>
+                <default>false</default>
+                <label>WOODS CIGARS - NATURAL</label>
+            </value>
+            <value>
+                <fullName>WOODS CIGARS - SILK &amp; BERRIES</fullName>
+                <default>false</default>
+                <label>WOODS CIGARS - SILK &amp; BERRIES</label>
+            </value>
+            <value>
+                <fullName>WOODS CIGARS - SWEET AROMATIC</fullName>
+                <default>false</default>
+                <label>WOODS CIGARS - SWEET AROMATIC</label>
+            </value>
+            <value>
+                <fullName>WOODS CIGARS - VELVET</fullName>
+                <default>false</default>
+                <label>WOODS CIGARS - VELVET</label>
+            </value>
+            <value>
+                <fullName>WRAPS - APPLE</fullName>
+                <default>false</default>
+                <label>WRAPS - APPLE</label>
+            </value>
+            <value>
+                <fullName>WRAPS - BLUEBERRY</fullName>
+                <default>false</default>
+                <label>WRAPS - BLUEBERRY</label>
+            </value>
+            <value>
+                <fullName>WRAPS - CHERRY</fullName>
+                <default>false</default>
+                <label>WRAPS - CHERRY</label>
+            </value>
+            <value>
+                <fullName>WRAPS - DRAGONBERRY</fullName>
+                <default>false</default>
+                <label>WRAPS - DRAGONBERRY</label>
+            </value>
+            <value>
+                <fullName>WRAPS - GRAPE</fullName>
+                <default>false</default>
+                <label>WRAPS - GRAPE</label>
+            </value>
+            <value>
+                <fullName>WRAPS - ISLAND</fullName>
+                <default>false</default>
+                <label>WRAPS - ISLAND</label>
+            </value>
+            <value>
+                <fullName>WRAPS - MANGO</fullName>
+                <default>false</default>
+                <label>WRAPS - MANGO</label>
+            </value>
+            <value>
+                <fullName>WRAPS - MELON</fullName>
+                <default>false</default>
+                <label>WRAPS - MELON</label>
+            </value>
+            <value>
+                <fullName>WRAPS - ORANGE</fullName>
+                <default>false</default>
+                <label>WRAPS - ORANGE</label>
+            </value>
+            <value>
+                <fullName>WRAPS - PEACH</fullName>
+                <default>false</default>
+                <label>WRAPS - PEACH</label>
+            </value>
+            <value>
+                <fullName>WRAPS - PINEAPPLE</fullName>
+                <default>false</default>
+                <label>WRAPS - PINEAPPLE</label>
+            </value>
+            <value>
+                <fullName>WRAPS - RILLO SIZE BLUE</fullName>
+                <default>false</default>
+                <label>WRAPS - RILLO SIZE BLUE</label>
+            </value>
+            <value>
+                <fullName>WRAPS - STRAIGHT UP</fullName>
+                <default>false</default>
+                <label>WRAPS - STRAIGHT UP</label>
+            </value>
+            <value>
+                <fullName>WRAPS - STRAWBERRY</fullName>
+                <default>false</default>
+                <label>WRAPS - STRAWBERRY</label>
+            </value>
+            <value>
+                <fullName>WRAPS - VANILLA</fullName>
+                <default>false</default>
+                <label>WRAPS - VANILLA</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGAR CONES</fullName>
+                <default>false</default>
+                <label>ZZ CIGAR CONES</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - BLUEBERRY</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - BLUEBERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - DRAGONBERRY</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - DRAGONBERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - GRAPE</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - GRAPE</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - GREEN GARUDA</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - GREEN GARUDA</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - GREEN KARMA</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - GREEN KARMA</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - GREEN KB90</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - GREEN KB90</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - GREEN SWEETS</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - GREEN SWEETS</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - MANGO</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - MANGO</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - MARACUJA</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - MARACUJA</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - PEACH</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - PEACH</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - STRAIGHT UP</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - STRAIGHT UP</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - STRAWBERRY</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - STRAWBERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - SWEETS</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - SWEETS</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - TANGELO</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - TANGELO</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARILLOS - WHITE GRAPE</fullName>
+                <default>false</default>
+                <label>ZZ CIGARILLOS - WHITE GRAPE</label>
+            </value>
+            <value>
+                <fullName>ZZ CIGARS WOODS</fullName>
+                <default>false</default>
+                <label>ZZ CIGARS WOODS</label>
+            </value>
+            <value>
+                <fullName>ZZ DISCOUNT PAPERS</fullName>
+                <default>false</default>
+                <label>ZZ DISCOUNT PAPERS</label>
+            </value>
+            <value>
+                <fullName>ZZ NATURAL LEAF WRAPS - BERRY BASH</fullName>
+                <default>false</default>
+                <label>ZZ NATURAL LEAF WRAPS - BERRY BASH</label>
+            </value>
+            <value>
+                <fullName>ZZ NATURAL LEAF WRAPS - PALMA</fullName>
+                <default>false</default>
+                <label>ZZ NATURAL LEAF WRAPS - PALMA</label>
+            </value>
+            <value>
+                <fullName>ZZ NATURAL LEAF WRAPS - STRAIGHT UP</fullName>
+                <default>false</default>
+                <label>ZZ NATURAL LEAF WRAPS - STRAIGHT UP</label>
+            </value>
+            <value>
+                <fullName>ZZ NATURAL LEAF WRAPS - SWEET</fullName>
+                <default>false</default>
+                <label>ZZ NATURAL LEAF WRAPS - SWEET</label>
+            </value>
+            <value>
+                <fullName>ZZ NATURAL LEAF WRAPS - VANILLA CREAM</fullName>
+                <default>false</default>
+                <label>ZZ NATURAL LEAF WRAPS - VANILLA CREAM</label>
+            </value>
+            <value>
+                <fullName>ZZ PALM ROLLS - BANANA</fullName>
+                <default>false</default>
+                <label>ZZ PALM ROLLS - BANANA</label>
+            </value>
+            <value>
+                <fullName>ZZ PALM ROLLS - BLUEBERRY</fullName>
+                <default>false</default>
+                <label>ZZ PALM ROLLS - BLUEBERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ PALM ROLLS - GRAPE</fullName>
+                <default>false</default>
+                <label>ZZ PALM ROLLS - GRAPE</label>
+            </value>
+            <value>
+                <fullName>ZZ PALM ROLLS - NATURAL</fullName>
+                <default>false</default>
+                <label>ZZ PALM ROLLS - NATURAL</label>
+            </value>
+            <value>
+                <fullName>ZZ PALM ROLLS - VANILLA</fullName>
+                <default>false</default>
+                <label>ZZ PALM ROLLS - VANILLA</label>
+            </value>
+            <value>
+                <fullName>ZZ PREMIUM CIGARILLOS - BLUEBERRY</fullName>
+                <default>false</default>
+                <label>ZZ PREMIUM CIGARILLOS - BLUEBERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ PREMIUM CIGARILLOS - DIAMOND</fullName>
+                <default>false</default>
+                <label>ZZ PREMIUM CIGARILLOS - DIAMOND</label>
+            </value>
+            <value>
+                <fullName>ZZ PREMIUM CIGARILLOS - GOLD</fullName>
+                <default>false</default>
+                <label>ZZ PREMIUM CIGARILLOS - GOLD</label>
+            </value>
+            <value>
+                <fullName>ZZ PREMIUM CIGARILLOS - GRAPE</fullName>
+                <default>false</default>
+                <label>ZZ PREMIUM CIGARILLOS - GRAPE</label>
+            </value>
+            <value>
+                <fullName>ZZ PREMIUM CIGARILLOS - SWEET</fullName>
+                <default>false</default>
+                <label>ZZ PREMIUM CIGARILLOS - SWEET</label>
+            </value>
+            <value>
+                <fullName>ZZ ROSE CONES</fullName>
+                <default>false</default>
+                <label>ZZ ROSE CONES</label>
+            </value>
+            <value>
+                <fullName>ZZ ROUGH CUT CIGARS - HONEY BERRY</fullName>
+                <default>false</default>
+                <label>ZZ ROUGH CUT CIGARS - HONEY BERRY</label>
+            </value>
+            <value>
+                <fullName>ZZ ROUGH CUT CIGARS - NATURAL</fullName>
+                <default>false</default>
+                <label>ZZ ROUGH CUT CIGARS - NATURAL</label>
+            </value>
+            <value>
+                <fullName>ZZ ROUGH CUT CIGARS - RUSSIAN CREAM</fullName>
+                <default>false</default>
+                <label>ZZ ROUGH CUT CIGARS - RUSSIAN CREAM</label>
+            </value>
+            <value>
+                <fullName>ZZ ROUGH CUT CIGARS - SWEET AROMATIC</fullName>
+                <default>false</default>
+                <label>ZZ ROUGH CUT CIGARS - SWEET AROMATIC</label>
+            </value>
+            <value>
+                <fullName>ZZ SUPER BUNDLE</fullName>
+                <default>false</default>
+                <label>ZZ SUPER BUNDLE</label>
+            </value>
+            <value>
+                <fullName>ZZ TERP CONES</fullName>
+                <default>false</default>
+                <label>ZZ TERP CONES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

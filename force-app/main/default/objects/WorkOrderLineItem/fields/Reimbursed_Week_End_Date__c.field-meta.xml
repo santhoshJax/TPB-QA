@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reimbursed_Week_End_Date__c</fullName>
+    <description>Updated by Admin; WE Date that the discount or return/credit was reimbursed (Batch File)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Updated by Admin; WE Date that the discount or return/credit was reimbursed (Batch File)</inlineHelpText>
+    <label>Reimbursed WE Date</label>
+    <length>15</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

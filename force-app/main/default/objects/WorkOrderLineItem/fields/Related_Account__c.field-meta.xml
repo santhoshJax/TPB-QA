@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Related Account</label>
+    <referenceTo>Related_Account__c</referenceTo>
+    <relationshipLabel>Work Order Line Items</relationshipLabel>
+    <relationshipName>Work_Order_Line_Items</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

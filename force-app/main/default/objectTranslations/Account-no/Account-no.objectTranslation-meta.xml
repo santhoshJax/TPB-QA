@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- AccountFieldSetProductAssortment --></label>
+        <name>cgcloud__AccountFieldSetProductAssortment</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobility Relevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SmartUIRelevant --></label>
+        <name>cgcloud__SmartUIRelevant</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Consumer --></label>
+        <name>Consumer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Headquarter --></label>
+        <name>Headquarter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retailer --></label>
+        <name>Retailer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wholesaler --></label>
+        <name>Wholesaler</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>cgcloud__Customer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Only HQ owners are able to assign store to the chain. --></errorMessage>
+        <name>Assign_Store_To_Chain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Notes can only be edited by Owner of Account --></errorMessage>
+        <name>Check_Account_Notes_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- 1. When the Account status is Closed Permanently/Temporarily, the Closure Reason cannot be empty.
+2. If this is a retailer account, please first ensure you are the Parent Account owner. -->
+        </errorMessage>
+        <name>Check_Closure_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Required Field Missing Account Status ,Zig Zag Wholesale Customer ID , Type, Email , Phone --></errorMessage>
+        <name>Field_Required_For_Inside_Sales</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please first ensure you are the current chain owner, then you can remove or change. --></errorMessage>
+        <name>Remove_Store_From_Chain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please reach out to admin for change of ownership. --></errorMessage>
+        <name>Restrict_InsideSales_from_Changing_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Administrators can transfer Retail account ownership. --></errorMessage>
+        <name>Restrict_Retail_Account_Owner_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not able to change the owner of this record.  Please contact your system administrator for help with this error. --></errorMessage>
+        <name>Restrict_Users_from_Changing_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the record owner or authorized admins can change the owner for this record type. --></errorMessage>
+        <name>Retail_owner_change_restriction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the owner of the Headquarter can close the child account in that chain hierarchy --></errorMessage>
+        <name>TPB_ChainAccountClosurePrivilegeCheck</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Chain Account should be created with Address and Parent Account. --></errorMessage>
+        <name>TPB_Chain_Account_Fields_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The status of Headquarter Accounts cannot be selected as Closed Temporarily. --></errorMessage>
+        <name>TPB_Check_HQ_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Account Management profile and TSM profile users can create a wholesaler account. --></errorMessage>
+        <name>TPB_Check_Wholesaler_Creator</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only AM and Admin can close headquarter accounts. --></errorMessage>
+        <name>TPB_Close_HQ_User_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot close this Headquarter while there are child accounts attached. --></errorMessage>
+        <name>TPB_Not_Close_Headquarter_With_Child_Acc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry, you can only assign to HQ - Unassigned Chain Retailers for current stage --></errorMessage>
+        <name>TPB_ParentAccountChangeValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only account owner and parent account owner can edit this record. --></errorMessage>
+        <name>TPB_Parent_Acc_Owner_Can_Edit_Child</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The record type of the Parent Account must be Headquarter --></errorMessage>
+        <name>TPB_Parent_Account_RecordType_Headquarte</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping street, city, state and zip code must be entered before saving the record. --></errorMessage>
+        <name>TPB_Shipping_Address_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The ExternalId can&apos;t be edited after Customer creation. --></errorMessage>
+        <name>cgcloud__Avoid_Change_External_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Account Template can&apos;t be edited after Customer creation. --></errorMessage>
+        <name>cgcloud__CGCloud_Prevent_Account_Template_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add a maximum of one extension record to the Customer. --></errorMessage>
+        <name>cgcloud__Only_One_Extension</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Parent Customer and the Customer Template must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CongaSign_sendForSignature --></label>
+        <name>CongaSign_sendForSignature</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_SIP_2020 --></label>
+        <name>Conga_Composer_SIP_2020</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ReEvaluateRecord --></label>
+        <name>Dialpad__ReEvaluateRecord</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Prebooks --></label>
+        <name>Prebooks</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Retail_Store_List --></label>
+        <name>Retail_Store_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Supplier_List_Retail_Stores --></label>
+        <name>Supplier_List_Retail_Stores</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Wave_Allocations --></label>
+        <name>Wave_Allocations</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>cgcloud__Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>TSM&amp;RSMPermissionSets</label>
+    <permissionSets>CGCloud_Mobility_Addon</permissionSets>
+    <permissionSets>CGCloud_Sales_User</permissionSets>
+    <permissionSets>IndustriesVisitCustom</permissionSets>
+    <permissionSets>LightningRetailExecutionPlusPslCustom</permissionSets>
+    <permissionSets>MapsUserCustom</permissionSets>
+    <permissionSets>TPB_Flow_User_Permission</permissionSets>
+    <permissionSets>View_corporate_Maps_folders</permissionSets>
+    <permissionSets>cgc_sync__Sync_User</permissionSets>
+    <permissionSets>cgcloud__Consumer_Goods_Cloud_Package_User</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__EinsteinAnalyticsPlusUser</permissionSets>
+    <permissionSets>force__PennyPerfectPricingPsl</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

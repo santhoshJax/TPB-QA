@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fre_Trade_Program_Compliant__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SAL-476: Set from the compliance (&quot;...when you LEFT today?&quot;) survey answer on the store&apos;s most recent completed visit. True=compliant (answer Yes), false=non-compliant (answer No). Maintained by flow TPB_Trade_Program_Compliance_From_Visit.</description>
+    <label>Trade Program Compliant</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

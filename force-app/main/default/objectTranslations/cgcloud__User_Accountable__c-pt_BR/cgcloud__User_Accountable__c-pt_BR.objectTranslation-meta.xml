@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Responsável pelo usuário</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Responsáveis pelo usuário</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do responsável do usuário</nameFieldLabel>
+</CustomObjectTranslation>

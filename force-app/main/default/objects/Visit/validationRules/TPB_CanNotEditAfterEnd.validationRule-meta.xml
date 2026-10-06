@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_CanNotEditAfterEnd</fullName>
+    <active>false</active>
+    <description>TSM cannot edit completed visit</description>
+    <errorConditionFormula>AND( ISPICKVAL( Status , &apos;Completed&apos; ),NOT( ISNEW()) , ISPICKVAL(PRIORVALUE(Status),&apos;Completed&apos;),OR($Profile.Name =&apos;CG Cloud Mobile - TSM&apos;, $Profile.Name =&apos;CG Cloud Mobile - RSM&apos;, $Profile.Name =&apos;Account Management&apos;) )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Visits cannot be edited after completion.</errorMessage>
+</ValidationRule>

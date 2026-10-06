@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- POS Type --></label>
+    <name>cgcloud__POS_Type_Tag__c</name>
+    <picklistValues>
+        <masterLabel>Display</masterLabel>
+        <translation>디스플레이</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fridge</masterLabel>
+        <translation>냉장고</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SecondPlacement</masterLabel>
+        <translation>SecondPlacement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shelf</masterLabel>
+        <translation>선반</translation>
+    </picklistValues>
+</CustomFieldTranslation>

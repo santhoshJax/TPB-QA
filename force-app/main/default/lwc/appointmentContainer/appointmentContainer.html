@@ -1,0 +1,179 @@
+<template>
+    <!-- <div class="slds-theme_default">
+        <template if:true={startCall}> -->
+            <!--HEADER START-->
+            <!-- <div class="slds-border_bottom">
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Store</p>
+                        <p>
+                            <lightning-button-icon icon-name="utility:edit" variant="brand" size="x-small" onclick={accEditHandler}></lightning-button-icon>
+                            <span class="slds-p-left_x-small">{accName}</span>
+                        </p>
+                        <lightning-formatted-address
+                            street={street}
+                            city={city}
+                            country=""
+                            province={state}
+                            postal-code={zip}>
+                        </lightning-formatted-address>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Appointment #</p>
+                        <p>{appointmentNumber}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Status</p>
+                        <p>{status}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Actual Start</p>
+                        <lightning-formatted-date-time value={actualStart} year="numeric" month="numeric" day="numeric" hour="2-digit" minute="2-digit" hour12="true">
+                        </lightning-formatted-date-time>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">FEIN</p>
+                        <p>{fein}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Tobacco Tax Number</p>
+                        <p>{tobacco}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">State Tax Number</p>
+                        <p>{tax}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Frequency</p>
+                        <p>{frequency}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Tier</p>
+                        <p>{tier}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Parent Account</p>
+                        <p>{parent}</p>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Account Number</p>
+                        <p>{accNumber}</p>
+                    </lightning-layout-item>
+                </lightning-layout>
+                <template if:true={accEdit}>
+                    <lightning-record-form
+                        record-id={accId}
+                        object-api-name="Account"
+                        layout-type="Full"
+                        columns="2"
+                        mode="edit"
+                        onsuccess={accEditClose}
+                        oncancel={accEditClose}>
+                    </lightning-record-form>
+                </template>
+            </div>
+            <div class="slds-border_bottom">
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Total Invoice</p>
+                        <lightning-formatted-number value={totalInvoice} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Total Price</p>
+                        <lightning-formatted-number value={totalPrice} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Total Discount</p>
+                        <lightning-formatted-number value={totalDiscount} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">Total Return</p>
+                        <lightning-formatted-number value={totalReturn} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <p class="field-title">C-fund reimbursement due to me</p>
+                        <lightning-formatted-number value={totalReimbursement} format-style="currency" currency-code="USD"></lightning-formatted-number>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <lightning-button variant="brand" label="View Invoice" onclick={preview} icon-name="utility:preview"></lightning-button>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+            <div class="slds-border_bottom">
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                        <lightning-button-menu label="Actions" onselect={headerActions}>
+                            <lightning-menu-item value="lines" label="Line Items" checked={lineSection}></lightning-menu-item>
+                            <lightning-menu-item value="account" label="Review Profile" checked={accountSection}></lightning-menu-item>
+                            <lightning-menu-item value="task" label="Open Tasks" checked={taskSection}></lightning-menu-item>
+                            <lightning-menu-item value="scan" label="Scan Items" checked={scanningSection}></lightning-menu-item>
+                            <lightning-menu-item value="survey" label="New Survey" checked={surveySection}></lightning-menu-item>
+                            <lightning-menu-item value="objective" label="Next Call Objective" checked={objectiveSection}></lightning-menu-item>
+                            <lightning-menu-item value="end" label="End Call" checked={endSection}></lightning-menu-item>
+                        </lightning-button-menu>
+                    </lightning-layout-item>
+                    <template if:true={lineSection}>
+                        <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="2" padding="around-small">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" onchange={toggleView}>
+                                            <template for:each={lineViewOptions} for:item="v">
+                                                <option key={v.value} value={v.value}>{v.label}</option>
+                                            </template>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </div> -->
+            <!--HEADER END-->
+            <!-- <div class="slds-p-around_small">
+                <template if:true={lineSection}>
+                    <template if:true={pricebookId}>
+                        <c-appointment-line-item-section line-view={lineView} work-order-id={parentId} account-id={accId} pricebook-id={pricebookId}
+                                                         onsave={saveHandler}>
+                        </c-appointment-line-item-section>
+                    </template>
+                </template>
+                <template if:true={accountSection}>
+                    <c-appointment-account-section acc-id={accId} acc-name={accName} acc-address={address} onclose={closeHandler}>
+                    </c-appointment-account-section>
+                </template>
+                <template if:true={taskSection}>
+                    <c-appointment-task-section acc-id={accId} onclose={closeHandler}>
+                    </c-appointment-task-section>
+                </template>
+                <template if:true={scanningSection}>
+                    <c-appointment-scanning-section work-order-id={parentId} pricebook-id={pricebookId} onclose={closeHandler}>
+                    </c-appointment-scanning-section>
+                </template>
+                <template if:true={surveySection}>
+                    <c-appointment-survey-section acc-id={accId} onclose={closeHandler}>
+                    </c-appointment-survey-section>
+                </template>
+                <template if:true={objectiveSection}>
+                    <c-appointment-objective-section work-order-id={parentId} onclose={closeHandler}>
+                    </c-appointment-objective-section>
+                </template>
+                <template if:true={endSection}>
+                    <c-appointment-end-section work-order-id={parentId} appointment-id={recordId} onclose={closeHandler}>
+                    </c-appointment-end-section>
+                </template>
+            </div>
+        </template>
+        <template if:false={startCall}>
+            Please click the Start Call button to enable this view.
+        </template>
+        <template if:true={spinner}>
+            <div id="spinner" class="slds-spinner_container slds-is-fixed">
+                <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </template>
+    </div> -->
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Merchandising Condition --></label>
+    <name>TPB_Merchandising_Condition__c</name>
+    <picklistValues>
+        <masterLabel>NTC products were well merchandised and visible to consumer</masterLabel>
+        <translation><!-- NTC products were well merchandised and visible to consumer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product merchandising did not meet standards</masterLabel>
+        <translation><!-- Product merchandising did not meet standards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some merchandising placed and updated, but missed opportunity for more</masterLabel>
+        <translation><!-- Some merchandising placed and updated, but missed opportunity for more --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

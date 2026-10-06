@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>true</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>Shopify</dataConnector>
+    <dataConnectorType>Shopify</dataConnectorType>
+    <dataPlatformDataSetItemName>CONNECTORSFRAMEWORK</dataPlatformDataSetItemName>
+    <dataSource>Shopify_Shopify</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>Orders Shopify</masterLabel>
+    <mktDataLakeObject>Orders_Shopify__dll</mktDataLakeObject>
+    <mktDataTranObject>Orders_Shopify</mktDataTranObject>
+    <parameters>
+        <fullName>Orders_Shopify_incrementalColumn</fullName>
+        <paramName>incrementalColumn</paramName>
+        <value>UpdatedAt</value>
+    </parameters>
+    <parameters>
+        <fullName>Orders_Shopify_objectName</fullName>
+        <paramName>objectName</paramName>
+        <value>Orders</value>
+    </parameters>
+</DataStreamDefinition>

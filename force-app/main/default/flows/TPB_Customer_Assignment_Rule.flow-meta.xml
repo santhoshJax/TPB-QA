@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>TPB Customer Assginment Rule {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Customer Assignment Rule</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Single_Assign</targetReference>
+        </connector>
+        <filterFormula>( ISCHANGED({!$Record.Status__c}) || ISCHANGED({!$Record.ShippingState}) || ISCHANGED({!$Record.ShippingPostalCode}) )
+&amp;&amp;
+( ISPICKVAL({!$Record.cgcloud__Account_Template__r.cgcloud__Sales_Org__c}, &apos;0001&apos;) )
+&amp;&amp;
+( BEGINS({!$Profile.Name}, &apos;CG Cloud Mobile&apos;) || {!$Record.RecordType.DeveloperName} == &apos;Retailer&apos; )</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Single_Assign</name>
+        <label>Single Assign</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <flowName>TPB_Sub_Customer_Assignment_Rule_Single</flowName>
+        <inputAssignments>
+            <name>AccountRecordInput</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>AccountIdList</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>AccountList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>AccountZipcodeList</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Frequency_Visits_Remaining__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    Visits_Remaining__c = 0,
+    &quot;Complete&quot;,
+    &quot;Frequency &quot; &amp;
+    IF(ISBLANK(Frequency__c), &quot;0&quot;, Frequency__c) &amp;
+    &quot;, &quot; &amp;
+    TEXT(Visits_Remaining__c) &amp; &quot; &quot; &amp;
+    IF(
+        Visits_Remaining__c = 1,
+        &quot;Visit Remaining&quot;,
+        &quot;Visits Remaining&quot;
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Frequency &amp; Visits Remaining</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

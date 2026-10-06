@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EclairGeoData xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <maps>
+        <mapLabel>US - Kentucky (KY)</mapLabel>
+        <mapName>map_1591448189712</mapName>
+        <projection>Equirectangular</projection>
+    </maps>
+    <maps>
+        <mapLabel>Kentucky Zips</mapLabel>
+        <mapName>map_1620228914945</mapName>
+        <projection>Equirectangular</projection>
+    </maps>
+    <masterLabel>Kentuckyfinal</masterLabel>
+</EclairGeoData>

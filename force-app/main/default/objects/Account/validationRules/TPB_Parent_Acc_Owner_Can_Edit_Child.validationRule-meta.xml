@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Parent_Acc_Owner_Can_Edit_Child</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  $UserRole.Name = &apos;NationalAccounts Manager&apos;,
+  RecordType.DeveloperName = &apos;Retailer&apos;,
+  Parent.RecordType.DeveloperName = &apos;Headquarter&apos;,
+  Parent.OwnerId &lt;&gt; $User.Id,
+  Parent.Name &lt;&gt; &apos;HQ - Unassigned Chain Retailers&apos;
+)</errorConditionFormula>
+    <errorMessage>Only account owner and parent account owner can edit this record.</errorMessage>
+</ValidationRule>

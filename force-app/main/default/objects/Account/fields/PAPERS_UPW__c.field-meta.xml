@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PAPERS_UPW__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Total PAPER booklets sold per week (26 week average at start of current cycle)</inlineHelpText>
+    <label>PAPERS UPW</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

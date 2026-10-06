@@ -1,0 +1,41 @@
+<apex:page controller="QuarterlyVisitReportController" showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false">
+    <apex:slds />
+    <body>
+        <div class="slds-scope">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label">Total Visit Goal</label>
+                        <div class="slds-form-element__control">
+                            {!reportValues[0]}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label">Calls Made</label>
+                        <div class="slds-form-element__control">
+                            {!reportValues[1]}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label">CPD to Hit Goal</label>
+                        <div class="slds-form-element__control">
+                            {!reportValues[2]}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label">% to Goal</label>
+                        <div class="slds-form-element__control">
+                            {!reportValues[3]}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</apex:page>

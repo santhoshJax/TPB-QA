@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_User_To_Change_Owner</fullName>
+    <active>false</active>
+    <description>This Rule is created so inside sales user cannot change owner of lead</description>
+    <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+NOT(ISNEW()),
+OR(
+$User.Email = &quot;hali@tpbi.com&quot;,
+$User.Email = &quot;bpanopio@tpbi.com&quot;,
+$User.Email = &quot;ntaylor@tpbi.com&quot;,
+$User.Email = &quot;akrishna@tpbi.com&quot;
+),
+$User.UserRoleId = &quot;00E3i000000pRrB&quot;
+)</errorConditionFormula>
+    <errorMessage>Lead Owner Cannot Be Changed</errorMessage>
+</ValidationRule>

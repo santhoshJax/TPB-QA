@@ -1,0 +1,109 @@
+<template>
+  <div class="slds-grid slds-grid_vertical slds-wrap">
+    <form>
+      <!--State -->
+      <div class="slds-col slds-p-top_medium">
+        <lightning-combobox
+          name="State"
+          label="Which inventory would you like to adjust?"
+          value={state.value}
+          placeholder="Select a state"
+          options={stateOptions}
+          onchange={state.onChange}
+          required
+        ></lightning-combobox>
+      </div>
+
+      <div class="slds-col slds-p-top_medium" if:true={isAdjustModeVisible}>
+        <lightning-radio-group
+          name="adjustMode"
+          label="Adjust Mode"
+          options={adjustMode.options}
+          value={adjustMode.value}
+          onchange={onAdjustModeChange}
+        ></lightning-radio-group>
+      </div>
+
+      <!-- Scanner -->
+      <div class="slds-col slds-p-top_medium" if:true={isScanVisible}>
+        <fieldset class="slds-form-element slds-form-element_compound">
+          <legend class="slds-form-element__label">
+            Click to scan a product:
+          </legend>
+          <div class="slds-form-element__control">
+            <c-tpb-barcode-scan-button
+              onscan={onScan}
+              auto-turn-off
+            ></c-tpb-barcode-scan-button>
+            <template if:true={isEditorVisible}>
+              <p if:true={isEditorDisabled} style="color: #959595">
+                Click Start Scan button to adjust balance for another product.
+              </p>
+            </template>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="slds-col slds-p-top_medium" if:true={isLookupProductVisible}>
+        <lightning-record-edit-form
+          object-api-name="cgcloud__Inventory__c"
+          onsubmit={handleProductLookupFormSubmit}
+        >
+          <lightning-messages></lightning-messages>
+          <lightning-input-field
+            field-name="TPB_Product_Lookup__c"
+            value={productLookup.value}
+            onchange={handleProductLookupChange}
+          ></lightning-input-field>
+          <template if:true={isEditorVisible}>
+            <p if:true={isEditorDisabled} style="color: #959595">
+              Reselect to adjust balance for another product.
+            </p>
+          </template>
+        </lightning-record-edit-form>
+      </div>
+
+      <!-- Editor -->
+      <div class="slds-col slds-p-top_medium" if:true={isEditorVisible}>
+        <fieldset class="slds-form-element slds-form-element_compound">
+          <legend class="slds-form-element__label">Product</legend>
+          <label class="slds-line-clamp_x-small">{productName}</label>
+        </fieldset>
+      </div>
+
+      <!-- Editor -->
+      <div class="slds-col slds-p-top_medium" if:true={isEditorVisible}>
+        <lightning-input
+          name="inventoryBalance"
+          label="Inventory Balance"
+          value={inventoryBalance}
+          type="number"
+          step=".01"
+          onchange={onInventoryBalanceChange}
+          disabled={isEditorDisabled}
+          data-id="formField-inventoryBalance"
+        ></lightning-input>
+      </div>
+
+      <!-- Editor -->
+      <div class="slds-col slds-p-top_medium" if:true={isEditorVisible}>
+        <lightning-button-group>
+          <lightning-button
+            variant="base"
+            label="Cancel"
+            onclick={onCancel}
+            class="slds-m-left_x-small"
+          ></lightning-button>
+
+          <lightning-button
+            variant="brand"
+            label="Save"
+            onclick={onSave}
+            class="slds-m-left_x-small"
+            disabled={isEditorDisabled}
+          ></lightning-button>
+        </lightning-button-group>
+      </div>
+    </form>
+  </div>
+</template>

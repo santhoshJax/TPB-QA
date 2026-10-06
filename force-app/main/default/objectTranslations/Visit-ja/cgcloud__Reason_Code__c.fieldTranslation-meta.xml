@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>cgcloud__Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>NoManager</masterLabel>
+        <translation>マネージャが対応できなかった</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreClosed</masterLabel>
+        <translation>店舗が閉まっていた</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TimeWindow</masterLabel>
+        <translation>時間枠に間に合わなかった</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviced</masterLabel>
+        <translation>終業時間になった</translation>
+    </picklistValues>
+</CustomFieldTranslation>

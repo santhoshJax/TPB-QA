@@ -1,0 +1,383 @@
+<template>
+    <!-- <template if:false={storeCockpit}> --><!--This is commented after redirect to the Account record page-->
+        <template if:true={visitSpinner}>
+            <div class="spinner-container">
+                <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                    message="Loading data..." size="medium" variant="base"></lightning-spinner>
+            </div>
+        </template>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                padding="around-small">
+                <div class="custom-card">
+                     <div class="custom-card-header">
+                        <h2>Summary</h2>
+                    </div>
+                     <div class="slds-p-around_small slds-text_align-center">
+                        <div class="slds-grid slds-p-bottom_small slds-p-left_small">
+                            <div class="slds-p-right_small">
+                                <lightning-icon icon-name="action:user" alternative-text="user" size="medium"
+                                    title="user"></lightning-icon>
+                            </div>
+                            <div>
+                                <span>
+                                    <p class="userName" style="font-size: 1.4em;letter-spacing: 0.4px;">
+                                        <strong>{userName}</strong>
+                                    </p>
+                                    <p style="font-size: 0.9em;"><span>Have a great day</span></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slds-p-around_small">
+                            <div class=" slds-grid  slds-grid_align-spread slds-grid_vertical-align-center">
+                
+                                <div class="">
+                                    <lightning-button-icon icon-class="" icon-name="utility:chevronleft"
+                                        alternative-text="Previous week" class="slds-col" name="" size="medium" title="Previous"
+                                        tooltip="" type="button" value="" variant="brand"
+                                        onclick={handlePrevDay}></lightning-button-icon>
+                                </div>
+         
+                                <div class="slds-p-right_small slds-p-left_small ">
+                                    
+                                    <div class="slds-card slds-grid slds-wrap slds-text-heading_x-small"
+                                        style="align-content: center;justify-items: center;justify-content: center;gap: 5px;">
+                                        <p class="slds-p-top_x-small"><span> <strong>{formatSelectedDate}</strong></span></p>
+                                        <button class="slds-button currentDatecls" onclick={handleCurrentDay}>
+                                            <lightning-icon icon-name="utility:date_input" class=" slds-p-right_xx-small"
+                                                alternative-text="date" size="x-small" title="date"></lightning-icon>
+                                            <span>Today</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div class="">
+                                    <lightning-button-icon icon-class="" icon-name="utility:chevronright" alternative-text="next week"
+                                        class="" name="" size="medium" title="next" tooltip="" type="button" value="" variant="brand"
+                                        onclick={handleNextDay}></lightning-button-icon>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="Visitcls">
+                            <span>{totalVisits} </span> <span> Visits</span>
+                        </div>
+                        <div class="slds-p-around_small slds-text_align-center">
+                             <!-- <lightning-button 
+                                variant="brand" 
+                                label="Create New Account" 
+                                title="Create New Account"
+                                onclick={handleNewAccount}>
+                            </lightning-button> -->
+                            <button class="slds-button addVisitcls" onclick={handleNewAccount}>
+                            <lightning-icon icon-name="utility:add" alternative-text="add" size="xx-small" title="add" variant="inverse"
+                                class="slds-p-right_small"></lightning-icon>
+                            <span>Add New Account</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <lightning-card title="Summary">
+                    <div class="slds-p-around_small slds-text_align-center">
+                        <div class="slds-grid slds-p-bottom_small slds-p-left_small">
+                            <div class="slds-p-right_small">
+                                <lightning-icon icon-name="action:user" alternative-text="user" size="medium"
+                                    title="user"></lightning-icon>
+                            </div>
+                            <div>
+                                <span>
+                                    <p class="userName" style="font-size: 1.4em;letter-spacing: 0.4px;">
+                                        <strong>{userName}</strong>
+                                    </p>
+                                    <p style="font-size: 0.9em;"><span>Have a great day</span></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="slds-p-around_small">
+                            <div class=" slds-grid  slds-grid_align-spread slds-grid_vertical-align-center">
+                
+                                <div class="">
+                                    <lightning-button-icon icon-class="" icon-name="utility:chevronleft"
+                                        alternative-text="Previous week" class="slds-col" name="" size="medium" title="Previous"
+                                        tooltip="" type="button" value="" variant="brand"
+                                        onclick={handlePrevDay}></lightning-button-icon>
+                                </div>
+         
+                                <div class="slds-p-right_small slds-p-left_small ">
+                                    
+                                    <div class="slds-card slds-grid slds-wrap slds-text-heading_x-small"
+                                        style="align-content: center;justify-items: center;justify-content: center;gap: 5px;">
+                                        <p class="slds-p-top_x-small"><span> <strong>{formatSelectedDate}</strong></span></p>
+                                        <button class="slds-button currentDatecls" onclick={handleCurrentDay}>
+                                            <lightning-icon icon-name="utility:date_input" class=" slds-p-right_xx-small"
+                                                alternative-text="date" size="x-small" title="date"></lightning-icon>
+                                            <span>Today</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div class="">
+                                    <lightning-button-icon icon-class="" icon-name="utility:chevronright" alternative-text="next week"
+                                        class="" name="" size="medium" title="next" tooltip="" type="button" value="" variant="brand"
+                                        onclick={handleNextDay}></lightning-button-icon>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <div class="Visitcls">
+                            <span>{totalVisits} </span> <span> Visits</span>
+                        </div>
+                    </div>
+                </lightning-card> -->
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                padding="around-small">
+                <c-cg-cloud-visits-list ontotalvisits={handleTotalVisits} onvisitcreated={handleVisitListChanged} onvisitcancelled={handleVisitListChanged} selected-calendar-date={selectedCalendarDate} onnavigate={handleNavigation} onvisitclick={handleVisitClick}></c-cg-cloud-visits-list>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                padding="around-small">
+                <div class="custom-card">
+                    <div class="custom-card-header">
+                        <h2>Dashboards</h2>
+                    </div>
+                      <div class="slds-p-around_small slds-text_align-center">
+                       
+                           
+                            <template for:each={dashboardLinksData} for:item="dashLink">
+                                <div key={dashLink.Id} 
+                                    class="task-item slds-p-top_x-small slds-p-bottom_x-small borderLine"
+                                    data-id={dashLink.Id}>
+                                    <div class="text-column " >
+                                       
+                                        <p class="name">
+                                           <a href={dashLink.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="link-text">
+                                            {dashLink.description}
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </template>
+                            
+                    
+   
+                    </div>
+                </div>
+                <!-- <lightning-card title="Dashboards">
+                    <div class="slds-p-around_small slds-text_align-center">
+                       
+                           
+                            <template for:each={dashboardLinksData} for:item="dashLink">
+                                <div key={dashLink.Id} 
+                                    class="task-item slds-p-top_x-small slds-p-bottom_x-small borderLine"
+                                    data-id={dashLink.Id}>
+                                    <div class="text-column " >
+                                       
+                                        <p class="name">
+                                           <a href={dashLink.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="link-text">
+                                            {dashLink.description}
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </template>
+                            
+                    
+   
+                    </div>
+                </lightning-card> -->
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="3"
+                padding="around-small">
+                <div class="custom-card">
+                     <div class="custom-card-header">
+                        <h2>Customer Tasks Today</h2>
+                    </div>
+                     <div class="slds-p-around_small slds-text_align-center">
+                        <button class="slds-button addVisitcls" onclick={addnewCustomerTask}>
+                            <lightning-icon icon-name="utility:add" alternative-text="add" size="xx-small" title="add" variant="inverse"
+                                class="slds-p-right_small"></lightning-icon>
+                            <span>Add new Customer Task</span>
+                        </button>
+                    
+                        <div class="slds-p-top_small">
+                           
+                            <template for:each={customerTasksData} for:item="ctData">
+                                <div key={ctData.Id} 
+                                    class="task-item slds-grid  slds-grid_vertical-align-center slds-p-top_x-small slds-p-bottom_x-small borderLine"
+                                    data-id={ctData.Id}
+                                    data-accid={ctData.accountId} 
+                                    onclick={handleTaskClick}>
+                                    <div class='slds-p-right_small'>
+                                    <lightning-icon icon-name='action:info' alternative-text='info' size='xx-small' title='info'></lightning-icon>
+                                    </div>
+                                    <div class="text-column">
+                                        <p class="description"><span>{ctData.description}</span></p>
+                                        <p class="name"><span>{ctData.Name}</span></p>
+                                        
+                                        <p class="description"><span>{ctData.due_date}</span></p>
+                                    </div>
+                                    <template if:true={ctData.isPresentOrPast}>
+                                        <div class="slds-p-left_xx-small">
+                                            <p class="circle"></p>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:false={isCustomerTaskData}>
+                                <div class="slds-grid slds-text-align_center slds-text-color_weak slds-grid_vertical-align-center">
+                                    <!-- <div>
+                                        <lightning-icon icon-name="utility:leave_conference" alternative-text="Connected" size="small"
+                                            title="large size"></lightning-icon>
+                                    </div> -->
+                                    <div>
+                                        <p><span><Strong>No Customer Tasks today</Strong> </span></p>
+                                        <!-- <p><span>why don't you add one?</span></p> -->
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <!-- <lightning-card title="Customer Tasks Today">
+                    <div class="slds-p-around_small slds-text_align-center">
+                        <button class="slds-button addVisitcls" onclick={addnewCustomerTask}>
+                            <lightning-icon icon-name="utility:add" alternative-text="add" size="xx-small" title="add" variant="inverse"
+                                class="slds-p-right_small"></lightning-icon>
+                            <span>Add new Customer Task</span>
+                        </button>
+                    
+                        <div class="slds-p-top_small">
+                           
+                            <template for:each={customerTasksData} for:item="ctData">
+                                <div key={ctData.Id} 
+                                    class="task-item slds-grid  slds-grid_vertical-align-center slds-p-top_x-small slds-p-bottom_x-small borderLine"
+                                    data-id={ctData.Id}
+                                    data-accid={ctData.accountId} 
+                                    onclick={handleTaskClick}>
+                                    <div class='slds-p-right_small'>
+                                    <lightning-icon icon-name='action:info' alternative-text='info' size='xx-small' title='info'></lightning-icon>
+                                    </div>
+                                    <div class="text-column">
+                                        <p class="description"><span>{ctData.description}</span></p>
+                                        <p class="name"><span>{ctData.Name}</span></p>
+                                        
+                                        <p class="description"><span>{ctData.due_date}</span></p>
+                                    </div>
+                                    <template if:true={ctData.isPresentOrPast}>
+                                        <div class="slds-p-left_xx-small">
+                                            <p class="circle"></p>
+                                        </div>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:false={isCustomerTaskData}>
+                                <div class="slds-grid slds-text-align_center slds-text-color_weak slds-grid_vertical-align-center">
+                                    
+                                    <div>
+                                        <p><span><Strong>No Customer Tasks today</Strong> </span></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </lightning-card> -->
+            </lightning-layout-item>
+
+            
+        </lightning-layout>
+    <template if:true={isRecordTypeModalOpen}>
+        <section class="slds-modal slds-fade-in-open custom-modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Select Account Record Type</h2>
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                        onclick={closeRecordTypeModal} style="top: 14px;right: 15px;">
+                        <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                    </button>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-radio-group
+                        name="Account Record Type"
+                        label=""
+                        type="radio"
+                        value={selectedAccountRecordTypeId}
+                        options={accountRecordTypeOptions}
+                        onchange={handleAccountRecordTypeChange}>
+                    </lightning-radio-group>
+                </div>
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <div>
+                        <lightning-button label="Cancel" class="slds-p-right_small" onclick={closeRecordTypeModal}
+                            variant="neutral"></lightning-button>
+                        <lightning-button label="Continue" onclick={handleRecordTypeContinue} variant="brand"
+                            disabled={isRecordTypeContinueDisabled}></lightning-button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    <template if:true={isModalOpen}>
+    
+        <section class="slds-modal slds-fade-in-open custom-modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Add Customer Task</h2>
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                        onclick={closeModal} style="top: 14px;right: 15px;">
+                        <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                    </button>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template if:true={isLoading}>
+                        <div class="spinner-container">
+                            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                                message="Loading data..." size="medium" variant="base"></lightning-spinner>
+                        </div>
+                    </template>
+    
+                    <div class=" slds-p-top_small">
+                        <c-custom-lookup-search label="Customer" onselect={handleChangeCustomer} options={customerAccounts}
+                            selected-value={selectedCustomerValue}></c-custom-lookup-search>
+                        <lightning-combobox name="Customer Type" label="Customer Type" value={selectedCustomerType} placeholder=""
+                                options={customerTaskTemplateOptions} onchange={handleChangeCustomerTask}></lightning-combobox>
+                        <lightning-input 
+                          type="text"
+                          label="Description"
+                          name="description"
+                          value={description}
+                          onchange={handleChangeCustomerTask}
+                        ></lightning-input>
+                    <lightning-input type="date" name="Due Date" label="Date" value={selectedCustomerTaskDate}
+                        onchange={handleChangeCustomerTask}></lightning-input>
+                        
+    
+                        
+                    </div>
+                </div>
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <div>
+                        <lightning-button label="Cancel" class="slds-p-right_small" onclick={closeModal}
+                            variant="neutral"></lightning-button>
+                        <lightning-button label="Create" onclick={createTask} variant="brand"
+                            disabled={isDisabled}></lightning-button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- </template> --><!--This is commented after redirect to the Account record page-->
+    <!--This is commented after redirect to the Account record page-->
+    <!-- <template if:true={storeCockpit}>
+        <c-cg-cloud-store-cockpit onnavigate={handleNavigation} visit-id={selectedVisitId} is-visit-done={isVisitDone}
+            selected-account-id={selectedAccountValue} customer-account-name={selectedCustomerName} is-spinner={storeCockpit}></c-cg-cloud-store-cockpit>
+    </template> -->
+</template>

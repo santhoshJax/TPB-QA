@@ -1,0 +1,19 @@
+<template>
+  <lightning-spinner
+    alternative-text="Loading"
+    size="medium"
+    if:true={loading}
+  ></lightning-spinner>
+
+  <!-- onsave={handleSave} -->
+  <!-- onrowaction={handleRowAction} -->
+  <lightning-datatable
+    key-field="id"
+    data={records}
+    columns={myColumns}
+    draft-values={draftValues}
+    oncellchange={handleCellChange}
+    hide-checkbox-column
+  >
+  </lightning-datatable>
+</template>

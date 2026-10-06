@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>e_cig_type__c</fullName>
+    <label>E_CIG_TYPE</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>E_CIG_TYPE</labelOverride>
+        <masterLabel>E_CIG_TYPE</masterLabel>
+        <refAttrDeveloperName>e_cig_type_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

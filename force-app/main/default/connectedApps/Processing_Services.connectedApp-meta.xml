@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>sfhelp@tpbi.com</contactEmail>
+    <label>Processing Services</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:3000/fake</callbackUrl>
+        <certificate>MIIFbjCCA1agAwIBAgIUAQAAAAAAAAAAAAAAAAAAAAAAAAEwDQYJKoZIhvcNAQEFBQAwOTEmMCQGA1UEAxMdMDBEM2kwMDAwMDBwS2hhRUFFLWh5cGVyZm9yY2UxDzANBgNVBAoTBnNmLXJjZzAeFw0yNjAzMjQwNzE0MjlaFw0yNzAzMjQwNzE0MjlaMDkxJjAkBgNVBAMTHTAwRDNpMDAwMDAwcEtoYUVBRS1oeXBlcmZvcmNlMQ8wDQYDVQQKEwZzZi1yY2cwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDNjN/zdGzNVHEn96lvvo7vGBpZjB0jXP58ZkUob+nb6nwVrW5D5cHLuocdj6qfWixjp4tQqOGjInZn8KG0+iFjWV1mX6nFV67aM0P39ZOKj2PXpnpS0SYgu916ekFCmcnWbF+8iRKDVKkfm1+RdnsPf4yzbjIRhKIvg+DeaSgevkdM/hktr/2RKkzJZ+qiwXqOrna1D7HtObEcOjgqthzQQfMYleNyTNgW2wer19MlsR+NFDougG6+4EyvEW+uVW7yJShWObhSW7vD5fWYXoWw5hkVyHirGHK4XZYTlUPOrQOH+Y3dj6YWeOz8Bp3MiBICA8nZGp3gNxLuVydz3DPtJ9290llBs6E+DLBtImj+sEUm0QuD/1e8JNSyCfm/m5nuihPfpxgJQQmhJ4E9u1+HxRSrnqfgqySl8f2gwoRFvn+30T2I3/Xxi/NZSn2MzsITJr44Ond+R6gwMHet4dqCvIcKf6LFZHVDaTCds+fptYjjCAdFxw80o0Kbk1SSJIc2REApbfEwHdn9AKAS/UiTQgkgwfXF+lsmr4uyO9FJqvddRqw11cxWM/rdOy7a9vanr7KlAzF5cM71D98I8yFmt8W/8E0+Amqrfq0CV3HGNjWePPA8FtFEL4aQTd9z3+BxzwGF8rex+hsGGjkF0U1h/TO0X/CdY6tKoScmfu/huQIDAQABo24wbDAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDATAQBglghkgBhvhCAQEEAwMBADAJBgNVHREEAjAAMB0GA1UdDgQWBBTs61oajZUD/e5jTik7JRMNDZj9sDANBgkqhkiG9w0BAQUFAAOCAgEAeRG6olBXPJK6Xpef7QHQ97lkVF2O8Sswol/EQpAn/vF7N3D7IL9DoFiodeF55eq0kc5Js21sdrDkcf7hiVOunHMME/82IBD5ok5owN/5DDisPsw0MHn+iqx+wi9PHyswUldFP6x8OKtlCJZZkUOgjFYjMCKuxva09csbzPHasYUKn/gzM/PSPfwVUL1qhGvoEYMQJeUFNTbx02Jgj04NhIgnJ4NTRm+nu4rmNzkE2MeAkGkfn8VhnLd1zPnuCyKzrzKNkkIlj8KfPu+DmKs2r/uM9N+R7LsngXMNUsgc7uRaS1MrjnXf8jv4Ps5QckiJ2hXAMfAKmK3/6Q4HBKMsV81ta/1KuFtZweS4OUKWIH+aDgLA11xKzeaBeW1NHJzGu0ljDLNo2Qec8yuwCprTz6E9Hb5nKDb6eQdk8z0UHxYl+oeOgGuJrAe8T1s91zfzHYH8oVmztP/gv7IxGR/WshUePu+5OAcIlLVpX6WWTs5pXTjfpVH0N3Ubk16bR6pv0U9qy86H6aIgfd+v+S6rw7YinCPDJzFHwOB8rYJpXH1MIFkp4wf/tDwpCvsgxM/vF49p5vKd+0hynDCQtjSJzeZF3BpQ6bV2Du8YxQetvP0+AVCq3fh7uq5YLWx+CcrG+ga70Lpppj9POmWMCjZ5URhLr7dfKhzZhY5DxNrTYdc=</certificate>
+        <consumerKey>3MVG9XhRuzJUtKtCbMsDHN24j_p3vYf7zPBroMvhRKIb4b39OZLdQmGWIrs45YAKpmGctep4ByeODr_rN2wUa</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>TPBI Integration User Access</permissionSetName>
+    <profileName>Mobile</profileName>
+    <profileName>Analytics Cloud Security User</profileName>
+    <profileName>Analytics Cloud Integration User</profileName>
+    <profileName>Minimum Access - Salesforce</profileName>
+    <profileName>Identity User</profileName>
+    <profileName>Account Management</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>Chatter Free User</profileName>
+    <profileName>Chatter External User</profileName>
+    <profileName>Chatter Moderator User</profileName>
+    <profileName>Contract Manager</profileName>
+    <profileName>Marketing User</profileName>
+    <profileName>Read Only</profileName>
+    <profileName>Solution Manager</profileName>
+    <profileName>Standard User</profileName>
+    <profileName>Guest License User</profileName>
+    <profileName>CPQ Integration User</profileName>
+    <profileName>CG Cloud Mobile - RSM</profileName>
+    <profileName>TPB Integration</profileName>
+    <profileName>Salesforce API Only System Integrations</profileName>
+    <profileName>Director/CS Agent</profileName>
+    <profileName>Executive</profileName>
+    <profileName>Salesperson</profileName>
+    <profileName>Supervisor</profileName>
+    <profileName>Junior System Administrator</profileName>
+    <profileName>InsideSales Profile</profileName>
+    <profileName>Data Integration User</profileName>
+    <profileName>Power User</profileName>
+    <profileName>TPBI Integration Profile</profileName>
+</ConnectedApp>

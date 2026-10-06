@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Center_Result__c</fullName>
+    <label>Remote Sales Result</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Answer</fullName>
+                <default>false</default>
+                <label>No Answer</label>
+            </value>
+            <value>
+                <fullName>Left VM/Email</fullName>
+                <default>false</default>
+                <label>Left VM/Email</label>
+            </value>
+            <value>
+                <fullName>Did not reach DM</fullName>
+                <default>false</default>
+                <label>Did not reach DM</label>
+            </value>
+            <value>
+                <fullName>Not in Service</fullName>
+                <default>false</default>
+                <label>Not in Service</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Will Place Marketplace Order</fullName>
+                <default>false</default>
+                <label>Will Place Marketplace Order</label>
+            </value>
+            <value>
+                <fullName>Has Placed Marketplace Order</fullName>
+                <default>false</default>
+                <label>Has Placed Marketplace Order</label>
+            </value>
+            <value>
+                <fullName>Has Inventory</fullName>
+                <default>false</default>
+                <label>Has Inventory</label>
+            </value>
+            <value>
+                <fullName>Dispatch TBM to Visit</fullName>
+                <default>false</default>
+                <label>Dispatch TBM to Visit</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

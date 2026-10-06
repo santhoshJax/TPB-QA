@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Modify_After_24_Hours</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(EndDate)),
+ISPICKVAL(StatusCategory, &quot;Completed&quot;),
+NOW() &gt; EndDate + 1,
+$Profile.Name != &apos;System Administrator&apos;,
+NOT(CONTAINS($UserRole.Name, &quot;Regional&quot;))
+)</errorConditionFormula>
+    <errorMessage>This work order can no longer be modified</errorMessage>
+</ValidationRule>

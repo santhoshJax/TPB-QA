@@ -1,0 +1,16 @@
+.backButton{
+    background-color: rgb(6, 165, 154);
+    padding: 1px 15px;
+    color: white;
+    border-radius: 20px;
+}
+.utility-icon{
+    --sds-c-icon-color-foreground-default: #f3f8f3;
+}
+
+.completeOrderBt{
+    background-color: rgb(6, 165, 154);
+    padding: 1px 15px;
+    color: white;
+    border-radius: 20px;
+}

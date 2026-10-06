@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.store_address__c</sourceField>
+        <sourceFormula>Store Address</sourceFormula>
+        <targetField>MSA_Store_Master__dll.store_address__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.store_zip__c</sourceField>
+        <sourceFormula>Store Zip</sourceFormula>
+        <targetField>MSA_Store_Master__dll.store_zip__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>MSA_Store_Master__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.store_name__c</sourceField>
+        <sourceFormula>Store Name</sourceFormula>
+        <targetField>MSA_Store_Master__dll.store_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.retail_number__c</sourceField>
+        <sourceFormula>Retail Number</sourceFormula>
+        <targetField>MSA_Store_Master__dll.retail_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>MSA_SALESFORCE_MSA</sourceFormula>
+        <targetField>MSA_Store_Master__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>MSA_Store_Master__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.store_city__c</sourceField>
+        <sourceFormula>Store City</sourceFormula>
+        <targetField>MSA_Store_Master__dll.store_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.store_state__c</sourceField>
+        <sourceFormula>Store State</sourceFormula>
+        <targetField>MSA_Store_Master__dll.store_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.ntc_ownership_type__c</sourceField>
+        <sourceFormula>NTC Ownership Type</sourceFormula>
+        <targetField>MSA_Store_Master__dll.ntc_ownership_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.ntc_chain__c</sourceField>
+        <sourceFormula>NTC Chain</sourceFormula>
+        <targetField>MSA_Store_Master__dll.ntc_chain__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_Store_Master.td_county_name__c</sourceField>
+        <sourceFormula>TD County Name</sourceFormula>
+        <targetField>MSA_Store_Master__dll.td_county_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>MSA_Store_Master_map_MSA_Store_Master_1741701677357</masterLabel>
+    <sourceObjectName>MSA_Store_Master</sourceObjectName>
+    <targetObjectName>MSA_Store_Master__dll</targetObjectName>
+</ObjectSourceTargetMap>

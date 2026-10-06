@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X7_11_VA_TBM_Coverage__c</fullName>
+    <label>7-11 VA TBM Coverage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TINA</fullName>
+                <default>false</default>
+                <label>TINA</label>
+            </value>
+            <value>
+                <fullName>DARRELL</fullName>
+                <default>false</default>
+                <label>DARRELL</label>
+            </value>
+            <value>
+                <fullName>TONYA</fullName>
+                <default>false</default>
+                <label>TONYA</label>
+            </value>
+            <value>
+                <fullName>JOHN K</fullName>
+                <default>false</default>
+                <label>JOHN K</label>
+            </value>
+            <value>
+                <fullName>ED</fullName>
+                <default>false</default>
+                <label>ED</label>
+            </value>
+            <value>
+                <fullName>KEN</fullName>
+                <default>false</default>
+                <label>KEN</label>
+            </value>
+            <value>
+                <fullName>WILLIAM</fullName>
+                <default>false</default>
+                <label>WILLIAM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

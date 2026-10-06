@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Price_Parity_Condition__c</fullName>
+    <label>Price Parity Condition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Products are in Line with competition</fullName>
+                <default>false</default>
+                <label>Products are in Line with competition</label>
+            </value>
+            <value>
+                <fullName>Papers pricing not in line with competitive pricing</fullName>
+                <default>false</default>
+                <label>Papers pricing not in line with competitive pricing</label>
+            </value>
+            <value>
+                <fullName>MST pricing not in line with competitive pricing</fullName>
+                <default>false</default>
+                <label>MST pricing not in line with competitive pricing</label>
+            </value>
+            <value>
+                <fullName>NTC products not in line with competitive pricing</fullName>
+                <default>false</default>
+                <label>NTC products not in line with competitive pricing</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

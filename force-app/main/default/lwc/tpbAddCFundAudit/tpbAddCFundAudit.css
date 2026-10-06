@@ -1,0 +1,36 @@
+@import 'c/appointmentStyling';
+.delete-wrap {
+    position: relative;
+}
+.delete-body {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+.divButton {
+    padding-top: 20px;
+}
+.deletebutton {
+    border-style: dotted;
+}
+.slds-hint-parent-td {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.slds-hint-parent {
+    height: 25px;
+}
+
+.example-accordion {
+    /* --sds-c-accordion-color-border: orange; rgba(21,137,238,.1)*/
+    --slds-c-accordion-summary-color-background: #d7ebf9;
+    --sds-c-accordion-heading-text-color: #2779aa;
+}
+.topCustom {
+    padding-top: 0.75rem;
+}
+.info-wrap {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}

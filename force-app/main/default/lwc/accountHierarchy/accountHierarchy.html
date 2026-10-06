@@ -1,0 +1,17 @@
+<template>
+    <lightning-tree-grid
+        columns={columns}
+        data={accounts}
+        key-field="accId"
+        onrowaction={changeAccount}
+        hide-checkbox-column="true">
+    </lightning-tree-grid>
+    <template if:true={spinner}>
+        <div id="spinner" class="slds-spinner_container slds-is-fixed">
+            <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

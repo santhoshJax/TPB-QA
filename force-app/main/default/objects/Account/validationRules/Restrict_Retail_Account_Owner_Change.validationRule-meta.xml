@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Retail_Account_Owner_Change</fullName>
+    <active>false</active>
+    <description>Prevents non-admin users from changing the owner of Retail accounts. Only administrators are allowed to transfer Retail account ownership.</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(OwnerId),
+    RecordType.DeveloperName = &quot;Retailer&quot;,
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>Only System Administrators can transfer Retail account ownership.</errorMessage>
+</ValidationRule>

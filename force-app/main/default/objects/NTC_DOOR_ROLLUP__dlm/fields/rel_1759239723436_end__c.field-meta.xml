@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1759239723436_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>NTC_DOOR_ROLLUP_retail_number_map_NT_rel</label>
+    <referenceTo>NTC_TRANSACTIONS__dlm</referenceTo>
+    <relationshipLabel>NTC_DOOR_ROLLUP_retail_number_map_NT_rel</relationshipLabel>
+    <relationshipName>rel_1759239723436_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

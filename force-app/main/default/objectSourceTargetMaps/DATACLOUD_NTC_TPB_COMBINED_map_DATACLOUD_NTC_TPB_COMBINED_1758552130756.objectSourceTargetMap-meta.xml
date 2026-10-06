@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_name__c</sourceField>
+        <sourceFormula>TD Owner Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_supplier_zone__c</sourceField>
+        <sourceFormula>NTC Supplier Zone</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_supplier_zone__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_supplier_territory__c</sourceField>
+        <sourceFormula>NTC Supplier Territory</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_supplier_territory__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_county_name__c</sourceField>
+        <sourceFormula>TD County Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_county_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_45_64__c</sourceField>
+        <sourceFormula>Age 45-64</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_45_64__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.gender_male_pct_group__c</sourceField>
+        <sourceFormula>Gender - Male Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.gender_male_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.sku_date_key__c</sourceField>
+        <sourceFormula>SKU_DATE_KEY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.sku_date_key__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_state__c</sourceField>
+        <sourceFormula>Store State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_ultimate_parent_state__c</sourceField>
+        <sourceFormula>TD Ultimate Parent State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_ultimate_parent_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.account_manager_c_c__c</sourceField>
+        <sourceFormula>Account Manager C&amp;C.</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.account_manager_c_c__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_address__c</sourceField>
+        <sourceFormula>TD Address</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_address__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_city__c</sourceField>
+        <sourceFormula>Distributor City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_distributor_customer_number__c</sourceField>
+        <sourceFormula>STORE_Distributor Customer Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_distributor_customer_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_warehouse__c</sourceField>
+        <sourceFormula>Distributor Warehouse</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_warehouse__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_zip_4__c</sourceField>
+        <sourceFormula>Store Zip +4</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_zip_4__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.time__c</sourceField>
+        <sourceFormula>TIME</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.time__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_hispanic_pct_group__c</sourceField>
+        <sourceFormula>Race - Hispanic Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_hispanic_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_ultimate_parent_city__c</sourceField>
+        <sourceFormula>TD Ultimate Parent City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_ultimate_parent_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_routing__c</sourceField>
+        <sourceFormula>NTC Routing</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_routing__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.retail_number__c</sourceField>
+        <sourceFormula>RETAIL NUMBER</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.retail_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_wraps__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Wraps</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_wraps__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_hispanic__c</sourceField>
+        <sourceFormula>Race - Hispanic</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_hispanic__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_linx_number__c</sourceField>
+        <sourceFormula>TD Linx Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_linx_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_some_college__c</sourceField>
+        <sourceFormula>Education - Some College</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_some_college__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_number__c</sourceField>
+        <sourceFormula>DISTRIBUTOR NUMBER</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_65_plus__c</sourceField>
+        <sourceFormula>Age 65 Plus</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_65_plus__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_asian__c</sourceField>
+        <sourceFormula>Race - Asian</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_asian__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_100k_plus_pct_group__c</sourceField>
+        <sourceFormula>HH Income 100K Plus Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_100k_plus_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_post_bachelors_pct_group__c</sourceField>
+        <sourceFormula>Education - Post Bachelors Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_post_bachelors_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.item__c</sourceField>
+        <sourceFormula>ITEM</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.item__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_papers__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Papers</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_papers__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.cogs__c</sourceField>
+        <sourceFormula>COGS</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.cogs__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_some_college_pct_group__c</sourceField>
+        <sourceFormula>Education - Some College Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_some_college_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_company_size__c</sourceField>
+        <sourceFormula>TD Company Size</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_company_size__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_state__c</sourceField>
+        <sourceFormula>TD State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.gender_female__c</sourceField>
+        <sourceFormula>Gender - Female</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.gender_female__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_44_pct_group__c</sourceField>
+        <sourceFormula>Age 21-44 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_44_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dollarizing_volume_usage__c</sourceField>
+        <sourceFormula>Dollarizing Volume Usage</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dollarizing_volume_usage__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_city__c</sourceField>
+        <sourceFormula>Store City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_customer_number__c</sourceField>
+        <sourceFormula>Distributor Customer Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_customer_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_lat__c</sourceField>
+        <sourceFormula>MSA Lat</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_lat__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_brand_extension__c</sourceField>
+        <sourceFormula>PRICE_BRAND_EXTENSION</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_brand_extension__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_class_of_trade__c</sourceField>
+        <sourceFormula>NTC Class of Trade</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_class_of_trade__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_finished_calls_last_52_weeks__c</sourceField>
+        <sourceFormula>NTC Finished Calls Last 52 Weeks</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_finished_calls_last_52_weeks__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_tert_supp_chew__c</sourceField>
+        <sourceFormula>MSA Tert Supp - Chew</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_tert_supp_chew__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_25k_pct_group__c</sourceField>
+        <sourceFormula>HH Income 25K Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_25k_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_sub_class_of_trade__c</sourceField>
+        <sourceFormula>NTC Sub-Class of Trade</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_sub_class_of_trade__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_75k_plus__c</sourceField>
+        <sourceFormula>HH Income 75K Plus</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_75k_plus__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dark_indicator__c</sourceField>
+        <sourceFormula>Dark Indicator</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dark_indicator__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ttl_population_21_over__c</sourceField>
+        <sourceFormula>Ttl Population 21 &amp; Over</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ttl_population_21_over__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_chain_owner_territory__c</sourceField>
+        <sourceFormula>NTC Chain Owner Territory</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_chain_owner_territory__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_name__c</sourceField>
+        <sourceFormula>Distributor Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_ownership_type__c</sourceField>
+        <sourceFormula>NTC Ownership Type</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_ownership_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_did__c</sourceField>
+        <sourceFormula>STORE_DID</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_did__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.gender_male__c</sourceField>
+        <sourceFormula>Gender - Male</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.gender_male__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.census_region__c</sourceField>
+        <sourceFormula>Census Region</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.census_region__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_zone__c</sourceField>
+        <sourceFormula>NTC Zone</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_zone__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_second_supp_total__c</sourceField>
+        <sourceFormula>MSA Second Supp - Total</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_second_supp_total__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_distributor_class_of_trade__c</sourceField>
+        <sourceFormula>NTC Distributor Class of Trade</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_distributor_class_of_trade__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_distributor_customer_ship_number__c</sourceField>
+        <sourceFormula>STORE_Distributor Customer Ship Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_distributor_customer_ship_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_industry_breaks_mst__c</sourceField>
+        <sourceFormula>MSA Industry Breaks - MST</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_industry_breaks_mst__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_44__c</sourceField>
+        <sourceFormula>Age 21-44</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_44__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_ultimate_parent_total_store_count__c</sourceField>
+        <sourceFormula>TD Ultimate Parent Total Store Count</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_ultimate_parent_total_store_count__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_african_american_pct_group__c</sourceField>
+        <sourceFormula>Race - African American Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_african_american_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dollarizing_category__c</sourceField>
+        <sourceFormula>Dollarizing Category</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dollarizing_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.fips_state_code__c</sourceField>
+        <sourceFormula>FIPS State Code</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.fips_state_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_second_supp_cigars__c</sourceField>
+        <sourceFormula>MSA Second Supp - Cigars</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_second_supp_cigars__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_region__c</sourceField>
+        <sourceFormula>NTC Region</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_region__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_name__c</sourceField>
+        <sourceFormula>Store Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_second_supp_chew__c</sourceField>
+        <sourceFormula>MSA Second Supp - Chew</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_second_supp_chew__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_tert_supp_mst__c</sourceField>
+        <sourceFormula>MSA Tert Supp - MST</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_tert_supp_mst__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_total_store_count__c</sourceField>
+        <sourceFormula>TD Owner Total Store Count</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_total_store_count__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_post_bachelors__c</sourceField>
+        <sourceFormula>Education - Post Bachelors</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_post_bachelors__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.revenue_per_latest_price__c</sourceField>
+        <sourceFormula>REVENUE_PER_LATEST_PRICE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.revenue_per_latest_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_35k_49999_pct_group__c</sourceField>
+        <sourceFormula>HH Income 35K-49999 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_35k_49999_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_24__c</sourceField>
+        <sourceFormula>Age 21-24</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_24__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.fips_county_code__c</sourceField>
+        <sourceFormula>FIPS County Code</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.fips_county_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.product_group__c</sourceField>
+        <sourceFormula>PRODUCT_GROUP</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.product_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.latest_date__c</sourceField>
+        <sourceFormula>Latest Date</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.latest_date__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_mst__c</sourceField>
+        <sourceFormula>MSA Prim Supp - MST</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_mst__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_fips_state_county__c</sourceField>
+        <sourceFormula>TD FIPS State/County</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_fips_state_county__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_tsm_name__c</sourceField>
+        <sourceFormula>NTC TSM Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_tsm_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.enrolled_distributors__c</sourceField>
+        <sourceFormula>Enrolled Distributors</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.enrolled_distributors__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.revenue__c</sourceField>
+        <sourceFormula>REVENUE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.revenue__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_immediate_account__c</sourceField>
+        <sourceFormula>TD Immediate Account</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_immediate_account__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dist_long__c</sourceField>
+        <sourceFormula>Dist Long</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dist_long__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_cone__c</sourceField>
+        <sourceFormula>PRICE_CONE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_cone__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_50k_74999__c</sourceField>
+        <sourceFormula>HH Income 50K-74999</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_50k_74999__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.gender_female_pct_group__c</sourceField>
+        <sourceFormula>Gender - Female Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.gender_female_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.eorder__c</sourceField>
+        <sourceFormula>EORDER</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.eorder__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.account_manager__c</sourceField>
+        <sourceFormula>Account Manager</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.account_manager__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_cigarillos_nt_htl__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Cigarillos NT HTL</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_cigarillos_nt_htl__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.metro_areas__c</sourceField>
+        <sourceFormula>Metro Areas</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.metro_areas__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_state__c</sourceField>
+        <sourceFormula>TD Owner State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_dma_name__c</sourceField>
+        <sourceFormula>TD DMA Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_dma_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.item_name__c</sourceField>
+        <sourceFormula>ITEM NAME</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.item_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dist_lat__c</sourceField>
+        <sourceFormula>Dist Lat</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dist_lat__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_25_34_pct_group__c</sourceField>
+        <sourceFormula>Age 25-34 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_25_34_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_territory__c</sourceField>
+        <sourceFormula>NTC Territory</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_territory__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_address__c</sourceField>
+        <sourceFormula>Store Address</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_address__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_24_pct_group__c</sourceField>
+        <sourceFormula>Age 21-24 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_24_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_tert_supp_total__c</sourceField>
+        <sourceFormula>MSA Tert Supp - Total</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_tert_supp_total__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_number__c</sourceField>
+        <sourceFormula>Store Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_chew__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Chew</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_chew__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_chain__c</sourceField>
+        <sourceFormula>NTC Chain</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_chain__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.trending_cu_price__c</sourceField>
+        <sourceFormula>TRENDING_CU_PRICE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.trending_cu_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_chain_ind__c</sourceField>
+        <sourceFormula>TD Chain Ind</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_chain_ind__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_name__c</sourceField>
+        <sourceFormula>TD Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_immediate_total_store_count__c</sourceField>
+        <sourceFormula>TD Immediate Total Store Count</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_immediate_total_store_count__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_other__c</sourceField>
+        <sourceFormula>Race - Other</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_other__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.store_zip__c</sourceField>
+        <sourceFormula>Store Zip</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.store_zip__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_cigars__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Cigars</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_cigars__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_td_store_id__c</sourceField>
+        <sourceFormula>NTC TD Store ID</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_td_store_id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.profit_per_latest_price__c</sourceField>
+        <sourceFormula>PROFIT_PER_LATEST_PRICE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.profit_per_latest_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_city__c</sourceField>
+        <sourceFormula>TD Owner City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.cu_vol__c</sourceField>
+        <sourceFormula>CU VOL</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.cu_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_second_supp_mst__c</sourceField>
+        <sourceFormula>MSA Second Supp - MST</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_second_supp_mst__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.census_state__c</sourceField>
+        <sourceFormula>Census State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.census_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.final_qty__c</sourceField>
+        <sourceFormula>Final Qty</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.final_qty__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_state__c</sourceField>
+        <sourceFormula>Distributor State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_date__c</sourceField>
+        <sourceFormula>PRICE_DATE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_date__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_last_call_date__c</sourceField>
+        <sourceFormula>NTC Last Call Date</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_last_call_date__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_master_brand_family__c</sourceField>
+        <sourceFormula>PRICE_MASTER_BRAND_FAMILY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_master_brand_family__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_caucasian__c</sourceField>
+        <sourceFormula>Race - Caucasian</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_caucasian__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_brand_family__c</sourceField>
+        <sourceFormula>PRICE_BRAND_FAMILY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_brand_family__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_address__c</sourceField>
+        <sourceFormula>TD Owner Address</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_address__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_35_44__c</sourceField>
+        <sourceFormula>Age 35-44</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_35_44__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_65_plus_pct_group__c</sourceField>
+        <sourceFormula>Age 65 Plus Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_65_plus_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_cigar_type__c</sourceField>
+        <sourceFormula>PRICE_CIGAR_TYPE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_cigar_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_state_license_number__c</sourceField>
+        <sourceFormula>NTC State License Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_state_license_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_customer_number__c</sourceField>
+        <sourceFormula>NTC Customer Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_customer_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_african_american__c</sourceField>
+        <sourceFormula>Race - African American</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_african_american__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_outlet_status__c</sourceField>
+        <sourceFormula>TD Outlet Status</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_outlet_status__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.latest_cogs__c</sourceField>
+        <sourceFormula>LATEST_COGS</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.latest_cogs__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.average_education__c</sourceField>
+        <sourceFormula>Average Education</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.average_education__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_zip__c</sourceField>
+        <sourceFormula>TD Zip</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_zip__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_selling_influence__c</sourceField>
+        <sourceFormula>NTC Selling Influence</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_selling_influence__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.fips_county_name__c</sourceField>
+        <sourceFormula>FIPS County Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.fips_county_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_bachelors_degree__c</sourceField>
+        <sourceFormula>Education - Bachelors Degree</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_bachelors_degree__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_25k_34999__c</sourceField>
+        <sourceFormula>HH Income 25K-34999</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_25k_34999__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_zip_5_digit__c</sourceField>
+        <sourceFormula>TD Zip 5-digit</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_zip_5_digit__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>MSA_SALESFORCE_MSA</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_chain_owner_zone__c</sourceField>
+        <sourceFormula>NTC Chain Owner Zone</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_chain_owner_zone__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_immediate_account_state__c</sourceField>
+        <sourceFormula>TD Immediate Account State</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_immediate_account_state__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_rsm_name__c</sourceField>
+        <sourceFormula>NTC RSM Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_rsm_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_tert_supp_cigars__c</sourceField>
+        <sourceFormula>MSA Tert Supp - Cigars</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_tert_supp_cigars__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.item_code__c</sourceField>
+        <sourceFormula>ITEM CODE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.item_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.description__c</sourceField>
+        <sourceFormula>DESCRIPTION</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.description__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.eq_vol__c</sourceField>
+        <sourceFormula>EQ VOL</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.eq_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_75k_99999_pct_group__c</sourceField>
+        <sourceFormula>HH Income 75K-99999 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_75k_99999_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.call_store_indicator__c</sourceField>
+        <sourceFormula>Call Store Indicator</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.call_store_indicator__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.profit__c</sourceField>
+        <sourceFormula>PROFIT</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.profit__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_latitude__c</sourceField>
+        <sourceFormula>TD Latitude</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_latitude__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_long__c</sourceField>
+        <sourceFormula>MSA Long</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_long__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.did__c</sourceField>
+        <sourceFormula>DID</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.did__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_asian_pct_group__c</sourceField>
+        <sourceFormula>Race - Asian Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_asian_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.trending_cu_cogs__c</sourceField>
+        <sourceFormula>TRENDING_CU_COGS</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.trending_cu_cogs__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_other_race_pct_group__c</sourceField>
+        <sourceFormula>Race - Other Race Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_other_race_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.household_total__c</sourceField>
+        <sourceFormula>Household Total</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.household_total__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_chain_owner_region__c</sourceField>
+        <sourceFormula>NTC Chain Owner Region</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_chain_owner_region__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_34_pct_group__c</sourceField>
+        <sourceFormula>Age 21-34 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_34_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_35_44_pct_group__c</sourceField>
+        <sourceFormula>Age 35-44 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_35_44_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_category__c</sourceField>
+        <sourceFormula>PRICE_CATEGORY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.race_caucasian_pct_group__c</sourceField>
+        <sourceFormula>Race - Caucasian Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.race_caucasian_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_trade_class__c</sourceField>
+        <sourceFormula>TD Trade Class</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_trade_class__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_owner_zip__c</sourceField>
+        <sourceFormula>TD Owner Zip</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_owner_zip__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_franchise__c</sourceField>
+        <sourceFormula>TD Franchise</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_franchise__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_call_id__c</sourceField>
+        <sourceFormula>NTC Call ID</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_call_id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_75k_plus_pct_group__c</sourceField>
+        <sourceFormula>HH Income 75K Plus Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_75k_plus_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_headquarters__c</sourceField>
+        <sourceFormula>Distributor Headquarters</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_headquarters__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_total__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Total</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_total__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_city__c</sourceField>
+        <sourceFormula>TD City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_dma_code__c</sourceField>
+        <sourceFormula>TD DMA Code</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_dma_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.latest_price__c</sourceField>
+        <sourceFormula>LATEST_PRICE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.latest_price__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_county_size__c</sourceField>
+        <sourceFormula>TD County Size</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_county_size__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_21_34__c</sourceField>
+        <sourceFormula>Age 21-34</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_21_34__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_address__c</sourceField>
+        <sourceFormula>Distributor Address</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_address__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_ultimate_parent__c</sourceField>
+        <sourceFormula>TD Ultimate Parent</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_ultimate_parent__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_chain_name__c</sourceField>
+        <sourceFormula>NTC Chain Name</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_chain_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_brand__c</sourceField>
+        <sourceFormula>PRICE_BRAND</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_brand__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.database_store_indicator__c</sourceField>
+        <sourceFormula>Database Store Indicator</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.database_store_indicator__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.sku_title__c</sourceField>
+        <sourceFormula>SKU TITLE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.sku_title__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_bachelors_degree_pct_group__c</sourceField>
+        <sourceFormula>Education - Bachelors Degree Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_bachelors_degree_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_24999_and_less__c</sourceField>
+        <sourceFormula>HH Income 24999 and Less</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_24999_and_less__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.combined_account__c</sourceField>
+        <sourceFormula>Combined Account</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.combined_account__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.average_income__c</sourceField>
+        <sourceFormula>Average Income</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.average_income__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.sub_category__c</sourceField>
+        <sourceFormula>Sub Category</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.sub_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.dist_store_transaction_type__c</sourceField>
+        <sourceFormula>Dist Store Transaction Type</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.dist_store_transaction_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_customer_ship_number__c</sourceField>
+        <sourceFormula>Distributor Customer Ship Number</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_customer_ship_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.census_division__c</sourceField>
+        <sourceFormula>Census Division</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.census_division__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_100k_plus__c</sourceField>
+        <sourceFormula>HH Income 100K Plus</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_100k_plus__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.cogs_per_latest_cogs__c</sourceField>
+        <sourceFormula>COGS_PER_LATEST_COGS</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.cogs_per_latest_cogs__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_50k_74999_pct_group__c</sourceField>
+        <sourceFormula>HH Income 50K-74999 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_50k_74999_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_sku_id__c</sourceField>
+        <sourceFormula>MSA_SKU_ID</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_sku_id__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_25_34__c</sourceField>
+        <sourceFormula>Age 25-34</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_25_34__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.age_45_64_pct_group__c</sourceField>
+        <sourceFormula>Age 45-64 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.age_45_64_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_25k_34999_pct_group__c</sourceField>
+        <sourceFormula>HH Income 25K-34999 Pct Group</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_25k_34999_pct_group__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.education_high_school_or_less__c</sourceField>
+        <sourceFormula>Education - High School or Less</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.education_high_school_or_less__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.distributor_zip__c</sourceField>
+        <sourceFormula>Distributor Zip</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.distributor_zip__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.msa_prim_supp_ecigs__c</sourceField>
+        <sourceFormula>MSA Prim Supp - Ecigs</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.msa_prim_supp_ecigs__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_supplier_region__c</sourceField>
+        <sourceFormula>NTC Supplier Region</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_supplier_region__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.sku_code__c</sourceField>
+        <sourceFormula>SKU CODE</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.sku_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_longitude__c</sourceField>
+        <sourceFormula>TD Longitude</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_longitude__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_banner_total_store_count__c</sourceField>
+        <sourceFormula>TD Banner Total Store Count</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_banner_total_store_count__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.ntc_frequency__c</sourceField>
+        <sourceFormula>NTC Frequency</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.ntc_frequency__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.average_age__c</sourceField>
+        <sourceFormula>Average Age</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.average_age__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_usage_category__c</sourceField>
+        <sourceFormula>PRICE_USAGE_CATEGORY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_usage_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_flavor__c</sourceField>
+        <sourceFormula>PRICE_FLAVOR</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_flavor__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_immediate_account_city__c</sourceField>
+        <sourceFormula>TD Immediate Account City</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_immediate_account_city__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.hh_income_35k_49999__c</sourceField>
+        <sourceFormula>HH Income 35K-49999</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.hh_income_35k_49999__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.price_sub_category__c</sourceField>
+        <sourceFormula>PRICE_SUB_CATEGORY</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.price_sub_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_sub_trade_class__c</sourceField>
+        <sourceFormula>TD Sub Trade Class</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_sub_trade_class__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>DATACLOUD_NTC_TPB_COMBINED.td_banner__c</sourceField>
+        <sourceFormula>TD Banner</sourceFormula>
+        <targetField>DATACLOUD_NTC_TPB_COMBINED__dll.td_banner__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>DATACLOUD_NTC_TPB_COMBINED_map_DATACLOUD_NTC_TPB_COMBINED_1758552130756</masterLabel>
+    <sourceObjectName>DATACLOUD_NTC_TPB_COMBINED</sourceObjectName>
+    <targetObjectName>DATACLOUD_NTC_TPB_COMBINED__dll</targetObjectName>
+</ObjectSourceTargetMap>

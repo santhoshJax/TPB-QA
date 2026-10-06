@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assign_Store_To_Chain</fullName>
+    <active>false</active>
+    <description>Only HQ owners are able to assign store to the chain.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(ParentId),
+  $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;Junior System Administrator&apos;,
+  $UserRole.Name &lt;&gt; &apos;Field Analyst&apos;,
+  ParentId &lt;&gt; null,
+  (
+    (
+      PRIORVALUE(ParentId) &lt;&gt; null &amp;&amp;
+      PRIORVALUE(TPB_Parent_Account_Name__c) = &apos;HQ - Unassigned Chain Retailers&apos; &amp;&amp;
+      !PRIORVALUE(Parent_Owner__c)
+    ) ||
+    (
+      Parent.Account_Number_old__c != $Label.TPB_HQAccount_AccountNumber &amp;&amp;
+      NOT(Parent_Owner__c)
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>Only HQ owners are able to assign store to the chain.</errorMessage>
+</ValidationRule>

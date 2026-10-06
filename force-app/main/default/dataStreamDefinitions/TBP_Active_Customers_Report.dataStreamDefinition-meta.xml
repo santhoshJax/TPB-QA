@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>Snowflake</dataConnector>
+    <dataConnectorType>SNOWFLAKE</dataConnectorType>
+    <dataPlatformDataSetItemName>EXTERNAL</dataPlatformDataSetItemName>
+    <dataSource>Snowflake</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>TBP_Active_Customers_Report</masterLabel>
+    <mktDataLakeObject>TBP_Active_Customers_Report__dll</mktDataLakeObject>
+    <mktDataTranObject>TBP_Active_Customers_Report</mktDataTranObject>
+</DataStreamDefinition>

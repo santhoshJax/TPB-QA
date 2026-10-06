@@ -1,0 +1,12 @@
+<apex:page standardController="ServiceAppointment"
+           lightningStylesheets="true"
+           showHeader="false"
+           showChat="false"
+           sidebar="false"
+           applyBodyTag="false"
+           cache="false"
+          >
+    <apex:slds />
+    <body>
+    </body>
+</apex:page>

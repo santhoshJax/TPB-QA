@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_RSMCannotEditAfter7Days</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( AND( $Profile.Name = &apos;CG Cloud Mobile - RSM&apos; , TODAY() - TPB_Date_of_Audit__c &gt; 7 , NOT(ISNEW()) , $User.Id = CreatedById , $Profile.Name  &lt;&gt; &apos;System Administrator&apos; ), AND( NOT(ISNEW()) , $User.Id &lt;&gt; CreatedById ,  $Profile.Name  &lt;&gt; &apos;System Administrator&apos; ))</errorConditionFormula>
+    <errorMessage>Please do not update other people&apos;s records or records after seven days!</errorMessage>
+</ValidationRule>

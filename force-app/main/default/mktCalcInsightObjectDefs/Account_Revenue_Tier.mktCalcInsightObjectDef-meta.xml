@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT 
+  Ranked_Account_Revenue__cio.Account_ID__c AS Account_ID__c,
+  MAX(Ranked_Account_Revenue__cio.Account_Revenue__c) AS Account_Revenue__c,
+  MAX(Ranked_Account_Revenue__cio.revenue_rank__c) AS revenue_rank__c,
+  CASE 
+    WHEN MAX(Ranked_Account_Revenue__cio.revenue_rank__c) &lt;= 23942 * 0.2 
+    THEN &apos;Top 20%&apos; 
+    ELSE &apos;Bottom 80%&apos; 
+  END AS CI_Account_Revenue_Tier__c
+FROM Ranked_Account_Revenue__cio
+GROUP BY Ranked_Account_Revenue__cio.Account_ID__c</expression>
+    <masterLabel>Account_Revenue_Tier</masterLabel>
+</MktCalcInsightObjectDef>

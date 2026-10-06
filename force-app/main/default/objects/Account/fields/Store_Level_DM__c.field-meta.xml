@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store_Level_DM__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flags HQ accounts where although a chain, the decision making ability resides a the store level (i.e. Co-Op Groups)</description>
+    <inlineHelpText>This flags HQ accounts where although a chain, the decision making ability resides a the store level (i.e. Co-Op Groups)</inlineHelpText>
+    <label>Decision Making at Store Level</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

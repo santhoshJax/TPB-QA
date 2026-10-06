@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Account Questions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Account Questions</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Caseys MST Survey --></label>
+        <name>Caseys_MST_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fre Revisit Stores --></label>
+        <name>Fre_Revisit_Stores</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

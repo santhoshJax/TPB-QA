@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visit_Timing_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  OR(ISBLANK(Frequency__c), Frequency__c = &quot;0&quot;),
+  &quot;No Coverage&quot;,
+  IF(
+    Visits_Remaining__c &lt;= 0,
+    &quot;Coverage Complete&quot;,
+    IF(
+      Sales_Cycle_End_Date__c - TODAY() &lt;= 7,
+      &quot;Due This Week&quot;,
+      CASE(
+        Frequency__c,
+
+        /* ===== FREQ 3 ===== */
+        &quot;3&quot;,
+        IF(
+          Completed_Visit_Count__c = 0,
+          IF(
+            TODAY() - Sales_Cycle_Start_Date__c &gt;= 32,
+            &quot;Overdue&quot;,
+            IF(
+              TODAY() - Sales_Cycle_Start_Date__c &gt;= 18,
+              &quot;Due This Week&quot;,
+              IF(
+                TODAY() - Sales_Cycle_Start_Date__c &gt;= 10,
+                &quot;Upcoming&quot;,
+                &quot;Not Started&quot;
+              )
+            )
+          ),
+          IF(
+            ISBLANK(Last_Completed_Call_Date_Time__c),
+            &quot;Not Started&quot;,
+            IF(
+              TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt; 37,
+              &quot;Overdue&quot;,
+              IF(
+                TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt;= 30,
+                &quot;Due This Week&quot;,
+                IF(
+                  TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt;= 23,
+                  &quot;Upcoming&quot;,
+                  &quot;Not Due Yet&quot;
+                )
+              )
+            )
+          )
+        ),
+
+        /* ===== FREQ 2 ===== */
+        &quot;2&quot;,
+        IF(
+          Completed_Visit_Count__c = 0,
+          IF(
+            Sales_Cycle_End_Date__c - TODAY() &lt;= 14,
+            &quot;Upcoming&quot;,
+            &quot;Not Started&quot;
+          ),
+          IF(
+            ISBLANK(Last_Completed_Call_Date_Time__c),
+            &quot;Not Started&quot;,
+            IF(
+              TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt; 49,
+              &quot;Overdue&quot;,
+              IF(
+                TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt;= 42,
+                &quot;Due This Week&quot;,
+                IF(
+                  TODAY() - DATEVALUE(Last_Completed_Call_Date_Time__c) &gt;= 35,
+                  &quot;Upcoming&quot;,
+                  &quot;Not Due Yet&quot;
+                )
+              )
+            )
+          )
+        ),
+
+        /* ===== FREQ 1 ===== */
+        &quot;1&quot;,
+        IF(
+          Sales_Cycle_End_Date__c - TODAY() &lt;= 14,
+          &quot;Upcoming&quot;,
+          &quot;Not Started&quot;
+        ),
+
+        &quot;Not Started&quot;
+      )
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Visit Timing Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

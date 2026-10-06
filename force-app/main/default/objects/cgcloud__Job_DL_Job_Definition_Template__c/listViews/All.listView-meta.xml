@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>cgcloud__Job_Template__c</columns>
+    <columns>cgcloud__Job_Definition_Template__c</columns>
+    <columns>cgcloud__Job_Definition_List__c</columns>
+    <columns>NAME</columns>
+    <columns>cgcloud__Mandatory__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>cgcloud__Sales_Org__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cgcloud__Job_Definition_Template__c</field>
+        <operation>notEqual</operation>
+        <value>Distributed</value>
+    </filters>
+    <label>All</label>
+</ListView>

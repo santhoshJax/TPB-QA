@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Visit$ActualVisitStartTime</field>
+    </columns>
+    <columns>
+        <field>Visit$ActualVisitEndTime</field>
+    </columns>
+    <columns>
+        <field>Visit$Status</field>
+    </columns>
+    <columns>
+        <field>Visit$TPB_Visit_Type__c</field>
+    </columns>
+    <columns>
+        <field>Visit$Account.Name</field>
+    </columns>
+    <columns>
+        <field>Visit$Distance_From_Store__c</field>
+    </columns>
+    <columns>
+        <field>Visit$cgcloud__Geolocation__Latitude__s</field>
+    </columns>
+    <columns>
+        <field>Visit$cgcloud__Geolocation__Longitude__s</field>
+    </columns>
+    <columns>
+        <field>Visit$Store_Location__Latitude__s</field>
+    </columns>
+    <columns>
+        <field>Visit$Store_Location__Longitude__s</field>
+    </columns>
+    <columns>
+        <field>Visit$cgcloud__Completed_Date__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(ISBLANK(Visit.cgcloud__Geolocation__Latitude__s) || Visit.cgcloud__Geolocation__Latitude__s = 0, 
+   &quot;No Geolocation Recorded&quot;, 
+   &quot;Geolocation Available&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Status</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Visit$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Visit$TPB_Visit_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In-Store Visit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Visit$Account.RecordType.DeveloperName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Retailer</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Visit$cgcloud__Responsible__c.Territory_Id__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Visit$cgcloud__Responsible__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Visits  - Geolocation Not Recorded</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Visits__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Visit$ActualVisitEndTime</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

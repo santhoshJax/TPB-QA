@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Usage --></label>
+    <name>cgcloud__Usage__c</name>
+    <picklistValues>
+        <masterLabel>Banner</masterLabel>
+        <translation>Szalagcím</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FulfilledBadge</masterLabel>
+        <translation>FulfilledBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HurdleRewardLog</masterLabel>
+        <translation>HurdleRewardLog</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Icon</masterLabel>
+        <translation>Ikon</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InitialBadge</masterLabel>
+        <translation>InitialBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation>Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation>Árképzés</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printed Document</masterLabel>
+        <translation>Nyomtatott dokumentum</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation>Értékesítés</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SelectionBar</masterLabel>
+        <translation>SelectionBar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation>Szolgáltatás</translation>
+    </picklistValues>
+</CustomFieldTranslation>

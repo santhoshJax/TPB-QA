@@ -1,0 +1,33 @@
+.tpb-lookup-label h3 {
+  font-size: inherit;
+  padding-right: 0.5rem;
+}
+
+/* .tpb-lookup-label lightning-button-icon {
+  display: none;
+}
+
+.tpb-lookup-label:hover lightning-button-icon {
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  right: 0.5rem;
+} */
+
+.tpb-lookup-label lightning-button-icon {
+  position: absolute;
+  top: 15%;
+  right: 0.5rem;
+}
+
+.tpb-lookup-field {
+  z-index: 9999;
+  position: absolute;
+  background: white;
+  border: 1px solid;
+  /* padding: 0.5rem 1rem; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

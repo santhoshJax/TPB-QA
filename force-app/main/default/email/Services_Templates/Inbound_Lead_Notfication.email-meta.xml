@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Inbound Lead Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Services_Letterhead</letterhead>
+    <name>Inbound Lead Notfication</name>
+    <style>freeForm</style>
+    <subject>New Inbound Lead Received</subject>
+    <textOnly>Hi Team,
+
+A new inbound lead has just been captured in Salesforce and is ready for review.
+
+Lead Details:
+
+Name: {!Lead.Name}
+Company: {!Lead.Company}
+Phone: {!Lead.Phone}
+Email: {!Lead.Email}
+Source: {!Lead.LeadSource}
+Date Created: {!Lead.CreatedDate}
+
+Please review and take action as soon as possible to ensure timely follow-ups.
+
+View Lead: {!Lead.Link}
+
+Thanks!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

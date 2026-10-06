@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notes_should_not_be_blank_for_instore_vi</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(cgcloud__Note__c ) &amp;&amp;  ISPICKVAL( TPB_Visit_Type__c , &quot;In-Store Visit&quot;)
+&amp;&amp; OR($Profile.Name =&apos;CG Cloud Mobile - TSM&apos;, $Profile.Name =&apos;CG Cloud Mobile - RSM&apos;, $Profile.Name =&apos;Account Management&apos;)</errorConditionFormula>
+    <errorDisplayField>cgcloud__Note__c</errorDisplayField>
+    <errorMessage>Notes cannot be blank for in-store visit.</errorMessage>
+</ValidationRule>

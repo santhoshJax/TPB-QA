@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Exclude_From_Base_Pricing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicator to determine if a product needs to be excluded from Base Price calculation</description>
+    <label>Exclude from Base Pricing</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

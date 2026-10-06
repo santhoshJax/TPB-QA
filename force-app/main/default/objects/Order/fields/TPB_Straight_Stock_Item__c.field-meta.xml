@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Straight_Stock_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Straight Stock Item</description>
+    <label>Straight Stock Item</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <filterItems>
+            <field>Product2.NTC_Item_Classification__c</field>
+            <operation>equals</operation>
+            <value>Straight Stock</value>
+        </filterItems>
+        <filterItems>
+            <field>Product2.cgcloud__Product_Level__c</field>
+            <operation>equals</operation>
+            <value>Product</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Straight Stock Item</relationshipLabel>
+    <relationshipName>Straight_Stock_Item</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

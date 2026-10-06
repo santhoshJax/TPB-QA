@@ -1,0 +1,322 @@
+<template>
+  <lightning-card title="C-Fund Audit">
+    <lightning-accordion
+      active-section-name={activeSections}
+      allow-multiple-sections-open
+    >
+      <lightning-accordion-section name="A" label="C-Fund Audit">
+        <div class="slds-grid slds-grid_align-center">
+          <!--Base C-Fund-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="baseCFund"
+              class="business-required"
+              type="number"
+              label="Base C-Fund"
+              value={cFundAuditData.baseCFund}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Total Adjustments-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="totalAdjustments"
+              class="business-required"
+              type="number"
+              label="Total Adjustments"
+              value={cFundAuditData.totalAdjustments}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Expected Cash and Cash Equivalents-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="expectedCashAndCashEquivalents"
+              class="business-required"
+              type="number"
+              label="Expected Cash &amp; Cash Equivalents"
+              value={cFundAuditData.expectedCashAndCashEquivalents}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Expected Inventory Value-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="expectedProductValue"
+              class="business-required"
+              type="number"
+              label="Expected Inventory Value"
+              value={cFundAuditData.expectedProductValue}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Total Accountable C-Fund  TPB_Total_Accountable_C_Fund__c-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="totalAccountableCFund"
+              class="business-required"
+              type="number"
+              label="Total Accountable C-Fund"
+              value={cFundAuditData.totalAccountableCFund}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-left">
+          <!--Bank Balance-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small"></div>
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small"></div>
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              type="number"
+              name="bankBalance"
+              label="Bank Balance"
+              value={cFundAuditData.bankBalance}
+              maxlength="10"
+              onblur={onInputBlur}
+              required
+              autocomplete
+              formatter="currency"
+              step="0.01"
+              disabled={ShowStatus}
+              data-validation-required="true"
+            ></lightning-input>
+          </div>
+
+          <!-- Actual Inventory Value -->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="actualProductValue"
+              class="business-required"
+              type="number"
+              label="Actual Inventory Value"
+              value={coreParams.actualProductValue}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-center">
+          <!--Pending Reimbursements -->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              name="pendingReimbursements"
+              type="number"
+              label="Reimbursements Pending"
+              value={cFundAuditData.pendingReimbursements}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-center">
+          <!--Reimbursements Issued-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              name="promoValue"
+              type="number"
+              label="Reimbursements Issued"
+              value={cFundAuditData.promoValue}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-center">
+          <!--Cash on Hand-->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              type="number"
+              name="actualCashOnHand"
+              label="Cash on Hand"
+              value={cFundAuditData.actualCashOnHand}
+              onblur={onInputBlur}
+              maxlength="10"
+              required
+              autocomplete
+              formatter="currency"
+              step="0.01"
+              disabled={ShowStatus}
+              data-validation-required="true"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-center">
+          <!--Actual Cash and Cash Equivalent  -->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              type="number"
+              name="actualCashAndCashEquivalent"
+              label="Actual Cash &amp; Cash Equivalents"
+              value={coreParams.actualCashAndCashEquivalent}
+              maxlength="10"
+              formatter="currency"
+              step="0.01"
+              read-only="true"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-left">
+          <!--Cash & Cash Equivalents Variance -->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small"></div>
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small"></div>
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              name="cashVariance"
+              class="business-required"
+              type="number"
+              label="Cash &amp; Cash Equivalents Variance"
+              value={coreParams.cashVariance}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Inventory Value Variance  -->
+          <div class="slds-col slds-size_1-of-5 slds-p-horizontal_small">
+            <lightning-input
+              class="business-required"
+              type="number"
+              label="Inventory Value Variance"
+              value={coreParams.productVariance}
+              maxlength="10"
+              read-only="true"
+              name="productVariance"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+
+          <!--Audit Variance  -->
+          <div class="slds-col slds-size_5-of-5">
+            <lightning-input
+              class="business-required"
+              name="auditResult"
+              type="number"
+              label="Audit Variance"
+              value={coreParams.auditResult}
+              maxlength="10"
+              read-only="true"
+              formatter="currency"
+              step="0.01"
+            ></lightning-input>
+          </div>
+        </div>
+
+        <div class="slds-grid slds-grid_align-left">
+          <div class="slds-col slds-size_12-of-12">
+            <div class="divButton">
+              <!--save-->
+              <lightning-button
+                class="slds-var-m-around_small"
+                variant="brand-outline"
+                type="submit"
+                label="Show Inventory Qty"
+                disabled={ShowStatus}
+                onclick={saveEvent}
+              ></lightning-button>
+
+              <!--submit-->
+              <lightning-button
+                class="slds-var-m-around_small"
+                variant="brand"
+                type="submit"
+                label="Submit"
+                disabled={SubmitDisabled}
+                onclick={submitEvent}
+              ></lightning-button>
+            </div>
+          </div>
+
+          <!--TSM Name  -->
+          <!-- <div class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_4-of-12">
+                      <lightning-input
+                          class="business-required"
+                          type="text"
+                          label="Created By/TSM Name"
+                          value={coreParams.tsmName}
+                          maxlength="10"
+                          read-only="true"
+                      ></lightning-input>
+                  </div> -->
+        </div>
+      </lightning-accordion-section>
+    </lightning-accordion>
+  </lightning-card>
+
+  <!--show C-Fund Audit Products-->
+  <template if:true={cFundAuditId}>
+    <lightning-card title="C-Fund Audit Products">
+      <lightning-accordion
+        active-section-name={activeSections}
+        allow-multiple-sections-open
+      >
+        <lightning-accordion-section name="B" label="C-Fund Audit Products">
+          <template
+            for:each={stateOptionsValueList}
+            for:item="column"
+            for:index="index"
+          >
+            <lightning-accordion-section
+              key={column.label}
+              label={column.value}
+              name="Products"
+            >
+              <div
+                class="slds-is-resizable dv-dynamic-width"
+                style="width: 100%"
+                title={column.value}
+              >
+                <c-tpb-c-fund-audit-product-table
+                  if:true={cFundAuditId}
+                  record-id={cFundAuditId}
+                  onauditproducts={handleAuditProducts}
+                  disabled={SubmitDisabled}
+                  state={column.label}
+                ></c-tpb-c-fund-audit-product-table>
+              </div>
+            </lightning-accordion-section>
+          </template>
+        </lightning-accordion-section>
+      </lightning-accordion>
+    </lightning-card>
+  </template>
+</template>

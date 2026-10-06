@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Belongs_to_Running_User__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+
+/* Logged-in user owns the order */
+cgcloud__Responsible__c = $User.Id,
+
+/* NSM parent territory coverage */
+AND(
+    NOT(ISBLANK($User.TPB_Territory__c)),
+    cgcloud__Responsible__r.TPB_Parent_Territory__c = $User.TPB_Territory__c
+),
+
+/* Directors (NSD) whose territory prefix matches */
+AND(
+    $User.Title = &quot;NSD&quot;,
+    LEFT($User.Territory_Id__c,2) = LEFT(cgcloud__Responsible__r.Territory_Id__c,2)
+),
+
+/* Admin override */
+$Profile.Name = &quot;System Administrator&quot;,
+
+/* Executive role */
+$UserRole.Name = &quot;Executive&quot;
+
+),
+1,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Belong to Running User Territory</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

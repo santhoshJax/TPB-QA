@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Class of Trade --></label>
+    <name>Class_of_Trade__c</name>
+    <picklistValues>
+        <masterLabel>CIGARETTE OUTLET</masterLabel>
+        <translation><!-- CIGARETTE OUTLET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CONVENIENCE STORE</masterLabel>
+        <translation><!-- CONVENIENCE STORE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRUG</masterLabel>
+        <translation><!-- DRUG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXTENDED MASTER</masterLabel>
+        <translation><!-- EXTENDED MASTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GROCERY</masterLabel>
+        <translation><!-- GROCERY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIQUOR</masterLabel>
+        <translation><!-- LIQUOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MASS MERCHANDISER</masterLabel>
+        <translation><!-- MASS MERCHANDISER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WHOLESALE CLUB</masterLabel>
+        <translation><!-- WHOLESALE CLUB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

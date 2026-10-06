@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- FilterCriteria --></label>
+        <name>cgcloud__FilterCriteria</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundingGrid --></label>
+        <name>cgcloud__FundingGrid</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Grid Hierarchy Fieldset --></label>
+        <name>cgcloud__GridHierarchyFieldset</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mobility Relevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- PaymentTacticGrid --></label>
+        <name>cgcloud__PaymentTacticGrid</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProductDescriptionFields --></label>
+        <name>cgcloud__ProductDescriptionFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProductSearchDisplayFields --></label>
+        <name>cgcloud__ProductSearchDisplayFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- REAssortmentGridFields --></label>
+        <name>cgcloud__REAssortmentGridFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RateBasedFundingGrid --></label>
+        <name>cgcloud__RateBasedFundingGrid</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- SearchByProductAttribute --></label>
+        <name>cgcloud__SearchByProductAttribute</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TPMAssortmentGridFields --></label>
+        <name>cgcloud__TPMAssortmentGridFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Tactic Filter Criteria --></label>
+        <name>cgcloud__TacticFilterCriteria</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- This record type is for creating CGCloud Products --></description>
+        <label><!-- Product --></label>
+        <name>cgcloud__Product</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type is for creating CGCloud Product Groups --></description>
+        <label><!-- Product Group --></label>
+        <name>cgcloud__Product_Group</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Asset Template and the Product must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__AssetTemplate_Sales_Org_same_Product_Org</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Asset Template can&apos;t be empty if the Product is an Asset Type. --></errorMessage>
+        <name>cgcloud__Asset_Type_must_have_Asset_Template</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ExternalId can&apos;t be edited if it has an existent value. --></errorMessage>
+        <name>cgcloud__Avoid_Change_External_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Category&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_1_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Sub Category&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_2_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Brand&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_3_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Flavor&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_4_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Package&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_5_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only products with &apos;Product&apos; Product Level can be selected. --></errorMessage>
+        <name>cgcloud__Criterion_6_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Product Template can&apos;t be edited after Product creation. --></errorMessage>
+        <name>cgcloud__Prevent_Product_Template_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From and Valid Thru can&apos;t be empty and Valid From can&apos;t be later than Valid Thru if the Product State &apos;Delivery&apos; is assigned to the Product. --></errorMessage>
+        <name>cgcloud__Product_Delivery_State_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Product Description can&apos;t be empty if it&apos;s used by CG Cloud Application. --></errorMessage>
+        <name>cgcloud__Product_Description_Mandatory_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From and Valid Thru can&apos;t be empty and Valid From can&apos;t be later than Valid Thru if the Product State &apos;Field&apos; is assigned to the Product. --></errorMessage>
+        <name>cgcloud__Product_Field_State_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From and Valid Thru can&apos;t be empty and Valid From can&apos;t be later than Valid Thru if the Product State &apos;Fund&apos; is assigned to the Product. --></errorMessage>
+        <name>cgcloud__Product_Fund_Role_State_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From and Valid Thru can&apos;t be empty and Valid From can&apos;t be later than Valid Thru if the Product State &apos;KAM&apos; is assigned to the Product. --></errorMessage>
+        <name>cgcloud__Product_KAM_State_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From and Valid Thru can&apos;t be empty and Valid From can&apos;t be later than Valid Thru if the Product State &apos;New Item&apos; is assigned to the Product. --></errorMessage>
+        <name>cgcloud__Product_New_Item_State_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Product and the Product Template must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same_for_all_lookups</name>
+    </validationRules>
+</CustomObjectTranslation>

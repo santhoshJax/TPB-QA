@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Level --></label>
+    <name>cgcloud__Product_Level__c</name>
+    <picklistValues>
+        <masterLabel>Brand</masterLabel>
+        <translation>מותג</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Category</masterLabel>
+        <translation>קטגוריה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flavor</masterLabel>
+        <translation>טעם</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Package</masterLabel>
+        <translation>חבילה</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product</masterLabel>
+        <translation>מוצר</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SubCategory</masterLabel>
+        <translation>תת-קטגוריה</translation>
+    </picklistValues>
+</CustomFieldTranslation>

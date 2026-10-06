@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_OperatingHours</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>Id</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LastModifiedBy</field>
+        <operation>contains</operation>
+        <value>amc</value>
+    </filters>
+    <label>All Operating Hours</label>
+</ListView>

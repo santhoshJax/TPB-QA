@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ntc_chain_owner_territory__c</fullName>
+    <label>NTC_CHAIN_OWNER_TERRITORY</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>NTC_CHAIN_OWNER_TERRITORY</labelOverride>
+        <masterLabel>NTC_CHAIN_OWNER_TERRITORY</masterLabel>
+        <refAttrDeveloperName>ntc_chain_owner_territory_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

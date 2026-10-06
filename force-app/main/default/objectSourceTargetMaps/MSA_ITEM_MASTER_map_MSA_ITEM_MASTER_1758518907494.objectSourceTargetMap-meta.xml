@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.puff_equivalent__c</sourceField>
+        <sourceFormula>Puff Equivalent</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.puff_equivalent__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.cigar_type__c</sourceField>
+        <sourceFormula>Cigar Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.cigar_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.weight__c</sourceField>
+        <sourceFormula>WEIGHT</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.weight__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.carton_upc__c</sourceField>
+        <sourceFormula>Carton UPC</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.carton_upc__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.pack_equivalent__c</sourceField>
+        <sourceFormula>Pack Equivalent</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.pack_equivalent__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.tobacco_alternative__c</sourceField>
+        <sourceFormula>Tobacco Alternative</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.tobacco_alternative__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.charger_type__c</sourceField>
+        <sourceFormula>Charger Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.charger_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.case_upc__c</sourceField>
+        <sourceFormula>Case UPC</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.case_upc__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.brand_extension__c</sourceField>
+        <sourceFormula>Brand Extension</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.brand_extension__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.cartridge_type__c</sourceField>
+        <sourceFormula>Cartridge Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.cartridge_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.sub_category__c</sourceField>
+        <sourceFormula>Sub Category</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.sub_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.kits_per_box__c</sourceField>
+        <sourceFormula>Kits Per Box</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.kits_per_box__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>MSA_SALESFORCE_MSA</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.brand__c</sourceField>
+        <sourceFormula>Brand</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.brand__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.item_name__c</sourceField>
+        <sourceFormula>ITEM NAME</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.item_name__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.filter_type__c</sourceField>
+        <sourceFormula>Filter Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.filter_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.packing_return__c</sourceField>
+        <sourceFormula>Packing/Return</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.packing_return__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.cartridge_use__c</sourceField>
+        <sourceFormula>Cartridge Use</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.cartridge_use__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.flavor__c</sourceField>
+        <sourceFormula>FLAVOR</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.flavor__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.items_per_sleeves_box__c</sourceField>
+        <sourceFormula>Items per Sleeves/box</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.items_per_sleeves_box__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.wrapper_type__c</sourceField>
+        <sourceFormula>Wrapper Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.wrapper_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.price_tier__c</sourceField>
+        <sourceFormula>Price Tier</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.price_tier__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.nicotine_level__c</sourceField>
+        <sourceFormula>Nicotine Level</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.nicotine_level__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>MSA_ITEM_MASTER__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.cut_type__c</sourceField>
+        <sourceFormula>Cut Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.cut_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.battery_type__c</sourceField>
+        <sourceFormula>Battery Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.battery_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.menthol_non_menthol__c</sourceField>
+        <sourceFormula>Menthol/Non_Menthol</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.menthol_non_menthol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.ntc_cigar_type__c</sourceField>
+        <sourceFormula>NTC Cigar Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.ntc_cigar_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.items_per_pack__c</sourceField>
+        <sourceFormula>Items per Pack</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.items_per_pack__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.tip_type__c</sourceField>
+        <sourceFormula>Tip Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.tip_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.category_manufacturer__c</sourceField>
+        <sourceFormula>Category Manufacturer</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.category_manufacturer__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.sub_flavor__c</sourceField>
+        <sourceFormula>Sub-Flavor</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.sub_flavor__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.pack_type__c</sourceField>
+        <sourceFormula>Pack Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.pack_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.strength__c</sourceField>
+        <sourceFormula>STRENGTH</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.strength__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.cone__c</sourceField>
+        <sourceFormula>CONE</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.cone__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.brand_family__c</sourceField>
+        <sourceFormula>Brand Family</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.brand_family__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.tip_color__c</sourceField>
+        <sourceFormula>Tip Color</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.tip_color__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.nicotine_free__c</sourceField>
+        <sourceFormula>Nicotine Free</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.nicotine_free__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.master_brand_family__c</sourceField>
+        <sourceFormula>Master Brand Family</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.master_brand_family__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.nicotine_percent__c</sourceField>
+        <sourceFormula>Nicotine Percent</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.nicotine_percent__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.usage_category__c</sourceField>
+        <sourceFormula>Usage Category</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.usage_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.manufacturer__c</sourceField>
+        <sourceFormula>Manufacturer</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.manufacturer__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.diet__c</sourceField>
+        <sourceFormula>DIET</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.diet__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.item_code__c</sourceField>
+        <sourceFormula>ITEM CODE</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.item_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.category__c</sourceField>
+        <sourceFormula>CATEGORY</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.number_of_cartridges__c</sourceField>
+        <sourceFormula>Number of Cartridges</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.number_of_cartridges__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.pack_upc__c</sourceField>
+        <sourceFormula>Pack UPC</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.pack_upc__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.paper_type__c</sourceField>
+        <sourceFormula>Paper Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.paper_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.circumference__c</sourceField>
+        <sourceFormula>CIRCUMFERENCE</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.circumference__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.e_cig_type__c</sourceField>
+        <sourceFormula>E-Cig Type</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.e_cig_type__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>MSA_ITEM_MASTER.number_of_batteries__c</sourceField>
+        <sourceFormula>Number of Batteries</sourceFormula>
+        <targetField>MSA_ITEM_MASTER__dll.number_of_batteries__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>MSA_ITEM_MASTER_map_MSA_ITEM_MASTER_1758518907494</masterLabel>
+    <sourceObjectName>MSA_ITEM_MASTER</sourceObjectName>
+    <targetObjectName>MSA_ITEM_MASTER__dll</targetObjectName>
+</ObjectSourceTargetMap>

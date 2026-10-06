@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_OOS__c</fullName>
+    <label>Number of OOS</label>
+    <summaryFilterItems>
+        <field>cgcloud__Visit_Job__c.cgcloud__Value__c</field>
+        <operation>contains</operation>
+        <value>Out</value>
+    </summaryFilterItems>
+    <summaryForeignKey>cgcloud__Visit_Job__c.cgcloud__Visit__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1759333516901_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>V_26WEEK_DOLLARIZED_STORE_COMBINED_r_rel</label>
+    <referenceTo>V_Dollarizing_Summary__dlm</referenceTo>
+    <relationshipLabel>V_26WEEK_DOLLARIZED_STORE_COMBINED_r_rel</relationshipLabel>
+    <relationshipName>rel_1759333516901_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

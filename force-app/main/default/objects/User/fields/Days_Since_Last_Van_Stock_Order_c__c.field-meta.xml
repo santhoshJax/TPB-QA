@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Since_Last_Van_Stock_Order_c__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(Last_Van_Stock_Order__c),
+    NULL,
+    MAX(0, TODAY() - DATEVALUE(Last_Van_Stock_Order__c))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days_Since_Last_Van_Stock_Order__c</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

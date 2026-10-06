@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Default_Quantity</fullName>
+        <field>Quantity</field>
+        <formula>1</formula>
+        <name>Default Quantity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Origin</fullName>
+        <field>Origin__c</field>
+        <literalValue>User Created</literalValue>
+        <name>Origin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reimbursement_Amount</fullName>
+        <field>Reimbursable_Amt__c</field>
+        <formula>IF(AND(ISPICKVAL(Item_Type__c, &quot;Cash Sale&quot;), Discount__c &gt; 0), Discount__c,
+IF(AND(ISPICKVAL(Item_Type__c, &quot;Return&quot;), OR(ISPICKVAL(Product2.Product_Type__c, &quot;ISTO&quot;), ISPICKVAL(Product2.Product_Type__c, &quot;TPR&quot;))), Total__c,
+IF(OR(ISPICKVAL(Item_Type__c, &quot;Product Purchase&quot;), ISPICKVAL(Item_Type__c, &quot;Reimbursable Gratis&quot;)), Total__c,
+NULL)))</formula>
+        <name>Reimbursement Amount</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Subtotal</fullName>
+        <field>Subtotal__c</field>
+        <formula>Quantity * UnitPrice</formula>
+        <name>Update Subtotal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Tax_Field</fullName>
+        <field>Tax__c</field>
+        <formula>IF(
+AND(ISPICKVAL(UoM__c, &quot;Carton&quot;),ISPICKVAL(PricebookEntry.Product2.Tax_Type__c, &quot;Flat Rate&quot;)),
+Quantity * PricebookEntry.Product2.Tax__c * PricebookEntry.Product2.Packs_Carton__c,
+IF(
+AND(ISPICKVAL(UoM__c, &quot;Each&quot;),ISPICKVAL(PricebookEntry.Product2.Tax_Type__c, &quot;Flat Rate&quot;)),
+Quantity * PricebookEntry.Product2.Tax__c,
+PricebookEntry.Product2.Tax__c * (UnitPrice * Quantity)
+)
+)</formula>
+        <name>Update Tax Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Total</fullName>
+        <field>Total__c</field>
+        <formula>IF(NOT(ISBLANK(Discount__c)),
+(Quantity * UnitPrice) - Discount__c,
+Quantity * UnitPrice
+)</formula>
+        <name>Update Total</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Default Quantity</fullName>
+        <actions>
+            <name>Default_Quantity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>WorkOrderLineItem.Quantity</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Origin</fullName>
+        <actions>
+            <name>Origin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>WorkOrderLineItem.Origin__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reimbursement Amount</fullName>
+        <actions>
+            <name>Reimbursement_Amount</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISNEW())</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Subtotal</fullName>
+        <actions>
+            <name>Update_Subtotal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISNEW(),ISCHANGED(Quantity),ISCHANGED(UnitPrice))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Tax Field</fullName>
+        <actions>
+            <name>Update_Tax_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>WorkOrderLineItem.Product2Id</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>WorkOrderLineItem.Item_Type__c</field>
+            <operation>equals</operation>
+            <value>Cash Sale</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Total</fullName>
+        <actions>
+            <name>Update_Total</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR( ISNEW(), ISCHANGED(Quantity), ISCHANGED(UnitPrice), ISCHANGED(Discount__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

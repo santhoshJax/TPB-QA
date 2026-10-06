@@ -1,0 +1,104 @@
+<template>
+  <!-- spinner has overlay and centralized based on the container component-->
+  <lightning-spinner
+    alternative-text="Loading"
+    size="medium"
+    if:true={loading}
+  ></lightning-spinner>
+
+  <!-- Begin of new datatable -->
+  <lightning-card title="Details">
+    <div class="slds-grid slds-m-horizontal_small">
+      <!-- Search -->
+      <div class="slds-col_bump-right" onkeyup={handleSearchKeyUp}>
+        <lightning-input
+          name="enter-search"
+          label="Search"
+          type="search"
+          disabled={disabled}
+        ></lightning-input>
+      </div>
+
+      <!-- Filters -->
+      <c-tpb-mass-prebook-filter
+        class="slds-col"
+        onselect={handleStoreFilterChange}
+        filter-criteria={storeFilterCriteria}
+      ></c-tpb-mass-prebook-filter>
+    </div>
+
+    <div class="slds-m-top_small slds-m-horizontal_small slds-scrollable_x">
+      <c-tpb-custom-type-mass-prebook-datatable
+        key-field="accountId"
+        columns={storeColumns}
+        data={storeData}
+        show-row-number-column
+        row-number-offset={storeRowOffset}
+        hide-checkbox-column={disabled}
+        selected-rows={storeSelectedRows}
+        onrowselection={handleRowSelected}
+        draft-values={storeDraftValues}
+        oncellchange={handleCellChange}
+        onlookupcellchange={handleLookupCellChange}
+      ></c-tpb-custom-type-mass-prebook-datatable>
+    </div>
+
+    <div class="slds-m-top_small slds-m-horizontal_small">
+      <c-tpb-pagination
+        page={pagination.page}
+        page-size={pagination.pageSize}
+        total={pagination.total}
+        onpagechange={pagination.onPageChange}
+        onpagesizechange={pagination.onPageSizeChange}
+      ></c-tpb-pagination>
+    </div>
+
+    <!-- Batch Record Actions-->
+    <div
+      class="slds-grid slds-m-top_small slds-m-horizontal_small slds-m-bottom_x-large"
+    >
+      <div class="slds-col slds-size_12-of-12">
+        <lightning-button
+          class="slds-m-right_small"
+          variant="default"
+          label="Input Quantities"
+          onclick={handleInputQuantities}
+          disabled={isInputQuantityDisabled}
+        ></lightning-button>
+
+        <lightning-button
+          class="slds-m-right_small"
+          variant="default"
+          label="Apply Planned Quantities"
+          onclick={handleOrderPlannedQuantities}
+          disabled={isOrderPlannedQuantitiesDisabled}
+        ></lightning-button>
+
+        <!-- header Save actions-->
+        <lightning-button
+          label="Save"
+          variant="default"
+          onclick={save}
+          disabled={disabled}
+        >
+        </lightning-button>
+      </div>
+    </div>
+  </lightning-card>
+  <!-- End of new datatable -->
+
+  <!-- Begin of Summary -->
+  <!--
+  <lightning-card title="Summary">
+    <div class="slds-m-horizontal_small slds-scrollable_x">
+      <lightning-datatable
+        key-field="id"
+        data={summaryRecords}
+        columns={summaryColumns}
+        hide-checkbox-column
+      ></lightning-datatable>
+    </div>
+  </lightning-card>
+  -->
+  <!-- End of Summary -->
+</template>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Adjustment_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  ISBLANK(cgcloud__Base_Price__c),
+  &quot;No Base Price&quot;,
+  IF(
+    Change_from_Base_Price__c = 0,
+    &quot;At Base&quot;,
+    IF(
+      Change_from_Base_Price__c &lt; 0,
+      &quot;Discount&quot;,
+      &quot;Markup&quot;
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pricing Adjustment Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

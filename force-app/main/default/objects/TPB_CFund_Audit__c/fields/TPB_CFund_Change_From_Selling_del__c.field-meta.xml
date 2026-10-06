@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_CFund_Change_From_Selling_del__c</fullName>
+    <description>any profit made off of selling activities (net of any Sp. adjustment, returns, etc.</description>
+    <label>C-Fund Change from Selling</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

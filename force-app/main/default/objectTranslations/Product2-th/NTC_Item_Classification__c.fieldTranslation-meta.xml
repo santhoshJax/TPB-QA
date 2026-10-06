@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NTC Item Classification --></label>
+    <name>NTC_Item_Classification__c</name>
+    <picklistValues>
+        <masterLabel>Competitive</masterLabel>
+        <translation><!-- Competitive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Display</masterLabel>
+        <translation><!-- Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merchandise</masterLabel>
+        <translation><!-- Merchandise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPU</masterLabel>
+        <translation><!-- PPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promo</masterLabel>
+        <translation><!-- Promo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Straight Stock</masterLabel>
+        <translation><!-- Straight Stock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

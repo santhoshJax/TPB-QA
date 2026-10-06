@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TPB_GTM_Goals__c.SF_Goal_ID__c</field>
+    </columns>
+    <columns>
+        <field>TPB_GTM_Goals__c.TPB_Org_Unit__c</field>
+    </columns>
+    <columns>
+        <field>TPB_GTM_Goals__c.Segment__c</field>
+    </columns>
+    <columns>
+        <field>TPB_GTM_Goals__c.Weight__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>GTM Goals by Territory (Metrics)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TPB_GTM_Goals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>NTC_VOL__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.eq_vol__c</sourceField>
+        <sourceFormula>EQ VOL</sourceFormula>
+        <targetField>NTC_VOL__dll.eq_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>MSA_SALESFORCE_MSA</sourceFormula>
+        <targetField>NTC_VOL__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.distributor_number__c</sourceField>
+        <sourceFormula>DISTRIBUTOR NUMBER</sourceFormula>
+        <targetField>NTC_VOL__dll.distributor_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.return_cu_vol__c</sourceField>
+        <sourceFormula>RETURN CU VOL</sourceFormula>
+        <targetField>NTC_VOL__dll.return_cu_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.return_eq_vol__c</sourceField>
+        <sourceFormula>RETURN EQ VOL</sourceFormula>
+        <targetField>NTC_VOL__dll.return_eq_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.sku_code__c</sourceField>
+        <sourceFormula>SKU CODE</sourceFormula>
+        <targetField>NTC_VOL__dll.sku_code__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.time__c</sourceField>
+        <sourceFormula>TIME</sourceFormula>
+        <targetField>NTC_VOL__dll.time__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>NTC_VOL__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.did__c</sourceField>
+        <sourceFormula>DID</sourceFormula>
+        <targetField>NTC_VOL__dll.did__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.retail_number__c</sourceField>
+        <sourceFormula>RETAIL NUMBER</sourceFormula>
+        <targetField>NTC_VOL__dll.retail_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.four_week_period__c</sourceField>
+        <sourceFormula>FOUR WEEK PERIOD</sourceFormula>
+        <targetField>NTC_VOL__dll.four_week_period__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>NTC_VOL.cu_vol__c</sourceField>
+        <sourceFormula>CU VOL</sourceFormula>
+        <targetField>NTC_VOL__dll.cu_vol__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>NTC_VOL_map_NTC_VOL_1756378783624</masterLabel>
+    <sourceObjectName>NTC_VOL</sourceObjectName>
+    <targetObjectName>NTC_VOL__dll</targetObjectName>
+</ObjectSourceTargetMap>

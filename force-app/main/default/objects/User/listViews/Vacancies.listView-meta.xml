@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vacancies</fullName>
+    <columns>TPB_Territory__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CORE.USERS.ADDRESS_CITY</columns>
+    <columns>CORE.USERS.STATE_CODE</columns>
+    <columns>TPB_Former_Employee_Name__c</columns>
+    <columns>CORE.USERS.USERNAME</columns>
+    <columns>Vacancy_Date__c</columns>
+    <columns>CORE.USERS.TITLE</columns>
+    <columns>CORE.USERS.ACTIVE</columns>
+    <columns>MANAGER</columns>
+    <columns>CORE.USERS.EMAIL</columns>
+    <columns>CORE.USERS.LAST_LOGIN</columns>
+    <columns>CORE.USERS.SAML_SUBJECT</columns>
+    <columns>IS_FROZEN</columns>
+    <columns>HAS_AUTHENTICATOR</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>VACANT</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Vacancies (Active)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Admin</role>
+    </sharedTo>
+</ListView>

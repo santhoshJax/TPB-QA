@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visits_Admin_View</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>cgcloud__Account_City__c</columns>
+    <columns>Status</columns>
+    <columns>TPB_VisitType__c</columns>
+    <columns>Call_Type__c</columns>
+    <columns>TPB_InProgress__c</columns>
+    <columns>ActualVisitStartTime</columns>
+    <columns>ActualVisitEndTime</columns>
+    <columns>Visit_Duration_Min__c</columns>
+    <columns>PlannedVisitStartTime</columns>
+    <columns>PlannedVisitEndTime</columns>
+    <columns>Owner</columns>
+    <columns>Acct_Frequency__c</columns>
+    <columns>Ownership_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner</field>
+        <operation>contains</operation>
+        <value>nix</value>
+    </filters>
+    <filters>
+        <field>ActualVisitStartTime</field>
+        <operation>equals</operation>
+        <value>5/13/2026 12:00 AM</value>
+    </filters>
+    <label>Visits (Global Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

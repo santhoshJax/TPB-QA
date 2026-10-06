@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>cgcloud__Update_internal_Asset_Serial_Number</fullName>
+        <field>cgcloud__Tag_Number__c</field>
+        <formula>TEXT(cgcloud__Sales_Org__c) &amp;&quot;-&quot;&amp; SerialNumber</formula>
+        <name>Update internal Asset Serial Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>cgcloud__Unique SN per Sales Org</fullName>
+        <actions>
+            <name>cgcloud__Update_internal_Asset_Serial_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Asset.SerialNumber</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Asset.cgcloud__Sales_Org__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

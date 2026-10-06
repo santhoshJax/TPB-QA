@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Total_Accountable_C_Fund__c</fullName>
+    <formula>ROUND(NULLVALUE(Current_C_Fund_Balance__c, 0),2) + NULLVALUE(TPB_Inventory_Balance__c,
+        0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Real-time update of Cash &amp; Cash Equivalents + Inventory Value</inlineHelpText>
+    <label>Total Accountable C-Fund</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

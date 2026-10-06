@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Purchases_Value__c</fullName>
+    <formula>IF(
+  NOT(ISBLANK(Commitment_Value__c)),
+  Commitment_Value__c + Cum_Sales_Value__c,
+  Initiative__r.Commitment_Value__c + Cum_Sales_Value__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Required Purchases Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

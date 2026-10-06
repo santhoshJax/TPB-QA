@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fre_Trade_Program_Enrolled__c</fullName>
+    <label>Fre Trade Program Enrolled</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prime 12</fullName>
+                <default>false</default>
+                <label>Prime 12</label>
+            </value>
+            <value>
+                <fullName>Prime 16</fullName>
+                <default>false</default>
+                <label>Prime 16</label>
+            </value>
+            <value>
+                <fullName>Alt 12</fullName>
+                <default>false</default>
+                <label>Alt 12</label>
+            </value>
+            <value>
+                <fullName>Alt 16</fullName>
+                <default>false</default>
+                <label>Alt 16</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

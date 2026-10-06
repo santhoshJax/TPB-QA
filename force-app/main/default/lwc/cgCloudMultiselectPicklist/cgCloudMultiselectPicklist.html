@@ -1,0 +1,101 @@
+<template>
+    <template if:true={label}>
+        <label class="slds-form-element__label">{label}</label>
+    </template>
+    <div class="slds-combobox_container picklist-container">
+        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open picklist-combobox" aria-expanded="true"
+            aria-haspopup="listbox" role="combobox">
+            <!-- Search Input -->
+            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon slds-input-has-icon_left-right"
+                    role="none">
+                    <!-- //#OCT Change John :added z-index0. -->
+                    <lightning-input disabled={disabled} type="search" class="inputBox" placeholder={placeholder}
+                        onblur={blurEvent} onclick={showOptions} onkeyup={filterOptions} value={searchString}
+                        auto-complete="on" variant="label-hidden" id="combobox-id-1" required={required} label={label}
+                        style="height: 33px !important;z-index:0;"></lightning-input>
+                </div>
+            </div>
+            <!-- Dropdown List -->
+            <template if:true={showDropdown}>
+                <div class="picklist-dropdown">
+                <!-- <div id="listbox-id-1" class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid">
+                    <ul class="slds-listbox slds-listbox_vertical recordListBox" role="presentation">
+                        <template if:false={message}>
+                            <template for:each={optionData} for:item="option">
+                                <template if:true={option.isVisible}>
+                                    <li key={option.value} data-id={option.value} onmousedown={selectItem}
+                                        class="slds-listbox__item eachItem">
+                                        <template if:true={option.selected}>
+                                            <lightning-icon icon-name="utility:check" size="x-small"
+                                                alternative-text="icon"></lightning-icon>
+                                        </template>
+                                        <div data-value={option.value} data-label={option.label} onclick={selectItem}
+                                            class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                            role="option">
+                                            <span
+                                                class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{option.label}</span>
+                                        </div>
+    
+                                    </li>
+                                </template>
+                            </template>
+                        </template>
+                        <template if:true={message}>
+                            <li class="slds-listbox__item">
+                                <span
+                                    class="slds-media slds-listbox__option_entity verticalAlign slds-truncate">{message}</span>
+                            </li>
+                        </template>
+                    </ul>
+                </div> -->
+
+                <!-- <lightning-card title="Product Selection Table"> -->
+
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped picklist-header-table">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col">
+                                    <!-- <lightning-input type="checkbox" onchange={toggleSelectAll}></lightning-input> -->
+                                </th>
+                                <th scope="col">Product Name</th>
+                                <!-- <th scope="col">SKU Code</th> -->
+                            </tr>
+                        </thead>
+                    </table>
+                    
+                    <!-- Scrollable section containing only the tbody rows -->
+                    <div class="picklist-table-wrap">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                            <tbody>
+                                <template for:each={filteredOptions} for:item="item">
+                                    <tr key={item.value}>
+                                        <td>
+                                            <lightning-input type="checkbox" data-id={item.value} onchange={handleCheckboxChange}
+                                                checked={item.selected} disabled={item.disabled}></lightning-input>
+                                        </td>
+                                        <td>{item.label}</td>
+                                        <!-- <td>{item.skuCode}</td> -->
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- <div class="slds-m-top_medium">
+                        <p><strong>Selected Product IDs:</strong> {selectedIds}</p>
+                    </div> -->
+                <!-- </lightning-card> -->
+            </template>
+        </div>
+    </div>
+    <!-- <template for:each={optionData} for:item="option">
+        <template if:true={option.selected}>
+            <lightning-pill key={option.value} name={option.value} label={option.label} onremove={closePill}
+                icon-name="custom:custom11" size="xx-small"></lightning-pill>
+        </template>
+    </template> -->
+</template>

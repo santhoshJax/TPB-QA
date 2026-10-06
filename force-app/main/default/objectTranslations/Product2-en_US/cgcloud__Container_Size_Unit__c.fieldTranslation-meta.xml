@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Container Size Unit --></label>
+    <name>cgcloud__Container_Size_Unit__c</name>
+    <picklistValues>
+        <masterLabel>gal</masterLabel>
+        <translation><!-- gal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>l</masterLabel>
+        <translation><!-- l --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ml</masterLabel>
+        <translation><!-- ml --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>m³</masterLabel>
+        <translation><!-- m³ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>oz</masterLabel>
+        <translation><!-- oz --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B_How_was_Fre_merchandised_upon_arrival__c</fullName>
+    <inlineHelpText>Select the locations within the store that you found Fre products when you arrived</inlineHelpText>
+    <label>How was Fre merchandised upon arrival?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In OTP/ Tobacco fixture</fullName>
+                <default>false</default>
+                <label>In OTP/ Tobacco fixture</label>
+            </value>
+            <value>
+                <fullName>Front counter - NTC Display</fullName>
+                <default>false</default>
+                <label>Front counter - NTC Display</label>
+            </value>
+            <value>
+                <fullName>Front counter - other display</fullName>
+                <default>false</default>
+                <label>Front counter - other display</label>
+            </value>
+            <value>
+                <fullName>Back Bar - NTC Display</fullName>
+                <default>false</default>
+                <label>Back Bar - NTC Display</label>
+            </value>
+            <value>
+                <fullName>Back Bar - Other Display</fullName>
+                <default>false</default>
+                <label>Back Bar - Other Display</label>
+            </value>
+            <value>
+                <fullName>Non-Visible Location</fullName>
+                <default>false</default>
+                <label>Non-Visible Location</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <label>--None--</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

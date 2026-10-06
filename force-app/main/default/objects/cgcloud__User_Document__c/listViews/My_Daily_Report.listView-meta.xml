@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Daily_Report</fullName>
+    <columns>NAME</columns>
+    <columns>TPB_Activity_Type__c</columns>
+    <columns>cgcloud__Annotation__c</columns>
+    <columns>cgcloud__Date__c</columns>
+    <columns>cgcloud__Phase__c</columns>
+    <columns>cgcloud__Work_Time_From__c</columns>
+    <columns>cgcloud__Work_Time_Thru__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Daily Report</label>
+</ListView>

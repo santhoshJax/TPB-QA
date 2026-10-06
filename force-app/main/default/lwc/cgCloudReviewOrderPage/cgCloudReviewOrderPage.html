@@ -1,0 +1,143 @@
+<template>
+    <template if:true={isSpinnerCompleted}>
+        <div class="spinner-container">
+            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner" message="Loading data..."
+                size="medium" variant="base"></lightning-spinner>
+        </div>
+    </template>
+    <div class="slds-grid slds-grid_align-spread slds-p-bottom_medium slds-grid_vertical-align-center" style="margin-top: -15px;">
+        <button class="slds-button backButton slds-p-left_x-small" onclick={navigateToStoreCockpit}>
+            <lightning-icon icon-name="utility:back" alternative-text="back" size="xx-small" title="large size"
+                variant="inverse" class="slds-p-right_x-small utility-icon"></lightning-icon>
+            <span> back </span>
+        </button>
+        <div class="slds-grid slds-grid_vertical-align-center">
+            <!-- <div class="slds-p-right_small slds-p-top_xxx-small">
+                <c-cg-cloud-invoice-pdf-generator order-id={orderId}></c-cg-cloud-invoice-pdf-generator>
+            </div> -->
+            <lightning-button 
+              variant="brand"
+              label=" Generate Invoice" class="slds-p-around_x-small"
+              onclick={handleGenerateInvoice} 
+            ></lightning-button>
+            <!-- <lightning-button variant="brand" label=" Generate Invoice" class="slds-p-around_x-small slds-m-right_small"
+                onclick={handleGenerateInvoice}></lightning-button> -->
+            <lightning-button 
+              variant="brand"
+              label=" Complete Order" class="slds-p-around_x-small"
+              onclick={handleCompleteOrder} 
+            ></lightning-button>
+        </div>
+    </div>
+
+
+    <lightning-card title="Order Details" icon-name="standard:orders">
+        <div class="slds-m-around_medium">
+            <lightning-layout multiple-rows="true" class="slds-var-m-bottom_large">
+
+                <!-- <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12" class="slds-var-p-around_x-small">
+                    <lightning-input label="Id" value={orderId} onchange={handleIdChange} disabled></lightning-input>
+                </lightning-layout-item> -->
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input data-field="orderer" label="Orderer" disabled value={accountName}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input type="date" data-field="orderDate" label="Order Date" value={orderDate}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input type="date" data-field="deliveryDate" label="Delivery Date" value={deliveryDate}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input type="number" data-field="totalValue" disabled label="Total Value"
+                        value={totalValue} onchange={handleFieldChange} formatter="currency"
+                        step="0.01"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    classs="slds-var-p-around_x-small">
+                    <lightning-combobox name="currency" label="Currency" data-field="currency" value={orderCurrency}
+                        placeholder="Select Currency" options={currencyOptions}
+                        onchange={handleFieldChange}></lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-combobox name="paymentMethod" label="Payment Method" data-field="paymentMethod"
+                        value={paymentMethod} placeholder="Select Payment Method" options={paymentMethodOptions}
+                        onchange={handleFieldChange}></lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                        <lightning-input type="number" data-field="paidAmount" label="Paid Amount" value={totalValue}
+                            onchange={handleFieldChange} formatter="currency" step="0.01" disabled></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small slds-p-top_small">
+                    <div class="slds-size_2-of-12">
+                        <lightning-input type="toggle" data-field="paymentCollected" label="Payment Collected?" checked={paymentCollected}
+                            onchange={handleFieldChange} required="true" class="validate"></lightning-input>
+                    </div>
+                    
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input label="Authorizing Agent" data-field="authorizingAgent" value={authorizingAgent}
+                        onchange={handleFieldChange} required="true" class="validate"></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-textarea label="Account Shipping Address" disabled value={accountShippingAddress}
+                        onchange={handleFieldChange}></lightning-textarea>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input label="Account Phone" data-field="accountPhone" disabled value={accountPhone}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input label="Account State Tobacco Number" disabled
+                        data-field="accountStateTobaccoNumber" value={accountStateTobaccoNumber}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input label="Account State Tax Number" disabled data-field="accountStateTaxNumber"
+                        value={accountStateTaxNumber} onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size="12" large-device-size="12"
+                    class="slds-var-p-around_x-small">
+                    <lightning-input label="FEIN" data-field="fein" disabled value={fein}
+                        onchange={handleFieldChange}></lightning-input>
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+            <!-- <div class="slds-text-heading_small slds-var-m-top_large">Current Form Values:</div>
+            <pre>{formValues}</pre> -->
+        </div>
+    </lightning-card>
+
+    <!-- <template if:true={isGenerateInvoice}>
+        <c-cg-cloud-invoice-pdf-generator></c-cg-cloud-invoice-pdf-generator>
+    </template> -->
+</template>

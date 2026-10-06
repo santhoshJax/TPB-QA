@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coverage_Store__c</fullName>
+    <label>Coverage Store</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coverage Store</fullName>
+                <default>false</default>
+                <label>Coverage Store</label>
+            </value>
+            <value>
+                <fullName>Noncoverage Store</fullName>
+                <default>false</default>
+                <label>Noncoverage Store</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

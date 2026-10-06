@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>בדיקת הסיורים בתבנית הסיור</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>בדיקת סיור בתבנית סיור</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>בדיקות הסיורים בתבנית הסיור</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>בדיקות סיורים בתבנית סיור</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>שם בדיקת סיבוב בתבנית סיבוב</nameFieldLabel>
+</CustomObjectTranslation>

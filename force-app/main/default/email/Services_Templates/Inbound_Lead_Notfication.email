@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="1" >
+<![CDATA[Hi Team,<div><br></div><div>A new inbound lead has just been captured in Salesforce and is ready for review.</div><div><br></div><div>Lead Details:</div><div><br></div><div>Name:&nbsp;{!Lead.Name}</div><div>Company:&nbsp;{!Lead.Company}</div><div>Phone:&nbsp;{!Lead.Phone}</div><div>Email:&nbsp;{!Lead.Email}</div><div>Source:&nbsp;{!Lead.LeadSource}</div><div>Date Created:&nbsp;{!Lead.CreatedDate}</div><div><br></div><div>Please review and take action as soon as possible to ensure timely follow-ups.</div><div><br></div><div>View Lead:&nbsp;{!Lead.Link}</div><div><br></div><div>Thanks!</div>]]></td>
+</tr>
+</table>

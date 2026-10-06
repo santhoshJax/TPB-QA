@@ -1,0 +1,72 @@
+<!-- sldsValidatorIgnore -->
+<!--
+_____________________________________________________________________________________________  
+LWC Name             :  TpbUserBasePriceResetProcess
+Version              :  1.0                                                                          
+Created Date         :  August 01, 2024                                                               
+Function             :  This cmp used to mass update user base pricing and Inventory
+Work Task            :                                                                               
+Modification Log     :        
+*________________________________________________________________________________________________  
+* Developer                   Date                   Description                                     
+*________________________________________________________________________________________________ 
+*                            01/08/2024              Initial Release
+*-->
+<template>
+    <template if:true={isLoadingSpinner}>
+        <div class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative">
+                <span class="slds-assistive-text">{currentProcessingStage}</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+        
+                <!-- additional element to show the text under the spinner -->
+                <p class="slds-spinner-text">{currentProcessingStage}</p>
+            </div>
+        </div>
+        <!--<lightning-spinner alternative-text={currentProcessingStage} variant="brand" size="large"></lightning-spinner>-->
+    </template>
+
+    <lightning-card title="User Base Price Reset CSV" icon-name="custom:custom63">
+        <lightning-layout multiple-rows class="slds-p-around_medium">
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="5" large-device-size="5" class="slds-box slds-theme_default slds-p-around_medium border-black">
+                <lightning-input
+                    type="file"
+                    label="Upload"
+                    multiple="false"
+                    class="slds-p-around_medium"
+                    accept={acceptedFormats}
+                    onchange={handleUploadFile}
+                    disabled={isInValidUser}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="1" large-device-size="1" class="slds-p-around_medium"></lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="5" large-device-size="5" class="slds-box slds-theme_default border-black slds-p-around_medium">
+                <h2><b>Notes</b></h2>
+                <ul class="notes slds-p-around_medium">
+                    <li>File format .csv</li>
+                    <li>CSV File headers: 
+                        <b> 
+                            <template iterator:header={acceptedCSVHeaders}>{header.value} <template if:false={header.last}> | </template> </template>
+                        </b> 
+                    </li>
+                </ul>
+            </lightning-layout-item>
+
+            <template if:true={tableData}>
+                <lightning-layout-item class="slds-p-around_medium slds-box slds-theme_default border-black m2" size="12" small-device-size="12" medium-device-size="2" large-device-size="12">
+                    <lightning-datatable
+                        key-field="Id"
+                        hide-checkbox-column
+                        data={tableData}
+                        columns={tableColumn}>
+                    </lightning-datatable>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="slds-p-around_medium" size="12" small-device-size="12" medium-device-size="2" large-device-size="12">
+                    <lightning-button variant="brand" class="slds-float_right" label="Process" title="Process" onclick={handleOnProcess} disabled={disabledProcessButton}></lightning-button>
+                </lightning-layout-item>
+            </template>
+        </lightning-layout>
+    </lightning-card>
+</template>

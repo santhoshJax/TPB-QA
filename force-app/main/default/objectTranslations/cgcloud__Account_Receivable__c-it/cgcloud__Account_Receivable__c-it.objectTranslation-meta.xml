@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Credito verso i clienti</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Crediti verso i clienti</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome credito verso i clienti</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

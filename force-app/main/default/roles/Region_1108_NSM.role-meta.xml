@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>1108|11</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Region 1108 NSM</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>US_Field_Sales_Director_Zone_11</parentRole>
+</Role>

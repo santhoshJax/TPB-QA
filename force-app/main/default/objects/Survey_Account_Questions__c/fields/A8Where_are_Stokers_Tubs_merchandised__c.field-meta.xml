@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A8Where_are_Stokers_Tubs_merchandised__c</fullName>
+    <description>Casey&apos;s Survey C4 2021</description>
+    <inlineHelpText>When you left the store, where were the Stokers Tubs merchandised?</inlineHelpText>
+    <label>8. Where are Stokers Tubs merchandised?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Window Ledge</fullName>
+                <default>false</default>
+                <label>Window Ledge</label>
+            </value>
+            <value>
+                <fullName>Top of Wooden Cabinet</fullName>
+                <default>false</default>
+                <label>Top of Wooden Cabinet</label>
+            </value>
+            <value>
+                <fullName>MST Fixture</fullName>
+                <default>false</default>
+                <label>MST Fixture</label>
+            </value>
+            <value>
+                <fullName>Cigarette Fixture</fullName>
+                <default>false</default>
+                <label>Cigarette Fixture</label>
+            </value>
+            <value>
+                <fullName>Non-Visible (Backstock)</fullName>
+                <default>false</default>
+                <label>Non-Visible (Backstock)</label>
+            </value>
+            <value>
+                <fullName>Other location</fullName>
+                <default>false</default>
+                <label>Other location</label>
+            </value>
+            <value>
+                <fullName>No Tubs in Stock</fullName>
+                <default>false</default>
+                <label>No Tubs in Stock</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

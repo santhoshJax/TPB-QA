@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retail Store Type --></label>
+    <name>Retail_Store_Type__c</name>
+    <picklistValues>
+        <masterLabel>Alt</masterLabel>
+        <translation><!-- Alt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada</masterLabel>
+        <translation><!-- Canada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco</masterLabel>
+        <translation><!-- Tobacco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vapor</masterLabel>
+        <translation><!-- Vapor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

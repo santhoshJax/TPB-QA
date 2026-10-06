@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>US Field Sales</fullName>
+        <default>true</default>
+        <label>US Field Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada</fullName>
+        <default>false</default>
+        <label>Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>Vapor</fullName>
+        <default>false</default>
+        <label>Vapor</label>
+    </customValue>
+    <customValue>
+        <fullName>Alt</fullName>
+        <default>false</default>
+        <label>Alt</label>
+    </customValue>
+    <masterLabel>Sales Division</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

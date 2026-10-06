@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>TPB_Category__c</name>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Air Filter.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Air Filter.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Apparel.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Apparel.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Apparel.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Apparel.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Auto.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Auto.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Baby.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Baby.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Cleaning Solution.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Cleaning Solution.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Confectionary.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Confectionary.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Cooking.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Cooking.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Food.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Food.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Gifts.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Gifts.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Gum.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Gum.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Home.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Home.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Inflatables.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Inflatables.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Kitchen.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Kitchen.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Odor Solutions.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Odor Solutions.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Office Supply.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Office Supply.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Other.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Other.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Other.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Other.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Personal Care.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Personal Care.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Scales.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Scales.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Storage.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Storage.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Terpene Vape.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Terpene Vape.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Toys.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Toys.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.General Merch.Trade Mktg.REC</masterLabel>
+        <translation><!-- Non-Tobacco.General Merch.Trade Mktg.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.510 Batteries.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.510 Batteries.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Bong.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Bong.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Butane.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Butane.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Concentrate Vape.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Concentrate Vape.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Dab Rig.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Dab Rig.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Dry Herb Vaporizer.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Dry Herb Vaporizer.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.E-Rig.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.E-Rig.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.General Accessories.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.General Accessories.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Grinder.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Grinder.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Hand Pipe.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Hand Pipe.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Humidity Solution.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Humidity Solution.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Infuser.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Infuser.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Lighters &amp; Torches.DVW</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Lighters &amp; Torches.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Lighters &amp; Torches.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Lighters &amp; Torches.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.One Hitter.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.One Hitter.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Paper Cones.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Paper Cones.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Papers.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Papers.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Rolling Machines.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Rolling Machines.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Rolling Tray.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Rolling Tray.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Tips.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Tips.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Vape Accessories.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Vape Accessories.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Tobacco.Smokeless.Wraps.REC</masterLabel>
+        <translation><!-- Non-Tobacco.Smokeless.Wraps.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smokeless. .NAOC</masterLabel>
+        <translation><!-- Raw Material.Smokeless. .NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smokeless. .NAWC</masterLabel>
+        <translation><!-- Raw Material.Smokeless. .NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smokeless. .NTC</masterLabel>
+        <translation><!-- Raw Material.Smokeless. .NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smokeless. .RBJ</masterLabel>
+        <translation><!-- Raw Material.Smokeless. .RBJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smoking. .NAOC</masterLabel>
+        <translation><!-- Raw Material.Smoking. .NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smoking. .NAWC</masterLabel>
+        <translation><!-- Raw Material.Smoking. .NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smoking. .NTC</masterLabel>
+        <translation><!-- Raw Material.Smoking. .NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Material.Smoking. .RBJ</masterLabel>
+        <translation><!-- Raw Material.Smoking. .RBJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smokeless. .NAOC</masterLabel>
+        <translation><!-- Raw Tobacco.Smokeless. .NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smokeless. .NAWC</masterLabel>
+        <translation><!-- Raw Tobacco.Smokeless. .NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smokeless. .NTC</masterLabel>
+        <translation><!-- Raw Tobacco.Smokeless. .NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smokeless. .RBJ</masterLabel>
+        <translation><!-- Raw Tobacco.Smokeless. .RBJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smoking. .NAOC</masterLabel>
+        <translation><!-- Raw Tobacco.Smoking. .NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smoking. .NAWC</masterLabel>
+        <translation><!-- Raw Tobacco.Smoking. .NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smoking. .NTC</masterLabel>
+        <translation><!-- Raw Tobacco.Smoking. .NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raw Tobacco.Smoking. .RBJ</masterLabel>
+        <translation><!-- Raw Tobacco.Smoking. .RBJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Cans.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Cans.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Cotton Mouth.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Cotton Mouth.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Discount Other.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Discount Other.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Discount.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Discount.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Fre.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Fre.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Nic Vape.REC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Nic Vape.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Premium.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Premium.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Stokers.NTC</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Stokers.NTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smokeless.Tubs.RBJ</masterLabel>
+        <translation><!-- Tobacco.Smokeless.Tubs.RBJ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Accessories.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Accessories.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Apparel.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Apparel.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Blunt Wrap.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Blunt Wrap.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Canadian Paper Cones.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Canadian Paper Cones.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Canadian Papers.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Canadian Papers.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Choice Leaf.DVW</masterLabel>
+        <translation><!-- Tobacco.Smoking.Choice Leaf.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Choice Leaf.REC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Choice Leaf.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.HMP Accessories.DVW</masterLabel>
+        <translation><!-- Tobacco.Smoking.HMP Accessories.DVW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.HMP Accessories.REC</masterLabel>
+        <translation><!-- Tobacco.Smoking.HMP Accessories.REC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Karma.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Karma.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Karma.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Karma.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Lighters.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Lighters.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Marley.INT</masterLabel>
+        <translation><!-- Tobacco.Smoking.Marley.INT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Other Accessories.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Other Accessories.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Other Cigars.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Other Cigars.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Other Cigars.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Other Cigars.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Other.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Other.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.US Paper Cones.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.US Paper Cones.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.US Papers.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.US Papers.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.Wild Hemp.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.Wild Hemp.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag HTL Cigars.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag HTL Cigars.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag HTL Cigars.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag HTL Cigars.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag HTL Wraps.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag HTL Wraps.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag HTL Wraps.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag HTL Wraps.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Natural Leaf Wraps.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Natural Leaf Wraps.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Non-Tobacco.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Non-Tobacco.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Non-Tobacco.NAWC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Non-Tobacco.NAWC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco.Smoking.ZigZag Tubes.NAOC</masterLabel>
+        <translation><!-- Tobacco.Smoking.ZigZag Tubes.NAOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vape.NewGen. .TPB Beast</masterLabel>
+        <translation><!-- Vape.NewGen. .TPB Beast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>h</masterLabel>
+        <translation><!-- h --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

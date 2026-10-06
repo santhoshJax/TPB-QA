@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Term__c</fullName>
+    <label>Payment Term</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30 Days After B/L Date</fullName>
+                <default>false</default>
+                <label>30 Days After B/L Date</label>
+            </value>
+            <value>
+                <fullName>60 Days After B/L Date</fullName>
+                <default>false</default>
+                <label>60 Days After B/L Date</label>
+            </value>
+            <value>
+                <fullName>90 Days After B/L Date</fullName>
+                <default>false</default>
+                <label>90 Days After B/L Date</label>
+            </value>
+            <value>
+                <fullName>3.25% 10 Days Cust Init</fullName>
+                <default>false</default>
+                <label>3.25% 10 Days Cust Init</label>
+            </value>
+            <value>
+                <fullName>2.1% Check 15 (NP)</fullName>
+                <default>false</default>
+                <label>2.1% Check 15 (NP)</label>
+            </value>
+            <value>
+                <fullName>3.5% ACH on Invoice</fullName>
+                <default>false</default>
+                <label>3.5% ACH on Invoice</label>
+            </value>
+            <value>
+                <fullName>3.25% ACH 10 Days</fullName>
+                <default>false</default>
+                <label>3.25% ACH 10 Days</label>
+            </value>
+            <value>
+                <fullName>3.2% ACH 10 Days (Meijer)</fullName>
+                <default>false</default>
+                <label>3.2% ACH 10 Days (Meijer)</label>
+            </value>
+            <value>
+                <fullName>2.1% ACH 10 Day (Non-Part)</fullName>
+                <default>false</default>
+                <label>2.1% ACH 10 Day (Non-Part)</label>
+            </value>
+            <value>
+                <fullName>3.25% ACH 90 Days - McLane Only</fullName>
+                <default>false</default>
+                <label>3.25% ACH 90 Days - McLane Only</label>
+            </value>
+            <value>
+                <fullName>Credit Card Only</fullName>
+                <default>false</default>
+                <label>Credit Card Only</label>
+            </value>
+            <value>
+                <fullName>2.1% Pre-Pay ACH (Non-Part)</fullName>
+                <default>false</default>
+                <label>2.1% Pre-Pay ACH (Non-Part)</label>
+            </value>
+            <value>
+                <fullName>3.5% ACH Pre-Pay</fullName>
+                <default>false</default>
+                <label>3.5% ACH Pre-Pay</label>
+            </value>
+            <value>
+                <fullName>2.75% - Due in 15 Days</fullName>
+                <default>false</default>
+                <label>2.75% - Due in 15 Days</label>
+            </value>
+            <value>
+                <fullName>1.25% - Due in 15 Days</fullName>
+                <default>false</default>
+                <label>1.25% - Due in 15 Days</label>
+            </value>
+            <value>
+                <fullName>3.5% Pre-Pay Electronic Pay</fullName>
+                <default>false</default>
+                <label>3.5% Pre-Pay Electronic Pay</label>
+            </value>
+            <value>
+                <fullName>0.00%</fullName>
+                <default>false</default>
+                <label>0.00%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

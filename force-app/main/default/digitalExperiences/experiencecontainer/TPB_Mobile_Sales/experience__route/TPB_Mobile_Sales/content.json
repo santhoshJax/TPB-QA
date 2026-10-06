@@ -1,0 +1,27 @@
+{
+  "type" : "experience__route",
+  "title" : "TPB_Mobile_Sales",
+  "contentBody" : {
+    "experience:routeMixin" : {
+      "attributes" : {
+        "target" : {
+          "definition" : "experience/scaTarget",
+          "attributes" : {
+            "recordHome" : [ {
+              "objectApiName" : "apiName",
+              "objectName" : "entityLabel",
+              "contentKey" : "contentKeyId"
+            }, {
+              "objectApiName" : "Visit",
+              "objectName" : "Visit",
+              "contentKey" : "MC6VSXJCRBRRCIPANBFAODGQBJ2A"
+            } ]
+          }
+        },
+        "pageName" : "contentKey"
+      },
+      "definition" : "experience/namedPageRoute"
+    }
+  },
+  "urlName" : "tpb-mobile-sales"
+}

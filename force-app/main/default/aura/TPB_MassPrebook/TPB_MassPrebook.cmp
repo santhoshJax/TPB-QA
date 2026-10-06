@@ -1,0 +1,19 @@
+<aura:component
+  implements="force:lightningQuickActionWithoutHeader,lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:hasRecordId,lightning:isUrlAddressable"
+  access="global"
+>
+  <!-- Calling the init method -->
+  <aura:handler name="init" value="this" action="{!c.init}" />
+  <!-- current recordId -->
+  <aura:attribute name="recordId" type="String" />
+
+  <!-- handler method -->
+  <aura:handler
+    name="change"
+    value="{!v.pageReference}"
+    action="{!c.onPageReferenceChanged}"
+  />
+
+  <!-- Calling tpbAddInventoryPurchasedForm lwc components -->
+  <c:tpbMassPrebook recordId="{!v.recordId}"></c:tpbMassPrebook>
+</aura:component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>X202003101</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>TSM Mobile</label>
+    <navType>Standard</navType>
+    <tabs>TSM_Mobile</tabs>
+    <tabs>standard-home</tabs>
+    <tabs>standard-ServiceAppointment</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-WorkOrder</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>TPB_Distributor_License__c</tabs>
+    <tabs>cgcloud__Tactic_Product__c</tabs>
+    <tabs>Ideal_Kit__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>TSM_Mobile_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definitionCreationType>Custom</definitionCreationType>
+    <lookupFieldName>MSA_Store_Master_Local__dlm.rel_1756382835869_end__c</lookupFieldName>
+    <masterLabel>MSA_Store_Master_Local_retail_number_map_MST_VOL_retail_number_1756382835869</masterLabel>
+    <owner>DataCloud</owner>
+    <relationshipCardinality>OneToOne</relationshipCardinality>
+    <sourceFieldName>MSA_Store_Master_Local__dlm.retail_number__c</sourceFieldName>
+    <targetEntity xsi:nil="true"/>
+    <targetFieldName>MST_VOL__dlm.retail_number__c</targetFieldName>
+</FieldSrcTrgtRelationship>

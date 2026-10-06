@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Returns 1 if the record falls within the running user&apos;s territory scope (own territory, parent/NSM territory, or matching Director region) or if the user has elevated access (System Administrator or Executive role). Otherwise returns 0. Used for reporting and filtering. --></help>
+    <label><!-- Belong to Running User Territory --></label>
+    <name>TPB_Belong_to_Running_User_Territory__c</name>
+</CustomFieldTranslation>

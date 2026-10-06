@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1759240888703_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>NTC_DISTRIBUTOR_ROLLUP_distributor_n_rel</label>
+    <referenceTo>NTC_TRANSACTIONS__dlm</referenceTo>
+    <relationshipLabel>NTC_DISTRIBUTOR_ROLLUP_distributor_n_rel</relationshipLabel>
+    <relationshipName>rel_1759240888703_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

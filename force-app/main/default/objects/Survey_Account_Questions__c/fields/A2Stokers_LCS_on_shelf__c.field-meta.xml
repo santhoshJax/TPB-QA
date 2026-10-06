@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A2Stokers_LCS_on_shelf__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Casey&apos;s Survey C4 2021</description>
+    <inlineHelpText>Was Stokers Long Cut Straight positioned on the shelf with all other MST products when you left the store?</inlineHelpText>
+    <label>2. Stokers LCS on shelf in MST Category?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

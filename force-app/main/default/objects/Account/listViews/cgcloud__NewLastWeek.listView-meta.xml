@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cgcloud__NewLastWeek</fullName>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <columns>TPB_Owner_Name__c</columns>
+    <columns>Ownership__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>TPB_TSM_Territory__c</columns>
+    <columns>TPB_Account_Territory__c</columns>
+    <columns>Territory_ID__c</columns>
+    <columns>cgcloud__Number_Of_Extensions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_WEEK</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>TPB_Belong_to_Running_User_Territory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>New Accounts Created Last Week*</label>
+</ListView>

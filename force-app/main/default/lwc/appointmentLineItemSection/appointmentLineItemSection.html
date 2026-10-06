@@ -1,0 +1,235 @@
+<template>
+    <!-- <template if:true={displayMain}>
+        <lightning-card title="Line Items" icon-name="standard:contract_line_item">
+            <template if:false={cartView}>
+                <lightning-button slot="actions" variant="brand" label="New Item" onclick={newItem} icon-name="utility:record_create"></lightning-button>
+            </template>
+            <lightning-button slot="actions" variant="success" label="Save" onclick={submit} class="slds-var-m-left_small"></lightning-button>
+            <lightning-accordion allow-multiple-sections-open>
+                <template if:true={lineItems}>
+                    <template for:each={lineItems} for:item="family" for:index="familyIndex">
+                        <template if:true={family.show}>
+                            <lightning-accordion-section key={family} label={family.name}>
+                                <template if:true={family.products}>
+                                    <template for:each={family.products} for:item="line" for:index="productIndex">
+                                        <lightning-layout class="rows" key={line.Id} multiple-rows> -->
+                                            <!--CART VIEW START-->
+                                            <!-- <template if:true={cartView}>
+                                                <template if:true={line.cartView}>
+                                                    <lightning-layout-item size="12" small-device-size="1" medium-device-size="1" large-device-size="1" padding="around-small">
+                                                        <p class="field-title">Actions</p>
+                                                        <template if:true={line.confirmDelete}>
+                                                            <div><b>Confirm Delete</b></div>
+                                                            <lightning-button-icon icon-name="utility:like" variant="bare" size="large" onclick={yesDeleteLine}
+                                                                                   data-index1={familyIndex} data-index2={productIndex} title="Delete">
+                                                            </lightning-button-icon>
+                                                            <lightning-button-icon icon-name="utility:dislike" variant="bare" size="large" onclick={noDeleteLine}
+                                                                                   class="slds-p-left_medium" data-index1={familyIndex} data-index2={productIndex} title="Do Not Delete">
+                                                            </lightning-button-icon>
+                                                        </template>
+                                                        <template if:false={line.confirmDelete}>
+                                                            <lightning-button-icon icon-name="action:delete" variant="bare" size="large" onclick={removeLine}
+                                                                                   data-index1={familyIndex} data-index2={productIndex} title="Delete">
+                                                            </lightning-button-icon>
+                                                            <lightning-button-icon icon-name="action:clone" variant="bare" size="large" onclick={cloneLine}
+                                                                                   data-index1={familyIndex} data-index2={productIndex} title="Clone">
+                                                            </lightning-button-icon>
+                                                        </template>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="6" large-device-size="3" padding="around-small">
+                                                        <p class="field-title">Product</p>
+                                                        <lightning-textarea label="" variant="label-hidden" value={line.productName} readonly>
+                                                        </lightning-textarea>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Activity</p>
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <div class="slds-select_container">
+                                                                    <c-picklist-util line-value={line.itemType} items={itemTypes} family-index={familyIndex} product-index={productIndex}
+                                                                                    onselect={selectHandler} field-name="itemType">
+                                                                    </c-picklist-util>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <template if:true={line.returnType}>
+                                                        <lightning-layout-item size="12" small-device-size="3" medium-device-size="2" large-device-size="1" padding="around-small">
+                                                        <p class="field-title">Resale</p>
+                                                        <lightning-input name="resale" type="toggle" label="" variant="label-hidden" checked={line.resale} onchange={lineUpdateHandler}
+                                                                        message-toggle-active="Yes" message-toggle-inactive="No" data-index1={familyIndex} data-index2={productIndex}>
+                                                        </lightning-input>
+                                                        </lightning-layout-item>
+                                                    </template>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Date</p>
+                                                        <lightning-input type="date" label="" variant="label-hidden" value={line.prebookDate} onchange={lineUpdateHandler}
+                                                                        disabled={line.isNotPrebook} name="prebookDate" data-index1={familyIndex} data-index2={productIndex}>
+                                                        </lightning-input>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Wholesaler</p>
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <div class="slds-select_container">
+                                                                    <c-picklist-util line-value={line.wholesalerId} items={wholesalers} family-index={familyIndex} product-index={productIndex}
+                                                                                    onselect={selectHandler} field-name="wholesalerId" disabled={line.wholesalerNotEnabled}>
+                                                                    </c-picklist-util>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Zone</p>
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <div class="slds-select_container">
+                                                                    <c-picklist-util line-value={line.zone} items={zones} family-index={familyIndex} product-index={productIndex}
+                                                                                    onselect={selectHandler} field-name="zone">
+                                                                    </c-picklist-util>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">UoM</p>
+                                                        <div class="slds-form-element">
+                                                            <div class="slds-form-element__control">
+                                                                <div class="slds-select_container">
+                                                                    <c-picklist-util line-value={line.uom} items={units} family-index={familyIndex} product-index={productIndex}
+                                                                                    onselect={selectHandler} field-name="uom" disabled={line.uomNotEnabled}>
+                                                                    </c-picklist-util>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Unit Price</p>
+                                                        <lightning-input type="number" label="" variant="label-hidden" value={line.unitPrice} formatter="currency" step="0.01"
+                                                                        onchange={lineUpdateHandler} name="unitPrice" data-index1={familyIndex} data-index2={productIndex}
+                                                                        disabled={line.pricingNotEnabled}>
+                                                        </lightning-input>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Qty</p>
+                                                        <lightning-input type="number" label="" variant="label-hidden" value={line.quantity} step="1"
+                                                                        onchange={lineUpdateHandler} name="quantity" data-index1={familyIndex} data-index2={productIndex}>
+                                                        </lightning-input>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Each Price</p>
+                                                        <lightning-formatted-number value={line.eachPrice} format-style="currency" currency-code="USD"
+                                                                                    minimum-fraction-digits="2" maximum-fraction-digits="2">
+                                                        </lightning-formatted-number>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Discount</p>
+                                                        <lightning-input type="number" label="" variant="label-hidden" value={line.discount} formatter="currency" step="0.01"
+                                                                        onchange={lineUpdateHandler} name="discount" data-index1={familyIndex} data-index2={productIndex}
+                                                                        disabled={line.discountNotEnabled}>
+                                                        </lightning-input>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                        <p class="field-title">Total</p>
+                                                        <lightning-formatted-number value={line.totalPrice} format-style="currency" currency-code="USD"
+                                                                                    minimum-fraction-digits="2" maximum-fraction-digits="2">
+                                                        </lightning-formatted-number>
+                                                    </lightning-layout-item>
+                                                </template>
+                                            </template> -->
+                                            <!--CART VIEW END-->
+                                            <!--DISTRIBUTION VIEW START-->
+                                            <!-- <template if:false={cartView}>
+                                                <lightning-layout-item size="12" small-device-size="1" medium-device-size="1" large-device-size="1" padding="around-small">
+                                                    <p class="field-title">Actions</p>
+                                                    <template if:true={line.confirmDelete}>
+                                                        <div><b>Confirm Delete</b></div>
+                                                        <lightning-button-icon icon-name="utility:like" variant="bare" size="large" onclick={yesDeleteLine}
+                                                                               data-index1={familyIndex} data-index2={productIndex} title="Delete">
+                                                        </lightning-button-icon>
+                                                        <lightning-button-icon icon-name="utility:dislike" variant="bare" size="large" onclick={noDeleteLine}
+                                                                               class="slds-p-left_medium" data-index1={familyIndex} data-index2={productIndex} title="Do Not Delete">
+                                                        </lightning-button-icon>
+                                                    </template>
+                                                    <template if:false={line.confirmDelete}>
+                                                        <lightning-button-icon icon-name="action:delete" variant="bare" size="large" onclick={removeLine}
+                                                                               data-index1={familyIndex} data-index2={productIndex} title="Delete" disabled={line.cannotDelete}>
+                                                        </lightning-button-icon>
+                                                        <lightning-button-icon icon-name="action:clone" variant="bare" size="large" onclick={cloneLine}
+                                                                               data-index1={familyIndex} data-index2={productIndex} title="Clone">
+                                                        </lightning-button-icon>
+                                                    </template>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="6" large-device-size="3" padding="around-small">
+                                                    <p class="field-title">Product</p>
+                                                    <lightning-textarea label="" variant="label-hidden" value={line.productName} readonly>
+                                                    </lightning-textarea>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="3" medium-device-size="2" large-device-size="1" padding="around-small">
+                                                    <p class="field-title">In Stock - Start of Call</p>
+                                                    <lightning-input name="inStock" type="toggle" label="" variant="label-hidden" checked={line.inStock} onchange={lineUpdateHandler}
+                                                                    message-toggle-active="Yes" message-toggle-inactive="No" data-index1={familyIndex} data-index2={productIndex}>
+                                                    </lightning-input>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                    <p class="field-title">Activity</p>
+                                                    <div class="slds-form-element">
+                                                        <div class="slds-form-element__control">
+                                                            <div class="slds-select_container">
+                                                                <c-picklist-util line-value={line.itemType} items={itemTypes} family-index={familyIndex} product-index={productIndex}
+                                                                                onselect={selectHandler} field-name="itemType">
+                                                                </c-picklist-util>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="2" padding="around-small">
+                                                    <p class="field-title">Shelf Price</p>
+                                                    <lightning-input type="number" label="" variant="label-hidden" value={line.shelfPrice} formatter="currency" step="0.01"
+                                                                    onchange={lineUpdateHandler} name="shelfPrice" data-index1={familyIndex} data-index2={productIndex}>
+                                                    </lightning-input>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="3" medium-device-size="2" large-device-size="1" padding="around-small">
+                                                    <p class="field-title">eOrder</p>
+                                                    <lightning-input class="locked" type="toggle" label="" variant="label-hidden" checked={line.eOrder}
+                                                                    message-toggle-active="Yes" message-toggle-inactive="No">
+                                                    </lightning-input>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="1" padding="around-small">
+                                                    <p class="field-title">Primary</p>
+                                                    <lightning-textarea type="text" label="" variant="label-hidden" value={line.primarySKU} readonly>
+                                                    </lightning-textarea>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="3" large-device-size="1" padding="around-small">
+                                                    <p class="field-title">Secondary</p>
+                                                    <lightning-textarea type="text" label="" variant="label-hidden" value={line.secondarySKU} readonly>
+                                                    </lightning-textarea>
+                                                </lightning-layout-item>
+                                            </template> -->
+                                            <!--DISTRIBUTION VIEW END-->
+                                        <!-- </lightning-layout>
+                                    </template>
+                                </template>        
+                            </lightning-accordion-section>
+                        </template>
+                    </template>
+                </template>
+            </lightning-accordion>
+            <div class="slds-var-m-top_medium">
+                <lightning-button variant="success" label="Save" onclick={submit} class="slds-var-m-left_small"></lightning-button>
+            </div>
+        </lightning-card>
+        <template if:true={spinner}>
+            <div id="spinner" class="slds-spinner_container slds-is-fixed">
+                <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </template>
+    </template>
+    <template if:false={displayMain}>
+        <c-appointment-product-search-section work-order-id={workOrderId} pricebook-id={pricebookId} line-items={lineItems} onclose={closeHandler}>
+        </c-appointment-product-search-section>
+    </template> -->
+</template>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>תנאי המוצר הייחודי ללקוח</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>תנאי מוצר ייחודי ללקוח</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>תנאי המוצר הייחודיים ללקוח</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>תנאי מוצר ייחודיים ללקוח</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם</nameFieldLabel>
+</CustomObjectTranslation>

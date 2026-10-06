@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Type --></label>
+    <name>Action_Type__c</name>
+    <picklistValues>
+        <masterLabel>Closed Permanently</masterLabel>
+        <translation><!-- Closed Permanently --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Temporarily</masterLabel>
+        <translation><!-- Closed Temporarily --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geo Address Change</masterLabel>
+        <translation><!-- Geo Address Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership change from Chain to Independent</masterLabel>
+        <translation><!-- Ownership change from Chain to Independent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ownership change from Independent to Chain</masterLabel>
+        <translation><!-- Ownership change from Independent to Chain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Acct to another Territory</masterLabel>
+        <translation><!-- Transfer Acct to another Territory --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

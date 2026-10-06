@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1755603300797_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>NATIONAL_TOBACCO_COMPANY_1_ship_to_c_rel</label>
+    <referenceTo>ssot__Account__dlm</referenceTo>
+    <relationshipLabel>NATIONAL_TOBACCO_COMPANY_1_ship_to_c_rel</relationshipLabel>
+    <relationshipName>rel_1755603300797_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

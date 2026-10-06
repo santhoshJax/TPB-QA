@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teams_Visits</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>cgcloud__Account_City__c</columns>
+    <columns>Status</columns>
+    <columns>TPB_VisitType__c</columns>
+    <columns>TPB_InProgress__c</columns>
+    <columns>ActualVisitStartTime</columns>
+    <columns>ActualVisitEndTime</columns>
+    <columns>PlannedVisitStartTime</columns>
+    <columns>PlannedVisitEndTime</columns>
+    <columns>CreatedDate</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>Owner</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>Account_Tier__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>0,1,2</value>
+    </filters>
+    <filters>
+        <field>TPB_Belong_to_Running_User_Territory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Teams Visits</label>
+    <sharedTo>
+        <group>Region_NSM_Group</group>
+    </sharedTo>
+</ListView>

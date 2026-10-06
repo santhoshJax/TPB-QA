@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Sales_Division__c</fullName>
+    <label>Sales Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>US Field Sales</fullName>
+                <default>false</default>
+                <label>US Field Sales</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Vapor</fullName>
+                <default>false</default>
+                <label>Vapor</label>
+            </value>
+            <value>
+                <fullName>Alt</fullName>
+                <default>false</default>
+                <label>Alt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

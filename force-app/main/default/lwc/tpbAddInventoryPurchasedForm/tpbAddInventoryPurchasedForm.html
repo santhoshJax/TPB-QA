@@ -1,0 +1,47 @@
+<template>
+  <lightning-card title={title}>
+    <!-- spinner has overlay and centralized based on the card component-->
+    <lightning-spinner
+      alternative-text="Loading"
+      size="medium"
+      if:true={loading}
+    ></lightning-spinner>
+
+    <c-tpb-add-inventory-order-headers
+      record-id={recordId}
+      onordercreated={handleOrderCreated}
+    ></c-tpb-add-inventory-order-headers>
+
+    <div class="OrderButtons slds-p-around_medium" if:true={orderId}>
+      <lightning-button
+        label="Complete Order"
+        title="Complete the order for inventory"
+        variant="brand"
+        onclick={handlePlaceOrder}
+        disabled={disablePlaceOrder}
+      ></lightning-button>
+
+      <lightning-button
+        label="Save and check order"
+        title="Save order and check the validity"
+        onclick={handleSaveAndCheckOrder}
+        disabled={disablePlaceOrder}
+      ></lightning-button>
+
+      <p
+        if:true={isDatatableChanging}
+        style="color: #ea001e; margin-top: 0.2rem"
+      >
+        Please save the order products.
+      </p>
+    </div>
+
+    <c-tpb-add-inventory-order-products
+      if:true={orderId}
+      record-id={recordId}
+      oncellchange={onDatatableCellChange}
+      onsave={onDatatableSave}
+      oncancel={onDatatableCancel}
+    ></c-tpb-add-inventory-order-products>
+  </lightning-card>
+</template>

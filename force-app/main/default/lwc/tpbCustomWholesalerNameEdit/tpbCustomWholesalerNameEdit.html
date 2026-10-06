@@ -1,0 +1,42 @@
+<template>
+  <div if:false={showLookup} class="tpb-lookup-label">
+    <h3>{wholesalerName}</h3>
+    <lightning-button-icon
+      if:true={relatedAccountId}
+      icon-name="utility:edit"
+      variant="bare"
+      alternative-text="Edit"
+      title="Edit"
+      onclick={handleShowLookup}
+    ></lightning-button-icon>
+  </div>
+  <template if:true={showLookup}>
+    <!--
+    <p>fieldName: {fieldName}</p>
+    <p>label: {label}</p>
+    <p>Name: {wholesalerName}</p>
+    <p>Related Account ID: {relatedAccountId}</p>
+    -->
+    <template if:false={isOptionsReady}>
+      <div>Loading..</div>
+    </template>
+    <template if:true={isOptionsReady}>
+      <div tabindex="0" class="tpb-lookup-field">
+        <lightning-combobox
+          name={fieldName}
+          value={value}
+          variant="label-hidden"
+          placeholder="Select .."
+          options={options}
+          onchange={handleChange}
+          onblur={handleBlur}
+        ></lightning-combobox>
+      </div>
+    </template>
+
+    <c-tpb-related-wholesaler-data-source
+      record-id={relatedAccountId}
+      ondataload={handleDataLoad}
+    ></c-tpb-related-wholesaler-data-source>
+  </template>
+</template>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Uses_per_Store__c</fullName>
+    <description>Maximum # of times the promo can be used in a store, within the cycle</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Maximum # of times the promo can be used in a store, within the cycle</inlineHelpText>
+    <label>Max Uses per Store</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

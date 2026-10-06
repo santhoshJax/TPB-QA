@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TPB_Org_Unit_Mapping__c$Name</field>
+    </columns>
+    <description>The Record count represents the number of zip codes assigned to a territory.  
+Territories ending in 00T are dark areas (no TBM coverage).  
+The local NSM is assigned the dark area territories.</description>
+    <filter>
+        <criteriaItems>
+            <column>TPB_Org_Unit_Mapping__c$TPB_State_Abbrev__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TPB_Org_Unit_Mapping__c$TPB_State_Abbrev__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TPB_Org_Unit_Mapping__c$TPB_Org_Unit__c.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Territories by State</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Org_Unit_Mapping__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TPB_Org_Unit_Mapping__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

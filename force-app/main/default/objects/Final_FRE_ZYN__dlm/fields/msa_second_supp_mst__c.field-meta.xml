@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msa_second_supp_mst__c</fullName>
+    <label>MSA_SECOND_SUPP_MST</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>MSA_SECOND_SUPP_MST</labelOverride>
+        <masterLabel>MSA_SECOND_SUPP_MST</masterLabel>
+        <refAttrDeveloperName>msa_second_supp_mst_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

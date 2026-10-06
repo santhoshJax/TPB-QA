@@ -1,0 +1,21 @@
+.delete-wrap {
+    position: relative;
+}
+.delete-body {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+.divButton {
+    padding-top: 20px;
+}
+.deletebutton {
+    border-style: dotted;
+}
+.slds-hint-parent-td {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.slds-hint-parent {
+    height: 25px;
+}

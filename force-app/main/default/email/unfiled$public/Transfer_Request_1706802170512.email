@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Acct Name: {{{Account.Name}}}<br />
+Acct ID: {{{Account.Id}}}<br />
+Current Owner:&nbsp;{{{Account.TPB_Owner_Name__c}}}<br />
+<span style="color:#c0392b;"><strong>New Owner:&nbsp;</strong></span><br />
+&nbsp;</body>
+</html>

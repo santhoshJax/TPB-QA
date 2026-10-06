@@ -1,0 +1,44 @@
+<template>
+  <div class="slds-grid slds-wrap">
+    <div
+      class="slds-p-around_small slds-col slds-size_1-of-1 slds-medium-size_2-of-12"
+    >
+      <c-tpb-barcode-scan-button
+        slot="actions"
+        onscan={handleScanProduct}
+        disabled={disabled}
+      ></c-tpb-barcode-scan-button>
+    </div>
+  </div>
+  <div class="slds-m-around_medium slds-scrollable_x">
+    <template if:true={tableRecords}>
+      <lightning-datatable
+        key-field="id"
+        data={tableRecords}
+        columns={tableColumns}
+        onsave={handleSave}
+        draft-values={draftValues}
+        onrowaction={handleRowAction}
+        onresize={handleResize}
+        hide-checkbox-column
+      >
+      </lightning-datatable>
+      <table
+        class="slds-table slds-table_bordered slds-table_fixed-layout"
+        data-name="totalTable"
+      >
+        <thead>
+          <th width={tableIndexColWidth}>&nbsp;</th>
+          <th width={tableColumnWidths.productName}>Total</th>
+          <th width={tableColumnWidths.unitPrice}>&nbsp;</th>
+          <th width={tableColumnWidths.expectedQuantity}>
+            $ {actualProductOnHandTwo}
+          </th>
+          <th width={tableColumnWidths.quantity}>$ {actualProductOnHand}</th>
+          <th width={tableColumnWidths.variance}>&nbsp;</th>
+          <th width={tableColumnWidths.quickAction}>&nbsp;</th>
+        </thead>
+      </table>
+    </template>
+  </div>
+</template>

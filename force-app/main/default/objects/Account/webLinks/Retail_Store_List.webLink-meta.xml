@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_Store_List</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Retail Store List</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>https://tpbi.lightning.force.com/lightning/r/report/00O3i000002Rir3EAC/view?fv0={!Account.Id}</url>
+</WebLink>

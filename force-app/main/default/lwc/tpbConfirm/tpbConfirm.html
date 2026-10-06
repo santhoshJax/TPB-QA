@@ -1,0 +1,21 @@
+<template>
+  <lightning-modal-body>
+    <p>{content}</p>
+  </lightning-modal-body>
+  <lightning-modal-footer>
+    <div class="“slds-modal__footer_directional”">
+      <lightning-button
+        variant="base"
+        label={labelNo}
+        onclick={handleNo}
+      ></lightning-button>
+
+      <lightning-button
+        class="slds-m-left_small"
+        variant="brand"
+        label={labelYes}
+        onclick={handleYes}
+      ></lightning-button>
+    </div>
+  </lightning-modal-footer>
+</template>

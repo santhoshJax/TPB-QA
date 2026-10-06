@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>cgcloud__Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>NoManager</masterLabel>
+        <translation>Menedzser nem érhető el</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreClosed</masterLabel>
+        <translation>Üzlet bezárt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TimeWindow</masterLabel>
+        <translation>Időintervallum elmulasztva</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviced</masterLabel>
+        <translation>Nap vége elérve</translation>
+    </picklistValues>
+</CustomFieldTranslation>

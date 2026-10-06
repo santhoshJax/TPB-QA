@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Non-admin users must be assigned this permission set in order to use Conga.  See:
+https://support.conga.com/content/composer/getting-started-with-composer/configuring-composer/required-profile-permissions-for-salesforce-winter-20-critical-update</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Assign to all Conga Users based on Winter 20 Critical Update</label>
+</PermissionSet>

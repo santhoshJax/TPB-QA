@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Person Meeting</masterLabel>
+        <translation><!-- In Person Meeting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meeting Note</masterLabel>
+        <translation><!-- Meeting Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone Call</masterLabel>
+        <translation><!-- Phone Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reminder</masterLabel>
+        <translation><!-- Reminder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Inventory Review Signal to BI</masterLabel>
+        <translation><!-- Send Inventory Review Signal to BI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Status Note</masterLabel>
+        <translation><!-- Status Note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Task</masterLabel>
+        <translation><!-- Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Meeting</masterLabel>
+        <translation><!-- Virtual Meeting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

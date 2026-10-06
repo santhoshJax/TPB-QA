@@ -1,0 +1,3397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <reportTypes>
+        <description><!-- Accnts with Cust Manager --></description>
+        <label><!-- Accnts with Cust Manager --></label>
+        <name>Accnts_with_Cust_Manager</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Managers --></label>
+            <name>Customer Managers</name>
+        </sections>
+        <sections>
+            <label><!-- accnts with Cust mangrs --></label>
+            <name>accnts with Cust mangrs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Account Duplicate Record Sets --></description>
+        <label><!-- Account Duplicate Record Sets --></label>
+        <name>Account_Duplicate_Record_Sets</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Duplicate Record Items --></label>
+            <name>Duplicate Record Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Account Tasks --></description>
+        <label><!-- Account Tasks --></label>
+        <name>Account_Tasks</name>
+        <sections>
+            <label><!-- Customer Tasks --></label>
+            <name>Customer Tasks</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + Parent Accts --></description>
+        <label><!-- Accounts + Parent Accts --></label>
+        <name>Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + Acct Team Members --></description>
+        <label><!-- Accounts + Acct Team Members --></label>
+        <name>Accounts_Acct_Team_Members</name>
+        <sections>
+            <columns>
+                <label><!-- Acct Team Member --></label>
+                <name>Acct Team Member</name>
+            </columns>
+            <label><!-- Account Team --></label>
+            <name>Account Team</name>
+        </sections>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + Advanced Orders --></description>
+        <label><!-- Accounts + Advanced Orders --></label>
+        <name>Accounts_AdvancedOrders</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Orders --></label>
+            <name>Advanced Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Order Items --></label>
+            <name>Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Orders (Customer) --></label>
+            <name>Orders (Customer)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts+Child Accounts --></description>
+        <label><!-- Accounts+Child Accounts --></label>
+        <name>Accounts_Child_Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + Contacts --></description>
+        <label><!-- Accounts + Contacts --></label>
+        <name>Accounts_Contacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + GTM Opps --></description>
+        <label><!-- Accounts + GTM Opps --></label>
+        <name>Accounts_GTM_Opps</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- TPB Account Opportunities --></label>
+            <name>TPB Account Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + TPB Promotion Allocation --></description>
+        <label><!-- Accounts + TPB Promotion Allocation --></label>
+        <name>Accounts_TPB_Promotion_Allocation</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Promotion Allocation Item --></label>
+            <name>Promotion Allocation Item</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts + Visits --></description>
+        <label><!-- Accounts + Visits --></label>
+        <name>Accounts_Visits</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Manager/Owner Hierarchy --></description>
+        <label><!-- Accounts with Manager/Owner Hierarchy --></label>
+        <name>Accounts_with_Manager_Owner_Hierarchy</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accts + Customer Extension --></description>
+        <label><!-- Accts + Customer Extension --></label>
+        <name>Accts_Customer_Extension</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Extensions --></label>
+            <name>Customer Extensions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accts + Ideal Set --></description>
+        <label><!-- Accts + Ideal Set --></label>
+        <name>Accts_Ideal_Set</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Ideal Kits --></label>
+            <name>Ideal Kits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accts + Ideal Set + Product --></description>
+        <label><!-- Accts + Ideal Set + Product --></label>
+        <name>Accts_Ideal_Set_Product</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Ideal Kits --></label>
+            <name>Ideal Kits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accts + Owners --></description>
+        <label><!-- Accts + Owners --></label>
+        <name>Accts_Owners</name>
+        <sections>
+            <columns>
+                <label><!-- 7-11 VA TBM Coverage --></label>
+                <name>7-11 VA TBM Coverage</name>
+            </columns>
+            <columns>
+                <label><!-- AR Customer Trigger --></label>
+                <name>AR Customer Trigger</name>
+            </columns>
+            <columns>
+                <label><!-- Accepts Any Mobile Coupons? --></label>
+                <name>Accepts Any Mobile Coupons?</name>
+            </columns>
+            <columns>
+                <label><!-- Accepts Discretionary Promo Allocation --></label>
+                <name>Accepts Discretionary Promo Allocation</name>
+            </columns>
+            <columns>
+                <label><!-- Account Classification --></label>
+                <name>Account Classification</name>
+            </columns>
+            <columns>
+                <label><!-- Account ID --></label>
+                <name>Account ID</name>
+            </columns>
+            <columns>
+                <label><!-- Account Name --></label>
+                <name>Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Account Notes --></label>
+                <name>Account Notes</name>
+            </columns>
+            <columns>
+                <label><!-- Account Number --></label>
+                <name>Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Account Owner --></label>
+                <name>Account Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Account Parent Territory --></label>
+                <name>Account Parent Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Account Parent Territory UserId --></label>
+                <name>Account Parent Territory UserId</name>
+            </columns>
+            <columns>
+                <label><!-- Account Record Type --></label>
+                <name>Account Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- Account Site --></label>
+                <name>Account Site</name>
+            </columns>
+            <columns>
+                <label><!-- Account Source --></label>
+                <name>Account Source</name>
+            </columns>
+            <columns>
+                <label><!-- Account Territory --></label>
+                <name>Account Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Acct Name and Acct # --></label>
+                <name>Acct Name and Acct #</name>
+            </columns>
+            <columns>
+                <label><!-- Address Complete --></label>
+                <name>Address Complete</name>
+            </columns>
+            <columns>
+                <label><!-- Address Filter --></label>
+                <name>Address Filter</name>
+            </columns>
+            <columns>
+                <label><!-- Allow LINX Auto Updates --></label>
+                <name>Allow LINX Auto Updates</name>
+            </columns>
+            <columns>
+                <label><!-- Annual Revenue --></label>
+                <name>Annual Revenue</name>
+            </columns>
+            <columns>
+                <label><!-- BIC Exclusivity --></label>
+                <name>BIC Exclusivity</name>
+            </columns>
+            <columns>
+                <label><!-- Belong to Running User Territory --></label>
+                <name>Belong to Running User Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Address --></label>
+                <name>Billing Address</name>
+            </columns>
+            <columns>
+                <label><!-- Billing City --></label>
+                <name>Billing City</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Country --></label>
+                <name>Billing Country</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Country (text only) --></label>
+                <name>Billing Country (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Geocode Accuracy --></label>
+                <name>Billing Geocode Accuracy</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Latitude --></label>
+                <name>Billing Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Longitude --></label>
+                <name>Billing Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Billing State/Province --></label>
+                <name>Billing State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Billing State/Province (text only) --></label>
+                <name>Billing State/Province (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Street --></label>
+                <name>Billing Street</name>
+            </columns>
+            <columns>
+                <label><!-- Billing Zip/Postal Code --></label>
+                <name>Billing Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- C5 Fre Cash Sales Allowed --></label>
+                <name>C5 Fre Cash Sales Allowed</name>
+            </columns>
+            <columns>
+                <label><!-- Can Be Closed --></label>
+                <name>Can Be Closed</name>
+            </columns>
+            <columns>
+                <label><!-- Cash Sales Allowed? --></label>
+                <name>Cash Sales Allowed?</name>
+            </columns>
+            <columns>
+                <label><!-- Change of Ownership(text) --></label>
+                <name>Change of Ownership(text)</name>
+            </columns>
+            <columns>
+                <label><!-- Change of Ownership? --></label>
+                <name>Change of Ownership?</name>
+            </columns>
+            <columns>
+                <label><!-- Class of Trade --></label>
+                <name>Class of Trade</name>
+            </columns>
+            <columns>
+                <label><!-- Classification of Wholesaler --></label>
+                <name>Classification of Wholesaler</name>
+            </columns>
+            <columns>
+                <label><!-- Clearing House Participant --></label>
+                <name>Clearing House Participant</name>
+            </columns>
+            <columns>
+                <label><!-- Closure Reason --></label>
+                <name>Closure Reason</name>
+            </columns>
+            <columns>
+                <label><!-- Competitive Contracts --></label>
+                <name>Competitive Contracts</name>
+            </columns>
+            <columns>
+                <label><!-- Completed Visit Count --></label>
+                <name>Completed Visit Count</name>
+            </columns>
+            <columns>
+                <label><!-- Conga Signer --></label>
+                <name>Conga Signer</name>
+            </columns>
+            <columns>
+                <label><!-- Counterfeit History --></label>
+                <name>Counterfeit History</name>
+            </columns>
+            <columns>
+                <label><!-- County --></label>
+                <name>County</name>
+            </columns>
+            <columns>
+                <label><!-- Coverage Store --></label>
+                <name>Coverage Store</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Credit Amount --></label>
+                <name>Credit Amount</name>
+            </columns>
+            <columns>
+                <label><!-- Customer Number --></label>
+                <name>Customer Number</name>
+            </columns>
+            <columns>
+                <label><!-- Customer Template --></label>
+                <name>Customer Template</name>
+            </columns>
+            <columns>
+                <label><!-- Customer Template Description --></label>
+                <name>Customer Template Description</name>
+            </columns>
+            <columns>
+                <label><!-- DO NOT USE --></label>
+                <name>DO NOT USE</name>
+            </columns>
+            <columns>
+                <label><!-- Data.com Key --></label>
+                <name>Data.com Key</name>
+            </columns>
+            <columns>
+                <label><!-- Days Since Last Completed Visit --></label>
+                <name>Days Since Last Completed Visit</name>
+            </columns>
+            <columns>
+                <label><!-- Decision Making at Store Level --></label>
+                <name>Decision Making at Store Level</name>
+            </columns>
+            <columns>
+                <label><!-- Delivery Due Date --></label>
+                <name>Delivery Due Date</name>
+            </columns>
+            <columns>
+                <label><!-- Description --></label>
+                <name>Description</name>
+            </columns>
+            <columns>
+                <label><!-- Distributor Number --></label>
+                <name>Distributor Number</name>
+            </columns>
+            <columns>
+                <label><!-- Email --></label>
+                <name>Email</name>
+            </columns>
+            <columns>
+                <label><!-- Employees --></label>
+                <name>Employees</name>
+            </columns>
+            <columns>
+                <label><!-- External Id --></label>
+                <name>External Id</name>
+            </columns>
+            <columns>
+                <label><!-- FEIN --></label>
+                <name>FEIN</name>
+            </columns>
+            <columns>
+                <label><!-- Fax --></label>
+                <name>Fax</name>
+            </columns>
+            <columns>
+                <label><!-- Formula Rollup Trigger --></label>
+                <name>Formula Rollup Trigger</name>
+            </columns>
+            <columns>
+                <label><!-- Fre Marketing Allowance Recipient --></label>
+                <name>Fre Marketing Allowance Recipient</name>
+            </columns>
+            <columns>
+                <label><!-- Fre Opp --></label>
+                <name>Fre Opp</name>
+            </columns>
+            <columns>
+                <label><!-- Fre Opp Assigned --></label>
+                <name>Fre Opp Assigned</name>
+            </columns>
+            <columns>
+                <label><!-- Frequency --></label>
+                <name>Frequency</name>
+            </columns>
+            <columns>
+                <label><!-- HQ ID --></label>
+                <name>HQ ID</name>
+            </columns>
+            <columns>
+                <label><!-- HQ Name --></label>
+                <name>HQ Name</name>
+            </columns>
+            <columns>
+                <label><!-- HQ Owner Email --></label>
+                <name>HQ Owner Email</name>
+            </columns>
+            <columns>
+                <label><!-- HQ Owner Name --></label>
+                <name>HQ Owner Name</name>
+            </columns>
+            <columns>
+                <label><!-- HQ Owner Terr --></label>
+                <name>HQ Owner Terr</name>
+            </columns>
+            <columns>
+                <label><!-- HQ_Acct ID --></label>
+                <name>HQ_Acct ID</name>
+            </columns>
+            <columns>
+                <label><!-- Has Loyalty Program? --></label>
+                <name>Has Loyalty Program?</name>
+            </columns>
+            <columns>
+                <label><!-- Has Sales Team? --></label>
+                <name>Has Sales Team?</name>
+            </columns>
+            <columns>
+                <label><!-- Industry --></label>
+                <name>Industry</name>
+            </columns>
+            <columns>
+                <label><!-- Internal Customer ID --></label>
+                <name>Internal Customer ID</name>
+            </columns>
+            <columns>
+                <label><!-- Is Indirect --></label>
+                <name>Is Indirect</name>
+            </columns>
+            <columns>
+                <label><!-- Jurisdiction --></label>
+                <name>Jurisdiction</name>
+            </columns>
+            <columns>
+                <label><!-- Last Activity --></label>
+                <name>Last Activity</name>
+            </columns>
+            <columns>
+                <label><!-- Last Activity Date --></label>
+                <name>Last Activity Date</name>
+            </columns>
+            <columns>
+                <label><!-- Last Completed Call --></label>
+                <name>Last Completed Call</name>
+            </columns>
+            <columns>
+                <label><!-- Last Completed Call Date Time --></label>
+                <name>Last Completed Call Date Time</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- MSA Distributor ID --></label>
+                <name>MSA Distributor ID</name>
+            </columns>
+            <columns>
+                <label><!-- MSA ID --></label>
+                <name>MSA ID</name>
+            </columns>
+            <columns>
+                <label><!-- MST Opp --></label>
+                <name>MST Opp</name>
+            </columns>
+            <columns>
+                <label><!-- MST UPW --></label>
+                <name>MST UPW</name>
+            </columns>
+            <columns>
+                <label><!-- Maps Assignment Rule --></label>
+                <name>Maps Assignment Rule</name>
+            </columns>
+            <columns>
+                <label><!-- Marketing Platforms --></label>
+                <name>Marketing Platforms</name>
+            </columns>
+            <columns>
+                <label><!-- Metro Area --></label>
+                <name>Metro Area</name>
+            </columns>
+            <columns>
+                <label><!-- NA --></label>
+                <name>NA</name>
+            </columns>
+            <columns>
+                <label><!-- NRS Store ID --></label>
+                <name>NRS Store ID</name>
+            </columns>
+            <columns>
+                <label><!-- NSM Coverage Area --></label>
+                <name>NSM Coverage Area</name>
+            </columns>
+            <columns>
+                <label><!-- NTC Signer --></label>
+                <name>NTC Signer</name>
+            </columns>
+            <columns>
+                <label><!-- Name 2 --></label>
+                <name>Name 2</name>
+            </columns>
+            <columns>
+                <label><!-- Natural Leaf Credit --></label>
+                <name>Natural Leaf Credit</name>
+            </columns>
+            <columns>
+                <label><!-- Number Of Extensions --></label>
+                <name>Number Of Extensions</name>
+            </columns>
+            <columns>
+                <label><!-- Number of Linked Stores --></label>
+                <name>Number of Linked Stores</name>
+            </columns>
+            <columns>
+                <label><!-- OST UPW --></label>
+                <name>OST UPW</name>
+            </columns>
+            <columns>
+                <label><!-- Operating Hours --></label>
+                <name>Operating Hours</name>
+            </columns>
+            <columns>
+                <label><!-- Org Unit Flag --></label>
+                <name>Org Unit Flag</name>
+            </columns>
+            <columns>
+                <label><!-- Owner Email --></label>
+                <name>Owner Email</name>
+            </columns>
+            <columns>
+                <label><!-- Owner Name --></label>
+                <name>Owner Name</name>
+            </columns>
+            <columns>
+                <label><!-- Owner Terr and Name --></label>
+                <name>Owner Terr and Name</name>
+            </columns>
+            <columns>
+                <label><!-- Ownership --></label>
+                <name>Ownership</name>
+            </columns>
+            <columns>
+                <label><!-- Ownership Type --></label>
+                <name>Ownership Type</name>
+            </columns>
+            <columns>
+                <label><!-- Ownership_Sync_Sharing --></label>
+                <name>Ownership_Sync_Sharing</name>
+            </columns>
+            <columns>
+                <label><!-- PAPERS UPW --></label>
+                <name>PAPERS UPW</name>
+            </columns>
+            <columns>
+                <label><!-- POS Allowed? --></label>
+                <name>POS Allowed?</name>
+            </columns>
+            <columns>
+                <label><!-- Papers Opp --></label>
+                <name>Papers Opp</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Account --></label>
+                <name>Parent Account</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Account Name --></label>
+                <name>Parent Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Owner --></label>
+                <name>Parent Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Parent Total Annual Revenue --></label>
+                <name>Parent Total Annual Revenue</name>
+            </columns>
+            <columns>
+                <label><!-- Payment Term --></label>
+                <name>Payment Term</name>
+            </columns>
+            <columns>
+                <label><!-- Phone --></label>
+                <name>Phone</name>
+            </columns>
+            <columns>
+                <label><!-- Planned Visit Count --></label>
+                <name>Planned Visit Count</name>
+            </columns>
+            <columns>
+                <label><!-- Previous Store Name --></label>
+                <name>Previous Store Name</name>
+            </columns>
+            <columns>
+                <label><!-- Price Tax Advantage --></label>
+                <name>Price Tax Advantage</name>
+            </columns>
+            <columns>
+                <label><!-- Primary Wholesaler --></label>
+                <name>Primary Wholesaler</name>
+            </columns>
+            <columns>
+                <label><!-- Prohibit Visit? --></label>
+                <name>Prohibit Visit?</name>
+            </columns>
+            <columns>
+                <label><!-- Promo - Loose Leaf --></label>
+                <name>Promo - Loose Leaf</name>
+            </columns>
+            <columns>
+                <label><!-- Promo - Towers --></label>
+                <name>Promo - Towers</name>
+            </columns>
+            <columns>
+                <label><!-- Promo - Tubs --></label>
+                <name>Promo - Tubs</name>
+            </columns>
+            <columns>
+                <label><!-- Promos Allowed? --></label>
+                <name>Promos Allowed?</name>
+            </columns>
+            <columns>
+                <label><!-- Promotional Wholesaler --></label>
+                <name>Promotional Wholesaler</name>
+            </columns>
+            <columns>
+                <label><!-- RPIP Participant --></label>
+                <name>RPIP Participant</name>
+            </columns>
+            <columns>
+                <label><!-- RPIP Store Participant --></label>
+                <name>RPIP Store Participant</name>
+            </columns>
+            <columns>
+                <label><!-- Rating --></label>
+                <name>Rating</name>
+            </columns>
+            <columns>
+                <label><!-- Reason Not Safe --></label>
+                <name>Reason Not Safe</name>
+            </columns>
+            <columns>
+                <label><!-- Reason Not Visited --></label>
+                <name>Reason Not Visited</name>
+            </columns>
+            <columns>
+                <label><!-- Recent Audit --></label>
+                <name>Recent Audit</name>
+            </columns>
+            <columns>
+                <label><!-- Remote Sales Acct --></label>
+                <name>Remote Sales Acct</name>
+            </columns>
+            <columns>
+                <label><!-- Remote Sales Assignment --></label>
+                <name>Remote Sales Assignment</name>
+            </columns>
+            <columns>
+                <label><!-- Remote Sales Contact Date --></label>
+                <name>Remote Sales Contact Date</name>
+            </columns>
+            <columns>
+                <label><!-- Remote Sales Mktplace State --></label>
+                <name>Remote Sales Mktplace State</name>
+            </columns>
+            <columns>
+                <label><!-- Remote Sales Result --></label>
+                <name>Remote Sales Result</name>
+            </columns>
+            <columns>
+                <label><!-- Republic Exclusivity --></label>
+                <name>Republic Exclusivity</name>
+            </columns>
+            <columns>
+                <label><!-- Retail Store Type --></label>
+                <name>Retail Store Type</name>
+            </columns>
+            <columns>
+                <label><!-- Route Code --></label>
+                <name>Route Code</name>
+            </columns>
+            <columns>
+                <label><!-- Running User is Owner --></label>
+                <name>Running User is Owner</name>
+            </columns>
+            <columns>
+                <label><!-- SF Account ID --></label>
+                <name>SF Account ID</name>
+            </columns>
+            <columns>
+                <label><!-- SIC Code --></label>
+                <name>SIC Code</name>
+            </columns>
+            <columns>
+                <label><!-- SIC Description --></label>
+                <name>SIC Description</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Division --></label>
+                <name>Sales Division</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Org --></label>
+                <name>Sales Org</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Address --></label>
+                <name>Shipping Address</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping City --></label>
+                <name>Shipping City</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Country --></label>
+                <name>Shipping Country</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Country (text only) --></label>
+                <name>Shipping Country (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Geocode Accuracy --></label>
+                <name>Shipping Geocode Accuracy</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Latitude --></label>
+                <name>Shipping Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Longitude --></label>
+                <name>Shipping Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping State/Province --></label>
+                <name>Shipping State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping State/Province (text only) --></label>
+                <name>Shipping State/Province (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Street --></label>
+                <name>Shipping Street</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Street Filter --></label>
+                <name>Shipping Street Filter</name>
+            </columns>
+            <columns>
+                <label><!-- Shipping Zip/Postal Code --></label>
+                <name>Shipping Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Shopify Account Number --></label>
+                <name>Shopify Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Smokeless Store Rank --></label>
+                <name>Smokeless Store Rank</name>
+            </columns>
+            <columns>
+                <label><!-- Smoking Store Rank --></label>
+                <name>Smoking Store Rank</name>
+            </columns>
+            <columns>
+                <label><!-- Source System ID --></label>
+                <name>Source System ID</name>
+            </columns>
+            <columns>
+                <label><!-- State Tax Number --></label>
+                <name>State Tax Number</name>
+            </columns>
+            <columns>
+                <label><!-- State Tobacco Number --></label>
+                <name>State Tobacco Number</name>
+            </columns>
+            <columns>
+                <label><!-- Status --></label>
+                <name>Status</name>
+            </columns>
+            <columns>
+                <label><!-- Store Count --></label>
+                <name>Store Count</name>
+            </columns>
+            <columns>
+                <label><!-- Store County --></label>
+                <name>Store County</name>
+            </columns>
+            <columns>
+                <label><!-- Store Number --></label>
+                <name>Store Number</name>
+            </columns>
+            <columns>
+                <label><!-- Store Visited --></label>
+                <name>Store Visited</name>
+            </columns>
+            <columns>
+                <label><!-- Sub Class of Trade --></label>
+                <name>Sub Class of Trade</name>
+            </columns>
+            <columns>
+                <label><!-- TDL Store ID --></label>
+                <name>TDL Store ID</name>
+            </columns>
+            <columns>
+                <label><!-- TPBM Account Number --></label>
+                <name>TPBM Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- TPB_RecordTypeName --></label>
+                <name>TPB_RecordTypeName</name>
+            </columns>
+            <columns>
+                <label><!-- TPBi Mobile Coupon Enrollment --></label>
+                <name>TPBi Mobile Coupon Enrollment</name>
+            </columns>
+            <columns>
+                <label><!-- TSM Territory --></label>
+                <name>TSM Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Tax Level --></label>
+                <name>Tax Level</name>
+            </columns>
+            <columns>
+                <label><!-- Terms --></label>
+                <name>Terms</name>
+            </columns>
+            <columns>
+                <label><!-- Territory ID --></label>
+                <name>Territory ID</name>
+            </columns>
+            <columns>
+                <label><!-- This Quarter Visit Audit --></label>
+                <name>This Quarter Visit Audit</name>
+            </columns>
+            <columns>
+                <label><!-- This Sales Cycle&apos;s Visit Audit --></label>
+                <name>This Sales Cycle&apos;s Visit Audit</name>
+            </columns>
+            <columns>
+                <label><!-- Ticker Symbol --></label>
+                <name>Ticker Symbol</name>
+            </columns>
+            <columns>
+                <label><!-- Tier --></label>
+                <name>Tier</name>
+            </columns>
+            <columns>
+                <label><!-- Tobacco License Expiration Date --></label>
+                <name>Tobacco License Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Total Amount of Orders --></label>
+                <name>Total Amount of Orders</name>
+            </columns>
+            <columns>
+                <label><!-- Total Annual Revenue --></label>
+                <name>Total Annual Revenue</name>
+            </columns>
+            <columns>
+                <label><!-- Total Opps Achieved --></label>
+                <name>Total Opps Achieved</name>
+            </columns>
+            <columns>
+                <label><!-- Total Tobacco Volume --></label>
+                <name>Total Tobacco Volume</name>
+            </columns>
+            <columns>
+                <label><!-- Type --></label>
+                <name>Type</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Status --></label>
+                <name>Visit Status</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Status and Coverage Type --></label>
+                <name>Visit Status and Coverage Type</name>
+            </columns>
+            <columns>
+                <label><!-- Website --></label>
+                <name>Website</name>
+            </columns>
+            <columns>
+                <label><!-- Wholesale ID --></label>
+                <name>Wholesale ID</name>
+            </columns>
+            <columns>
+                <label><!-- Work Days Since Last Completed Visit --></label>
+                <name>Work Days Since Last Completed Visit</name>
+            </columns>
+            <columns>
+                <label><!-- Workload Status --></label>
+                <name>Workload Status</name>
+            </columns>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Acct Owner Details --></label>
+            <name>Acct Owner Details</name>
+        </sections>
+        <sections>
+            <label><!-- Parent Account Details --></label>
+            <name>Parent Account Details</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activity + Job List + VJ --></description>
+        <label><!-- Activity + Job List + VJ --></label>
+        <name>Activity_Job_List_VJ</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Job Lists --></label>
+            <name>Job Lists</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Jobs --></label>
+            <name>Visit Jobs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Activity Products + Accts --></description>
+        <label><!-- Activity Products + Accts --></label>
+        <name>Activity_Products</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Activity Products --></label>
+            <name>Activity Products</name>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <name>Product</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Adv Orders + Related Wholesaler --></description>
+        <label><!-- Adv Orders + Related Wholesaler --></label>
+        <name>Adv_Orders_Related_Wholesaler</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Account Supplier --></label>
+            <name>Account Supplier</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Order --></label>
+            <name>Order</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Advanced Order Items --></description>
+        <label><!-- Advanced Order Items --></label>
+        <name>Advanced_Order_Items</name>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Advanced Order Items for Prebook --></description>
+        <label><!-- Advanced Order Items for Prebook --></label>
+        <name>Advanced_Order_Items_for_Prebook</name>
+        <sections>
+            <label><!-- Advanced Order --></label>
+            <name>Advanced Order</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Misc --></label>
+            <name>Misc</name>
+        </sections>
+        <sections>
+            <label><!-- Prebook Wholesaler --></label>
+            <name>Prebook Wholesaler</name>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <name>Product</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Advanced Order With Advanced Order Items --></description>
+        <label><!-- Advanced Order With Advanced Order Items --></label>
+        <name>Advanced_Order_With_Advanced_Order_Items</name>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Orders --></label>
+            <name>Advanced Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Order Items --></label>
+            <name>Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Advanced Orders + Advanced Order Items --></description>
+        <label><!-- Advanced Orders + Advanced Order Items --></label>
+        <name>Advanced_Orders_Advanced_Order_Items</name>
+        <sections>
+            <label><!-- Advanced Order Items --></label>
+            <name>Advanced Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- Advanced Orders --></label>
+            <name>Advanced Orders</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Price Group --></label>
+                <name>Price Group</name>
+            </columns>
+            <label><!-- Order Items --></label>
+            <name>Order Items</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Advanced Promotions + Products --></description>
+        <label><!-- Advanced Promotions + Products --></label>
+        <name>Advanced_Promotions_Products</name>
+        <sections>
+            <columns>
+                <label><!-- Available in --></label>
+                <name>Available in</name>
+            </columns>
+            <label><!-- Advanced Promotions --></label>
+            <name>Advanced Promotions</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Product Group (L4) --></label>
+                <name>Product Group (L4)</name>
+            </columns>
+            <label><!-- Tactic Products --></label>
+            <name>Tactic Products</name>
+        </sections>
+        <sections>
+            <label><!-- Tactics --></label>
+            <name>Tactics</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Alias + Products --></description>
+        <label><!-- Alias + Products --></label>
+        <name>Alias_Products</name>
+        <sections>
+            <label><!-- Alias --></label>
+            <name>Alias</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Anchor Sets + Accounts --></description>
+        <label><!-- Anchor Sets + Accounts --></label>
+        <name>Anchor_Sets_Accounts</name>
+        <sections>
+            <label><!-- Customer Set Customers --></label>
+            <name>Customer Set Customers</name>
+        </sections>
+        <sections>
+            <label><!-- Customer Sets --></label>
+            <name>Customer Sets</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Appts + WO +  Accounts --></description>
+        <label><!-- Appts + WO +  Accounts --></label>
+        <name>Appts_Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Service Appointments --></label>
+            <name>Service Appointments</name>
+        </sections>
+        <sections>
+            <label><!-- Work Order Line Items --></label>
+            <name>Work Order Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Work Orders --></label>
+            <name>Work Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Authorized Products + WHL + Products --></description>
+        <label><!-- Authorized Products + WHL + Products --></label>
+        <name>Authorized_Products_WHL_Products</name>
+        <sections>
+            <label><!-- Account Detail --></label>
+            <name>Account Detail</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Account --></label>
+                <name>Account</name>
+            </columns>
+            <columns>
+                <label><!-- Account Product ID --></label>
+                <name>Account Product ID</name>
+            </columns>
+            <columns>
+                <label><!-- Account Product Name --></label>
+                <name>Account Product Name</name>
+            </columns>
+            <columns>
+                <label><!-- Cost Price --></label>
+                <name>Cost Price</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Item Type --></label>
+                <name>Item Type</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Owner --></label>
+                <name>Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Product --></label>
+                <name>Product</name>
+            </columns>
+            <columns>
+                <label><!-- Quantity --></label>
+                <name>Quantity</name>
+            </columns>
+            <columns>
+                <label><!-- SKU --></label>
+                <name>SKU</name>
+            </columns>
+            <columns>
+                <label><!-- Selling Price --></label>
+                <name>Selling Price</name>
+            </columns>
+            <columns>
+                <label><!-- Status --></label>
+                <name>Status</name>
+            </columns>
+            <columns>
+                <label><!-- Test --></label>
+                <name>Test</name>
+            </columns>
+            <columns>
+                <label><!-- Unique Id --></label>
+                <name>Unique Id</name>
+            </columns>
+            <label><!-- Account Products --></label>
+            <name>Account Products</name>
+        </sections>
+        <sections>
+            <label><!-- Product --></label>
+            <name>Product</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- C-Fund Transaction History --></description>
+        <label><!-- C-Fund Transaction History --></label>
+        <name>C_Fund_Transaction_History</name>
+        <sections>
+            <label><!-- C-Fund Transaction --></label>
+            <name>C-Fund Transaction</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Daily Report --></description>
+        <label><!-- Daily Report --></label>
+        <name>Daily_Report</name>
+        <sections>
+            <label><!-- Daily Reports --></label>
+            <name>Daily Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Dumpjobbers + Users + WHL --></description>
+        <label><!-- Dumpjobbers + Users + WHL --></label>
+        <name>Dumpjobbers_Users_WHL</name>
+        <sections>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Dumpjobber ID --></label>
+                <name>Dumpjobber ID</name>
+            </columns>
+            <columns>
+                <label><!-- Dumpjobber Name --></label>
+                <name>Dumpjobber Name</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Owner --></label>
+                <name>Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Primary Dumpjobber --></label>
+                <name>Primary Dumpjobber</name>
+            </columns>
+            <columns>
+                <label><!-- User --></label>
+                <name>User</name>
+            </columns>
+            <columns>
+                <label><!-- Wholesaler --></label>
+                <name>Wholesaler</name>
+            </columns>
+            <label><!-- Dumpjobbers --></label>
+            <name>Dumpjobbers</name>
+        </sections>
+        <sections>
+            <label><!-- User Detail --></label>
+            <name>User Detail</name>
+        </sections>
+        <sections>
+            <label><!-- Wholesaler Detail --></label>
+            <name>Wholesaler Detail</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- GTM Retail Acct Opps --></description>
+        <label><!-- GTM Retail Acct Opps --></label>
+        <name>GTM_Retail_Acct_Opps</name>
+        <sections>
+            <label><!-- TPB Account Opportunities --></label>
+            <name>TPB Account Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Group Member --></description>
+        <label><!-- Group Member --></label>
+        <name>Group_Member</name>
+        <sections>
+            <label><!-- Group Member --></label>
+            <name>Group Member</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Ideal Kits + Accts --></description>
+        <label><!-- Ideal Kits + Accts --></label>
+        <name>Ideal_Kits_Accts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Ideal Kits --></label>
+            <name>Ideal Kits</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Inventory + Products + Users --></description>
+        <label><!-- Inventory + Products + Users --></label>
+        <name>Inventory_Products_Users</name>
+        <sections>
+            <label><!-- Inventory --></label>
+            <name>Inventory</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Inventory Transaction Custom Report --></description>
+        <label><!-- Inventory Transaction Custom Report --></label>
+        <name>Inventory_Transaction_Custom_Report</name>
+        <sections>
+            <label><!-- Inventory --></label>
+            <name>Inventory</name>
+        </sections>
+        <sections>
+            <label><!-- Inventory Transactions --></label>
+            <name>Inventory Transactions</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- JDL + Visit Job --></description>
+        <label><!-- JDL + Visit Job --></label>
+        <name>JDL_Visit_Job</name>
+        <sections>
+            <columns>
+                <label><!-- Active --></label>
+                <name>Active</name>
+            </columns>
+            <columns>
+                <label><!-- Competitor Relevant --></label>
+                <name>Competitor Relevant</name>
+            </columns>
+            <columns>
+                <label><!-- Consider Max Value --></label>
+                <name>Consider Max Value</name>
+            </columns>
+            <columns>
+                <label><!-- Consider Min Value --></label>
+                <name>Consider Min Value</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Data Type --></label>
+                <name>Data Type</name>
+            </columns>
+            <columns>
+                <label><!-- Description --></label>
+                <name>Description</name>
+            </columns>
+            <columns>
+                <label><!-- Description Language 1 --></label>
+                <name>Description Language 1</name>
+            </columns>
+            <columns>
+                <label><!-- Description Language 2 --></label>
+                <name>Description Language 2</name>
+            </columns>
+            <columns>
+                <label><!-- Description Language 3 --></label>
+                <name>Description Language 3</name>
+            </columns>
+            <columns>
+                <label><!-- Description Language 4 --></label>
+                <name>Description Language 4</name>
+            </columns>
+            <columns>
+                <label><!-- Job Definition Template : Job Template : Job Template Name --></label>
+                <name>Job Definition Template : Job Template : Job Template Name</name>
+            </columns>
+            <columns>
+                <label><!-- Job Definition Template ID --></label>
+                <name>Job Definition Template ID</name>
+            </columns>
+            <columns>
+                <label><!-- Job Definition Template Name --></label>
+                <name>Job Definition Template Name</name>
+            </columns>
+            <columns>
+                <label><!-- Job Template --></label>
+                <name>Job Template</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Max Date Policy --></label>
+                <name>Max Date Policy</name>
+            </columns>
+            <columns>
+                <label><!-- Max Value --></label>
+                <name>Max Value</name>
+            </columns>
+            <columns>
+                <label><!-- Measure Type --></label>
+                <name>Measure Type</name>
+            </columns>
+            <columns>
+                <label><!-- Min Date Policy --></label>
+                <name>Min Date Policy</name>
+            </columns>
+            <columns>
+                <label><!-- Min Value --></label>
+                <name>Min Value</name>
+            </columns>
+            <columns>
+                <label><!-- Owner --></label>
+                <name>Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Perfect Store Question --></label>
+                <name>Perfect Store Question</name>
+            </columns>
+            <columns>
+                <label><!-- Picture Taking --></label>
+                <name>Picture Taking</name>
+            </columns>
+            <columns>
+                <label><!-- Presetting --></label>
+                <name>Presetting</name>
+            </columns>
+            <columns>
+                <label><!-- Primary Survey Policy --></label>
+                <name>Primary Survey Policy</name>
+            </columns>
+            <columns>
+                <label><!-- Product Reference --></label>
+                <name>Product Reference</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Org --></label>
+                <name>Sales Org</name>
+            </columns>
+            <columns>
+                <label><!-- Save Presetting --></label>
+                <name>Save Presetting</name>
+            </columns>
+            <columns>
+                <label><!-- Short Description --></label>
+                <name>Short Description</name>
+            </columns>
+            <columns>
+                <label><!-- Short Description Language 1 --></label>
+                <name>Short Description Language 1</name>
+            </columns>
+            <columns>
+                <label><!-- Short Description Language 2 --></label>
+                <name>Short Description Language 2</name>
+            </columns>
+            <columns>
+                <label><!-- Short Description Language 3 --></label>
+                <name>Short Description Language 3</name>
+            </columns>
+            <columns>
+                <label><!-- Short Description Language 4 --></label>
+                <name>Short Description Language 4</name>
+            </columns>
+            <columns>
+                <label><!-- Sort --></label>
+                <name>Sort</name>
+            </columns>
+            <columns>
+                <label><!-- Step Size --></label>
+                <name>Step Size</name>
+            </columns>
+            <columns>
+                <label><!-- Survey Identification --></label>
+                <name>Survey Identification</name>
+            </columns>
+            <columns>
+                <label><!-- Target Value Column --></label>
+                <name>Target Value Column</name>
+            </columns>
+            <columns>
+                <label><!-- Use Stepper --></label>
+                <name>Use Stepper</name>
+            </columns>
+            <label><!-- Job Definition Templates --></label>
+            <name>Job Definition Templates</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Answer --></label>
+                <name>Answer</name>
+            </columns>
+            <columns>
+                <label><!-- Calculated Distribution --></label>
+                <name>Calculated Distribution</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Data Migration Remark --></label>
+                <name>Data Migration Remark</name>
+            </columns>
+            <columns>
+                <label><!-- Data Type Option --></label>
+                <name>Data Type Option</name>
+            </columns>
+            <columns>
+                <label><!-- Done --></label>
+                <name>Done</name>
+            </columns>
+            <columns>
+                <label><!-- EOV --></label>
+                <name>EOV</name>
+            </columns>
+            <columns>
+                <label><!-- Final Distribution --></label>
+                <name>Final Distribution</name>
+            </columns>
+            <columns>
+                <label><!-- Item Stocked --></label>
+                <name>Item Stocked</name>
+            </columns>
+            <columns>
+                <label><!-- Job Definition --></label>
+                <name>Job Definition</name>
+            </columns>
+            <columns>
+                <label><!-- Job List --></label>
+                <name>Job List</name>
+            </columns>
+            <columns>
+                <label><!-- Job Template Description --></label>
+                <name>Job Template Description</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Last Value --></label>
+                <name>Last Value</name>
+            </columns>
+            <columns>
+                <label><!-- MSA Date --></label>
+                <name>MSA Date</name>
+            </columns>
+            <columns>
+                <label><!-- MSA Vol.? --></label>
+                <name>MSA Vol.?</name>
+            </columns>
+            <columns>
+                <label><!-- Manually --></label>
+                <name>Manually</name>
+            </columns>
+            <columns>
+                <label><!-- Metric Status --></label>
+                <name>Metric Status</name>
+            </columns>
+            <columns>
+                <label><!-- Number of Pictures --></label>
+                <name>Number of Pictures</name>
+            </columns>
+            <columns>
+                <label><!-- Old SFDCID --></label>
+                <name>Old SFDCID</name>
+            </columns>
+            <columns>
+                <label><!-- Origin --></label>
+                <name>Origin</name>
+            </columns>
+            <columns>
+                <label><!-- PODRIA Status --></label>
+                <name>PODRIA Status</name>
+            </columns>
+            <columns>
+                <label><!-- POS --></label>
+                <name>POS</name>
+            </columns>
+            <columns>
+                <label><!-- Product --></label>
+                <name>Product</name>
+            </columns>
+            <columns>
+                <label><!-- Product Name --></label>
+                <name>Product Name</name>
+            </columns>
+            <columns>
+                <label><!-- Promotion --></label>
+                <name>Promotion</name>
+            </columns>
+            <columns>
+                <label><!-- Question --></label>
+                <name>Question</name>
+            </columns>
+            <columns>
+                <label><!-- SOV --></label>
+                <name>SOV</name>
+            </columns>
+            <columns>
+                <label><!-- Target Value --></label>
+                <name>Target Value</name>
+            </columns>
+            <columns>
+                <label><!-- Value --></label>
+                <name>Value</name>
+            </columns>
+            <columns>
+                <label><!-- Visit --></label>
+                <name>Visit</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Date --></label>
+                <name>Visit Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Job List : Activity : Activity Name --></label>
+                <name>Visit Job : Job List : Activity : Activity Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Job List : Job List Name --></label>
+                <name>Visit Job : Job List : Job List Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Account Name --></label>
+                <name>Visit Job : Visit : Account : Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Account Number --></label>
+                <name>Visit Job : Visit : Account : Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Account Owner --></label>
+                <name>Visit Job : Visit : Account : Account Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Class of Trade --></label>
+                <name>Visit Job : Visit : Account : Class of Trade</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Sub Class of Trade --></label>
+                <name>Visit Job : Visit : Account : Sub Class of Trade</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job : Visit : Account : Territory ID --></label>
+                <name>Visit Job : Visit : Account : Territory ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job ID --></label>
+                <name>Visit Job ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Job Name --></label>
+                <name>Visit Job Name</name>
+            </columns>
+            <label><!-- Visit Jobs --></label>
+            <name>Visit Jobs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Lead Duplicate Record Sets Report --></description>
+        <label><!-- Lead Duplicate Record Sets Report --></label>
+        <name>Lead_Duplicate_Record_Sets_Report</name>
+        <sections>
+            <label><!-- Duplicate Record Items --></label>
+            <name>Duplicate Record Items</name>
+        </sections>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Market Inspections --></description>
+        <label><!-- Market Inspections --></label>
+        <name>Market_Inspections</name>
+        <sections>
+            <label><!-- Market Inspections --></label>
+            <name>Market Inspections</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Mass Prebook Orders --></description>
+        <label><!-- Mass Prebook Orders --></label>
+        <name>Mass_Prebook_Orders</name>
+        <sections>
+            <label><!-- Order Products --></label>
+            <name>Order Products</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Mkt Inspections + Product Observation --></description>
+        <label><!-- Mkt Inspections + Product Observation --></label>
+        <name>Mkt_Inspections_Product_Observation</name>
+        <sections>
+            <label><!-- Market Inspections --></label>
+            <name>Market Inspections</name>
+        </sections>
+        <sections>
+            <label><!-- Product Visit Inspections --></label>
+            <name>Product Visit Inspections</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities + Opp Products --></description>
+        <label><!-- Opportunities + Opp Products --></label>
+        <name>Opportunities_Opp_Products</name>
+        <sections>
+            <label><!-- Account Details --></label>
+            <name>Account Details</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Products --></label>
+            <name>Opportunity Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opps + Events --></description>
+        <label><!-- Opps + Events --></label>
+        <name>Opps_Events</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opps + Opp Log --></description>
+        <label><!-- Opps + Opp Log --></label>
+        <name>Opps_Opp_Log</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Log --></label>
+            <name>Opportunity Log</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Order + Order Item --></description>
+        <label><!-- Order + Order Item --></label>
+        <name>Order_Order_Item</name>
+        <sections>
+            <label><!-- Order Products --></label>
+            <name>Order Products</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orders with Accounts --></description>
+        <label><!-- Orders with Accounts --></label>
+        <name>Orders_with_Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Org Unit Mapping --></description>
+        <label><!-- Org Unit Mapping --></label>
+        <name>Org_Unit_Mapping</name>
+        <sections>
+            <columns>
+                <label><!-- Territory --></label>
+                <name>Territory</name>
+            </columns>
+            <label><!-- Org Unit Mapping --></label>
+            <name>Org Unit Mapping</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Org Units + Org Unit Users --></description>
+        <label><!-- Org Units + Org Unit Users --></label>
+        <name>Org_Units_Org_Unit_Users</name>
+        <sections>
+            <label><!-- Org Unit Users --></label>
+            <name>Org Unit Users</name>
+        </sections>
+        <sections>
+            <label><!-- Org Units --></label>
+            <name>Org Units</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Products + Product Parts --></description>
+        <label><!-- Products + Product Parts --></label>
+        <name>Products_Product_Parts</name>
+        <sections>
+            <label><!-- Product Parts --></label>
+            <name>Product Parts</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Products with Unit of Measure --></description>
+        <label><!-- Products with Unit of Measure --></label>
+        <name>Products_with_Unit_of_Measure</name>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+        <sections>
+            <label><!-- Units of Measure --></label>
+            <name>Units of Measure</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Promotion Allocation Items --></description>
+        <label><!-- Promotion Allocation Items --></label>
+        <name>Promotion_Allocation_Items</name>
+        <sections>
+            <label><!-- Promotion Allocation Items --></label>
+            <name>Promotion Allocation Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Related Accounts --></description>
+        <label><!-- Related Accounts --></label>
+        <name>Related_Accounts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Related Accounts --></label>
+            <name>Related Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Wholesalers --></label>
+            <name>Wholesalers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Related Accounts + Retailer + Wholesaler --></description>
+        <label><!-- Related Accounts + Retailer + Wholesaler --></label>
+        <name>Related_Accounts_Retailer_Wholesaler</name>
+        <sections>
+            <label><!-- Related Accounts --></label>
+            <name>Related Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Retailer --></label>
+            <name>Retailer</name>
+        </sections>
+        <sections>
+            <label><!-- Wholesaler --></label>
+            <name>Wholesaler</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Related Accounts with WHL --></description>
+        <label><!-- Related Accounts with WHL --></label>
+        <name>Related_Accounts_WHL</name>
+        <sections>
+            <label><!-- Related Accounts --></label>
+            <name>Related Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Retail Acct Opps --></description>
+        <label><!-- Retail Acct Opps --></label>
+        <name>Retail_Acct_Opps</name>
+        <sections>
+            <label><!-- TPB Account Opportunities --></label>
+            <name>TPB Account Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Retail Acct Opps + GTM Goals --></description>
+        <label><!-- Retail Acct Opps + GTM Goals --></label>
+        <name>Retail_Acct_Opps_GTM_Goals</name>
+        <sections>
+            <label><!-- TPB Account Opportunities --></label>
+            <name>TPB Account Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sales Initiative Custom Report --></description>
+        <label><!-- Sales Initiative Custom Report --></label>
+        <name>Sales_Initiative_Custom_Report</name>
+        <sections>
+            <label><!-- Sales Initiatives --></label>
+            <name>Sales Initiatives</name>
+        </sections>
+        <sections>
+            <label><!-- TPB User Metric --></label>
+            <name>TPB User Metric</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sales Org + Sales Org User --></description>
+        <label><!-- Sales Org + Sales Org User --></label>
+        <name>Sales_Org_Sales_Org_User</name>
+        <sections>
+            <label><!-- Sales Organization --></label>
+            <name>Sales Organization</name>
+        </sections>
+        <sections>
+            <label><!-- User --></label>
+            <name>User</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Scheduled Visits --></description>
+        <label><!-- Scheduled Visits --></label>
+        <name>Scheduled_Visits</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Service Appointments --></label>
+            <name>Service Appointments</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Survey + Accts --></description>
+        <label><!-- Survey + Accts --></label>
+        <name>Survey_Accts</name>
+        <sections>
+            <label><!-- Survey Account Questions --></label>
+            <name>Survey Account Questions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Survey+Survey Items --></description>
+        <label><!-- Survey+Survey Items --></label>
+        <name>Survey_Survey_Items</name>
+        <sections>
+            <label><!-- Survey Items --></label>
+            <name>Survey Items</name>
+        </sections>
+        <sections>
+            <label><!-- Surveys --></label>
+            <name>Surveys</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sync History + Sync Details --></description>
+        <label><!-- Sync History + Sync Details --></label>
+        <name>Sync_History</name>
+        <sections>
+            <label><!-- Sync History --></label>
+            <name>Sync History</name>
+        </sections>
+        <sections>
+            <label><!-- Sync History Detail --></label>
+            <name>Sync History Detail</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sync ID Mapping --></description>
+        <label><!-- Sync ID Mapping --></label>
+        <name>Sync_ID_Mapping</name>
+        <sections>
+            <label><!-- Salesforce and Mobile App ID Mappings --></label>
+            <name>Salesforce and Mobile App ID Mappings</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Inventory Transactions --></description>
+        <label><!-- Inventory Transactions --></label>
+        <name>TPB_Inventory_Transactions</name>
+        <sections>
+            <label><!-- Inventory Transactions --></label>
+            <name>Inventory Transactions</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- TPB Opportunities with TPB Account Opportunities --></description>
+        <label><!-- TPB Opportunities with TPB Account Opportunities --></label>
+        <name>TPB_Opportunities_with_TPB_Account_Opportunities</name>
+        <sections>
+            <label><!-- TPB Account Opportunities --></label>
+            <name>TPB Account Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- TPB Opportunities --></label>
+            <name>TPB Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- TPB User Metrics with Manager and Delegated Approver --></description>
+        <label><!-- TPB User Metrics with Manager and Delegated Approver --></label>
+        <name>TPB_User_Metrics_with_Manager_and_Delegated_Approver</name>
+        <sections>
+            <label><!-- Role --></label>
+            <name>Role</name>
+        </sections>
+        <sections>
+            <label><!-- TPB User Metric --></label>
+            <name>TPB User Metric</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Units of Measure --></description>
+        <label><!-- Units of Measure --></label>
+        <name>Units_of_Measure</name>
+        <sections>
+            <label><!-- Units of Measure --></label>
+            <name>Units of Measure</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users + Dumpjobbers --></description>
+        <label><!-- Users + Dumpjobbers --></label>
+        <name>Users_Dumpjobbers</name>
+        <sections>
+            <label><!-- Dumpjobbers --></label>
+            <name>Dumpjobbers</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Whl Info --></label>
+            <name>Whl Info</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users + Inventory --></description>
+        <label><!-- Users + Inventory --></label>
+        <name>Users_Inventory</name>
+        <sections>
+            <label><!-- Inventory --></label>
+            <name>Inventory</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users + Managers --></description>
+        <label><!-- Users + Managers --></label>
+        <name>Users_Managers</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Users (Manager) --></label>
+            <name>Users (Manager)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Users + Visits --></description>
+        <label><!-- Users + Visits --></label>
+        <name>Users_Visits</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+        <sections>
+            <label><!-- Visits (Created By) --></label>
+            <name>Visits (Created By)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Van Inventory --></description>
+        <label><!-- Van Inventory --></label>
+        <name>Van_Inventory</name>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Van Inventory --></label>
+            <name>Van Inventory</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visits --></description>
+        <label><!-- Visits --></label>
+        <name>Visits</name>
+        <sections>
+            <label><!-- Account Details --></label>
+            <name>Account Details</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Visit : Responsible : ADP Employee Number --></label>
+                <name>Visit : Responsible : ADP Employee Number</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : APCode --></label>
+                <name>Visit : Responsible : APCode</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : About Me --></label>
+                <name>Visit : Responsible : About Me</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Account --></label>
+                <name>Visit : Responsible : Account</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Active --></label>
+                <name>Visit : Responsible : Active</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Address --></label>
+                <name>Visit : Responsible : Address</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Admin Info Emails --></label>
+                <name>Visit : Responsible : Admin Info Emails</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Alias --></label>
+                <name>Visit : Responsible : Alias</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Allow Forecasting --></label>
+                <name>Visit : Responsible : Allow Forecasting</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Allow Maps Exports --></label>
+                <name>Visit : Responsible : Allow Maps Exports</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Balance --></label>
+                <name>Visit : Responsible : Balance</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Base C-Fund Amount --></label>
+                <name>Visit : Responsible : Base C-Fund Amount</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Base C-Fund Amount (Net Admin Adj) --></label>
+                <name>Visit : Responsible : Base C-Fund Amount (Net Admin Adj)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Call Center --></label>
+                <name>Visit : Responsible : Call Center</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Calls per Day Goal --></label>
+                <name>Visit : Responsible : Calls per Day Goal</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Cash &amp; Cash Equivalents --></label>
+                <name>Visit : Responsible : Cash &amp; Cash Equivalents</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Cash &amp; Cash Equivalents (Net Admin Adj) --></label>
+                <name>Visit : Responsible : Cash &amp; Cash Equivalents (Net Admin Adj)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Chatter Adoption Stage --></label>
+                <name>Visit : Responsible : Chatter Adoption Stage</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Chatter Adoption Stage Modified Date --></label>
+                <name>Visit : Responsible : Chatter Adoption Stage Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Chatter Email Highlights Frequency --></label>
+                <name>Visit : Responsible : Chatter Email Highlights Frequency</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : City --></label>
+                <name>Visit : Responsible : City</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Company Name --></label>
+                <name>Visit : Responsible : Company Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Contact --></label>
+                <name>Visit : Responsible : Contact</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Country --></label>
+                <name>Visit : Responsible : Country</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Country (text only) --></label>
+                <name>Visit : Responsible : Country (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Created By --></label>
+                <name>Visit : Responsible : Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Created Date --></label>
+                <name>Visit : Responsible : Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Current Status --></label>
+                <name>Visit : Responsible : Current Status</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Cust Id --></label>
+                <name>Visit : Responsible : Cust Id</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Default Notification Frequency when Joining Groups --></label>
+                <name>Visit : Responsible : Default Notification Frequency when Joining Groups</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Default Proximity Radius --></label>
+                <name>Visit : Responsible : Default Proximity Radius</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : DefaultType --></label>
+                <name>Visit : Responsible : DefaultType</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Department --></label>
+                <name>Visit : Responsible : Department</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Device Id --></label>
+                <name>Visit : Responsible : Device Id</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Device Vendor --></label>
+                <name>Visit : Responsible : Device Vendor</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Distributor License # --></label>
+                <name>Visit : Responsible : Distributor License #</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Division --></label>
+                <name>Visit : Responsible : Division</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Edit Maps Org Wide Queries --></label>
+                <name>Visit : Responsible : Edit Maps Org Wide Queries</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Email --></label>
+                <name>Visit : Responsible : Email</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Email Encoding --></label>
+                <name>Visit : Responsible : Email Encoding</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Email Sender Address --></label>
+                <name>Visit : Responsible : Email Sender Address</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Email Sender Name --></label>
+                <name>Visit : Responsible : Email Sender Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Email Signature --></label>
+                <name>Visit : Responsible : Email Signature</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Employee Number --></label>
+                <name>Visit : Responsible : Employee Number</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : End of Day --></label>
+                <name>Visit : Responsible : End of Day</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Extension --></label>
+                <name>Visit : Responsible : Extension</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Failed Login Attempts --></label>
+                <name>Visit : Responsible : Failed Login Attempts</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Fax --></label>
+                <name>Visit : Responsible : Fax</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Federation ID is set? --></label>
+                <name>Visit : Responsible : Federation ID is set?</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Finished Maps Advanced Route Setup --></label>
+                <name>Visit : Responsible : Finished Maps Advanced Route Setup</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : First Name --></label>
+                <name>Visit : Responsible : First Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Fleet Unit ID --></label>
+                <name>Visit : Responsible : Fleet Unit ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Former Employee Name --></label>
+                <name>Visit : Responsible : Former Employee Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Full Name --></label>
+                <name>Visit : Responsible : Full Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Geocode Accuracy --></label>
+                <name>Visit : Responsible : Geocode Accuracy</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Global Identity GID --></label>
+                <name>Visit : Responsible : Global Identity GID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Has Profile Photo --></label>
+                <name>Visit : Responsible : Has Profile Photo</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Hire Date --></label>
+                <name>Visit : Responsible : Hire Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Individual --></label>
+                <name>Visit : Responsible : Individual</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Info Emails --></label>
+                <name>Visit : Responsible : Info Emails</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Internal Subtype --></label>
+                <name>Visit : Responsible : Internal Subtype</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Inventory Adjustment Amount --></label>
+                <name>Visit : Responsible : Inventory Adjustment Amount</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Inventory Value --></label>
+                <name>Visit : Responsible : Inventory Value</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Is Controlled By System --></label>
+                <name>Visit : Responsible : Is Controlled By System</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Language --></label>
+                <name>Visit : Responsible : Language</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Language Postfix --></label>
+                <name>Visit : Responsible : Language Postfix</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Last Login --></label>
+                <name>Visit : Responsible : Last Login</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Last Modified By --></label>
+                <name>Visit : Responsible : Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Last Modified Date --></label>
+                <name>Visit : Responsible : Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Last Name --></label>
+                <name>Visit : Responsible : Last Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Last Password Change or Reset --></label>
+                <name>Visit : Responsible : Last Password Change or Reset</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Latitude --></label>
+                <name>Visit : Responsible : Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Locale --></label>
+                <name>Visit : Responsible : Locale</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Longitude --></label>
+                <name>Visit : Responsible : Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Manager --></label>
+                <name>Visit : Responsible : Manager</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Map Settings --></label>
+                <name>Visit : Responsible : Map Settings</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Beta Tester --></label>
+                <name>Visit : Responsible : Maps Beta Tester</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Default Latitude --></label>
+                <name>Visit : Responsible : Maps Default Latitude</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Default Longitude --></label>
+                <name>Visit : Responsible : Maps Default Longitude</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Default Zoom Level --></label>
+                <name>Visit : Responsible : Maps Default Zoom Level</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Max Export Size --></label>
+                <name>Visit : Responsible : Maps Max Export Size</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Max Query Size --></label>
+                <name>Visit : Responsible : Maps Max Query Size</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Maps Version --></label>
+                <name>Visit : Responsible : Maps Version</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Middle Name --></label>
+                <name>Visit : Responsible : Middle Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Mobile --></label>
+                <name>Visit : Responsible : Mobile</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Mobility Sales Org --></label>
+                <name>Visit : Responsible : Mobility Sales Org</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Need CG Cloud Setup --></label>
+                <name>Visit : Responsible : Need CG Cloud Setup</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Nickname --></label>
+                <name>Visit : Responsible : Nickname</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Offline Edition Trial Expiration Date --></label>
+                <name>Visit : Responsible : Offline Edition Trial Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Parent Org Unit UserId --></label>
+                <name>Visit : Responsible : Parent Org Unit UserId</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Parent Territory --></label>
+                <name>Visit : Responsible : Parent Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Password Expiration Date --></label>
+                <name>Visit : Responsible : Password Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Phone --></label>
+                <name>Visit : Responsible : Phone</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Preferred Type of Measurement --></label>
+                <name>Visit : Responsible : Preferred Type of Measurement</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Previous User ID --></label>
+                <name>Visit : Responsible : Previous User ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Profile --></label>
+                <name>Visit : Responsible : Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : ProfileName --></label>
+                <name>Visit : Responsible : ProfileName</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : RW3 --></label>
+                <name>Visit : Responsible : RW3</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Receive Batch Exception Emails --></label>
+                <name>Visit : Responsible : Receive Batch Exception Emails</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Region --></label>
+                <name>Visit : Responsible : Region</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Region2 --></label>
+                <name>Visit : Responsible : Region2</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Reimbursable Amount Owed --></label>
+                <name>Visit : Responsible : Reimbursable Amount Owed</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Reimbursements Issued --></label>
+                <name>Visit : Responsible : Reimbursements Issued</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Reimbursements Pending --></label>
+                <name>Visit : Responsible : Reimbursements Pending</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Role --></label>
+                <name>Visit : Responsible : Role</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : SAML Federation ID --></label>
+                <name>Visit : Responsible : SAML Federation ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : SU Access Expiration Date --></label>
+                <name>Visit : Responsible : SU Access Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : SU Org Admin Expiration Date --></label>
+                <name>Visit : Responsible : SU Org Admin Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Sales Anywhere Trial Expiration Date --></label>
+                <name>Visit : Responsible : Sales Anywhere Trial Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Sales Division --></label>
+                <name>Visit : Responsible : Sales Division</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Sales Organization --></label>
+                <name>Visit : Responsible : Sales Organization</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Shipping City --></label>
+                <name>Visit : Responsible : Shipping City</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Shipping State --></label>
+                <name>Visit : Responsible : Shipping State</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Shipping Street --></label>
+                <name>Visit : Responsible : Shipping Street</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Shipping Zip/Postal Code --></label>
+                <name>Visit : Responsible : Shipping Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Start of Day --></label>
+                <name>Visit : Responsible : Start of Day</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : State/Province --></label>
+                <name>Visit : Responsible : State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : State/Province (text only) --></label>
+                <name>Visit : Responsible : State/Province (text only)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Stay-in-Touch Email Note --></label>
+                <name>Visit : Responsible : Stay-in-Touch Email Note</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Stay-in-Touch Email Signature --></label>
+                <name>Visit : Responsible : Stay-in-Touch Email Signature</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Stay-in-Touch Email Subject --></label>
+                <name>Visit : Responsible : Stay-in-Touch Email Subject</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Street --></label>
+                <name>Visit : Responsible : Street</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Suffix --></label>
+                <name>Visit : Responsible : Suffix</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Territory --></label>
+                <name>Visit : Responsible : Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Territory Id --></label>
+                <name>Visit : Responsible : Territory Id</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Territory Planning Approver --></label>
+                <name>Visit : Responsible : Territory Planning Approver</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Territory Planning Publisher --></label>
+                <name>Visit : Responsible : Territory Planning Publisher</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Territory for Offline App --></label>
+                <name>Visit : Responsible : Territory for Offline App</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : TestUserLookup --></label>
+                <name>Visit : Responsible : TestUserLookup</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Time Zone --></label>
+                <name>Visit : Responsible : Time Zone</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Time Zone Offset --></label>
+                <name>Visit : Responsible : Time Zone Offset</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Title --></label>
+                <name>Visit : Responsible : Title</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Total Accountable C-Fund --></label>
+                <name>Visit : Responsible : Total Accountable C-Fund</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Total Accountable C-Fund(Adjustment) --></label>
+                <name>Visit : Responsible : Total Accountable C-Fund(Adjustment)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Total Adjustments --></label>
+                <name>Visit : Responsible : Total Adjustments</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Total Adjustments(Adjustment Amount) --></label>
+                <name>Visit : Responsible : Total Adjustments(Adjustment Amount)</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : User ID --></label>
+                <name>Visit : Responsible : User ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : User ID --></label>
+                <name>Visit : Responsible : User ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : User Type --></label>
+                <name>Visit : Responsible : User Type</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Username --></label>
+                <name>Visit : Responsible : Username</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Vacancy Date --></label>
+                <name>Visit : Responsible : Vacancy Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Wireless Trial Expiration Date --></label>
+                <name>Visit : Responsible : Wireless Trial Expiration Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Zip/Postal Code --></label>
+                <name>Visit : Responsible : Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Responsible : Zone --></label>
+                <name>Visit : Responsible : Zone</name>
+            </columns>
+            <label><!-- Visitor Details --></label>
+            <name>Visitor Details</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Account --></label>
+                <name>Account</name>
+            </columns>
+            <columns>
+                <label><!-- Account Name --></label>
+                <name>Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Account Number --></label>
+                <name>Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Account Tier --></label>
+                <name>Account Tier</name>
+            </columns>
+            <columns>
+                <label><!-- Accountable --></label>
+                <name>Accountable</name>
+            </columns>
+            <columns>
+                <label><!-- Actual End Time --></label>
+                <name>Actual End Time</name>
+            </columns>
+            <columns>
+                <label><!-- Actual Start Time --></label>
+                <name>Actual Start Time</name>
+            </columns>
+            <columns>
+                <label><!-- All-Day Event --></label>
+                <name>All-Day Event</name>
+            </columns>
+            <columns>
+                <label><!-- Annual Base Call --></label>
+                <name>Annual Base Call</name>
+            </columns>
+            <columns>
+                <label><!-- Belong to Running User Territory --></label>
+                <name>Belong to Running User Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Call Type --></label>
+                <name>Call Type</name>
+            </columns>
+            <columns>
+                <label><!-- Cash Sales Total --></label>
+                <name>Cash Sales Total</name>
+            </columns>
+            <columns>
+                <label><!-- Completed Date --></label>
+                <name>Completed Date</name>
+            </columns>
+            <columns>
+                <label><!-- Completion Date --></label>
+                <name>Completion Date</name>
+            </columns>
+            <columns>
+                <label><!-- Coverage Type --></label>
+                <name>Coverage Type</name>
+            </columns>
+            <columns>
+                <label><!-- Created By --></label>
+                <name>Created By</name>
+            </columns>
+            <columns>
+                <label><!-- Created Date --></label>
+                <name>Created Date</name>
+            </columns>
+            <columns>
+                <label><!-- Creation Date and Time --></label>
+                <name>Creation Date and Time</name>
+            </columns>
+            <columns>
+                <label><!-- Creation Mode --></label>
+                <name>Creation Mode</name>
+            </columns>
+            <columns>
+                <label><!-- Current Sales Cycle --></label>
+                <name>Current Sales Cycle</name>
+            </columns>
+            <columns>
+                <label><!-- Custom Status --></label>
+                <name>Custom Status</name>
+            </columns>
+            <columns>
+                <label><!-- Customer City --></label>
+                <name>Customer City</name>
+            </columns>
+            <columns>
+                <label><!-- Customer Street --></label>
+                <name>Customer Street</name>
+            </columns>
+            <columns>
+                <label><!-- Date --></label>
+                <name>Date</name>
+            </columns>
+            <columns>
+                <label><!-- Distance From Store --></label>
+                <name>Distance From Store</name>
+            </columns>
+            <columns>
+                <label><!-- Distribution Issue --></label>
+                <name>Distribution Issue</name>
+            </columns>
+            <columns>
+                <label><!-- Distribution Issue --></label>
+                <name>Distribution Issue</name>
+            </columns>
+            <columns>
+                <label><!-- Distribution Rate All --></label>
+                <name>Distribution Rate All</name>
+            </columns>
+            <columns>
+                <label><!-- Distribution Rate Focus --></label>
+                <name>Distribution Rate Focus</name>
+            </columns>
+            <columns>
+                <label><!-- Distribution Relevant --></label>
+                <name>Distribution Relevant</name>
+            </columns>
+            <columns>
+                <label><!-- Duration Effective --></label>
+                <name>Duration Effective</name>
+            </columns>
+            <columns>
+                <label><!-- Duration In Minutes --></label>
+                <name>Duration In Minutes</name>
+            </columns>
+            <columns>
+                <label><!-- End Date --></label>
+                <name>End Date</name>
+            </columns>
+            <columns>
+                <label><!-- Fixed Visit Date --></label>
+                <name>Fixed Visit Date</name>
+            </columns>
+            <columns>
+                <label><!-- Formula Rollup Trigger --></label>
+                <name>Formula Rollup Trigger</name>
+            </columns>
+            <columns>
+                <label><!-- Geolocation (Latitude) --></label>
+                <name>Geolocation (Latitude)</name>
+            </columns>
+            <columns>
+                <label><!-- Geolocation (Longitude) --></label>
+                <name>Geolocation (Longitude)</name>
+            </columns>
+            <columns>
+                <label><!-- In Progress --></label>
+                <name>In Progress</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified By --></label>
+                <name>Last Modified By</name>
+            </columns>
+            <columns>
+                <label><!-- Last Modified Date --></label>
+                <name>Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Location Status --></label>
+                <name>Location Status</name>
+            </columns>
+            <columns>
+                <label><!-- Name --></label>
+                <name>Name</name>
+            </columns>
+            <columns>
+                <label><!-- Note --></label>
+                <name>Note</name>
+            </columns>
+            <columns>
+                <label><!-- Number --></label>
+                <name>Number</name>
+            </columns>
+            <columns>
+                <label><!-- Number of Distribution --></label>
+                <name>Number of Distribution</name>
+            </columns>
+            <columns>
+                <label><!-- Number of OOS --></label>
+                <name>Number of OOS</name>
+            </columns>
+            <columns>
+                <label><!-- OoS Issue --></label>
+                <name>OoS Issue</name>
+            </columns>
+            <columns>
+                <label><!-- OoS Issue --></label>
+                <name>OoS Issue</name>
+            </columns>
+            <columns>
+                <label><!-- OoS Rate All --></label>
+                <name>OoS Rate All</name>
+            </columns>
+            <columns>
+                <label><!-- OoS Rate Focus --></label>
+                <name>OoS Rate Focus</name>
+            </columns>
+            <columns>
+                <label><!-- PSI --></label>
+                <name>PSI</name>
+            </columns>
+            <columns>
+                <label><!-- PSQ Rate --></label>
+                <name>PSQ Rate</name>
+            </columns>
+            <columns>
+                <label><!-- Place --></label>
+                <name>Place</name>
+            </columns>
+            <columns>
+                <label><!-- Planned End Time --></label>
+                <name>Planned End Time</name>
+            </columns>
+            <columns>
+                <label><!-- Planned Start Time --></label>
+                <name>Planned Start Time</name>
+            </columns>
+            <columns>
+                <label><!-- Prebook Qty Total --></label>
+                <name>Prebook Qty Total</name>
+            </columns>
+            <columns>
+                <label><!-- Reason Code --></label>
+                <name>Reason Code</name>
+            </columns>
+            <columns>
+                <label><!-- Record Link --></label>
+                <name>Record Link</name>
+            </columns>
+            <columns>
+                <label><!-- Record Type --></label>
+                <name>Record Type</name>
+            </columns>
+            <columns>
+                <label><!-- Responsible --></label>
+                <name>Responsible</name>
+            </columns>
+            <columns>
+                <label><!-- Retail Visit Type --></label>
+                <name>Retail Visit Type</name>
+            </columns>
+            <columns>
+                <label><!-- Returns Total --></label>
+                <name>Returns Total</name>
+            </columns>
+            <columns>
+                <label><!-- Sales Division --></label>
+                <name>Sales Division</name>
+            </columns>
+            <columns>
+                <label><!-- Special Instruction --></label>
+                <name>Special Instruction</name>
+            </columns>
+            <columns>
+                <label><!-- Start Date --></label>
+                <name>Start Date</name>
+            </columns>
+            <columns>
+                <label><!-- Status --></label>
+                <name>Status</name>
+            </columns>
+            <columns>
+                <label><!-- Status Remark --></label>
+                <name>Status Remark</name>
+            </columns>
+            <columns>
+                <label><!-- Subject --></label>
+                <name>Subject</name>
+            </columns>
+            <columns>
+                <label><!-- Subject --></label>
+                <name>Subject</name>
+            </columns>
+            <columns>
+                <label><!-- TSM Territory --></label>
+                <name>TSM Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Territory --></label>
+                <name>Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Tour --></label>
+                <name>Tour</name>
+            </columns>
+            <columns>
+                <label><!-- Update Last Modified Date --></label>
+                <name>Update Last Modified Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Name --></label>
+                <name>Visit : Account : Account Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Notes --></label>
+                <name>Visit : Account : Account Notes</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Number --></label>
+                <name>Visit : Account : Account Number</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Owner --></label>
+                <name>Visit : Account : Account Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Owner : Full Name --></label>
+                <name>Visit : Account : Account Owner : Full Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Owner : User ID --></label>
+                <name>Visit : Account : Account Owner : User ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Owner : Username --></label>
+                <name>Visit : Account : Account Owner : Username</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Record Type : Record Type Name --></label>
+                <name>Visit : Account : Account Record Type : Record Type Name</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Account Territory --></label>
+                <name>Visit : Account : Account Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Coverage Store --></label>
+                <name>Visit : Account : Coverage Store</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Internal Customer ID --></label>
+                <name>Visit : Account : Internal Customer ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Ownership Type --></label>
+                <name>Visit : Account : Ownership Type</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Route Code --></label>
+                <name>Visit : Account : Route Code</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Running User is Owner --></label>
+                <name>Visit : Account : Running User is Owner</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : SF Account ID --></label>
+                <name>Visit : Account : SF Account ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping Address --></label>
+                <name>Visit : Account : Shipping Address</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping City --></label>
+                <name>Visit : Account : Shipping City</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping Country --></label>
+                <name>Visit : Account : Shipping Country</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping State/Province --></label>
+                <name>Visit : Account : Shipping State/Province</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping Street --></label>
+                <name>Visit : Account : Shipping Street</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Shipping Zip/Postal Code --></label>
+                <name>Visit : Account : Shipping Zip/Postal Code</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Account : Workload Status --></label>
+                <name>Visit : Account : Workload Status</name>
+            </columns>
+            <columns>
+                <label><!-- Visit : Accountable : Territory Id --></label>
+                <name>Visit : Accountable : Territory Id</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Counter --></label>
+                <name>Visit Counter</name>
+            </columns>
+            <columns>
+                <label><!-- Visit ID --></label>
+                <name>Visit ID</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Planned Date --></label>
+                <name>Visit Planned Date</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Priority --></label>
+                <name>Visit Priority</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Template --></label>
+                <name>Visit Template</name>
+            </columns>
+            <columns>
+                <label><!-- Visit Type --></label>
+                <name>Visit Type</name>
+            </columns>
+            <columns>
+                <label><!-- Visitor --></label>
+                <name>Visitor</name>
+            </columns>
+            <columns>
+                <label><!-- Visitor Territory --></label>
+                <name>Visitor Territory</name>
+            </columns>
+            <columns>
+                <label><!-- Week --></label>
+                <name>Week</name>
+            </columns>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visits + Accts + Ideal Set --></description>
+        <label><!-- Visits + Accts + Ideal Set --></label>
+        <name>Visits_Accts_Ideal_Set</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Ideal Kits --></label>
+            <name>Ideal Kits</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visits + WH Orders --></description>
+        <label><!-- Visits + WH Orders --></label>
+        <name>Visits_Orders</name>
+        <sections>
+            <label><!-- Advanced Orders --></label>
+            <name>Advanced Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visits + Visit Job --></description>
+        <label><!-- Visits + Visit Job --></label>
+        <name>Visits_Visit_Job</name>
+        <sections>
+            <label><!-- Visit Jobs --></label>
+            <name>Visit Jobs</name>
+        </sections>
+        <sections>
+            <label><!-- Visits --></label>
+            <name>Visits</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Run Logs Spring &apos;24 --></description>
+        <label><!-- Orchestration Run Logs Spring &apos;24 --></label>
+        <name>flow_orchestration_log_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Run Log --></label>
+            <name>Orchestration Run Log</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Runs --></label>
+            <name>Orchestration Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Stage Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Stage Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_stage_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Stage Runs --></label>
+            <name>Orchestration Stage Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Step Runs Spring &apos;24 --></description>
+        <label><!-- Orchestration Step Runs Spring &apos;24 --></label>
+        <name>flow_orchestration_step_run_ootb_crt_two_four_eight</name>
+        <sections>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Orchestration Work Items Spring &apos;24 --></description>
+        <label><!-- Orchestration Work Items Spring &apos;24 --></label>
+        <name>flow_orchestration_work_item_ootb_crt_two_four_eight</name>
+        <sections>
+            <columns>
+                <label><!-- Orchestration Step Run: Label --></label>
+                <name>Orchestration Step Run: Label</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Name --></label>
+                <name>Orchestration Step Run: Name</name>
+            </columns>
+            <columns>
+                <label><!-- Orchestration Step Run: Status --></label>
+                <name>Orchestration Step Run: Status</name>
+            </columns>
+            <label><!-- Orchestration Step Runs --></label>
+            <name>Orchestration Step Runs</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Assigned Group or Queue --></label>
+                <name>Assigned Group or Queue</name>
+            </columns>
+            <columns>
+                <label><!-- Assigned User --></label>
+                <name>Assigned User</name>
+            </columns>
+            <label><!-- Orchestration Work Items --></label>
+            <name>Orchestration Work Items</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

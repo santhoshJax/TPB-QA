@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>SHAREPOINT_SHAREPOINT_DATA</sourceFormula>
+        <targetField>TELMARK_DISTRIBUTOR_LIST__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>TELMARK_DISTRIBUTOR_LIST__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>TELMARK_DISTRIBUTOR_LIST.account_description__c</sourceField>
+        <sourceFormula>Account Description</sourceFormula>
+        <targetField>TELMARK_DISTRIBUTOR_LIST__dll.account_description__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>TELMARK_DISTRIBUTOR_LIST.customer_account_number__c</sourceField>
+        <sourceFormula>Customer Account Number</sourceFormula>
+        <targetField>TELMARK_DISTRIBUTOR_LIST__dll.customer_account_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>TELMARK_DISTRIBUTOR_LIST__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>TELMARK_DISTRIBUTOR_LIST_map_TELMARK_DISTRIBUTOR_LIST_1755530751668</masterLabel>
+    <sourceObjectName>TELMARK_DISTRIBUTOR_LIST</sourceObjectName>
+    <targetObjectName>TELMARK_DISTRIBUTOR_LIST__dll</targetObjectName>
+</ObjectSourceTargetMap>

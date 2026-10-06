@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_Possible_Store_Replacement</name>
+        <label>Set Possible Store Replacement to true</label>
+        <locationX>176</locationX>
+        <locationY>288</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Possible_Store_Replacement__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>SAL-431: When a CG Cloud Mobile - TSM user updates an Account and Name, ShippingStreet and ShippingCity all change in the same save, flag the record as a possible wholesale store replacement. Before-save context sets Possible_Store_Replacement__c with no extra DML and no recursion, and runs in a separate context from the after-save TPB_Send_Account_Update_Email notification flow so the two never race. Update Message: v1.0 Created (SAL-431).</description>
+    <environments>Default</environments>
+    <interviewLabel>RT - Account - Flag Possible Store Replacement {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>RT - Account - Flag Possible Store Replacement</label>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Possible_Store_Replacement</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Record.Name} = {!$Record__Prior.Name}) &amp;&amp; NOT({!$Record.ShippingStreet} = {!$Record__Prior.ShippingStreet}) &amp;&amp; NOT({!$Record.ShippingCity} = {!$Record__Prior.ShippingCity}) &amp;&amp; {!$Profile.Name} = &apos;CG Cloud Mobile - TSM&apos;</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

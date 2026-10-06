@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Training Opportunity --></label>
+    <name>TPB_Training_Opportunity__c</name>
+    <picklistValues>
+        <masterLabel>Analytics - Understands, calculates, and utilizes relevant financial data</masterLabel>
+        <translation><!-- Analytics - Understands, calculates, and utilizes relevant financial data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>People Development - Leads and develops relationships with key decision makers</masterLabel>
+        <translation><!-- People Development - Leads and develops relationships with key decision makers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning &amp; Execution - Aligns resources to maximize impact and results</masterLabel>
+        <translation><!-- Planning &amp; Execution - Aligns resources to maximize impact and results --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning &amp; Execution - Prioritizes work and establishes clear goals and objectives</masterLabel>
+        <translation><!-- Planning &amp; Execution - Prioritizes work and establishes clear goals and objectives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Selling &amp; Communication - Utilizes relevant and compelling data, information, and insights to positively impact decisions</masterLabel>
+        <translation><!-- Selling &amp; Communication - Utilizes relevant and compelling data, information, and insights to positively impact decisions --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

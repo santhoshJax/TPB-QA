@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A6Stokers_Tubs_in_Stock__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Casey&apos;s Survey C4 2021</description>
+    <inlineHelpText>Did this store have any Stokers Tubs in stock when you arrived?</inlineHelpText>
+    <label>6. Stokers Tubs in Stock?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

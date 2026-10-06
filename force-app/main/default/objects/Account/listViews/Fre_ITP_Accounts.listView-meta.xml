@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fre_ITP_Accounts</fullName>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE_CODE</columns>
+    <columns>Frequency__c</columns>
+    <columns>Visits_Remaining__c</columns>
+    <columns>Completed_Visit_Count__c</columns>
+    <columns>Fre_Trade_Program_Enrolled__c</columns>
+    <columns>Fre_Trade_Program_Sign_Date__c</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fre_Trade_Program_Enrolled__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>TPB_Belong_to_Running_User_Territory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Fre ITP Accounts*</label>
+</ListView>

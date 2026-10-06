@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>true</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>TPB_Marketplace</dataConnector>
+    <dataConnectorType>Shopify</dataConnectorType>
+    <dataPlatformDataSetItemName>CONNECTORSFRAMEWORK</dataPlatformDataSetItemName>
+    <dataSource>Shopify_TPB_Marketplace</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>Orders TPB Marketplace</masterLabel>
+    <mktDataLakeObject>Orders_TPB_Marketplace__dll</mktDataLakeObject>
+    <mktDataTranObject>Orders_TPB_Marketplace</mktDataTranObject>
+    <parameters>
+        <fullName>Orders_TPB_Marketplace_incrementalColumn</fullName>
+        <paramName>incrementalColumn</paramName>
+        <value>UpdatedAt</value>
+    </parameters>
+    <parameters>
+        <fullName>Orders_TPB_Marketplace_objectName</fullName>
+        <paramName>objectName</paramName>
+        <value>Orders</value>
+    </parameters>
+</DataStreamDefinition>

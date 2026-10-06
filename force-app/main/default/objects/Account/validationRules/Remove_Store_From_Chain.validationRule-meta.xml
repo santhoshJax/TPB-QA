@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remove_Store_From_Chain</fullName>
+    <active>false</active>
+    <description>Account owners are able to remove a store they own from a chain.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(ParentId),
+  $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+  $UserRole.Name &lt;&gt; &apos;Field Analyst&apos;,
+  OR(
+    TPB_Parent_Account_Name__c = &apos;HQ - Unassigned Chain Retailers&apos;,
+    ISBLANK(ParentId)
+  ),
+  PRIORVALUE(TPB_Parent_Account_Name__c) &lt;&gt; &apos;HQ - Unassigned Chain Retailers&apos;,
+  NOT(ISBLANK(PRIORVALUE(ParentId))),
+  NOT(PRIORVALUE(Parent_Owner__c)),
+  TEXT(Status__c) = &apos;Open&apos;
+)</errorConditionFormula>
+    <errorMessage>Please first ensure you are the current chain owner, then you can remove or change.</errorMessage>
+</ValidationRule>

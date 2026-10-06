@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recent_Audit__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Work_Days_Since_Last_Completed_Visit__c ,
+0, &quot;Stores Visited in Last 5 Working Days&quot;,
+1, &quot;Stores Visited in Last 5 Working Days&quot;,
+2, &quot;Stores Visited in Last 5 Working Days&quot;,
+3, &quot;Stores Visited in Last 5 Working Days&quot;,
+4, &quot;Stores Visited in Last 5 Working Days&quot;,
+5, &quot;Stores Visited in Last 5 Working Days&quot;,
+6, &quot;Stores Visited in Last 6-10 Working Days&quot;,
+7, &quot;Stores Visited in Last 6-10 Working Days&quot;,
+8, &quot;Stores Visited in Last 6-10 Working Days&quot;,
+9, &quot;Stores Visited in Last 6-10 Working Days&quot;,
+10, &quot;Stores Visited in Last 6-10 Working Days&quot;,
+11, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+12, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+13, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+14, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+15, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+16, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+17, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+18, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+19, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+20, &quot;Stores Visited in Last 11-20 Working Days&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Recent Audit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

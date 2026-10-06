@@ -1,0 +1,62 @@
+<template>
+  <c-tpb-event-bridge data-dom-id="eventBridge"></c-tpb-event-bridge>
+  <lightning-modal-header label={modalTitle}></lightning-modal-header>
+
+  <lightning-modal-body>
+    <lightning-record-edit-form
+      object-api-name="OrderItem"
+      onsubmit={handleSubmit}
+    >
+      <lightning-messages> </lightning-messages>
+
+      <lightning-input-field
+        field-name="Product2Id"
+        required
+        data-input-validation="required"
+        onchange={handleProductChange}
+        value={formData.productId.value}
+      ></lightning-input-field>
+
+      <lightning-input-field
+        field-name="UoM__c"
+        required
+        data-input-validation="required"
+        onchange={handleUomChange}
+        value={formData.uom.value}
+      ></lightning-input-field>
+
+      <lightning-input-field
+        field-name="UnitPrice"
+        value={formData.unitPrice.value}
+        onchange={formData.unitPrice.onChange}
+        required
+        data-input-validation="required"
+      ></lightning-input-field>
+
+      <lightning-input-field
+        field-name="Quantity"
+        value={formData.quantity.value}
+        onchange={formData.quantity.onChange}
+        required
+        data-input-validation="required"
+      ></lightning-input-field>
+
+      <lightning-input-field
+        field-name="TPB_Type__c"
+        required
+        data-input-validation="required"
+        onchange={handleTypeChange}
+      ></lightning-input-field>
+
+      <div class="slds-text-align_right">
+        <lightning-button
+          id="submitButton"
+          class="slds-m-top_small"
+          type="submit"
+          label={labels.saveButton}
+          disabled={loading}
+        ></lightning-button>
+      </div>
+    </lightning-record-edit-form>
+  </lightning-modal-body>
+</template>

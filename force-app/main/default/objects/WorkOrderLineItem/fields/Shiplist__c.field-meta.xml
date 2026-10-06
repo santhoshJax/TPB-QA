@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shiplist__c</fullName>
+    <formula>OR(
+AND(
+ISPICKVAL(WorkOrder.Status, &quot;Completed&quot;),
+ISPICKVAL (Item_Type__c, &quot;Prebook&quot;),
+Prebook_Date__c &gt;= Product2.Shiplist_Start__c,
+Prebook_Date__c &lt;= Product2.Shiplist_End__c
+),
+AND(
+ISPICKVAL(WorkOrder.Status, &quot;Completed&quot;),
+ISPICKVAL (Item_Type__c, &quot;Prebook&quot;),
+DATEVALUE(WorkOrder.EndDate) &gt;= Product2.Shiplist_Start__c,
+DATEVALUE(WorkOrder.EndDate) &lt;= Product2.Shiplist_End__c
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Shiplist</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

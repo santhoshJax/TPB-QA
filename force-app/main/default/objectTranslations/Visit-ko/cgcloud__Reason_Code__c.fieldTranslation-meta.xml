@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>cgcloud__Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>NoManager</masterLabel>
+        <translation>관리자 부재</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreClosed</masterLabel>
+        <translation>매장 마감됨</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TimeWindow</masterLabel>
+        <translation>기간 놓침</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviced</masterLabel>
+        <translation>하루의 끝에 도달함</translation>
+    </picklistValues>
+</CustomFieldTranslation>

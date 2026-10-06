@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile App</fullName>
+        <default>false</default>
+        <label>Mobile App</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Loyalty Program</fullName>
+        <default>false</default>
+        <label>Loyalty Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Paper Coupons</fullName>
+        <default>false</default>
+        <label>Paper Coupons</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronic Coupons</fullName>
+        <default>false</default>
+        <label>Electronic Coupons</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalina Coupons</fullName>
+        <default>false</default>
+        <label>Catalina Coupons</label>
+    </customValue>
+    <customValue>
+        <fullName>Email Blast</fullName>
+        <default>false</default>
+        <label>Email Blast</label>
+    </customValue>
+    <masterLabel>Marketing Platforms</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>TPB_Type__c</name>
+    <picklistValues>
+        <masterLabel>New Distribution</masterLabel>
+        <translation><!-- New Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKU Expansion</masterLabel>
+        <translation><!-- SKU Expansion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKU Maintenance</masterLabel>
+        <translation><!-- SKU Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secure Reorder</masterLabel>
+        <translation><!-- Secure Reorder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sell Promotions</masterLabel>
+        <translation><!-- Sell Promotions --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

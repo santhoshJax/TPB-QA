@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_CheckHQVisitType</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISNEW() || ISCHANGED(TPB_HQ_Visit_Type__c))
+&amp;&amp;
+TEXT(TPB_HQ_Visit_Type__c) != &apos;Virtual&apos;
+&amp;&amp;
+TEXT(TPB_HQ_Visit_Type__c) != &apos;Sales_Appointment&apos;
+&amp;&amp;
+TEXT(TPB_HQ_Visit_Type__c) != &apos;Maintenance&apos;
+&amp;&amp;
+TPB_VisitType__c = &apos;Headquarter&apos;</errorConditionFormula>
+    <errorDisplayField>TPB_HQ_Visit_Type__c</errorDisplayField>
+    <errorMessage>The value of HQ Visit Type must be Virtual, Sales Appointment or Maintenance.</errorMessage>
+</ValidationRule>

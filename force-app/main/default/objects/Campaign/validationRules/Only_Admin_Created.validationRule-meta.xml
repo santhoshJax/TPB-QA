@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Admin_Created</fullName>
+    <active>true</active>
+    <description>Only System Admin profiles can create Campaigns</description>
+    <errorConditionFormula>AND (
+ISNEW(),
+NOT(
+OR ($Profile.Name = &apos;System Administrator&apos;, $User.Username = &apos;rgebhardt@tpbi.com&apos;)
+)
+)</errorConditionFormula>
+    <errorMessage>Only System Admin profiles can create Campaign</errorMessage>
+</ValidationRule>

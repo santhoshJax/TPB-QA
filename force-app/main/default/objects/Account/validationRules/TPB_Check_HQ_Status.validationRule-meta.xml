@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Check_HQ_Status</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT( Status__c ) == &apos;Closed Temporarily&apos; &amp;&amp;  TPB_RecordTypeName__c == &apos;Headquarter&apos;</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>The status of Headquarter Accounts cannot be selected as Closed Temporarily.</errorMessage>
+</ValidationRule>

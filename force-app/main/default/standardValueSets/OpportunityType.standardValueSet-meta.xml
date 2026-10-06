@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New Item Intro (Whl)</fullName>
+        <default>false</default>
+        <label>New Item Intro (Whl)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Line Extension (Whl)</fullName>
+        <default>false</default>
+        <label>Line Extension (Whl)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Launch Intro (Whl)</fullName>
+        <default>false</default>
+        <label>Product Launch Intro (Whl)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Item Intro (HQ)</fullName>
+        <default>false</default>
+        <label>New Item Intro (HQ)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Line Extension (HQ)</fullName>
+        <default>false</default>
+        <label>Line Extension (HQ)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Launch Intro (HQ)</fullName>
+        <default>false</default>
+        <label>Product Launch Intro (HQ)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Store Expansion (HQ)</fullName>
+        <default>false</default>
+        <label>Store Expansion (HQ)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Program Enrollment</fullName>
+        <default>false</default>
+        <label>Program Enrollment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promotions (Whl)</fullName>
+        <default>false</default>
+        <label>Promotions (Whl)</label>
+    </standardValue>
+</StandardValueSet>

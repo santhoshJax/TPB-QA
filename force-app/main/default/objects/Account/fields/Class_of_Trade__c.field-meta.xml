@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Class_of_Trade__c</fullName>
+    <label>Class of Trade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Convenience Store</fullName>
+                <default>false</default>
+                <label>CONVENIENCE STORE</label>
+            </value>
+            <value>
+                <fullName>Extended Master</fullName>
+                <default>false</default>
+                <label>EXTENDED MASTER</label>
+            </value>
+            <value>
+                <fullName>Grocery</fullName>
+                <default>false</default>
+                <label>GROCERY</label>
+            </value>
+            <value>
+                <fullName>Liquor</fullName>
+                <default>false</default>
+                <label>LIQUOR</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>Wholesale Club</fullName>
+                <default>false</default>
+                <label>WHOLESALE CLUB</label>
+            </value>
+            <value>
+                <fullName>DRUG</fullName>
+                <default>false</default>
+                <label>DRUG</label>
+            </value>
+            <value>
+                <fullName>Cigarette Outlet</fullName>
+                <default>true</default>
+                <label>CIGARETTE OUTLET</label>
+            </value>
+            <value>
+                <fullName>MASS MERCHANDISER</fullName>
+                <default>false</default>
+                <label>MASS MERCHANDISER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

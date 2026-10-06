@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectSourceTargetMap xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <creationType>Custom</creationType>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>V_Dollarizing_Summary.retail_category__c</sourceField>
+        <sourceFormula>RETAIL_CATEGORY</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.retail_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>V_Dollarizing_Summary.dollarizing_volume_usage__c</sourceField>
+        <sourceFormula>Dollarizing Volume Usage</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.dollarizing_volume_usage__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>V_Dollarizing_Summary.retail_number__c</sourceField>
+        <sourceFormula>RETAIL NUMBER</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.retail_number__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>MSA_SALESFORCE_MSA</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.DataSourceObject__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <targetField>V_Dollarizing_Summary__dll.InternalOrganization__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>System</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>true</isSourceFormula>
+        <sourceField xsi:nil="true"/>
+        <sourceFormula>Snowflake</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.DataSource__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>V_Dollarizing_Summary.volume__c</sourceField>
+        <sourceFormula>VOLUME</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.volume__c</targetField>
+    </fieldSourceTargetMaps>
+    <fieldSourceTargetMaps>
+        <creationType>Custom</creationType>
+        <filterApplied>false</filterApplied>
+        <isSourceFormula>false</isSourceFormula>
+        <sourceField>V_Dollarizing_Summary.dollarizing_category__c</sourceField>
+        <sourceFormula>Dollarizing Category</sourceFormula>
+        <targetField>V_Dollarizing_Summary__dll.dollarizing_category__c</targetField>
+    </fieldSourceTargetMaps>
+    <masterLabel>V_Dollarizing_Summary_map_V_Dollarizing_Summary_1756390970075</masterLabel>
+    <sourceObjectName>V_Dollarizing_Summary</sourceObjectName>
+    <targetObjectName>V_Dollarizing_Summary__dll</targetObjectName>
+</ObjectSourceTargetMap>

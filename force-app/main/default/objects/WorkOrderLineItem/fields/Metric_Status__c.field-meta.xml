@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metric_Status__c</fullName>
+    <description>Metric Status as of the Last Call</description>
+    <externalId>false</externalId>
+    <formula>CASE(PODRIA_Status__c,
+&quot;P&quot;,&quot;Maintain&quot;,
+&quot;O&quot;,&quot;Loss/Out Of Stock&quot;,
+&quot;D&quot;,&quot;Loss/Discontinued&quot;,
+&quot;R&quot;,&quot;Maintain&quot;,
+&quot;I&quot;,&quot;Gain&quot;,
+&quot;A&quot;,Null,
+NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Metric Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

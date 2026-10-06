@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Headquarter</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Authorized Items Updated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Deck Build%2FPrep</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Meeting Scheduled</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>POG%2C Placement%2C MAF determined %26 communicated</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

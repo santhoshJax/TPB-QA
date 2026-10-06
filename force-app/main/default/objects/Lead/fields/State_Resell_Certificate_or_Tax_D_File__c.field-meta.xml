@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_Resell_Certificate_or_Tax_D_File__c</fullName>
+    <label>State Resell Certificate or Tax ID File</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

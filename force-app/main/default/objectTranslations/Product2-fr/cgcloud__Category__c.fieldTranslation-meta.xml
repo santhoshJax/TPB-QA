@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>cgcloud__Category__c</name>
+    <picklistValues>
+        <masterLabel>Beverages</masterLabel>
+        <translation>Boissons</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chips</masterLabel>
+        <translation>Frites</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Detergent</masterLabel>
+        <translation>Détergent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frozen</masterLabel>
+        <translation>Produits surgelés</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hygiene</masterLabel>
+        <translation>Hygiène</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snacks</masterLabel>
+        <translation>Snacks</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Training_Opportunity__c</fullName>
+    <label>Training Opportunity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Selling &amp; Communication - Utilizes relevant and compelling data, information, and insights to positively impact decisions</fullName>
+                <default>false</default>
+                <label>Selling &amp; Communication - Utilizes relevant and compelling data, information, and insights to positively impact decisions</label>
+            </value>
+            <value>
+                <fullName>Analytics - Understands, calculates, and utilizes relevant financial data</fullName>
+                <default>false</default>
+                <label>Analytics - Understands, calculates, and utilizes relevant financial data</label>
+            </value>
+            <value>
+                <fullName>Planning &amp; Execution - Prioritizes work and establishes clear goals and objectives</fullName>
+                <default>false</default>
+                <label>Planning &amp; Execution - Prioritizes work and establishes clear goals and objectives</label>
+            </value>
+            <value>
+                <fullName>Planning &amp; Execution - Aligns resources to maximize impact and results</fullName>
+                <default>false</default>
+                <label>Planning &amp; Execution - Aligns resources to maximize impact and results</label>
+            </value>
+            <value>
+                <fullName>People Development - Leads and develops relationships with key decision makers</fullName>
+                <default>false</default>
+                <label>People Development - Leads and develops relationships with key decision makers</label>
+            </value>
+            <value>
+                <fullName>Picklist Values TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Picklist Values TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

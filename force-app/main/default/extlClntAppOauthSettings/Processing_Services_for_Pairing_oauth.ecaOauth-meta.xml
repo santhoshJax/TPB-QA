@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <commaSeparatedOauthScopes>Basic, Api, RefreshToken, OpenID</commaSeparatedOauthScopes>
+    <externalClientApplication>Processing_Services_for_Pairing</externalClientApplication>
+    <isFirstPartyAppEnabled>false</isFirstPartyAppEnabled>
+    <label>Processing_Services_for_Pairing_oauth</label>
+    <oauthLink>00DOx00000O6UBK:888Ox000000QvFZ</oauthLink>
+</ExtlClntAppOauthSettings>

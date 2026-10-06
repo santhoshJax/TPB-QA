@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the locations within the store that you found Fre products when you arrived --></help>
+    <label><!-- How was Fre merchandised upon arrival? --></label>
+    <name>B_How_was_Fre_merchandised_upon_arrival__c</name>
+    <picklistValues>
+        <masterLabel>--None--</masterLabel>
+        <translation><!-- - - None- -  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Back Bar - NTC Display</masterLabel>
+        <translation><!-- Back Bar - NTC Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Back Bar - Other Display</masterLabel>
+        <translation><!-- Back Bar - Other Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Front counter - NTC Display</masterLabel>
+        <translation><!-- Front counter - NTC Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Front counter - other display</masterLabel>
+        <translation><!-- Front counter - other display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In OTP/ Tobacco fixture</masterLabel>
+        <translation><!-- In OTP/ Tobacco fixture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Visible Location</masterLabel>
+        <translation><!-- Non-Visible Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

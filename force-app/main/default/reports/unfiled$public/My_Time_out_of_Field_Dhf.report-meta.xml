@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>cgcloud__User_Document__c$Name</field>
+    </columns>
+    <columns>
+        <field>cgcloud__User_Document__c$cgcloud__Annotation__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__User_Document__c$TPB_Activity_Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__User_Document__c$cgcloud__Total_Working_Duration_Min__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__User_Document__c$cgcloud__Phase__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>cgcloud__User_Document__c.cgcloud__Total_Working_Duration_Min__c / 60</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label># Total Working Duration (Hr)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <format>Tabular</format>
+    <name>My Time out of Field</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Daily_Report__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__User_Document__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

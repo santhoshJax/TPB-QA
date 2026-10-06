@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>cgcloud__Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Advertising</masterLabel>
+        <translation>Materiale pubblicitario</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AssetType</masterLabel>
+        <translation>Tipo di asset</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commodity</masterLabel>
+        <translation>Materie prime</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CountingGroup</masterLabel>
+        <translation>Gruppo di conteggio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Empty</masterLabel>
+        <translation>Vuoto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation>Servizio</translation>
+    </picklistValues>
+</CustomFieldTranslation>

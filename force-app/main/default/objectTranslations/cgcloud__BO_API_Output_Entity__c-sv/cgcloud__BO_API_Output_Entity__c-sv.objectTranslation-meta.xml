@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>API-utgångsenheten för affärsobjekt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En API-utgångsenhet för affärsobjekt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>API-utgångsenhet för affärsobjekt</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>API-utgångsenheterna för affärsobjekt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>API-utgångsenheter för affärsobjekt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>API-utgångsenheter för affärsobjekt</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Enhetsnamn på API-utdata för affärsobjek</nameFieldLabel>
+</CustomObjectTranslation>

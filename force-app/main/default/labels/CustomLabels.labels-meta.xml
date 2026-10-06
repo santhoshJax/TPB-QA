@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>FEIN_Question</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FEIN Question</shortDescription>
+        <value>Provide FEIN number</value>
+    </labels>
+    <labels>
+        <fullName>TPB_AcountRecordNameForVisitValidationRule</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_AcountRecordNameForVisitValidationRule</shortDescription>
+        <value>Wholesaler</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Campaign_Member_Role</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Campaign Member Role</shortDescription>
+        <value>Admin</value>
+    </labels>
+    <labels>
+        <fullName>TPB_CharacterForCreateInventoryFlow</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_CharacterForCreateInventoryFlow</shortDescription>
+        <value>;</value>
+    </labels>
+    <labels>
+        <fullName>TPB_CreateInventoryForFlowPeriod</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_CreateInventoryForFlowPeriod</shortDescription>
+        <value>3650</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Data_Migration_Remark</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Data_Migration_Remark</shortDescription>
+        <value>batch 1</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Data_Migration_Remark2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Data_Migration_Remark2</shortDescription>
+        <value>batch 2</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Data_Migration_Remark3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Data_Migration_Remark3</shortDescription>
+        <value>batch3</value>
+    </labels>
+    <labels>
+        <fullName>TPB_ErrorOccurred</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Alert</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>TPB_HQAccount_AccountNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HQ - Unassigned Chain Retailers</shortDescription>
+        <value>624169</value>
+    </labels>
+    <labels>
+        <fullName>TPB_MaxNumForNewInventoryFlow</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_MaxNumForNewInventoryFlow</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>TPB_NewInventoryPhase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_NewInventoryPhase</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>TPB_NewInventoryTemplateName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_NewInventoryTemplateName</shortDescription>
+        <value>TPB Control Template</value>
+    </labels>
+    <labels>
+        <fullName>TPB_ProdEmail_Receiver</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB ProdEmail Receiver</shortDescription>
+        <value>kjohnson@tpbi.com</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Query_Condition</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Query_Condition</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Query_Condition2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Query_Condition2</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Query_Condition3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB_Query_Condition3</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>TPB_TestEmail_Receiver</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB TestEmail Receiver</shortDescription>
+        <value>moskasky2021@hotmail.com</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Trade_Program_Compliance_Question</fullName>
+        <categories>SAL-476</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAL-476 compliance-on-departure question master template name</shortDescription>
+        <value>Fre Trade Program - Compliance on Departure</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Trade_Program_Compliance_Question_Text</fullName>
+        <categories>SAL-476</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAL-476 compliance-on-departure question display text</shortDescription>
+        <value>Was the store in compliance of the Fre Trade Program when you LEFT today?</value>
+    </labels>
+    <labels>
+        <fullName>TPB_User_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TPB User Id</shortDescription>
+        <value>0053i000001xdmH</value>
+    </labels>
+    <labels>
+        <fullName>TPB_Visit_Template_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Visit Template Id</shortDescription>
+        <value>a6k6T0000011dB3QAI</value>
+    </labels>
+    <labels>
+        <fullName>TSM_Account_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TSM Account Name</shortDescription>
+        <value>National Tobacco</value>
+    </labels>
+    <labels>
+        <fullName>VisitJobDeleteBatch_Query</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VisitJobDeleteBatch_Query</shortDescription>
+        <value>SELECT Id, Name, ToBeArchived__c, 
+       cgcloud__Visit__r.Name, 
+       cgcloud__Visit__r.Account_Name__c, 
+       cgcloud__Visit__r.ActualVisitEndTime 
+FROM cgcloud__Visit_Job__c 
+WHERE cgcloud__Visit__r.ActualVisitEndTime &lt;LAST_N_DAYS:210
+AND ToBeArchived__c = true 
+ORDER BY cgcloud__Visit__r.ActualVisitEndTime DESC</value>
+    </labels>
+    <labels>
+        <fullName>calculateLatitudeLongitudeError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>quick action button(Get location)  on location object detail page error message</shortDescription>
+        <value>Something went wrong</value>
+    </labels>
+    <labels>
+        <fullName>calculateLatitudeLongitudeSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>quick action button(Get location)  on location object detail pagesuccess message</shortDescription>
+        <value>We Accessed your geocodes of your location</value>
+    </labels>
+    <labels>
+        <fullName>lightningRedirectionURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lightningRedirectionURL</shortDescription>
+        <value>https://tpbi--partial.lightning.force.com/lightning/r/</value>
+    </labels>
+</CustomLabels>

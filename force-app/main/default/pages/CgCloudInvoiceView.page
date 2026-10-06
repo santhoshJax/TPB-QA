@@ -1,0 +1,5 @@
+<apex:page controller="TPB_OnlineAppController" showHeader="false" sidebar="false">
+    
+        <c:CgCloudOrderInvoiceContent />
+   
+</apex:page>

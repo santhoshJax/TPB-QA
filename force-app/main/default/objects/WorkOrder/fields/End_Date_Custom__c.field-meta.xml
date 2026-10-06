@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Custom__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(LEN(TEXT(MONTH(DATEVALUE(EndDate)))) &gt; 1, TEXT(MONTH(DATEVALUE(EndDate))), &apos;0&apos; + TEXT(MONTH(DATEVALUE(EndDate)))) + &apos;/&apos; +
+
+IF(LEN(TEXT(DAY(DATEVALUE(EndDate)))) &gt; 1, TEXT(DAY(DATEVALUE(EndDate))), &apos;0&apos; + TEXT(DAY(DATEVALUE(EndDate)))) + &apos;/&apos; +
+
+TEXT(YEAR(DATEVALUE(EndDate))) + &apos; &apos; +
+
+IF(VALUE(MID(TEXT(EndDate + ((1/24) * -4)), 12, 2)) &gt;= 12, 
+IF(VALUE(MID(TEXT(EndDate + ((1/24)* -4)), 12, 2)) = 12, &quot;12&quot;, TEXT(VALUE(MID(TEXT(EndDate + ((1/24) * -4)), 12, 2)) -12)), 
+MID(TEXT(EndDate +((1/24) * -4)), 12, 2)) + &quot;:&quot; + MID(TEXT(EndDate ), 15, 2) +
+IF(VALUE(MID(TEXT(EndDate + ((1/24) * -4)), 12, 2)) &gt;= 12, &quot; PM&quot;, &quot; AM&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>End Date - Custom</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

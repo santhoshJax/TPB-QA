@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Promotional_Discounts_del__c</fullName>
+    <description>sum of any promo codes applied that have not yet been reimbursed (same logic as &quot;Discounts Applied&quot; metric on Inventory Dashboard</description>
+    <label>Promotional Discounts</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competitive Contracts --></label>
+    <name>Competitive_Contracts__c</name>
+    <picklistValues>
+        <masterLabel>ASC</masterLabel>
+        <translation><!-- ASC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phillip Morris</masterLabel>
+        <translation><!-- Phillip Morris --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAI</masterLabel>
+        <translation><!-- RAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Republic</masterLabel>
+        <translation><!-- Republic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swedish Match</masterLabel>
+        <translation><!-- Swedish Match --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swisher</masterLabel>
+        <translation><!-- Swisher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USTT</masterLabel>
+        <translation><!-- USTT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Call__c</fullName>
+    <formula>IF(Id = Account.Last_Completed_Call__c, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Call</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

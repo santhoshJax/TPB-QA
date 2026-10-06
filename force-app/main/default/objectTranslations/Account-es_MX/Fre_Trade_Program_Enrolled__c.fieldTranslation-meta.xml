@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Fre Trade Program Enrolled --></label>
+    <name>Fre_Trade_Program_Enrolled__c</name>
+    <picklistValues>
+        <masterLabel>Alt 12</masterLabel>
+        <translation><!-- Alt 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alt 16</masterLabel>
+        <translation><!-- Alt 16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prime 12</masterLabel>
+        <translation><!-- Prime 12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prime 16</masterLabel>
+        <translation><!-- Prime 16 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

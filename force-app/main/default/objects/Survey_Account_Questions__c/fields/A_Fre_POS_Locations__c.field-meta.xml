@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_Fre_POS_Locations__c</fullName>
+    <label>Select Fre POS Locations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <label>--None--</label>
+            </value>
+            <value>
+                <fullName>At Product</fullName>
+                <default>false</default>
+                <label>At Product</label>
+            </value>
+            <value>
+                <fullName>In Window</fullName>
+                <default>false</default>
+                <label>In Window</label>
+            </value>
+            <value>
+                <fullName>At Door</fullName>
+                <default>false</default>
+                <label>At Door</label>
+            </value>
+            <value>
+                <fullName>At Counter</fullName>
+                <default>false</default>
+                <label>At Counter</label>
+            </value>
+            <value>
+                <fullName>At Street / Outside</fullName>
+                <default>false</default>
+                <label>At Street / Outside</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

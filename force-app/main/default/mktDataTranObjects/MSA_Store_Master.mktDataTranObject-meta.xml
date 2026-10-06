@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake</dataSource>
+    <dataSourceObject>MSA_Store_Master</dataSourceObject>
+    <masterLabel>MSA_Store_Master</masterLabel>
+    <mktDataTranFields>
+        <fullName>ntc_chain</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Chain</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Chain</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>193</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_ownership_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Ownership Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Ownership Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>104</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Retail Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Retail Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_zip</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Zip</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Zip</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>td_county_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>TD County Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>TD County Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>218</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Related</objectCategory>
+</MktDataTranObject>

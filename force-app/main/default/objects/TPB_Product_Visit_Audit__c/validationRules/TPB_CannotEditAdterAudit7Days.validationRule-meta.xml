@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_CannotEditAdterAudit7Days</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( TODAY() - TPB_Audit__r.TPB_Date_of_Audit__c &gt; 7, OR(NOT(ISNEW()), ISNEW()), $Profile.Name &lt;&gt; &apos;System Administrator&apos; )</errorConditionFormula>
+    <errorMessage>RSM can not edit after 7 days !</errorMessage>
+</ValidationRule>

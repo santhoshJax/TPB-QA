@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_MaxPrice__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  cgcloud__Order_Item_Template__r.Name = &apos;Return&apos;,  MAX(ABS(cgcloud__Base_Price__c) * cgcloud__Product__r.cgcloud__Pack_Size__c,  ABS(cgcloud__Special_Price__c) * cgcloud__Product__r.cgcloud__Pack_Size__c )   ,  MAX( ABS(cgcloud__Base_Price__c) , ABS(cgcloud__Special_Price__c)) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MaxPrice</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

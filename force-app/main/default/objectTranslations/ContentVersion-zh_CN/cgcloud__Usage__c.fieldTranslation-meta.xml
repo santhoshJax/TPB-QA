@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Usage --></label>
+    <name>cgcloud__Usage__c</name>
+    <picklistValues>
+        <masterLabel>Banner</masterLabel>
+        <translation>横幅</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FulfilledBadge</masterLabel>
+        <translation>FulfilledBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HurdleRewardLog</masterLabel>
+        <translation>HurdleRewardLog</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Icon</masterLabel>
+        <translation>图标</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InitialBadge</masterLabel>
+        <translation>InitialBadge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation>市场营销</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation>定价</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printed Document</masterLabel>
+        <translation>已打印文档</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation>销售</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SelectionBar</masterLabel>
+        <translation>SelectionBar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation>服务</translation>
+    </picklistValues>
+</CustomFieldTranslation>

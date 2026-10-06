@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Ownership__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>Store_Number__c</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>TPB_TSM_Territory__c</columns>
+    <columns>TPB_Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <label>All Accounts*</label>
+    <sharedTo>
+        <group>Admins_and_BA_s</group>
+        <group>Executive_Team</group>
+        <group>Region_NSM_Group</group>
+        <group>TPB_Director_Group</group>
+    </sharedTo>
+</ListView>

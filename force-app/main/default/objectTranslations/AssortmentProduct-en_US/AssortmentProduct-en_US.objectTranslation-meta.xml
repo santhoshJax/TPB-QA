@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Assortment Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Assortment Products</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- MobilityRelevant --></label>
+        <name>cgcloud__MobilityRelevant</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProductAssortmentProductDisplayFields --></label>
+        <name>cgcloud__ProductAssortmentProductDisplayFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- REAssortmentGridFields --></label>
+        <name>cgcloud__REAssortmentGridFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- TPMAssortmentGridFields --></label>
+        <name>cgcloud__TPMAssortmentGridFields</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The date range defined in the assortment product doesn&apos;t fall within the date range defined in its assortment. --></errorMessage>
+        <name>cgcloud__Is_Date_Range_Valid_For_TPM_Assortment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter a date in the Valid From and Valid Thru fields. --></errorMessage>
+        <name>cgcloud__Not_Empty_Dates_If_Template</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Product and the Product Assortment must have the same Sales Org. --></errorMessage>
+        <name>cgcloud__Sales_Org_should_be_same</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Valid From can&apos;t be later than Valid Thru. --></errorMessage>
+        <name>cgcloud__Valid_From_Valid_Thru_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Multiple_Product_Assortment_Product --></label>
+        <name>cgcloud__Multiple_Product_Assortment_Product</name>
+    </webLinks>
+</CustomObjectTranslation>

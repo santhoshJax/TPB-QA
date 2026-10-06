@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Main Function --></label>
+    <name>cgcloud__Main_Function__c</name>
+    <picklistValues>
+        <masterLabel>BuyingAgent</masterLabel>
+        <translation>구매 대리인</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CategoryManager</masterLabel>
+        <translation>카테고리 매니저</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAM</masterLabel>
+        <translation>핵심 계정 관리자</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation>소유자</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO</masterLabel>
+        <translation>구매 담당자</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation>비서</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreManager</masterLabel>
+        <translation>매장 관리자</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation>테넌트</translation>
+    </picklistValues>
+</CustomFieldTranslation>

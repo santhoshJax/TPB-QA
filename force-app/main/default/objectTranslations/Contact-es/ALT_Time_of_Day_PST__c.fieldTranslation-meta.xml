@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Time of Day (PST) --></label>
+    <name>ALT_Time_of_Day_PST__c</name>
+    <picklistValues>
+        <masterLabel>10AM - 11AM</masterLabel>
+        <translation><!-- 10AM - 11AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11AM - 12PM</masterLabel>
+        <translation><!-- 11AM - 12PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>12PM - 1PM</masterLabel>
+        <translation><!-- 12PM - 1PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1PM - 2PM</masterLabel>
+        <translation><!-- 1PM - 2PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2PM - 3PM</masterLabel>
+        <translation><!-- 2PM - 3PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3PM - 4PM</masterLabel>
+        <translation><!-- 3PM - 4PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4PM - 5PM</masterLabel>
+        <translation><!-- 4PM - 5PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5PM - 6PM</masterLabel>
+        <translation><!-- 5PM - 6PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6AM - 7AM</masterLabel>
+        <translation><!-- 6AM - 7AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7AM - 8AM</masterLabel>
+        <translation><!-- 7AM - 8AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8AM - 9AM</masterLabel>
+        <translation><!-- 8AM - 9AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9AM - 10AM</masterLabel>
+        <translation><!-- 9AM - 10AM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

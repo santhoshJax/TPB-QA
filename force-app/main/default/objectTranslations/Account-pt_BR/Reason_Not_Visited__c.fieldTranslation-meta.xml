@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Not Visited --></label>
+    <name>Reason_Not_Visited__c</name>
+    <picklistValues>
+        <masterLabel>Access to site is restricted</masterLabel>
+        <translation><!-- Access to site is restricted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geography Restriction</masterLabel>
+        <translation><!-- Geography Restriction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HQ/Acct Mgr Prohibits Visit</masterLabel>
+        <translation><!-- HQ/Acct Mgr Prohibits Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Risk Area/Danger</masterLabel>
+        <translation><!-- High Risk Area/Danger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Litigation/Legal Reasons</masterLabel>
+        <translation><!-- Litigation/Legal Reasons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Store Personnel</masterLabel>
+        <translation><!-- Store Personnel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

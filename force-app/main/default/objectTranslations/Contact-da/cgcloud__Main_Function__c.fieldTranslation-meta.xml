@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Main Function --></label>
+    <name>cgcloud__Main_Function__c</name>
+    <picklistValues>
+        <masterLabel>BuyingAgent</masterLabel>
+        <translation>Indkøbsagent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CategoryManager</masterLabel>
+        <translation>Kategorimanager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAM</masterLabel>
+        <translation>Key account manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation>Ejer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO</masterLabel>
+        <translation>Indkøbsmedarbejder</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation>Sekretær</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreManager</masterLabel>
+        <translation>Butikschef</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation>Lejer</translation>
+    </picklistValues>
+</CustomFieldTranslation>

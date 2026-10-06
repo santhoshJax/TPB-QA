@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zig_zag_classification__c</fullName>
+    <label>ZIG_ZAG_CLASSIFICATION</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Transform</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>ZIG_ZAG_CLASSIFICATION</labelOverride>
+        <masterLabel>ZIG_ZAG_CLASSIFICATION</masterLabel>
+        <refAttrDeveloperName>zig_zag_classification_Transform</refAttrDeveloperName>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

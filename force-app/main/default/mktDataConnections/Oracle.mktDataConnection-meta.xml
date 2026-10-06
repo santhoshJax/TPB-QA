@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataConnection xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectionMethod>Ingress</connectionMethod>
+    <connectionStatus>ERROR</connectionStatus>
+    <connectorName>OracleSCM</connectorName>
+    <credentials>
+        <fullName>Oracle_Password</fullName>
+        <credentialName>Password</credentialName>
+        <value>*</value>
+    </credentials>
+    <credentials>
+        <fullName>Oracle_User</fullName>
+        <credentialName>User</credentialName>
+        <value>*</value>
+    </credentials>
+    <externalRecordIdentifier>cf852f5a-e5a4-443d-b8bd-b8ebab6995e7</externalRecordIdentifier>
+    <isActivityEnabled>false</isActivityEnabled>
+    <isSentosEnabled>false</isSentosEnabled>
+    <masterLabel>Oracle</masterLabel>
+    <parameters>
+        <fullName>Oracle_connection_url</fullName>
+        <paramName>connection_url</paramName>
+        <value>fa-ewlf-dev3-saasfaprod1.fa.ocs.oraclecloud.com</value>
+    </parameters>
+    <shouldAutoCreatePolicies>false</shouldAutoCreatePolicies>
+</MktDataConnection>

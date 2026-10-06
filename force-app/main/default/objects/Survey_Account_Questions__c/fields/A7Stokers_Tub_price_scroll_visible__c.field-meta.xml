@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A7Stokers_Tub_price_scroll_visible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Casey&apos;s Survey C4 2021</description>
+    <inlineHelpText>When you arrived at the store, was there a Stokers Tub price scroll visible to the consumer?</inlineHelpText>
+    <label>7. Stokers Tub price scroll visible?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

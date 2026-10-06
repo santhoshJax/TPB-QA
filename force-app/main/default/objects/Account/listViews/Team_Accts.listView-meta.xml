@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_Accts</fullName>
+    <columns>Frequency__c</columns>
+    <columns>Store_Visited__c</columns>
+    <columns>Completed_Visit_Count__c</columns>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>TPB_Owner_Name__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <columns>Territory_ID__c</columns>
+    <columns>Visit_Status__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Retailer</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>TPB_Belong_to_Running_User_Territory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Teams Accounts*</label>
+    <sharedTo>
+        <group>Region_NSM_Group</group>
+    </sharedTo>
+</ListView>

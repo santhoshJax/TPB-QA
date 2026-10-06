@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A4Pricing_on_Can_Price_Scroll_is_correct__c</fullName>
+    <description>Casey&apos;s Survey C42021</description>
+    <inlineHelpText>If the price scroll was present when you arrived, was the pricing for Stokers Cans correct?  This should be the scanned price.</inlineHelpText>
+    <label>4. Can Price on Scroll is correct?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>No Scroll Present</fullName>
+                <default>false</default>
+                <label>No Scroll Present</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Parent_Account_RecordType_Headquarte</fullName>
+    <active>true</active>
+    <description>The record type of the Parent Account must be Headquarter</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(ParentId )),ISCHANGED(ParentId ), Parent.RecordType.DeveloperName!=&apos;Headquarter&apos;)</errorConditionFormula>
+    <errorMessage>The record type of the Parent Account must be Headquarter</errorMessage>
+</ValidationRule>

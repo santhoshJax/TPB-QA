@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Within_Commitment_Range__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  AND(
+    (Reinvestment_Gap_Value__c + Inventory_Balance_Value__c) &gt;= (IF(ISNULL(Commitment_Value__c), Initiative__r.Commitment_Value__c, Commitment_Value__c) * 0.9),
+    (Reinvestment_Gap_Value__c + Inventory_Balance_Value__c) &lt;= (IF(ISNULL(Commitment_Value__c), Initiative__r.Commitment_Value__c, Commitment_Value__c) * 1.1)
+  ),
+  &quot;Yes&quot;,
+  &quot;No&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Commitment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

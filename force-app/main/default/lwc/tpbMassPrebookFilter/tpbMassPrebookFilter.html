@@ -1,0 +1,17 @@
+<template>
+  <div class="slds-grid slds-grid_align-end slds-gutters_x-small">
+    <template for:each={filters} for:item="filter">
+      <div key={filter.name} class="slds-col slds-size_1-of-6">
+        <lightning-combobox
+          name={filter.name}
+          label={filter.label}
+          value={filter.value}
+          placeholder=""
+          options={filter.options}
+          onchange={filter.onChange}
+          data-name={filter.name}
+        ></lightning-combobox>
+      </div>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Check_Wholesaler_Creator</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; $Profile.Name != &apos;CG Cloud Mobile - TSM&apos; &amp;&amp; $Profile.Name != &apos;Account Management&apos; &amp;&amp;  TPB_RecordTypeName__c == &apos;Wholesaler&apos; &amp;&amp; $Profile.Name != &apos;System Administrator&apos; &amp;&amp; $Profile.Name != &apos;Analytics Cloud Integration User&apos;</errorConditionFormula>
+    <errorMessage>Only Account Management profile and TSM profile users can create a wholesaler account.</errorMessage>
+</ValidationRule>

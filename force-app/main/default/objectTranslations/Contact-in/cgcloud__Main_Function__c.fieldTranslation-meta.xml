@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Main Function --></label>
+    <name>cgcloud__Main_Function__c</name>
+    <picklistValues>
+        <masterLabel>BuyingAgent</masterLabel>
+        <translation>Agen Pembelian</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CategoryManager</masterLabel>
+        <translation>Manajer Kategori</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KAM</masterLabel>
+        <translation>Manajer Account Utama</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation>Pemilik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO</masterLabel>
+        <translation>Petugas Bagian Pembelian</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation>Sekretaris</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreManager</masterLabel>
+        <translation>Manajer Toko</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation>Penyewa</translation>
+    </picklistValues>
+</CustomFieldTranslation>

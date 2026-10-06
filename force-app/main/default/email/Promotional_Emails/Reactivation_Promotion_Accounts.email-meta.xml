@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Reactivation Promotion (Accounts)</name>
+    <style>none</style>
+    <subject>Welcome Back to Zig-Zag - Enjoy Up To 10% Off Your Next Order!</subject>
+    <textOnly>Hello {!Contact.FirstName},
+ 
+It’s been a while since your last order, and we&apos;ve love to show you what you’ve missed! We’ve rolled out new products across our growing Zig-Zag and Clipper portfolios to complement our classics. Tap into our latest Brand Guide [link to guide] to explore what you’ve missed. 
+ 
+To show our appreciation, we’re offering an exclusive promotion of up to 10% off your next order—to get you back on the Zig-Zag Alternative platform [[link to zz.wholesale]].
+ 
+While your dedicated sales representative will be reaching out to you soon, feel free to connect with us directly. We&apos;re here to assist and ensure you have a seamless experience.
+ 
+Thank you for being a valued part of the Zig-Zag Alternative family. We look forward to serving you again.
+ 
+Happy Rolling,
+Zig-Zag Alternative Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

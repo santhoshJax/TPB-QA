@@ -1,0 +1,26 @@
+<template>
+  <c-tpb-event-bridge data-dom-id="eventBridge"></c-tpb-event-bridge>
+
+  <lightning-modal-header label={labels.title}></lightning-modal-header>
+
+  <lightning-modal-body>
+    <lightning-input
+      type="number"
+      name="quantity"
+      label="Enter the quantity"
+      min={minQty}
+      message-when-range-underflow={labels.minQtyMessage}
+      max={maxQty}
+      message-when-range-overflow={labels.maxQtyMessage}
+      value={formData.quantity.value}
+      onchange={formData.quantity.onChange}
+    ></lightning-input>
+  </lightning-modal-body>
+
+  <lightning-modal-footer>
+    <lightning-button
+      label={labels.submit}
+      onclick={handleSubmit}
+    ></lightning-button>
+  </lightning-modal-footer>
+</template>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>TPB_Date__c</columns>
+    <columns>TPB_Activity__c</columns>
+    <columns>TPB_User__c</columns>
+    <columns>TPB_Product__c</columns>
+    <columns>TPB_Base_Price__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPB_Activity__c</field>
+        <operation>contains</operation>
+        <value>Base Price</value>
+    </filters>
+    <filters>
+        <field>TPB_Reson__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Base Price Resets</label>
+</ListView>

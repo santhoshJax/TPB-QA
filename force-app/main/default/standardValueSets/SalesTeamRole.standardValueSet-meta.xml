@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Manager</fullName>
+        <default>false</default>
+        <label>Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Coverage TSM</fullName>
+        <default>false</default>
+        <label>Coverage TSM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relief TSM</fullName>
+        <default>false</default>
+        <label>Relief TSM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relief NAM</fullName>
+        <default>false</default>
+        <label>Relief NAM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Primary Inside Sales – Read/Write</fullName>
+        <default>false</default>
+        <label>Primary Inside Sales – Read/Write</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inside Sales – Read/Write</fullName>
+        <default>false</default>
+        <label>Inside Sales – Read/Write</label>
+    </standardValue>
+</StandardValueSet>

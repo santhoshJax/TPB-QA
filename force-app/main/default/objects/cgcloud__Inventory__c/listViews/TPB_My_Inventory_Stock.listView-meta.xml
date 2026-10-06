@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_My_Inventory_Stock</fullName>
+    <columns>cgcloud__Tour__c</columns>
+    <columns>TPB_PricingCategory__c</columns>
+    <columns>cgcloud__Product__c</columns>
+    <columns>TPB_AvgPrice__c</columns>
+    <columns>cgcloud__Balance__c</columns>
+    <columns>Extended_Cost__c</columns>
+    <columns>cgcloud__User__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPB_IsMyInventory__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Inventory Stock</label>
+</ListView>

@@ -1,0 +1,15 @@
+.field-title {
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #54698d;
+    margin-bottom: .25rem;
+}
+.rows:nth-child(odd) {
+    background-color:#f3f2f2;
+}
+.neutral {
+    margin-right:10px;
+}
+.locked {
+    pointer-events:none;
+}

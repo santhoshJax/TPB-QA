@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Category__c</fullName>
+    <description>Category for ERP</description>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tobacco.Smokeless.Premium.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Premium.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Discount.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Discount.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Discount Other.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Discount Other.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Stokers.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Stokers.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Cans.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Cans.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Tubs.RBJ</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Tubs.RBJ</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Fre.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Fre.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Cotton Mouth.NTC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Cotton Mouth.NTC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Tubes.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Tubes.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.US Papers.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.US Papers.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.US Paper Cones.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.US Paper Cones.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Canadian Papers.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Canadian Papers.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Canadian Paper Cones.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Canadian Paper Cones.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Natural Leaf Wraps.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Natural Leaf Wraps.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Natural Leaf Cigars.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag HTL Wraps.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag HTL Wraps.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag HTL Cigars.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag HTL Cigars.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag HTL Wraps.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag HTL Wraps.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag HTL Cigars.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag HTL Cigars.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Non-Tobacco.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Non-Tobacco.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.ZigZag Non-Tobacco.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.ZigZag Non-Tobacco.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Blunt Wrap.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Blunt Wrap.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Karma.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Karma.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Karma.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Karma.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Choice Leaf.DVW</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Choice Leaf.DVW</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Choice Leaf.REC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Choice Leaf.REC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Other Cigars.NAWC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Other Cigars.NAWC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Other Cigars.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Other Cigars.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.HMP Accessories.REC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.HMP Accessories.REC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.HMP Accessories.DVW</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.HMP Accessories.DVW</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Other Accessories.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Other Accessories.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Apparel.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Apparel.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Wild Hemp.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Wild Hemp.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Other.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Other.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Marley.INT</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Marley.INT</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Lighters.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Lighters.NAOC</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smoking.Accessories.NAOC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smoking.Accessories.NAOC</label>
+            </value>
+            <value>
+                <fullName>Vape.NewGen. .TPB Beast</fullName>
+                <default>false</default>
+                <label>Vape.NewGen. .TPB Beast</label>
+            </value>
+            <value>
+                <fullName>Tobacco.Smokeless.Nic Vape.REC</fullName>
+                <default>false</default>
+                <label>Tobacco.Smokeless.Nic Vape.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Papers.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Papers.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Paper Cones.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Paper Cones.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Wraps.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Wraps.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Butane.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Butane.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Lighters &amp; Torches.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Lighters &amp; Torches.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Infuser.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Infuser.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Dry Herb Vaporizer.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Dry Herb Vaporizer.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.General Accessories.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.General Accessories.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Humidity Solution.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Humidity Solution.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Rolling Tray.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Rolling Tray.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Vape Accessories.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Vape Accessories.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Grinder.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Grinder.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.E-Rig.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.E-Rig.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Concentrate Vape.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Concentrate Vape.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.510 Batteries.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.510 Batteries.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.One Hitter.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.One Hitter.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Bong.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Bong.REC</label>
+            </value>
+            <value>
+                <fullName>h</fullName>
+                <default>false</default>
+                <label>h</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Tips.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Tips.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Hand Pipe.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Hand Pipe.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Dab Rig.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Dab Rig.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Rolling Machines.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Rolling Machines.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Apparel.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Apparel.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Trade Mktg.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Trade Mktg.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Cleaning Solution.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Cleaning Solution.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Personal Care.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Personal Care.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Storage.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Storage.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Cooking.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Cooking.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Scales.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Scales.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Terpene Vape.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Terpene Vape.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Air Filter.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Air Filter.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Food.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Food.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Gum.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Gum.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Odor Solutions.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Odor Solutions.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Gifts.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Gifts.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Other.REC</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Other.REC</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Apparel.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Apparel.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.Smokeless.Lighters &amp; Torches.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.Smokeless.Lighters &amp; Torches.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Inflatables.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Inflatables.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Toys.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Toys.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Baby.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Baby.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Home.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Home.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Kitchen.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Kitchen.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Office Supply.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Office Supply.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Auto.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Auto.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Confectionary.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Confectionary.DVW</label>
+            </value>
+            <value>
+                <fullName>Non-Tobacco.General Merch.Other.DVW</fullName>
+                <default>false</default>
+                <label>Non-Tobacco.General Merch.Other.DVW</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smokeless. .NTC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smokeless. .NTC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smokeless. .NAWC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smokeless. .NAWC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smokeless. .NAOC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smokeless. .NAOC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smokeless. .RBJ</fullName>
+                <default>false</default>
+                <label>Raw Material.Smokeless. .RBJ</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smoking. .NTC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smoking. .NTC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smoking. .NAWC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smoking. .NAWC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smoking. .NAOC</fullName>
+                <default>false</default>
+                <label>Raw Material.Smoking. .NAOC</label>
+            </value>
+            <value>
+                <fullName>Raw Material.Smoking. .RBJ</fullName>
+                <default>false</default>
+                <label>Raw Material.Smoking. .RBJ</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smokeless. .NTC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smokeless. .NTC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smokeless. .NAWC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smokeless. .NAWC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smokeless. .NAOC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smokeless. .NAOC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smokeless. .RBJ</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smokeless. .RBJ</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smoking. .NTC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smoking. .NTC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smoking. .NAWC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smoking. .NAWC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smoking. .NAOC</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smoking. .NAOC</label>
+            </value>
+            <value>
+                <fullName>Raw Tobacco.Smoking. .RBJ</fullName>
+                <default>false</default>
+                <label>Raw Tobacco.Smoking. .RBJ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

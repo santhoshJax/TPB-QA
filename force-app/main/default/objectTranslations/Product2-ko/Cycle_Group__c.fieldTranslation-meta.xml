@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cycle Group --></label>
+    <name>Cycle_Group__c</name>
+    <picklistValues>
+        <masterLabel>ALP POUCHES</masterLabel>
+        <translation><!-- ALP POUCHES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 12 MG</masterLabel>
+        <translation><!-- FRE - LUSH 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 15 MG</masterLabel>
+        <translation><!-- FRE - LUSH 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 3 MG</masterLabel>
+        <translation><!-- FRE - LUSH 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 6 MG</masterLabel>
+        <translation><!-- FRE - LUSH 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 9 MG</masterLabel>
+        <translation><!-- FRE - LUSH 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 12 MG</masterLabel>
+        <translation><!-- FRE - MINT 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 15 MG</masterLabel>
+        <translation><!-- FRE - MINT 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 3 MG</masterLabel>
+        <translation><!-- FRE - MINT 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 6 MG</masterLabel>
+        <translation><!-- FRE - MINT 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 9 MG</masterLabel>
+        <translation><!-- FRE - MINT 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MOCHA 12 MG</masterLabel>
+        <translation><!-- FRE - MOCHA 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MOCHA 9 MG</masterLabel>
+        <translation><!-- FRE - MOCHA 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - ORIGINAL 12 MG</masterLabel>
+        <translation><!-- FRE - ORIGINAL 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - ORIGINAL 15 MG</masterLabel>
+        <translation><!-- FRE - ORIGINAL 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - ORIGINAL 3 MG</masterLabel>
+        <translation><!-- FRE - ORIGINAL 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - ORIGINAL 6 MG</masterLabel>
+        <translation><!-- FRE - ORIGINAL 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - ORIGINAL 9 MG</masterLabel>
+        <translation><!-- FRE - ORIGINAL 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 12 MG</masterLabel>
+        <translation><!-- FRE - SWEET 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 15 MG</masterLabel>
+        <translation><!-- FRE - SWEET 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 3 MG</masterLabel>
+        <translation><!-- FRE - SWEET 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 6 MG</masterLabel>
+        <translation><!-- FRE - SWEET 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 9 MG</masterLabel>
+        <translation><!-- FRE - SWEET 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WATERMELON 12 MG</masterLabel>
+        <translation><!-- FRE - WATERMELON 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WATERMELON 15 MG</masterLabel>
+        <translation><!-- FRE - WATERMELON 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WATERMELON 3 MG</masterLabel>
+        <translation><!-- FRE - WATERMELON 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WATERMELON 6 MG</masterLabel>
+        <translation><!-- FRE - WATERMELON 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WATERMELON 9 MG</masterLabel>
+        <translation><!-- FRE - WATERMELON 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 12 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 15 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 3 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 3 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 6 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 9 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE MEGA PACK</masterLabel>
+        <translation><!-- FRE MEGA PACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - BLUE DREAM</masterLabel>
+        <translation><!-- HEMP WRAPS - BLUE DREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - GEORGIA FIELDS</masterLabel>
+        <translation><!-- HEMP WRAPS - GEORGIA FIELDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - ISLAND VIBES</masterLabel>
+        <translation><!-- HEMP WRAPS - ISLAND VIBES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - MELLOW HAZE</masterLabel>
+        <translation><!-- HEMP WRAPS - MELLOW HAZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - NATURAL</masterLabel>
+        <translation><!-- HEMP WRAPS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - OG PURP</masterLabel>
+        <translation><!-- HEMP WRAPS - OG PURP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - SOUR SQUEEZE</masterLabel>
+        <translation><!-- HEMP WRAPS - SOUR SQUEEZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEMP WRAPS - SUMMER SLICE</masterLabel>
+        <translation><!-- HEMP WRAPS - SUMMER SLICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI HEMP WRAPS</masterLabel>
+        <translation><!-- HI-FI HEMP WRAPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - SIGNATURE BLEND</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - SIGNATURE BLEND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - SOUTHERN PEACH</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - SOUTHERN PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - STRAIGHT NATURAL</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - STRAIGHT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - STRAWBERRY RUSH</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - STRAWBERRY RUSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - SWEET COGNAC</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - SWEET COGNAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATURAL LEAF FLAT WRAPS - WHITE RUSSIAN RESERVE</masterLabel>
+        <translation><!-- NATURAL LEAF FLAT WRAPS - WHITE RUSSIAN RESERVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 1 1/4</masterLabel>
+        <translation><!-- PAPER CONES - 1 1/4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 1 1/4 HEMP</masterLabel>
+        <translation><!-- PAPER CONES - 1 1/4 HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 1 1/4 UNBLEACHED</masterLabel>
+        <translation><!-- PAPER CONES - 1 1/4 UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 70MM HEMP</masterLabel>
+        <translation><!-- PAPER CONES - 70MM HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 70MM ULTRA THIN</masterLabel>
+        <translation><!-- PAPER CONES - 70MM ULTRA THIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 70MM UNBLEACHED</masterLabel>
+        <translation><!-- PAPER CONES - 70MM UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 98s ULTRA THIN</masterLabel>
+        <translation><!-- PAPER CONES - 98s ULTRA THIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - 98s UNBLEACHED</masterLabel>
+        <translation><!-- PAPER CONES - 98s UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - KING</masterLabel>
+        <translation><!-- PAPER CONES - KING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - KING HEMP</masterLabel>
+        <translation><!-- PAPER CONES - KING HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - KING SLIM UNBLEACHED</masterLabel>
+        <translation><!-- PAPER CONES - KING SLIM UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - KING ULTRA THIN</masterLabel>
+        <translation><!-- PAPER CONES - KING ULTRA THIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPER CONES - KING UNBLEACHED</masterLabel>
+        <translation><!-- PAPER CONES - KING UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - 1 1/2 BLUE</masterLabel>
+        <translation><!-- PAPERS - 1 1/2 BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - 1 1/4 BLUE</masterLabel>
+        <translation><!-- PAPERS - 1 1/4 BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - 1 1/4 ULTRA THIN</masterLabel>
+        <translation><!-- PAPERS - 1 1/4 ULTRA THIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - 1 1/4 UNBLEACHED</masterLabel>
+        <translation><!-- PAPERS - 1 1/4 UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - FRENCH ORANGE</masterLabel>
+        <translation><!-- PAPERS - FRENCH ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - KING</masterLabel>
+        <translation><!-- PAPERS - KING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - KING SLIM HEMP</masterLabel>
+        <translation><!-- PAPERS - KING SLIM HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - KING UNBLEACHED</masterLabel>
+        <translation><!-- PAPERS - KING UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - KUTCORNERS</masterLabel>
+        <translation><!-- PAPERS - KUTCORNERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS - WHITE</masterLabel>
+        <translation><!-- PAPERS - WHITE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAPERS -1 1/4 HEMP</masterLabel>
+        <translation><!-- PAPERS -1 1/4 HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PREMIUM LOOSE LEAF</masterLabel>
+        <translation><!-- PREMIUM LOOSE LEAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS  -BLACK</masterLabel>
+        <translation><!-- RILLO WRAPS  -BLACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - BLACK</masterLabel>
+        <translation><!-- RILLO WRAPS - BLACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - BLUE</masterLabel>
+        <translation><!-- RILLO WRAPS - BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - BLUEBERRY</masterLabel>
+        <translation><!-- RILLO WRAPS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - DIAMOND</masterLabel>
+        <translation><!-- RILLO WRAPS - DIAMOND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - GOLD</masterLabel>
+        <translation><!-- RILLO WRAPS - GOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - GRAPE</masterLabel>
+        <translation><!-- RILLO WRAPS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - GREEN</masterLabel>
+        <translation><!-- RILLO WRAPS - GREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - PINK</masterLabel>
+        <translation><!-- RILLO WRAPS - PINK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - PURPLE</masterLabel>
+        <translation><!-- RILLO WRAPS - PURPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - SILVER</masterLabel>
+        <translation><!-- RILLO WRAPS - SILVER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - STRAIGHT UP</masterLabel>
+        <translation><!-- RILLO WRAPS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RILLO WRAPS - SWEET</masterLabel>
+        <translation><!-- RILLO WRAPS - SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEE PRODUCT PARTS</masterLabel>
+        <translation><!-- SEE PRODUCT PARTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - FCN</masterLabel>
+        <translation><!-- STOKERS CAN - FCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - FCW</masterLabel>
+        <translation><!-- STOKERS CAN - FCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - LCM</masterLabel>
+        <translation><!-- STOKERS CAN - LCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - LCN</masterLabel>
+        <translation><!-- STOKERS CAN - LCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - LCS</masterLabel>
+        <translation><!-- STOKERS CAN - LCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN - LCW</masterLabel>
+        <translation><!-- STOKERS CAN - LCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - FCN</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - FCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - FCW</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - FCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - LCM</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - LCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - LCN</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - LCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - LCS</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - LCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CAN TOWER - LCW</masterLabel>
+        <translation><!-- STOKERS CAN TOWER - LCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS LOOSE LEAF</masterLabel>
+        <translation><!-- STOKERS LOOSE LEAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS PROUD - LCS</masterLabel>
+        <translation><!-- STOKERS PROUD - LCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS PROUD - LCW</masterLabel>
+        <translation><!-- STOKERS PROUD - LCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - FCN</masterLabel>
+        <translation><!-- STOKERS TUB - FCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - FCW</masterLabel>
+        <translation><!-- STOKERS TUB - FCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - LCM</masterLabel>
+        <translation><!-- STOKERS TUB - LCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - LCN</masterLabel>
+        <translation><!-- STOKERS TUB - LCN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - LCS</masterLabel>
+        <translation><!-- STOKERS TUB - LCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB - LCW</masterLabel>
+        <translation><!-- STOKERS TUB - LCW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TENZ CIGARILLOS</masterLabel>
+        <translation><!-- TENZ CIGARILLOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOODS CIGARS - CREME ROYALE</masterLabel>
+        <translation><!-- WOODS CIGARS - CREME ROYALE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOODS CIGARS - NATURAL</masterLabel>
+        <translation><!-- WOODS CIGARS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOODS CIGARS - SILK &amp; BERRIES</masterLabel>
+        <translation><!-- WOODS CIGARS - SILK &amp; BERRIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOODS CIGARS - SWEET AROMATIC</masterLabel>
+        <translation><!-- WOODS CIGARS - SWEET AROMATIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WOODS CIGARS - VELVET</masterLabel>
+        <translation><!-- WOODS CIGARS - VELVET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - APPLE</masterLabel>
+        <translation><!-- WRAPS - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - BLUEBERRY</masterLabel>
+        <translation><!-- WRAPS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - CHERRY</masterLabel>
+        <translation><!-- WRAPS - CHERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - DRAGONBERRY</masterLabel>
+        <translation><!-- WRAPS - DRAGONBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - GRAPE</masterLabel>
+        <translation><!-- WRAPS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - ISLAND</masterLabel>
+        <translation><!-- WRAPS - ISLAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - MANGO</masterLabel>
+        <translation><!-- WRAPS - MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - MELON</masterLabel>
+        <translation><!-- WRAPS - MELON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - ORANGE</masterLabel>
+        <translation><!-- WRAPS - ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - PEACH</masterLabel>
+        <translation><!-- WRAPS - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - PINEAPPLE</masterLabel>
+        <translation><!-- WRAPS - PINEAPPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - RILLO SIZE BLUE</masterLabel>
+        <translation><!-- WRAPS - RILLO SIZE BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - STRAIGHT UP</masterLabel>
+        <translation><!-- WRAPS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - STRAWBERRY</masterLabel>
+        <translation><!-- WRAPS - STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRAPS - VANILLA</masterLabel>
+        <translation><!-- WRAPS - VANILLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGAR CONES</masterLabel>
+        <translation><!-- ZZ CIGAR CONES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - BLUEBERRY</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - DRAGONBERRY</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - DRAGONBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - GRAPE</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - GREEN GARUDA</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - GREEN GARUDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - GREEN KARMA</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - GREEN KARMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - GREEN KB90</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - GREEN KB90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - GREEN SWEETS</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - GREEN SWEETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - MANGO</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - MARACUJA</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - MARACUJA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - PEACH</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - STRAIGHT UP</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - STRAWBERRY</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - SWEETS</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - SWEETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - TANGELO</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - TANGELO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARILLOS - WHITE GRAPE</masterLabel>
+        <translation><!-- ZZ CIGARILLOS - WHITE GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ CIGARS WOODS</masterLabel>
+        <translation><!-- ZZ CIGARS WOODS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ DISCOUNT PAPERS</masterLabel>
+        <translation><!-- ZZ DISCOUNT PAPERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ NATURAL LEAF WRAPS - BERRY BASH</masterLabel>
+        <translation><!-- ZZ NATURAL LEAF WRAPS - BERRY BASH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ NATURAL LEAF WRAPS - PALMA</masterLabel>
+        <translation><!-- ZZ NATURAL LEAF WRAPS - PALMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ NATURAL LEAF WRAPS - STRAIGHT UP</masterLabel>
+        <translation><!-- ZZ NATURAL LEAF WRAPS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ NATURAL LEAF WRAPS - SWEET</masterLabel>
+        <translation><!-- ZZ NATURAL LEAF WRAPS - SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ NATURAL LEAF WRAPS - VANILLA CREAM</masterLabel>
+        <translation><!-- ZZ NATURAL LEAF WRAPS - VANILLA CREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PALM ROLLS - BANANA</masterLabel>
+        <translation><!-- ZZ PALM ROLLS - BANANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PALM ROLLS - BLUEBERRY</masterLabel>
+        <translation><!-- ZZ PALM ROLLS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PALM ROLLS - GRAPE</masterLabel>
+        <translation><!-- ZZ PALM ROLLS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PALM ROLLS - NATURAL</masterLabel>
+        <translation><!-- ZZ PALM ROLLS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PALM ROLLS - VANILLA</masterLabel>
+        <translation><!-- ZZ PALM ROLLS - VANILLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PREMIUM CIGARILLOS - BLUEBERRY</masterLabel>
+        <translation><!-- ZZ PREMIUM CIGARILLOS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PREMIUM CIGARILLOS - DIAMOND</masterLabel>
+        <translation><!-- ZZ PREMIUM CIGARILLOS - DIAMOND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PREMIUM CIGARILLOS - GOLD</masterLabel>
+        <translation><!-- ZZ PREMIUM CIGARILLOS - GOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PREMIUM CIGARILLOS - GRAPE</masterLabel>
+        <translation><!-- ZZ PREMIUM CIGARILLOS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ PREMIUM CIGARILLOS - SWEET</masterLabel>
+        <translation><!-- ZZ PREMIUM CIGARILLOS - SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ ROSE CONES</masterLabel>
+        <translation><!-- ZZ ROSE CONES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ ROUGH CUT CIGARS - HONEY BERRY</masterLabel>
+        <translation><!-- ZZ ROUGH CUT CIGARS - HONEY BERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ ROUGH CUT CIGARS - NATURAL</masterLabel>
+        <translation><!-- ZZ ROUGH CUT CIGARS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ ROUGH CUT CIGARS - RUSSIAN CREAM</masterLabel>
+        <translation><!-- ZZ ROUGH CUT CIGARS - RUSSIAN CREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ ROUGH CUT CIGARS - SWEET AROMATIC</masterLabel>
+        <translation><!-- ZZ ROUGH CUT CIGARS - SWEET AROMATIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ SUPER BUNDLE</masterLabel>
+        <translation><!-- ZZ SUPER BUNDLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ TERP CONES</masterLabel>
+        <translation><!-- ZZ TERP CONES --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

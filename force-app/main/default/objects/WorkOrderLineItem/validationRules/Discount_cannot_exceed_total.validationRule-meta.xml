@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_cannot_exceed_total</fullName>
+    <active>true</active>
+    <errorConditionFormula>Discount__c &gt; (UnitPrice * Quantity)</errorConditionFormula>
+    <errorMessage>The discount cannot exceed the total</errorMessage>
+</ValidationRule>

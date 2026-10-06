@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Inbound_Email_Alert</fullName>
+        <description>Inbound Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>agicaro@tpbi.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Services_Templates/Inbound_Lead_Notfication</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Lead_Assignment</fullName>
+        <description>New_Lead_Assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>New_Ventures_Sales_Templates/New_Lead_Notification</template>
+    </alerts>
+</Workflow>

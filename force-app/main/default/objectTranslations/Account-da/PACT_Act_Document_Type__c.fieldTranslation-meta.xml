@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PACT Act Document Type --></label>
+    <name>PACT_Act_Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business License (Include Expiration Date)</masterLabel>
+        <translation><!-- Business License (Include Expiration Date) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resale License / Sellers Permit (Include Expiration Date)</masterLabel>
+        <translation><!-- Resale License / Sellers Permit (Include Expiration Date) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco and/or Vape Retailer License</masterLabel>
+        <translation><!-- Tobacco and/or Vape Retailer License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tobacco and/or Vape Wholesaler/Distributor/Manufacturer License</masterLabel>
+        <translation><!-- Tobacco and/or Vape Wholesaler/Distributor/Manufacturer License --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

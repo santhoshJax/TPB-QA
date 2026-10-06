@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TPB_Approval_In_Progress</fullName>
+        <description>Status Update</description>
+        <field>TPB_Status__c</field>
+        <literalValue>Approval In Progress</literalValue>
+        <name>Approval In Progress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TPB_Approved</fullName>
+        <description>RSM Approved</description>
+        <field>TPB_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>RSM Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TPB_RSM_Reject</fullName>
+        <description>RSM Reject</description>
+        <field>TPB_Status__c</field>
+        <literalValue>Reject</literalValue>
+        <name>RSM Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Promotions_Admin_View</fullName>
+    <columns>NAME</columns>
+    <columns>cgcloud__Active__c</columns>
+    <columns>cgcloud__Slogan__c</columns>
+    <columns>cgcloud__Slogan_Language_2__c</columns>
+    <columns>cgcloud__Promotion_Template__c</columns>
+    <columns>cgcloud__Phase__c</columns>
+    <columns>cgcloud__Date_Thru__c</columns>
+    <columns>cgcloud__Anchor_Account_Set__c</columns>
+    <columns>Anchor_Set_Descr__c</columns>
+    <columns>Anchor_Set_Store_Count__c</columns>
+    <columns>OR_Budget_Code__c</columns>
+    <columns>TPB_Promotion_Type__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cgcloud__Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Active Promotions (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

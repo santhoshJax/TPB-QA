@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_RetailVisitTypeNotBlank</fullName>
+    <active>false</active>
+    <errorConditionFormula>TPB_VisitType__c = &apos;Retailer&apos; &amp;&amp; ISBLANK(TEXT(TPB_Visit_Type__c)) &amp;&amp; OR($Profile.Name =&apos;CG Cloud Mobile - TSM&apos;, $Profile.Name =&apos;CG Cloud Mobile - RSM&apos;, $Profile.Name =&apos;Account Management&apos;)</errorConditionFormula>
+    <errorDisplayField>TPB_Visit_Type__c</errorDisplayField>
+    <errorMessage>Retail visit type cannot be blank.</errorMessage>
+</ValidationRule>

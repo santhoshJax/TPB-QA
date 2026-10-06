@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Program Enrollment Guidance</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000b9&amp;amp;feoid=Info&amp;amp;refid=0EMPd000001WOTF&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Deck Build/Prep</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Meeting_Date__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000bA&amp;amp;feoid=Info&amp;amp;refid=0EMPd000001WOUr&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Meeting Scheduled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000b7&amp;amp;feoid=Info&amp;amp;refid=0EMPd000001WO54&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Program Details Delivered/DM Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;img src=&quot;https://tpbi--qa.sandbox.file.force.com/servlet/rtaImage?eid=1CFPd00000000b8&amp;amp;feoid=Info&amp;amp;refid=0EMPd000001WORd&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Prospecting</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Program_Enrollment</recordTypeName>
+</PathAssistant>

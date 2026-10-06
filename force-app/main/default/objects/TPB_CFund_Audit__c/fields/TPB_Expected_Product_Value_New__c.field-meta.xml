@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Expected_Product_Value_New__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>pulled from &quot;Balance&quot; field (TPB_Inventory_Balance__c) on User record of running user</description>
+    <label>Expected Inventory Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

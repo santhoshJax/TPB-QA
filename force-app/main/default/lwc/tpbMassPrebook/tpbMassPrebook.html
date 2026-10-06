@@ -1,0 +1,170 @@
+<template>
+  <!-- spinner has overlay and centralized based on the container component-->
+  <lightning-spinner
+    alternative-text="Loading"
+    size="medium"
+    if:true={loading}
+  ></lightning-spinner>
+
+  <lightning-card title={title}>
+    <div class="slds-grid slds-p-horizontal_small">
+      <!-- header form -->
+      <div class="slds-col slds-size_1-of-2">
+        <!--HQ Account -->
+        <lightning-record-edit-form object-api-name="Order">
+          <lightning-input-field
+            disabled={isDisabled}
+            field-name="TPB_HQ_Account__c"
+            data-id="TPB_HQ_Account__c"
+            value={coreParams.strHqAccountId}
+            onchange={handleHQAccountChange}
+            required
+          >
+          </lightning-input-field>
+        </lightning-record-edit-form>
+
+        <div
+          class="slds-grid slds-grid_vertical"
+          if:true={coreParams.strHqAccountId}
+        >
+          <div class="slds-col">
+            <!--Straight Stock Item or Product Promotion-->
+            <lightning-radio-group
+              name="radioGroup"
+              label="Select Straight Stock Item or Product Promotion"
+              options={lsProductPromotionOptions}
+              value={coreParams.strProductPromotion}
+              onchange={handleProductPromotionChange}
+              disabled={isDisabled}
+              type="radio"
+              variant="label-inline"
+              required
+            >
+            </lightning-radio-group>
+          </div>
+
+          <div class="slds-col">
+            <!--Product Promotion -->
+            <lightning-record-edit-form object-api-name="Order">
+              <lightning-input-field
+                disabled={isDisabled}
+                field-name="TPB_Product_Promotion__c"
+                data-id="TPB_Product_Promotion__c"
+                onchange={handleProductChange}
+                value={coreParams.strProductId}
+                if:true={isShowProduct}
+                required
+              ></lightning-input-field>
+            </lightning-record-edit-form>
+
+            <!--Wave Period-->
+            <lightning-combobox
+              disabled={isDisabled}
+              if:true={isShowProduct}
+              name="Wave Period"
+              label="Wave Period"
+              value={coreParams.stateOptionsValue}
+              data-id="WavePeriodId"
+              placeholder="Select Wave Period"
+              options={stateInformationList}
+              onchange={handleOptionsChange}
+              required
+            ></lightning-combobox>
+
+            <!--Wave Order Entry-->
+            <lightning-combobox
+              disabled="true"
+              if:true={isShowProduct}
+              name="Wave Order Entry"
+              label="Wave Order Entry"
+              value={coreParams.stateOptionsWavePeriodValue}
+              placeholder="Select Wave Order Entry"
+              data-id="WaveOrderEntryId"
+              options={stateOptionsWavePeriodValue}
+            ></lightning-combobox>
+
+            <!--Straight Stock Item -->
+            <lightning-record-edit-form object-api-name="Order">
+              <lightning-input-field
+                disabled={isDisabled}
+                field-name="TPB_Straight_Stock_Item__c"
+                data-id="TPB_Straight_Stock_Item__c"
+                onchange={handleProductChange}
+                value={coreParams.strProductId}
+                if:false={isShowProduct}
+                required
+              ></lightning-input-field>
+            </lightning-record-edit-form>
+          </div>
+
+          <div class="slds-col">
+            <!--Ship Date -->
+            <lightning-input
+              type="date"
+              if:false={isShowProduct}
+              data-id="shipDateFrom"
+              value={coreParams.strShipDateFrom}
+              label="Ship Date"
+              onchange={handleShipDateFromChange}
+              date-style="short"
+              disabled={isDisabled}
+              variant="label-inline"
+              required
+            >
+            </lightning-input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="slds-grid slds-p-horizontal_small slds-m-top_small slds-m-bottom_small"
+    >
+      <!-- header submit actions-->
+      <div class="slds-col slds-size_1-of-4">
+        <lightning-button
+          if:false={isShowSubmitDisabled}
+          class="slds-m-right_small"
+          label="Continue"
+          title="Continue"
+          variant="default"
+          onclick={handleSubmitOrder}
+          disabled={isShowSubmitDisabled}
+        >
+        </lightning-button>
+
+        <!-- header Complete actions-->
+        <lightning-button
+          class="slds-m-right_small"
+          if:false={isShowCompleteDisabled}
+          label="Complete Order"
+          title="Complete Order"
+          variant="default"
+          onclick={handleCompleteOrder}
+          disabled={isShowCompleteDisabled}
+        >
+        </lightning-button>
+
+        <!-- header Cancel actions-->
+        <lightning-button
+          if:false={isShowCancelDisabled}
+          label="Cancel"
+          title="Cancel"
+          variant="default"
+          onclick={handleCancelClick}
+          disabled={isShowCancelDisabled}
+        >
+        </lightning-button>
+      </div>
+    </div>
+
+    <!-- data table-->
+    <c-tpb-mass-prebook-datatable
+      record-id={_recordId}
+      hq-account-id={_hqAccountId}
+      disabled={_disabled}
+      order-type={coreParams.strProductPromotion}
+      wave-period={coreParams.stateOptionsValue}
+    ></c-tpb-mass-prebook-datatable>
+  </lightning-card>
+</template>

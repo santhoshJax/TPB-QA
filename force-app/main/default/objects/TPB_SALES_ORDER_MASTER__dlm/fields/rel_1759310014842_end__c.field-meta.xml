@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rel_1759310014842_end__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>TPB_SALES_ORDER_MASTER_bill_to_custo_rel</label>
+    <referenceTo>ssot__Account__dlm</referenceTo>
+    <relationshipLabel>TPB_SALES_ORDER_MASTER_bill_to_custo_rel</relationshipLabel>
+    <relationshipName>rel_1759310014842_end</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

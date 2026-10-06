@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wholesaler_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Refer to Wholesaler&apos;s product id</description>
+    <label>Wholesaler Product</label>
+    <referenceTo>Account_Product__c</referenceTo>
+    <relationshipLabel>Advanced Order Items</relationshipLabel>
+    <relationshipName>Advanced_Order_Items</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

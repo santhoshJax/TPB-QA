@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_StateClassId__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(cgcloud__Product__r.cgcloud__Criterion_5_Product__c), CASESAFEID( cgcloud__Product__c ), CASESAFEID(cgcloud__Product__r.cgcloud__Criterion_5_Product__c )) + TPB_Tour_State__c + CASESAFEID(cgcloud__User__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>StateClassId</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

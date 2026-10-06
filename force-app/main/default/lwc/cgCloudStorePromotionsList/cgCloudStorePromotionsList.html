@@ -1,0 +1,36 @@
+<template>
+    <div class="custom-card">
+        <div class="custom-card-header">
+            <h2>Eligible Promotions</h2>
+        </div>
+        <template if:false={isPromotionsExists}>
+            <div class="slds-grid slds-p-around_small">
+                <lightning-icon icon-name='utility:home' alternative-text='home' size='small' title='home'
+                    class="slds-m-right_small"></lightning-icon>
+                <p><span>No active promotions today</span></p>
+            </div>
+        </template>
+        <template if:true={isPromotionsExists}>
+            <div class="card-body slds-p-around_small product-table-container">
+                <div class="slds-grid slds-grid_align-space slds-p-around_xxx-small">
+                    
+                    <div>
+                        <template for:each={customerPromotionList} for:item="promo">
+                            <div key={promo.Id}>
+                                <div data-id={promo.Id}
+                                    style="cursor: pointer;padding: 5px 0px;font-size: 0.9rem;" class="row text-wrap">
+                                    <p><b>{promo.cgcloud__Slogan__c}</b></p>
+                                </div>
+        
+                            </div>
+        
+                        </template>
+                    </div>
+        
+                </div>
+        
+            </div>
+        
+        </template>
+    </div>
+</template>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT 
+Final_FRE_ZYN__dlm.flavor__c AS flavor__c,
+  Final_FRE_ZYN__dlm.nicotine_level__c AS nicotine_level__c,
+  CONCAT(Final_FRE_ZYN__dlm.flavor__c, &apos;-&apos;, Final_FRE_ZYN__dlm.nicotine_level__c) AS flavor_nicotine_combo__c,
+  COUNT(*) AS combo_count__c
+FROM Final_FRE_ZYN__dlm
+JOIN ssot__Account__dlm 
+  ON Final_FRE_ZYN__dlm.KQ_retail_number11__c = ssot__Account__dlm.ssot__Id__c
+JOIN Account_Revenue_Tier__cio
+  ON ssot__Account__dlm.ssot__Id__c = Account_Revenue_Tier__cio.Account_ID__c
+WHERE Account_Revenue_Tier__cio.CI_Account_Revenue_Tier__c = &apos;Top 20%&apos;
+  AND Account_Revenue_Tier__cio.revenue_rank__c &lt;= 10
+  AND Final_FRE_ZYN__dlm.flavor__c &lt;&gt; &apos;Other&apos;
+GROUP BY 
+  Final_FRE_ZYN__dlm.flavor__c,
+  Final_FRE_ZYN__dlm.nicotine_level__c,
+  CONCAT(Final_FRE_ZYN__dlm.flavor__c, &apos;-&apos;, Final_FRE_ZYN__dlm.nicotine_level__c)</expression>
+    <masterLabel>FRE_Unique</masterLabel>
+</MktCalcInsightObjectDef>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_For_Inside_Sales</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+   $UserRole.DeveloperName = &quot;Inside_Sales&quot;,
+   OR(
+      ISBLANK(TEXT(Class_Of_Trade__c)),
+      ISBLANK(Phone),
+      ISBLANK(TEXT( LeadSource ))
+   )
+)</errorConditionFormula>
+    <errorMessage>Required Field Missing Class Of Trades, Phone and Lead Source</errorMessage>
+</ValidationRule>

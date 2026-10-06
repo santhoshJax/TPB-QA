@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppGlobalOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <callbackUrl>https://test.salesforce.com/services/oauth/success</callbackUrl>
+    <certificate>MIIFbjCCA1agAwIBAgIUAQAAAAAAAAAAAAAAAAAAAAAAAAEwDQYJKoZIhvcNAQEF
+BQAwOTEmMCQGA1UEAxMdMDBET3gwMDAwME82VUJLTUEzLWh5cGVyZm9yY2UxDzAN
+BgNVBAoTBnNmLXJjZzAeFw0yNjA2MTExNDAwMzRaFw0yNzA2MTExNDAwMzRaMDkx
+JjAkBgNVBAMTHTAwRE94MDAwMDBPNlVCS01BMy1oeXBlcmZvcmNlMQ8wDQYDVQQK
+EwZzZi1yY2cwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCqYeb9Fyvp
+pOfUJPpqYsSB0PE3p343VLliClEATUmQ/0ed31ltSiwj1WvRg3NdMyr81w7Shw3l
+v9iGg+CW9BD2ney575xrZTJPzG2PRcSDHgjhYsLIPyOZwETjgj0e1s7AB5ACS6Ed
+lh7yxt98+2qQ4h43jPPax8VMlWDLYM4f05k7HCjsZY4KZTCt/erGyRyYOvNKHEvS
+k+eQ9Jq2SXSj7rTfjxmvpmtH/FD3w5bGNeYjrTslQGwKwQWK6MMFjdw2VkWcxJDQ
+Q92Yvt5mWKcivb9XpM6mbygvOPQ4X3d6Sil1yPlfBpwnbJiEZFJuk8xuDvyHmDD+
+pDvOnXFBk2g8y+B2kgC2RCpqgbJkZLOqyRRuJi4mNeFCbNvnIo8GvlXUwMR+EG10
+iKqHrQ2uNF83uRUd6g6X80rimbMYMlmHroOwjLCP7+4SaMmSRwT4HHuE0cAXD3IT
+YaJWjQZxCrr7fTuvC41yUlkpXX7Y7C/GvlrylNZHN4igaHbNncWU18SkdH2oYFIa
+0oW4SRJRjeKYD2A2EKtg3QvQnswUiaP7UbSnlwsmfERAfQWaqOAJpiqrewtdIK9k
+dxln4vv8jtLj225LDCk75xEDoxcS/7vBOOvbBDuocJhpglvpHyPld7ADKXWvqpuy
+tWZG+FpvPl76P2nfZ3Tqayw84zsROTPsqwIDAQABo24wbDAMBgNVHRMEBTADAQH/
+MAsGA1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDATAQBglghkgBhvhCAQEE
+AwMBADAJBgNVHREEAjAAMB0GA1UdDgQWBBSs6l53rM9P4D346jcilsYO/uxfhjAN
+BgkqhkiG9w0BAQUFAAOCAgEATiBIZeUQTu8gfPDsDfLS3igftnBEZKV8CS4ngC20
+KgFd2aQs00ii/tjFnuanbSdXy2Wyk4IjB+BxuyIK4t59R3v/47P4WufIAATrbhCq
+3s7j8fpKMPKU1w37gOaWLskeZyDh65aHu6kpvOMadhznI4+Lqyc/hL4vxOPwZhV0
+bnnX2bZC6uvlH1/tJ21vV4kMy2RgIF2Hfhl0ae0BUwMQtkNRxS+bkBD1p4QZywFF
+IWtP77xIIQwCZBH7NTqL9uTOs+25U2jW1BvmlSX+bXZCICZXMHvU9URlnIRSHBXs
+ieEBBoRtFU0Q3hUb3mNuUJ1EreDPhkTKMpK8sA4wWrqar4w526vx29fB+ESj5KwM
+1Ak2Aw2zM6SBtZx3GSZMHe+jVpnoKQO44h9dIYMR+xTJPP10DY1Nq0FwgQJlf1Nq
+UdSG0LQU/Sep77I2G4NSXbd18i5WARTnlvC8By/zWbYwmgtadQU6Vq2K80bZBs1f
+PlMWtY7sQ0G2qxhi7ilQMledczoBDVtfRlDMMQv2g/2TnPo427XhyxarYsjxDWVZ
+vLycYPD5XYBQWylCUoih9M92Ya15kDFNGbRq/jvf5XyJgtXSpKC9/g+q90O5C+Mv
+idwY1kpIGbSFXxFcUCajUWdjnw/+foWO2m3N3BczX/6YqJnA7v9D/zBK2RrvYUkV
+f6c=</certificate>
+    <consumerKey>3MVG9XhRuzJUtKtAloaVS.RDU2uER8177tiyfbDD82LpTGwad7FkVPxYWQbEaKKHvMPjf94rp0PMt7Nsh5NtR</consumerKey>
+    <externalClientApplication>Processing_Services_for_Pairing</externalClientApplication>
+    <isClientCredentialsFlowEnabled>false</isClientCredentialsFlowEnabled>
+    <isCodeCredFlowEnabled>false</isCodeCredFlowEnabled>
+    <isCodeCredPostOnly>false</isCodeCredPostOnly>
+    <isConsumerSecretOptional>true</isConsumerSecretOptional>
+    <isDeviceFlowEnabled>false</isDeviceFlowEnabled>
+    <isEnforceRefreshTokenTTL>false</isEnforceRefreshTokenTTL>
+    <isIntrospectAllTokens>false</isIntrospectAllTokens>
+    <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+    <isPkceRequired>false</isPkceRequired>
+    <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+    <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+    <isSecretRequiredForTokenExchange>true</isSecretRequiredForTokenExchange>
+    <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+    <label>Processing_Services_for_Pairing_glbloauth</label>
+    <shouldRotateConsumerKey>false</shouldRotateConsumerKey>
+    <shouldRotateConsumerSecret>false</shouldRotateConsumerSecret>
+</ExtlClntAppGlobalOauthSettings>

@@ -1,0 +1,9 @@
+<template>
+    <select class="slds-select" onchange={lineUpdateHandler} disabled={disabled}>
+        <template for:each={itemsList} for:item="v">
+            <option key={v.value} value={v.value} selected={v.selected}>
+                {v.label}
+            </option>
+        </template>
+    </select>
+</template>

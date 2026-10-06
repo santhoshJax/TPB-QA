@@ -1,0 +1,36 @@
+<aura:component
+  implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:hasRecordId,lightning:isUrlAddressable"
+  access="global"
+  controller="TPB_MassPrebookController"
+>
+  <!-- Calling the init method -->
+  <aura:handler name="init" value="this" action="{!c.init}" />
+  <!-- current recordId -->
+  <aura:attribute name="recordId" type="String" />
+  <aura:attribute
+    name="renderMassPrebookOrder"
+    type="Boolean"
+    default="false"
+  />
+  <!-- current renderWholesalerOrder -->
+  <aura:attribute name="renderWholesalerOrder" type="Boolean" default="false" />
+
+  <!-- handler method -->
+  <aura:handler
+    name="change"
+    value="{!v.pageReference}"
+    action="{!c.onPageReferenceChanged}"
+  />
+
+  <!-- render mass prebook order page once recordId exists and recordType = 'Mass_Prebook' -->
+  <aura:if isTrue="{!v.renderMassPrebookOrder}">
+    <c:tpbMassPrebook recordId="{!v.recordId}"></c:tpbMassPrebook>
+  </aura:if>
+
+  <!-- render wholesaler order page once other case of recordType -->
+  <aura:if isTrue="{!v.renderWholesalerOrder}">
+    <c:tpbAddInventoryPurchasedForm
+      recordId="{!v.recordId}"
+    ></c:tpbAddInventoryPurchasedForm>
+  </aura:if>
+</aura:component>

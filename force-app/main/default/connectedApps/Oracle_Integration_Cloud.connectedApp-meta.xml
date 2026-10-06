@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>maggarwal@tpbi.com</contactEmail>
+    <label>Oracle Integration Cloud</label>
+    <oauthConfig>
+        <callbackUrl>https://oic-tpbi-prod-ids14i2iglfl-ia.integration.us-ashburn-1.ocp.oraclecloud.com/icsapis/agent/oauth/callback</callbackUrl>
+        <consumerKey>3MVG9XhRuzJUtKtCbMsDHN24j_p3vYf7zPBro3MxVDq_LjwxURoolByeoKR2jUkQvQA.fEVritTAISJPLpwX.</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>TPBI Integration User Access</permissionSetName>
+    <profileName>System Administrator</profileName>
+    <profileName>TPB Integration</profileName>
+    <profileName>Junior System Administrator</profileName>
+    <profileName>InsideSales Profile</profileName>
+    <profileName>Data Integration User</profileName>
+</ConnectedApp>

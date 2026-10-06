@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definitionCreationType>System</definitionCreationType>
+    <lookupFieldName>UnifiedLinkssotContactPointPhone2__dlm.rel_1749919015835_end__c</lookupFieldName>
+    <masterLabel>UnifiedLinkssotContactPointPhone2_UnifiedRecordId_map_UnifiedssotContactPointPhone2_ssot_Id_1749919015835</masterLabel>
+    <owner>DataCloud</owner>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>UnifiedLinkssotContactPointPhone2__dlm.UnifiedRecordId__c</sourceFieldName>
+    <targetEntity xsi:nil="true"/>
+    <targetFieldName>UnifiedssotContactPointPhone2__dlm.ssot__Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

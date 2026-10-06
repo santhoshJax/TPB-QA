@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vicinity_Anchors__c</fullName>
+    <inlineHelpText>Select all major landmarks or venues located near this store that may drive customer traffic (e.g., airport, college campus, military base, casino, etc). Choose all that apply</inlineHelpText>
+    <label>Vicinity Anchors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>College/University Campus</fullName>
+                <default>false</default>
+                <label>College/University Campus</label>
+            </value>
+            <value>
+                <fullName>Military Base</fullName>
+                <default>false</default>
+                <label>Military Base</label>
+            </value>
+            <value>
+                <fullName>Casino</fullName>
+                <default>false</default>
+                <label>Casino</label>
+            </value>
+            <value>
+                <fullName>Fairgrounds</fullName>
+                <default>false</default>
+                <label>Fairgrounds</label>
+            </value>
+            <value>
+                <fullName>Sports Stadium/Arena</fullName>
+                <default>false</default>
+                <label>Sports Stadium/Arena</label>
+            </value>
+            <value>
+                <fullName>Factory/Manufacturing Plant/DC</fullName>
+                <default>false</default>
+                <label>Factory/Manufacturing Plant/DC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

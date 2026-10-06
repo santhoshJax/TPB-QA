@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Group --></label>
+    <name>Group__c</name>
+    <picklistValues>
+        <masterLabel>APPALACHIA 16 OZ CHEW</masterLabel>
+        <translation><!-- APPALACHIA 16 OZ CHEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APPALACHIA 6 OZ CHEW - B2G1</masterLabel>
+        <translation><!-- APPALACHIA 6 OZ CHEW - B2G1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEECHNUT 3OZ</masterLabel>
+        <translation><!-- BEECHNUT 3OZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEECHNUT 3OZ PROMO</masterLabel>
+        <translation><!-- BEECHNUT 3OZ PROMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIG MOUNTAIN 16 OZ CHEW - APPLE</masterLabel>
+        <translation><!-- BIG MOUNTAIN 16 OZ CHEW - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIG MOUNTAIN 16 OZ CHEW - FULL FLAVOR</masterLabel>
+        <translation><!-- BIG MOUNTAIN 16 OZ CHEW - FULL FLAVOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR</masterLabel>
+        <translation><!-- BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR B2G1</masterLabel>
+        <translation><!-- BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR B2G1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLACK MOUNTAIN 16OZ CHEW</masterLabel>
+        <translation><!-- BLACK MOUNTAIN 16OZ CHEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM APPLE</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM BERRIES</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM BERRIES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM BLUEBERRY</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM CHERRY</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM CHERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM CHOCOLATE</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM CHOCOLATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM FRENCH VANILLA</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM FRENCH VANILLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM GRAPE</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM KIWI STRAWBERRY</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM KIWI STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM KUSH</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM KUSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM MANGO</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM PEACH</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM WATERMELON</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM WATERMELON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 2 PK PLATINUM ZERO</masterLabel>
+        <translation><!-- BLUNT WRAP - 2 PK PLATINUM ZERO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 4 PK PLATINUM KIWI STRAWBERRY</masterLabel>
+        <translation><!-- BLUNT WRAP - 4 PK PLATINUM KIWI STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 4 PK PLATINUM KUSH</masterLabel>
+        <translation><!-- BLUNT WRAP - 4 PK PLATINUM KUSH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 4 PK PLATINUM SWEET</masterLabel>
+        <translation><!-- BLUNT WRAP - 4 PK PLATINUM SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLUNT WRAP - 4 PK PLATINUM ZERO</masterLabel>
+        <translation><!-- BLUNT WRAP - 4 PK PLATINUM ZERO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 133ML FLUID</masterLabel>
+        <translation><!-- CLIPPER - 133ML FLUID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 138ML BUTANE</masterLabel>
+        <translation><!-- CLIPPER - 138ML BUTANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 16ML BUTANE</masterLabel>
+        <translation><!-- CLIPPER - 16ML BUTANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 300ML BUTANE</masterLabel>
+        <translation><!-- CLIPPER - 300ML BUTANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 300ML ISOBUTANE</masterLabel>
+        <translation><!-- CLIPPER - 300ML ISOBUTANE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 3PK FLINT SYSTEM 12CT</masterLabel>
+        <translation><!-- CLIPPER - 3PK FLINT SYSTEM 12CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER - 9PK FLINT BLISTER 24CT</masterLabel>
+        <translation><!-- CLIPPER - 9PK FLINT BLISTER 24CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER CP11</masterLabel>
+        <translation><!-- CLIPPER CP11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER CP22</masterLabel>
+        <translation><!-- CLIPPER CP22 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER JET FLAME</masterLabel>
+        <translation><!-- CLIPPER JET FLAME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER LIGHTERS 4 TIER</masterLabel>
+        <translation><!-- CLIPPER LIGHTERS 4 TIER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER LIGHTERS ZZ</masterLabel>
+        <translation><!-- CLIPPER LIGHTERS ZZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIPPER MINITUBE</masterLabel>
+        <translation><!-- CLIPPER MINITUBE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COTTONMOUTH</masterLabel>
+        <translation><!-- COTTONMOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DURANGO LOOSE LEAF - ORIGINAL</masterLabel>
+        <translation><!-- DURANGO LOOSE LEAF - ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 12 MG</masterLabel>
+        <translation><!-- FRE - LUSH 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 15 MG</masterLabel>
+        <translation><!-- FRE - LUSH 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - LUSH 9 MG</masterLabel>
+        <translation><!-- FRE - LUSH 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 12 MG</masterLabel>
+        <translation><!-- FRE - MINT 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 15 MG</masterLabel>
+        <translation><!-- FRE - MINT 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 6 MG</masterLabel>
+        <translation><!-- FRE - MINT 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - MINT 9 MG</masterLabel>
+        <translation><!-- FRE - MINT 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 12 MG</masterLabel>
+        <translation><!-- FRE - SWEET 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 15 MG</masterLabel>
+        <translation><!-- FRE - SWEET 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - SWEET 9 MG</masterLabel>
+        <translation><!-- FRE - SWEET 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 12 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 12 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 15 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 15 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 6 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 6 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRE - WINTERGREEN 9 MG</masterLabel>
+        <translation><!-- FRE - WINTERGREEN 9 MG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAVANA BLOSSOM LOOSE LEAF - ORIGINAL</masterLabel>
+        <translation><!-- HAVANA BLOSSOM LOOSE LEAF - ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI BLU BERRY DIESEL</masterLabel>
+        <translation><!-- HI-FI BLU BERRY DIESEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI DIAMOND SUPREME</masterLabel>
+        <translation><!-- HI-FI DIAMOND SUPREME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI HAZY GRAPE</masterLabel>
+        <translation><!-- HI-FI HAZY GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI JOOZE MELON</masterLabel>
+        <translation><!-- HI-FI JOOZE MELON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI NECTAR PUNCH</masterLabel>
+        <translation><!-- HI-FI NECTAR PUNCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI PLATINUM GRAPE</masterLabel>
+        <translation><!-- HI-FI PLATINUM GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI SUPA GREENZ</masterLabel>
+        <translation><!-- HI-FI SUPA GREENZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI-FI SUPA SWEET</masterLabel>
+        <translation><!-- HI-FI SUPA SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARMA BLAZIN BLUE</masterLabel>
+        <translation><!-- KARMA BLAZIN BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARMA ORIGINAL</masterLabel>
+        <translation><!-- KARMA ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARMA PURPLE CHILL</masterLabel>
+        <translation><!-- KARMA PURPLE CHILL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KARMA TROPIC TRIP</masterLabel>
+        <translation><!-- KARMA TROPIC TRIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MISC OTHER</masterLabel>
+        <translation><!-- MISC OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUR PRIDE 8 OZ CHEW - APPLE</masterLabel>
+        <translation><!-- OUR PRIDE 8 OZ CHEW - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUR PRIDE 8 OZ CHEW - PEACH</masterLabel>
+        <translation><!-- OUR PRIDE 8 OZ CHEW - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OUR PRIDE 8 OZ CHEW - SWEET</masterLabel>
+        <translation><!-- OUR PRIDE 8 OZ CHEW - SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEE PRODUCT PARTS</masterLabel>
+        <translation><!-- SEE PRODUCT PARTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNAKE RIVER LEAF - FIRE CURED</masterLabel>
+        <translation><!-- SNAKE RIVER LEAF - FIRE CURED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNAKE RIVER TWIST - AIR CURED</masterLabel>
+        <translation><!-- SNAKE RIVER TWIST - AIR CURED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SNAKE RIVER TWIST - FIRE CURED</masterLabel>
+        <translation><!-- SNAKE RIVER TWIST - FIRE CURED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - 24C CLASSIC</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - 24C CLASSIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - 24C PROMO</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - 24C PROMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - 24M</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - 24M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - APPLE</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - BLACK WILD CHERRY</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - BLACK WILD CHERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - BUTTERNUT</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - BUTTERNUT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - FREDS CHOICE</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - FREDS CHOICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - L50</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - L50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - PEACH</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - RED SUPREME</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - RED SUPREME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - TEQUILA SUNRISE</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - TEQUILA SUNRISE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - TN CHEW BIG BAG PROMO</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - TN CHEW BIG BAG PROMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - TN CHEW MOONSHINE BLEND</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - TN CHEW MOONSHINE BLEND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - TN CHEW ORIGINAL</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - TN CHEW ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 16 OZ CHEW - WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS 16 OZ CHEW - WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 3 OZ CHEW - CLASSIC</masterLabel>
+        <translation><!-- STOKERS 3 OZ CHEW - CLASSIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 3 OZ CHEW - RED SUPREME BIG BAG PROMO</masterLabel>
+        <translation><!-- STOKERS 3 OZ CHEW - RED SUPREME BIG BAG PROMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 3 OZ CHEW - RED SUPREME BOLD</masterLabel>
+        <translation><!-- STOKERS 3 OZ CHEW - RED SUPREME BOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 3 OZ CHEW - RED SUPREME ORIGINAL</masterLabel>
+        <translation><!-- STOKERS 3 OZ CHEW - RED SUPREME ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 3 OZ CHEW - TN CHEW ORIGINAL 3OZ</masterLabel>
+        <translation><!-- STOKERS 3 OZ CHEW - TN CHEW ORIGINAL 3OZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - 24C CLASSIC</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - 24C CLASSIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - APPLE</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - BLACK WILD CHERRY</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - BLACK WILD CHERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - FREDS CHOICE</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - FREDS CHOICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - L50</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - L50 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - PEACH</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS 8 OZ CHEW - TN CHEW ORIGINAL</masterLabel>
+        <translation><!-- STOKERS 8 OZ CHEW - TN CHEW ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CANS - FINE CUT NATURAL</masterLabel>
+        <translation><!-- STOKERS CANS - FINE CUT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CANS - LONG CUT MINT</masterLabel>
+        <translation><!-- STOKERS CANS - LONG CUT MINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CANS - LONG CUT NATURAL</masterLabel>
+        <translation><!-- STOKERS CANS - LONG CUT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CANS - LONG CUT STRAIGHT</masterLabel>
+        <translation><!-- STOKERS CANS - LONG CUT STRAIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS CANS - LONG CUT WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS CANS - LONG CUT WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TOWER PROMOS - FC NATURAL</masterLabel>
+        <translation><!-- STOKERS TOWER PROMOS - FC NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TOWER PROMOS - MINT</masterLabel>
+        <translation><!-- STOKERS TOWER PROMOS - MINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TOWER PROMOS - STRAIGHT</masterLabel>
+        <translation><!-- STOKERS TOWER PROMOS - STRAIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TOWER PROMOS - WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS TOWER PROMOS - WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB PROMOS - FC NATURAL</masterLabel>
+        <translation><!-- STOKERS TUB PROMOS - FC NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB PROMOS - FC WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS TUB PROMOS - FC WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB PROMOS - LC MINT</masterLabel>
+        <translation><!-- STOKERS TUB PROMOS - LC MINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB PROMOS - LC STRAIGHT</masterLabel>
+        <translation><!-- STOKERS TUB PROMOS - LC STRAIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUB PROMOS - LC WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS TUB PROMOS - LC WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - FINE CUT NATURAL</masterLabel>
+        <translation><!-- STOKERS TUBS - FINE CUT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - FINE CUT WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS TUBS - FINE CUT WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - LONG CUT MINT</masterLabel>
+        <translation><!-- STOKERS TUBS - LONG CUT MINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - LONG CUT NATURAL</masterLabel>
+        <translation><!-- STOKERS TUBS - LONG CUT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - LONG CUT STRAIGHT</masterLabel>
+        <translation><!-- STOKERS TUBS - LONG CUT STRAIGHT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STOKERS TUBS - LONG CUT WINTERGREEN</masterLabel>
+        <translation><!-- STOKERS TUBS - LONG CUT WINTERGREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TROPHY LOOSE LEAF - ORIGINAL</masterLabel>
+        <translation><!-- TROPHY LOOSE LEAF - ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TROPHY LOOSE LEAF - ORIGINAL 2 POUCH</masterLabel>
+        <translation><!-- TROPHY LOOSE LEAF - ORIGINAL 2 POUCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - LARGE CLASSIC</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - LARGE CLASSIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - LARGE ORIGINAL</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - LARGE ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - LARGE PAPER MIX</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - LARGE PAPER MIX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - LARGE TIE DYE</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - LARGE TIE DYE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - SMALL BLACK</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - SMALL BLACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - SMALL HEMP</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - SMALL HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - SMALL ORANGE</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - SMALL ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG ZAG ROLLING TRAYS - SMALL ORIGINAL</masterLabel>
+        <translation><!-- ZIG ZAG ROLLING TRAYS - SMALL ORIGINAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - APPLE</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - APPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - BLUEBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - CHERRY</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - CHERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - DRAGONBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - DRAGONBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - ISLAND</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - ISLAND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - MANGO</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - MELON</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - MELON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - ORANGE</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - PEACH</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - PINEAPPLE</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - PINEAPPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - STRAWBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 2 PK HTL WRAPS - VANILLA</masterLabel>
+        <translation><!-- ZIG-ZAG 2 PK HTL WRAPS - VANILLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - BLUE</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - BLUEBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - GOLD</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - GOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - GREEN</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - GREEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - PINK</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - PINK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - PURPLE</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - PURPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG 4 PK HTL WRAPS - SWEET</masterLabel>
+        <translation><!-- ZIG-ZAG 4 PK HTL WRAPS - SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK MANGO</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK PEACH</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK STRAWBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK SWEETS</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK SWEETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 2 PK WHITE GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 2 PK WHITE GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK BLUEBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK DRAGONBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK DRAGONBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK GREEN GARUDA</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK GREEN GARUDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK GREEN KARMA</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK GREEN KARMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK GREEN KB90</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK GREEN KB90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK GREEN SWEETS</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK GREEN SWEETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK MANGO</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK MANGO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK MARACUJA</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK MARACUJA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK PEACH</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK PEACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK STRAWBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK STRAWBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK SWEETS</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK SWEETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK TANGELO</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK TANGELO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARILLOS - 3 PK WHITE GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARILLOS - 3 PK WHITE GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARS - ROUGH CUT HONEY BERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARS - ROUGH CUT HONEY BERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARS - ROUGH CUT NATURAL</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARS - ROUGH CUT NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARS - ROUGH CUT RUSSIAN CREAM</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARS - ROUGH CUT RUSSIAN CREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CIGARS - ROUGH CUT SWEET AROMATIC</masterLabel>
+        <translation><!-- ZIG-ZAG CIGARS - ROUGH CUT SWEET AROMATIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CONES - BLUEBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CONES - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CONES - DRAGONBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG CONES - DRAGONBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CONES - GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG CONES - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CONES - PINEAPPLE</masterLabel>
+        <translation><!-- ZIG-ZAG CONES - PINEAPPLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG CONES - STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG CONES - STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - BLUE DREAM</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - BLUE DREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - GEORGIA FIELDS</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - GEORGIA FIELDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - ISLAND VIBES</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - ISLAND VIBES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - MELLOW HAZE</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - MELLOW HAZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - NATURAL</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - OG PURP</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - OG PURP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - SOUR SQUEEZE</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - SOUR SQUEEZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG HEMP WRAPS - SUMMER SLICE</masterLabel>
+        <translation><!-- ZIG-ZAG HEMP WRAPS - SUMMER SLICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG NL WRAPS - 2 PK BERRY BASH</masterLabel>
+        <translation><!-- ZIG-ZAG NL WRAPS - 2 PK BERRY BASH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG NL WRAPS - 2 PK PALMA</masterLabel>
+        <translation><!-- ZIG-ZAG NL WRAPS - 2 PK PALMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG NL WRAPS - 2 PK STRAIGHT UP</masterLabel>
+        <translation><!-- ZIG-ZAG NL WRAPS - 2 PK STRAIGHT UP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG NL WRAPS - 2 PK SWEET</masterLabel>
+        <translation><!-- ZIG-ZAG NL WRAPS - 2 PK SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG NL WRAPS - 2 PK VANILLA CREAM</masterLabel>
+        <translation><!-- ZIG-ZAG NL WRAPS - 2 PK VANILLA CREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM KING ROLLS - NATURAL</masterLabel>
+        <translation><!-- ZIG-ZAG PALM KING ROLLS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM MINI ROLLS - BANANA</masterLabel>
+        <translation><!-- ZIG-ZAG PALM MINI ROLLS - BANANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM MINI ROLLS - BLUEBERRY</masterLabel>
+        <translation><!-- ZIG-ZAG PALM MINI ROLLS - BLUEBERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM MINI ROLLS - GRAPE</masterLabel>
+        <translation><!-- ZIG-ZAG PALM MINI ROLLS - GRAPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM MINI ROLLS - NATURAL</masterLabel>
+        <translation><!-- ZIG-ZAG PALM MINI ROLLS - NATURAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PALM MINI ROLLS - VANILLA</masterLabel>
+        <translation><!-- ZIG-ZAG PALM MINI ROLLS - VANILLA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - 1 1/4 CONES</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - 1 1/4 CONES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - 1 1/4 UNBLEACHED</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - 1 1/4 UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - KING CONES</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - KING CONES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - KING UNBLEACHED</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - KING UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - ULTRA THIN 70MM</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - ULTRA THIN 70MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPER CONES - UNBLEACHED 70MM</masterLabel>
+        <translation><!-- ZIG-ZAG PAPER CONES - UNBLEACHED 70MM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/2 BLUE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/2 BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/4 BLUE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/4 BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/4 FRENCH ORANGE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/4 FRENCH ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/4 HEMP</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/4 HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/4 ULTRA THIN</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/4 ULTRA THIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - 1 1/4 UNBLEACHED</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - 1 1/4 UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - COMBO BOOKLET - FRENCH ORANGE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - COMBO BOOKLET - FRENCH ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - COMBO BOOKLET - HEMP</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - COMBO BOOKLET - HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - COMBO BOOKLET - UNBLEACHED</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - COMBO BOOKLET - UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - KING SIZE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - KING SIZE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - KING SLIM HEMP</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - KING SLIM HEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - KING SLIM UNBLEACHED</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - KING SLIM UNBLEACHED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - KUTCORNERS</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - KUTCORNERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG PAPERS - WHITE</masterLabel>
+        <translation><!-- ZIG-ZAG PAPERS - WHITE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG ROSE CONES - 70MM 5 PK</masterLabel>
+        <translation><!-- ZIG-ZAG ROSE CONES - 70MM 5 PK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG ROSE CONES - KING SIZE 1 PK</masterLabel>
+        <translation><!-- ZIG-ZAG ROSE CONES - KING SIZE 1 PK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG ROSE CONES - KING SIZE 3 PK</masterLabel>
+        <translation><!-- ZIG-ZAG ROSE CONES - KING SIZE 3 PK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK ATL</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK ATL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK CHI-RACKS</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK CHI-RACKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK DARK BROAD LEAF</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK DARK BROAD LEAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK HABANO LEAF</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK HABANO LEAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK HARD RED</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK HARD RED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY BERRY</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY BERRY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY DRIP</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY DRIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK ISLAND RUM</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK ISLAND RUM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK RUSSIAN CREAM</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK RUSSIAN CREAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TENZ CIGARILLOS - 2 PK SWEET</masterLabel>
+        <translation><!-- ZIG-ZAG TENZ CIGARILLOS - 2 PK SWEET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TERP CONES - 2 PK CLEMENTINE</masterLabel>
+        <translation><!-- ZIG-ZAG TERP CONES - 2 PK CLEMENTINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TERP CONES - 2 PK GRAND DADDY PURP</masterLabel>
+        <translation><!-- ZIG-ZAG TERP CONES - 2 PK GRAND DADDY PURP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TERP CONES - 2 PK LIMONCELLO</masterLabel>
+        <translation><!-- ZIG-ZAG TERP CONES - 2 PK LIMONCELLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIG-ZAG TERP CONES - 2PK SHORTCAKE</masterLabel>
+        <translation><!-- ZIG-ZAG TERP CONES - 2PK SHORTCAKE --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

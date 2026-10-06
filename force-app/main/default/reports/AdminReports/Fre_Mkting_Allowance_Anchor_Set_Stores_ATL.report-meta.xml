@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>cgcloud__Account_Set__c$Name</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Account_Set__c$Short_Description__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Account_Set__c.cgcloud__Account_Set_Accounts__r$cgcloud__Account_Set_Account__c.SF_Account_ID__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cgcloud__Account_Set__c$Short_Description__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Allowance</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Fre Mkting Allowance Anchor Set Stores</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Anchor_Sets_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__Account_Set__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

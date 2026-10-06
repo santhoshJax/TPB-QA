@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Closed Permanently - Out of Business</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Out of Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Permanently - Does Not Sell Tobacco</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Does Not Sell Tobacco</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Permanently - Duplicate of Another Store</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Duplicate of Another Store</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Permanently - Not a Retail Location</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Not a Retail Location</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Permanently - Other</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Permanently - Closed via Automation</fullName>
+        <default>false</default>
+        <label>Closed Permanently - Closed via Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Temporarily - Building Damage (Fire, Hurricane, etc)</fullName>
+        <default>false</default>
+        <label>Closed Temporarily - Building Damage (Fire, Hurricane, etc)</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Temporarily - Remodel Underway</fullName>
+        <default>false</default>
+        <label>Closed Temporarily - Remodel Underway</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Temporarily - Seasonal</fullName>
+        <default>false</default>
+        <label>Closed Temporarily - Seasonal</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed Temporarily - Other</fullName>
+        <default>false</default>
+        <label>Closed Temporarily - Other</label>
+    </customValue>
+    <masterLabel>Account Closure Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

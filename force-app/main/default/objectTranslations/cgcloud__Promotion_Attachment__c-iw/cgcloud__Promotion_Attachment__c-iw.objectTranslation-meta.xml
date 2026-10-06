@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>הקובץ המצורף לקידום מכירות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>קובץ מצורף לקידום מכירות</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>הקבצים המצורפים לקידום מכירות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>קבצים מצורפים לקידום מכירות</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>שם קובץ מצורף של קידום מכירות</nameFieldLabel>
+</CustomObjectTranslation>

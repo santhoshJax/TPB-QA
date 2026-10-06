@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Distribution</fullName>
+                <default>false</default>
+                <label>New Distribution</label>
+            </value>
+            <value>
+                <fullName>SKU Expansion</fullName>
+                <default>false</default>
+                <label>SKU Expansion</label>
+            </value>
+            <value>
+                <fullName>SKU Maintenance</fullName>
+                <default>false</default>
+                <label>SKU Maintenance</label>
+            </value>
+            <value>
+                <fullName>Sell Promotions</fullName>
+                <default>false</default>
+                <label>Sell Promotions</label>
+            </value>
+            <value>
+                <fullName>Secure Reorder</fullName>
+                <default>false</default>
+                <label>Secure Reorder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

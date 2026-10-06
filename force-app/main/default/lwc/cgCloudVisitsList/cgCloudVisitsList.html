@@ -1,0 +1,273 @@
+<template>
+    <template if:false={storeCockpit}>
+        <template if:true={isLoading}>
+        <div class="spinner-container">
+            <lightning-spinner
+                alternative-text="Loading"
+                message="Loading data..."
+                size="medium"
+                variant="base">
+            </lightning-spinner>
+        </div>
+    </template>
+        <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" small-device-size="12" medium-device-size={cardSize} large-device-size={cardSize}
+                    >
+                    <div class="custom-card">
+                         <div class="custom-card-header">
+                            <h2>Visits For Today</h2>
+                        </div>
+                        <div class="slds-p-around_small slds-text_align-center">
+                         
+                
+                            <template if:true={isCustomerAccountsExist}>
+                                <button class="slds-button addVisitcls" onclick={addnewVisit}>
+                                    <lightning-icon icon-name="utility:add" alternative-text="add" size="xx-small" title="add"
+                                        variant="inverse" class="slds-p-right_small"></lightning-icon>
+                                    <span>Add new Visit</span>
+                                </button>
+                            </template>
+                            <template if:false={isCustomerAccountsExist}>
+                                <span style="color: #f08080;">No Customer Manager and Account Team Member assigned for this Account to
+                                    create Visit, Please assign Customer Manager and Account Teams Members.</span>
+                            </template>
+                
+                            <div class="slds-p-top_small">
+                                <!-- <template if:true={isVisitsFinalData}>
+                                    <template for:each={visitsFinalData} for:item="visitData">
+                                        
+                                        <div key={visitData.id} class={visitData.computedClass} data-id={visitData.id}
+                                            data-accid={visitData.accountId} data-acctype={visitData.accountType}  onclick={handleVisitClick}>
+                                            <div class={visitData.circleClass}>
+                                               
+                                            </div>
+                                            <div class=" text-column">
+                                                <p class="name"><span>{visitData.name}</span></p>
+                                                <p class="address"><span>{visitData.address}</span></p>
+                                            </div>
+                
+                                        </div>
+                                    </template>
+                                </template> -->
+                                <template if:true={isVisitsFinalData}>
+                                    <template for:each={visitsFinalData} for:item="visitData">
+
+                                        <div key={visitData.id}
+                                            class={visitData.computedClass}
+                                            data-id={visitData.id}
+                                            data-accid={visitData.accountId}
+                                            data-acctype={visitData.accountType}
+                                            onclick={handleVisitClick}>
+
+                                            <div class={visitData.circleClass}></div>
+
+                                            <div class="text-column">
+                                                <p class="name"><span>{visitData.name}</span></p>
+                                                <p class="address"><span>{visitData.address}</span></p>
+                                            </div>
+
+                                            <!-- THREE DOT MENU -->
+                                            <div class="menu-column" onclick={stopPropagation}>
+                                                <lightning-button-icon
+                                                    icon-name="utility:threedots_vertical"
+                                                    variant="bare"
+                                                    alternative-text="Actions"
+                                                    size="small"
+                                                    data-id={visitData.id}
+                                                    onclick={toggleMenu}>
+                                                </lightning-button-icon>
+
+                                                <template if:true={visitData.showMenu}>
+                                                    <div class="custom-dropdown">
+                                                        <div
+                                                            class="dropdown-item"
+                                                            data-id={visitData.id}
+                                                            onclick={handleCancelClick}>
+                                                            Cancel Visit
+                                                        </div>
+                                                    </div>
+                                                </template>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </template>
+                                </template>
+
+                                <template if:false={isVisitsFinalData}>
+                                    <div class="slds-grid slds-text-align_center slds-text-color_weak slds-grid_vertical-align-center">
+                                        <div>
+                                            <lightning-icon icon-name="utility:leave_conference" alternative-text="Connected"
+                                                size="small" title="large size"></lightning-icon>
+                                        </div>
+                                        <div>
+                                            <p><span><Strong>No visits planned today</Strong> </span></p>
+                                            <p><span>why don't you add one?</span></p>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </lightning-layout-item>
+                
+                <template if:true={isAccountPage}>
+                    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6"
+                        padding="horizontal-small">
+                        <div class="custom-card">
+                            <div class="custom-card-header">
+                                <h2>Customer Tasks Today</h2>
+                            </div>
+                             <div class="slds-p-around_small slds-text_align-center">
+                                <button class="slds-button addVisitcls" onclick={addnewCustomerTask}>
+                                    <lightning-icon icon-name="utility:add" alternative-text="add" size="xx-small" title="add"
+                                        variant="inverse" class="slds-p-right_small"></lightning-icon>
+                                    <span>Add new Customer Task</span>
+                                </button>
+                    
+                                <div class="slds-p-top_small">
+                    
+                                    <template for:each={customerTasksData} for:item="ctData">
+                                        <div key={ctData.Id}
+                                            class="task-item slds-grid  slds-grid_vertical-align-center slds-p-top_x-small slds-p-bottom_x-small borderLine"
+                                            data-id={ctData.Id} data-accid={ctData.accountId} onclick={handleTaskClick}>
+                                            <div class='slds-p-right_small'>
+                                                <lightning-icon icon-name='action:info' alternative-text='info' size='xx-small'
+                                                    title='info'></lightning-icon>
+                                            </div>
+                                            <div class="text-column">
+                                                <p class="description"><span>{ctData.description}</span></p>
+                                                <p class="name"><span>{ctData.Name}</span></p>
+                    
+                                                <p class="description"><span>{ctData.due_date}</span></p>
+                                            </div>
+                                            <template if:true={ctData.isPresentOrPast}>
+                                                <div class="slds-p-left_xx-small">
+                                                    <p class="circle"></p>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                    <template if:false={isCustomerTaskData}>
+                                        <div class="slds-grid slds-text-align_center slds-text-color_weak slds-grid_vertical-align-center">
+                                            
+                                            <div>
+                                                <p><span><Strong>No Customer Tasks today</Strong> </span></p>
+                                               
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </lightning-layout-item>
+                </template>
+               
+        </lightning-layout>
+    </template>
+    
+
+    <template if:true={isModalOpen}>
+    
+        <section class="slds-modal slds-fade-in-open custom-modal">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">What type of Visit would you like to start?</h2>
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                        onclick={closeModal} style="top: 14px;right: 15px;">
+                        <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                    </button>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template if:true={isLoading}>
+                        <div class="spinner-container">
+                            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                                message="Loading data..." size="medium" variant="base"></lightning-spinner>
+                        </div>
+                    </template>
+    
+                    <div class=" slds-p-top_small">
+                        <lightning-combobox name="Visit Template" label="Visit Template" value={selectedVisitTemplate}
+                            placeholder="Select Visit Template" options={visitTemplateOptions}
+                            onchange={handleChangeVisit}></lightning-combobox>
+                        <lightning-input type="date" name="Visit Date" label="Date" value={selectedVisitDate}
+                            onchange={handleChangeVisit}></lightning-input>
+                        <lightning-input type="time" name="Visit Time" label="Time" value={selectedVisitTime}
+                            onchange={handleChangeVisit}></lightning-input>
+                        <lightning-combobox name="Visit Type" label="Visit Type" value={selectedVisitType}
+                            placeholder="Select Visit Type" options={visitTypeOptions}
+                            onchange={handleChangeVisit}></lightning-combobox>
+    
+                        <c-custom-lookup-search data-id="visitCustomerLookup" label="Customer" onselect={handleChangeCustomer} options={customerAccounts}
+                            selected-value={selectedCustomerValue}></c-custom-lookup-search>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                    <div>
+                        <lightning-button label="Cancel" class="slds-p-right_small" onclick={closeModal}
+                            variant="neutral"></lightning-button>
+                        <lightning-button label="Create Visit" onclick={CreateVisit} variant="brand"
+                            disabled={isDisabled}></lightning-button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+<template if:true={isCustomerTaskModalOpen}>
+
+    <section class="slds-modal slds-fade-in-open custom-modal">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <h2 class="slds-text-heading_medium">Add Customer Task</h2>
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closeModal} style="top: 14px;right: 15px;">
+                    <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                </button>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium">
+                <template if:true={isTaskLoading}>
+                    <div class="spinner-container">
+                        <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                            message="Loading data..." size="medium" variant="base"></lightning-spinner>
+                    </div>
+                </template>
+
+                <div class=" slds-p-top_small">
+                    <c-custom-lookup-search label="Customer" onselect={handleChangeCustomerTask} options={customerAccounts}
+                        selected-value={selectedCustomerTaskValue}></c-custom-lookup-search>
+                    <lightning-combobox name="Customer Type" label="Customer Type" value={selectedCustomerType}
+                        placeholder="" options={customerTaskTemplateOptions}
+                        onchange={handleChangeTask}></lightning-combobox>
+                    <lightning-input type="text" label="Description" name="description" value={description}
+                        onchange={handleChangeTask}></lightning-input>
+                    <lightning-input type="date" name="Due Date" label="Date" value={selectedCustomerTaskDate}
+                        onchange={handleChangeTask}></lightning-input>
+
+
+
+                </div>
+            </div>
+            <footer class="slds-modal__footer slds-grid slds-grid_align-spread">
+                <div>
+                    <lightning-button label="Cancel" class="slds-p-right_small" onclick={closeModal}
+                        variant="neutral"></lightning-button>
+                    <lightning-button label="Create" onclick={createTask} variant="brand"
+                        disabled={isTaskDisabled}></lightning-button>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+    <template if:true={storeCockpit}>
+        <c-cg-cloud-store-cockpit onnavigate={handleNavigation} visit-id={selectedVisitId} is-visit-started={isVisitStarted}
+            selected-account-id={selectedAccountValue} customer-account-name={selectedCustomerName}
+            is-spinner={storeCockpit}></c-cg-cloud-store-cockpit>
+    </template>
+</template>

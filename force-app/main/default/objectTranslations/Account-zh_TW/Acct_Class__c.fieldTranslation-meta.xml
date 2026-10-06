@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Classification --></label>
+    <name>Acct_Class__c</name>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smokeless</masterLabel>
+        <translation><!-- Smokeless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smoking</masterLabel>
+        <translation><!-- Smoking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Total OTP</masterLabel>
+        <translation><!-- Total OTP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

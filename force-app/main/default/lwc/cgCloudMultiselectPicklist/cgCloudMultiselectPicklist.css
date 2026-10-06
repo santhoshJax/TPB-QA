@@ -1,0 +1,107 @@
+.verticalAlign {
+    cursor: pointer;
+    padding: 0px 5px !important;
+}
+
+.slds-dropdown {
+    padding: 0px !important;
+}
+
+.recordListBox {
+    margin-top: 0px !important;
+    overflow-y: scroll;
+}
+
+:host {
+    display: block;
+    height: 100%;
+}
+
+.picklist-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.picklist-combobox {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 0;
+}
+
+.slds-combobox__form-element {
+    grid-row: 1;
+}
+
+.picklist-dropdown {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.picklist-table-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: clamp(22rem, 62dvh, 48rem);
+    max-height: 70dvh;
+    overflow-y: auto;
+}
+
+.slds-listbox li {
+    padding: .45rem 0.7rem !important;
+    display: flex;
+}
+
+.inputBox input {
+    padding-left: 10px;
+    height: 30px;
+}
+
+.eachItem:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+/* For Scrolling */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    display: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+lightning-pill {
+    font-size: 10px;
+}
+.slds-table td {
+    white-space: normal !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.picklist-header-table thead th {
+    background-color: #87cefa;
+}
+
+/* Optional: limit column width to avoid extremely wide columns */
+.slds-table td:nth-child(2) {
+    /* max-width: 200px;  */
+}
+
+@media only screen and (max-width: 1024px) {
+    .picklist-table-wrap {
+        height: clamp(24rem, 66dvh, 52rem);
+        max-height: 74dvh;
+    }
+}

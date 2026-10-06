@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Orders</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>External_Order_Number__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>ORDERS.CREATED_DATE</columns>
+    <columns>ORDERS.ACTIVATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Orders</label>
+</ListView>

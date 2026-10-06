@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>00:00:00.000Z</fridayEndTime>
+        <fridayStartTime>00:00:00.000Z</fridayStartTime>
+        <mondayEndTime>00:00:00.000Z</mondayEndTime>
+        <mondayStartTime>00:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <saturdayEndTime>00:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>00:00:00.000Z</saturdayStartTime>
+        <thursdayEndTime>00:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>00:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>00:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>00:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>00:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>00:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2022-12-26</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-12-23</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Eve</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-07-05</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Employee Appreciation Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-09-02</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Friday before Labor Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-05-27</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Friday before Memorial Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-07-04</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Independence Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-06-20</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Juneteenth</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-09-05</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Labor Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-05-30</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Memorial Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2024-01-01</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>New Years Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-31</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>New Years Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-11-24</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Thanksgiving Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2022-11-25</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Thanksgiving Friday</name>
+    </holidays>
+</BusinessHoursSettings>

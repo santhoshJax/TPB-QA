@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_Source__c</fullName>
+    <description>How the distribution was entered on the Visit Job: Scanner (online scan), Online App (online manual), Offline Manual, or Offline Scanner. Populated by TPB_OnlineAppBarcodeScanController (Scanner), TPB_OnlineAppController (Online App), and TPB_VisitJobEOVCalcuBatch (Offline Manual / Offline Scanner, the latter from the offline order item TPB_Via_Scanner__c flag). SAL-281 / SAL-281b Distribution Origin Tracking.</description>
+    <inlineHelpText>Channel the distribution was captured through: Scanner, Online App, Offline Manual, or Offline Scanner.</inlineHelpText>
+    <label>Distribution Source</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scanner</fullName>
+                <default>false</default>
+                <label>Online Scanner</label>
+            </value>
+            <value>
+                <fullName>Online App</fullName>
+                <default>false</default>
+                <label>Online Manual</label>
+            </value>
+            <value>
+                <fullName>Offline Manual</fullName>
+                <default>false</default>
+                <label>Offline Manual</label>
+            </value>
+            <value>
+                <fullName>Offline Scanner</fullName>
+                <default>false</default>
+                <label>Offline Scanner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

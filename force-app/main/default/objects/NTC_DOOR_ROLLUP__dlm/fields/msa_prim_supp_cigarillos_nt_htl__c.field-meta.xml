@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>msa_prim_supp_cigarillos_nt_htl__c</fullName>
+    <label>MSA Prim Supp - Cigarillos NT HTL</label>
+    <length>60</length>
+    <mktDataModelFieldAttributes>
+        <definitionCreationType>Custom</definitionCreationType>
+        <isDynamicLookup>false</isDynamicLookup>
+        <labelOverride>MSA Prim Supp - Cigarillos NT HTL</labelOverride>
+        <masterLabel>MSA Prim Supp - Cigarillos NT HTL</masterLabel>
+        <usageTag>None</usageTag>
+    </mktDataModelFieldAttributes>
+    <required>false</required>
+    <type>Text</type>
+</CustomField>

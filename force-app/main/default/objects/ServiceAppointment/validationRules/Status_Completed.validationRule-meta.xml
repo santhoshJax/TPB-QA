@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE(StatusCategory), &quot;Completed&quot;),
+NOT(ISPICKVAL(StatusCategory, &quot;Completed&quot;))
+)</errorConditionFormula>
+    <errorMessage>This appointment has already been closed.</errorMessage>
+</ValidationRule>

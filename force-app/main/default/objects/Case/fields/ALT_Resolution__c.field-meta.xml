@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALT_Resolution__c</fullName>
+    <label>ALT Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Make Right Order</fullName>
+                <default>false</default>
+                <label>Make Right Order</label>
+            </value>
+            <value>
+                <fullName>Authorized Return</fullName>
+                <default>false</default>
+                <label>Authorized Return</label>
+            </value>
+            <value>
+                <fullName>Issued Store Credit</fullName>
+                <default>false</default>
+                <label>Issued Store Credit</label>
+            </value>
+            <value>
+                <fullName>Issued Refund</fullName>
+                <default>false</default>
+                <label>Issued Refund</label>
+            </value>
+            <value>
+                <fullName>Reset Password</fullName>
+                <default>false</default>
+                <label>Reset Password</label>
+            </value>
+            <value>
+                <fullName>Filed Shipment Claim (Missing Package)</fullName>
+                <default>false</default>
+                <label>Filed Shipment Claim (Missing Package)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

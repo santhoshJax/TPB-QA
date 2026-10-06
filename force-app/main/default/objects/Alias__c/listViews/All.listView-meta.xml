@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Product__c</columns>
+    <columns>MSA_SKU_Description__c</columns>
+    <columns>MSA_SKU_ID__c</columns>
+    <columns>MSA_Item_Name__c</columns>
+    <columns>Distribution_Time_Window_In_weeks__c</columns>
+    <columns>Evaluate__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Alias Items</label>
+</ListView>

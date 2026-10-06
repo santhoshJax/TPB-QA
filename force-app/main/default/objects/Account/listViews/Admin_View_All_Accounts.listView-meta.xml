@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Admin_View_All_Accounts</fullName>
+    <columns>Frequency__c</columns>
+    <columns>Completed_Visit_Count__c</columns>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>TPB_Owner_Name__c</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>Territory_ID__c</columns>
+    <columns>TPB_TSM_Territory__c</columns>
+    <columns>TPB_Account_Territory__c</columns>
+    <columns>TPB_Account_Parent_Territory__c</columns>
+    <columns>Gap_Weight__c</columns>
+    <columns>Gap_Weight_Bucket__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Retailer</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS2_CITY</field>
+        <operation>equals</operation>
+        <value>ROGERS</value>
+    </filters>
+    <label>Admin View - All Accounts</label>
+    <sharedTo>
+        <group>Admins_and_BA_s</group>
+    </sharedTo>
+</ListView>

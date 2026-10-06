@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Form --></label>
+    <name>cgcloud__Product_Form__c</name>
+    <picklistValues>
+        <masterLabel>Liquid</masterLabel>
+        <translation>Cair</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solid</masterLabel>
+        <translation>Padat</translation>
+    </picklistValues>
+</CustomFieldTranslation>

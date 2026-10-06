@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake</dataSource>
+    <dataSourceObject>MSA_ITEM_MASTER</dataSourceObject>
+    <masterLabel>MSA_ITEM_MASTER</masterLabel>
+    <mktDataTranFields>
+        <fullName>battery_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Battery Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Battery Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>brand</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Brand</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Brand</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>brand_extension</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Brand Extension</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Brand Extension</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>brand_family</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Brand Family</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Brand Family</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>carton_upc</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Carton UPC</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Carton UPC</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cartridge_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Cartridge Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Cartridge Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>7</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cartridge_use</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Cartridge Use</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Cartridge Use</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>8</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>case_upc</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Case UPC</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Case UPC</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>9</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>CATEGORY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>CATEGORY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>10</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>category_manufacturer</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Category Manufacturer</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Category Manufacturer</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>11</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>charger_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Charger Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Charger Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>12</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cigar_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Cigar Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Cigar Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>13</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>circumference</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>CIRCUMFERENCE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>CIRCUMFERENCE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>14</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cone</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>CONE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>CONE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>15</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cut_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Cut Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Cut Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>16</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>diet</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>DIET</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>DIET</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>17</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>e_cig_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>E-Cig Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>E-Cig Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>18</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>filter_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Filter Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Filter Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>19</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>flavor</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>FLAVOR</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>FLAVOR</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>20</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>item_code</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>ITEM CODE</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>ITEM CODE</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>item_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>ITEM NAME</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>ITEM NAME</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>items_per_pack</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Items per Pack</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Items per Pack</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>21</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>items_per_sleeves_box</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Items per Sleeves/box</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Items per Sleeves/box</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>22</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>kits_per_box</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Kits Per Box</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Kits Per Box</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>23</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>manufacturer</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Manufacturer</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Manufacturer</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>24</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>master_brand_family</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Master Brand Family</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Master Brand Family</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>25</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>menthol_non_menthol</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Menthol/Non_Menthol</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Menthol/Non_Menthol</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>26</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>nicotine_free</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Nicotine Free</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Nicotine Free</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>28</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>nicotine_level</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Nicotine Level</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Nicotine Level</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>29</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>nicotine_percent</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Nicotine Percent</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Nicotine Percent</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>30</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_cigar_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Cigar Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Cigar Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>27</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>number_of_batteries</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Number of Batteries</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Number of Batteries</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>31</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>number_of_cartridges</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Number of Cartridges</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Number of Cartridges</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>32</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>pack_equivalent</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Pack Equivalent</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Pack Equivalent</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>33</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>pack_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Pack Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Pack Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>34</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>pack_upc</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Pack UPC</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Pack UPC</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>35</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>packing_return</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Packing/Return</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Packing/Return</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>36</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>paper_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Paper Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Paper Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>37</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>price_tier</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Price Tier</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Price Tier</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>38</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>puff_equivalent</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Puff Equivalent</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Puff Equivalent</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>39</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>strength</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>STRENGTH</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>STRENGTH</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>40</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sub_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Sub Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Sub Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>41</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sub_flavor</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Sub-Flavor</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Sub-Flavor</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>42</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>tip_color</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Tip Color</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Tip Color</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>43</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>tip_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Tip Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Tip Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>44</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>tobacco_alternative</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Tobacco Alternative</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Tobacco Alternative</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>45</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>usage_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Usage Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Usage Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>46</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>weight</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>WEIGHT</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>WEIGHT</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>47</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>wrapper_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Wrapper Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Wrapper Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>48</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Related</objectCategory>
+</MktDataTranObject>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>cgcloud__Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>NoManager</masterLabel>
+        <translation>Manajer tidak ada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreClosed</masterLabel>
+        <translation>Toko Tutup</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TimeWindow</masterLabel>
+        <translation>Jendela waktu terlewatkan</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviced</masterLabel>
+        <translation>Akhir hari tercapai</translation>
+    </picklistValues>
+</CustomFieldTranslation>

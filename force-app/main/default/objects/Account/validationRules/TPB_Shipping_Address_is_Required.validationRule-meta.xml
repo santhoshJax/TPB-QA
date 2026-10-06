@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Shipping_Address_is_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(   AND(
+         ISNEW(),
+         OR(ISBLANK(ShippingStreet) ,
+            ISBLANK(ShippingCity) ,
+            ISBLANK(ShippingPostalCode),
+            ISBLANK(ShippingState)
+         )
+      ),
+      AND(
+         OR(ISBLANK(ShippingStreet) ,
+            ISBLANK(ShippingCity) ,
+            ISBLANK(ShippingPostalCode),
+            ISBLANK(ShippingState)
+         ),
+         OR(ISCHANGED(ShippingStreet) ,
+            ISCHANGED(ShippingCity) ,
+            ISCHANGED(ShippingPostalCode),
+            ISCHANGED(ShippingState)
+         )
+      )
+)</errorConditionFormula>
+    <errorMessage>Shipping street, city, state and zip code must be entered before saving the record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select all major landmarks or venues located near this store that may drive customer traffic (e.g., airport, college campus, military base, casino, etc). Choose all that apply --></help>
+    <label><!-- Vicinity Anchors --></label>
+    <name>Vicinity_Anchors__c</name>
+    <picklistValues>
+        <masterLabel>Airport</masterLabel>
+        <translation><!-- Airport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casino</masterLabel>
+        <translation><!-- Casino --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College/University Campus</masterLabel>
+        <translation><!-- College/University Campus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Factory/Manufacturing Plant/DC</masterLabel>
+        <translation><!-- Factory/Manufacturing Plant/DC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fairgrounds</masterLabel>
+        <translation><!-- Fairgrounds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military Base</masterLabel>
+        <translation><!-- Military Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Stadium/Arena</masterLabel>
+        <translation><!-- Sports Stadium/Arena --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

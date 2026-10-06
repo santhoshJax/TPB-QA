@@ -1,0 +1,269 @@
+.addVisitcls{
+    width: 100%;
+    background-color: lightgray;
+    padding: 2px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.currentDatecls{
+    /* width: 100%; */
+    background-color: lightgray;
+    padding: 2px 12px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.Visitcls{
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px 5px;
+    color: #0050d9;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.borderLine{
+    border-bottom: 1px solid #ddd;
+}
+.row:hover {
+    background-color: #f3f3f3;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.phone {
+    font-size: 12px;
+    color: #555;
+}
+.slds-modal__content{
+    overflow: visible;
+}
+.userName::first-letter {
+    text-transform: uppercase;
+  }
+/* .circle-default,
+.circle-completed,
+.circle-inprogress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.circle-default {
+    background-color: #f93030cf;
+}
+
+.circle-inprogress {
+    background-color: #f6cf34d6;
+}
+
+.circle-completed {
+    background-color: #008000ab;
+   
+} 
+.completed{
+ pointer-events: none !important;
+} */
+.user_Icon{
+    --sds-c-icon-color-foreground-default: #f3f8f3;
+}
+.circle{
+    border-radius: 50%;
+    background-color: #f10e0e;
+    padding: 6px;
+}
+.custom-card {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.custom-card-header {
+    background-color: #f3f6f9;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #d8dde6;
+}
+.custom-card-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* New Code*/
+.visit-list {
+    padding: 12px;
+}
+
+.visit-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.visit-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Base circle */
+.circle-default,
+.circle-inprogress,
+.circle-completed {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+/* ❌ NOT STARTED */
+.circle-default {
+    background: #e53935;
+}
+
+.circle-default::before,
+.circle-default::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+.circle-default::before {
+    transform: rotate(45deg);
+}
+
+.circle-default::after {
+    transform: rotate(-45deg);
+}
+
+/* 🟡 IN PROGRESS — layered ring style */
+.circle-inprogress {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+
+    /* outer yellow with depth */
+    background: radial-gradient(
+        circle at top,
+        #ffd76a 0%,
+        #fbc02d 60%,
+        #e6a800 100%
+    );
+
+    box-shadow:
+        inset 0 2px 2px rgba(255,255,255,0.4),
+        inset 0 -2px 3px rgba(0,0,0,0.25),
+        0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* white ring */
+.circle-inprogress::before {
+    content: '';
+    position: absolute;
+    inset: 5px;              /* controls ring thickness */
+    background: white;
+    border-radius: 50%;
+
+    box-shadow:
+        inset 0 1px 1px rgba(0,0,0,0.15);
+}
+
+/* yellow center */
+.circle-inprogress::after {
+    content: '';
+    position: absolute;
+    inset: 9px;              /* controls center size */
+    background: #fbc02d;
+    border-radius: 50%;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,0.4),
+        inset 0 -1px 1px rgba(0,0,0,0.25);
+}
+/* ✅ COMPLETED */
+.circle-completed {
+    background: #43a047;
+}
+
+.circle-completed::after {
+    content: '';
+    width: 8px;
+    height: 14px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+}
+/* Disable completed interaction */
+.completed {
+    pointer-events: none;
+    opacity: 0.95;
+}
+.menu-column {
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;   /* ✅ vertically center dots */
+    height: 100%;
+}
+.custom-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;          /* start from bottom of the dots */
+    margin-top: 2px;    /* small spacing from bottom dot */
+    background: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 120px;
+}
+.dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    white-space: nowrap;   /* ✅ force single line */
+}
+.dropdown-item:hover {
+    background-color: #f3f3f3;
+}
+
+/* Increase the size of the three dots */
+.menu-column lightning-button-icon svg {
+    transform: scale(2);   /* 🔼 increase dot size */
+}
+
+/* Increase vertical spacing between dots */
+.menu-column lightning-button-icon {
+    line-height: 2;        /* 🔼 increases gap between dots */
+}

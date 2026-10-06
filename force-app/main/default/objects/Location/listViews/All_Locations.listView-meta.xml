@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Locations</fullName>
+    <columns>Name</columns>
+    <columns>LocationType</columns>
+    <columns>IsInventoryLocation</columns>
+    <columns>IsMobile</columns>
+    <columns>TimeZone</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Locations</label>
+</ListView>

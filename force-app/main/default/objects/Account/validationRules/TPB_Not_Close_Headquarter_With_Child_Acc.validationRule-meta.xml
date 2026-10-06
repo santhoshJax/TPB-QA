@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Not_Close_Headquarter_With_Child_Acc</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(ISPICKVAL(Status__c ,&apos;Closed Permanently&apos;),
+ISPICKVAL(Status__c , &apos;Closed Temporarily&apos;)),
+ !TPB_Can_Be_Closed__c, 
+ RecordType.Name == &apos;Headquarter&apos; )</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>You cannot close this Headquarter while there are child accounts attached.</errorMessage>
+</ValidationRule>

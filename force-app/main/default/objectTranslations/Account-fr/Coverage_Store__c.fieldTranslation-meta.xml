@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Coverage Store --></label>
+    <name>Coverage_Store__c</name>
+    <picklistValues>
+        <masterLabel>Coverage Store</masterLabel>
+        <translation><!-- Coverage Store --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noncoverage Store</masterLabel>
+        <translation><!-- Noncoverage Store --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

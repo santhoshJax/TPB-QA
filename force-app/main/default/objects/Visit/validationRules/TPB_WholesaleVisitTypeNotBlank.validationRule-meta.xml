@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_WholesaleVisitTypeNotBlank</fullName>
+    <active>true</active>
+    <description>The wholesale visit type must have value for a whole sale visit.</description>
+    <errorConditionFormula>(ISNEW() || ISCHANGED(TPB_WholesaleVisitType__c))
+&amp;&amp;
+TPB_VisitType__c = &apos;Wholesaler&apos; 
+&amp;&amp;
+ISBLANK(TEXT(TPB_WholesaleVisitType__c))
+&amp;&amp;
+OR($Profile.Name =&apos;CG Cloud Mobile - TSM&apos;, $Profile.Name =&apos;CG Cloud Mobile - RSM&apos;, $Profile.Name =&apos;Account Management&apos;)</errorConditionFormula>
+    <errorDisplayField>TPB_WholesaleVisitType__c</errorDisplayField>
+    <errorMessage>Wholesale Visit Type cannot be blank.</errorMessage>
+</ValidationRule>

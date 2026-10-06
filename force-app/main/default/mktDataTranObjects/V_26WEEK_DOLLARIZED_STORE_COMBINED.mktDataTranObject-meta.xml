@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake_3</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake_3</dataSource>
+    <dataSourceObject>V_26WEEK_DOLLARIZED_STORE_COMBINED</dataSourceObject>
+    <masterLabel>V_26WEEK_DOLLARIZED_STORE_COMBINED</masterLabel>
+    <mktDataTranFields>
+        <fullName>annual_cogs_based_on_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual COGS based on Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual COGS based on Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>26</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>annual_profit_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual Profit Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual Profit Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>27</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>annual_revenue_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual Revenue Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual Revenue Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>25</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>annual_store_value_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual Store Value_COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual Store Value_COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>15</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>annual_store_value_profit</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual Store Value_Profit</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual Store Value_Profit</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>16</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>annual_store_value_revenue</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Annual Store Value_Revenue</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Annual Store Value_Revenue</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>14</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>blended_cu_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Blended CU COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Blended CU COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>7</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>blended_cu_price</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Blended CU Price</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Blended CU Price</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>cu_vol</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>CU VOL</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>CU VOL</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dollarizing_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dollarizing_volume_usage</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Volume Usage</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Volume Usage</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>8</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>eq_vol</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>EQ VOL</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>EQ VOL</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>final_qty</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Final Qty</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Final Qty</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>10</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>max_date</fullName>
+        <creationType>Custom</creationType>
+        <datatype>D</datatype>
+        <dateFormat>MM/dd/yyyy</dateFormat>
+        <externalName>Max Date</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Max Date</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>min_date</fullName>
+        <creationType>Custom</creationType>
+        <datatype>D</datatype>
+        <dateFormat>MM/dd/yyyy</dateFormat>
+        <externalName>MIN Date</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>MIN Date</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>national_share_in_store_selling</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>National Share in Store Selling</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>National Share in Store Selling</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>24</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_ownership_type</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>NTC Ownership Type</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC Ownership Type</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>19</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>ntc_vol_26wk</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>NTC VOL 26wk</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>NTC VOL 26wk</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>20</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>realized_annual_cogs_based_on_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Realized Annual COGS based on Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Realized Annual COGS based on Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>30</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>realized_annual_profit_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Realized Annual Profit Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Realized Annual Profit Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>31</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>realized_annual_revenue_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Realized Annual Revenue Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Realized Annual Revenue Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>29</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_category_key</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Retail_Category_Key</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Retail_Category_Key</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>9</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>RETAIL_NUMBER</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>RETAIL_NUMBER</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>same_store_flag</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Same Store Flag</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Same Store Flag</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>22</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>state</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>State</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>State</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>17</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>state_category_key</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>State_Category_Key</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>State_Category_Key</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>21</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>state_share_in_store_selling</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>State Share in Store Selling</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>State Share in Store Selling</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>23</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Store Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>18</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>store_share</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Store Share</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Store Share</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>28</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>unrealized_annual_cogs_based_on_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Unrealized Annual COGS based on Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Unrealized Annual COGS based on Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>33</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>unrealized_annual_profit_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Unrealized Annual Profit Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Unrealized Annual Profit Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>34</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>unrealized_annual_revenue_opps</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Unrealized Annual Revenue Opps</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Unrealized Annual Revenue Opps</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>32</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>weekly_store_value_cogs</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Weekly Store Value_COGS</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Weekly Store Value_COGS</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>12</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>weekly_store_value_profit</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Weekly Store Value_Profit</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Weekly Store Value_Profit</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>13</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>weekly_store_value_revenue</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>Weekly Store Value_Revenue</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Weekly Store Value_Revenue</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>11</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Profile</objectCategory>
+</MktDataTranObject>

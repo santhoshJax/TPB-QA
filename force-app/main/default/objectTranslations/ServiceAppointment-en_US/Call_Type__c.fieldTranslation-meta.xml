@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Type --></label>
+    <name>Call_Type__c</name>
+    <picklistValues>
+        <masterLabel>Admin Update</masterLabel>
+        <translation><!-- Admin Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Store Visit</masterLabel>
+        <translation><!-- In-Store Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tele-Visit</masterLabel>
+        <translation><!-- Tele-Visit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

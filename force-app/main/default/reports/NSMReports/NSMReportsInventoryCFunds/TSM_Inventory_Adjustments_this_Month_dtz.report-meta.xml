@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>cgcloud__Inventory_Transaction__c.cgcloud__Inventory__c.cgcloud__Balance__c:SUM - cgcloud__Inventory_Transaction__c.cgcloud__Amount__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>[3:54 PM] Xueding Tian (US)  beginning inventory balance for that product, ending inventory balance for this product</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Beginning Inventory Balance</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>cgcloud__Inventory_Transaction__c.cgcloud__Inventory__c.cgcloud__Balance__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>ending inventory balance for this product</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Ending Inventory Balance</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>RowCount</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel># of adjustments</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Inventory_Transaction__c$cgcloud__Amount__c</field>
+    </columns>
+    <description>Shows inventory adjustments made this month, including beginning inventory balance, adjustment amount, and ending balance.</description>
+    <filter>
+        <criteriaItems>
+            <column>cgcloud__Inventory_Transaction__c$cgcloud__Inventory__c.TPB_Belong_to_Running_User_Region__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cgcloud__Inventory_Transaction__c$cgcloud__Order_Document__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cgcloud__Inventory_Transaction__c$TPB_Wholesale_Order_Item__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Inventory_Transaction__c$cgcloud__Inventory__c.cgcloud__User__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Inventory_Transaction__c$cgcloud__Inventory__c.cgcloud__Product__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Inventory_Transaction__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TSM Inventory Adjustments this Month</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>TPB_Inventory_Transactions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__Inventory_Transaction__c$cgcloud__Charge_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

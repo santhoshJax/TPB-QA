@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>NAM Chain</fullName>
+        <default>false</default>
+        <label>NAM Chain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FSO Chain</fullName>
+        <default>false</default>
+        <label>FSO Chain</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Independent</fullName>
+        <default>true</default>
+        <label>Independent</label>
+    </standardValue>
+</StandardValueSet>

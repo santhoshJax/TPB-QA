@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Code --></label>
+    <name>cgcloud__Reason_Code__c</name>
+    <picklistValues>
+        <masterLabel>NoManager</masterLabel>
+        <translation>Người quản lý không có mặt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StoreClosed</masterLabel>
+        <translation>Cửa Hàng Đã Đóng</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TimeWindow</masterLabel>
+        <translation>Không đúng khung thời gian</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviced</masterLabel>
+        <translation>Đã đến cuối ngày</translation>
+    </picklistValues>
+</CustomFieldTranslation>

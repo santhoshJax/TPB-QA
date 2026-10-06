@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Platforms__c</fullName>
+    <inlineHelpText>Pick all Marketing platforms that this account utilizes</inlineHelpText>
+    <label>Marketing Platforms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Marketing_Platforms</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

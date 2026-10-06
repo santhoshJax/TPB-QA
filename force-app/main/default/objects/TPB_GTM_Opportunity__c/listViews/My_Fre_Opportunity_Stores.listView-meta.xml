@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Fre_Opportunity_Stores</fullName>
+    <columns>TPB_Account_ID__c</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>TPB_Opportunity_Name__c</columns>
+    <columns>TPB_Opportunity_Rank__c</columns>
+    <columns>Opp_Status_Metrics__c</columns>
+    <columns>Store_Visited__c</columns>
+    <columns>Last_Call_Date__c</columns>
+    <columns>TPB_Territory__c</columns>
+    <columns>TPB_Current_Sales_Cycle__c</columns>
+    <columns>TPB_Priority_Flag__c</columns>
+    <columns>TPB_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Opps in Coverage Stores</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Menthol/Non-Menthol --></label>
+    <name>Menthol_Non_Menthol__c</name>
+    <picklistValues>
+        <masterLabel>Menthol</masterLabel>
+        <translation><!-- Menthol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Menthol</masterLabel>
+        <translation><!-- Non-Menthol --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

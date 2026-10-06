@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Complete__c</fullName>
+    <formula>IF(
+    NOT(ISBLANK( ShippingStreet)) &amp;&amp; NOT(ISBLANK( ShippingState)) &amp;&amp; NOT(ISBLANK( ShippingPostalCode)),
+    TRUE,
+    FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Address Complete</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

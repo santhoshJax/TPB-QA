@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Due_Date__c</fullName>
+    <description>Once visit is completed, the system updates  the last visit date on the Account record, and calculates the next delivery  due date of 90 days out.</description>
+    <label>Delivery Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

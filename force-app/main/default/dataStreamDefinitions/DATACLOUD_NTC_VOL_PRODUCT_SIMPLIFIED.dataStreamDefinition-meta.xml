@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>Snowflake</dataConnector>
+    <dataConnectorType>SNOWFLAKE</dataConnectorType>
+    <dataPlatformDataSetItemName>EXTERNAL</dataPlatformDataSetItemName>
+    <dataSource>Snowflake</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>DATACLOUD_NTC_VOL_PRODUCT_SIMPLIFIED</masterLabel>
+    <mktDataLakeObject>DATACLOUD_NTC_VOL_PRODUCT_SIMPLIFIED__dll</mktDataLakeObject>
+    <mktDataTranObject>DATACLOUD_NTC_VOL_PRODUCT_SIMPLIFIED</mktDataTranObject>
+</DataStreamDefinition>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Possible_Store_Replacement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SAL-431: Governance flag set automatically by the &quot;RT - Account - Flag Possible Store Replacement&quot; before-save flow when a CG Cloud Mobile - TSM user changes Name, ShippingStreet and ShippingCity on an Account in a single save (a likely wholesale store replacement). Read-only for TSM users; editable by System Administrators. Read by the &quot;Possible Store Replacements&quot; report. Data owner: Store Operations / System Administrator. Origin: SAL-431.</description>
+    <inlineHelpText>Auto-set to true when a TSM user changes the store Name and Shipping address together, indicating a possible store replacement to review. Managed by automation; edit only as an administrator correcting a false positive.</inlineHelpText>
+    <label>Possible Store Replacement</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

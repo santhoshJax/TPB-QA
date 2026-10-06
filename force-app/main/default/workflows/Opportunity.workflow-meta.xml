@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Opportunity_Created_Notification_to_Opp_Owner</fullName>
+        <description>New Opportunity Created - Notification to Opp Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Opportunity_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Opportunity_Name</fullName>
+        <field>Name</field>
+        <formula>RecordType.Name + &quot; &quot; + Account.Account_Number_old__c + TEXT(TODAY())</formula>
+        <name>Opportunity Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>New Opportunity Notification</fullName>
+        <actions>
+            <name>New_Opportunity_Created_Notification_to_Opp_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Opportunity_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>When Opportunity Created will notify the Owner</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

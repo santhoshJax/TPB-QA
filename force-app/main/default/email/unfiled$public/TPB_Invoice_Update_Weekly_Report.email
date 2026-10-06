@@ -1,0 +1,22 @@
+<messaging:emailTemplate subject="Invoice Update Weekly Report" recipientType="User" replyTo="{!recipient.Email}">
+<messaging:htmlEmailBody >
+<html>
+<STYLE type="text/css">
+  
+  TD.important  {font-size:11px; font-face:arial} 
+  
+  TR.important {border: solid #CCCCCC; border-width: 1}
+</STYLE>
+<font face="arial" size="2">
+<body>
+    
+    <p>Dear,{!recipient.FirstName}</p>
+    
+    Invoice Update Weekly Report is attached.
+    
+    
+</body>
+</font>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

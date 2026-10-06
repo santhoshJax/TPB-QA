@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Product</description>
+    <label>Product</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Product2.IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>Product2.NTC_Item_Classification__c</field>
+            <operation>notEqual</operation>
+            <value>Competitive, Display, Inactive, POS, PPU</value>
+        </filterItems>
+        <filterItems>
+            <field>Product2.Product_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Competitive, ISTO, TPR, POS</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Campaign Product</relationshipLabel>
+    <relationshipName>Campaign_Product</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

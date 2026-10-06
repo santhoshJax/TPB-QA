@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Title --></label>
+    <name>Title2__c</name>
+    <picklistValues>
+        <masterLabel>Assistant Buyer</masterLabel>
+        <translation><!-- Assistant Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buyer</masterLabel>
+        <translation><!-- Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clearing House Tech Support</masterLabel>
+        <translation><!-- Clearing House Tech Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clerk</masterLabel>
+        <translation><!-- Clerk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Manager</masterLabel>
+        <translation><!-- Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VP</masterLabel>
+        <translation><!-- VP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,205 @@
+.product-table {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    background-color: white;
+}
+
+.group-header {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-row {
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.badge-oos {
+    background-color: #f2c200;
+    color: #000;
+}
+
+.badge-instock {
+    background-color: #3b873e;
+    color: #fff;
+}
+.backButton{
+    background-color: rgb(6, 165, 154);
+    padding: 1px 15px;
+    color: white;
+}
+
+.utility-icon{
+    --sds-c-icon-color-foreground-default: #f3f8f3;
+}
+.delete-icon{
+    --sds-c-icon-color-foreground-default: #060606;
+}
+.status-oos {
+    background-color: #f2c94c;
+    color: black;
+    border-radius: 50%;
+    padding: 0.2rem 0.2rem;
+    font-weight: bold;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    font-size: 8px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.status-distributed  {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.2rem;
+    font-weight: bold;
+    height: 23px;
+    width: 23px;
+    display: flex;
+}
+.custom-picklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    padding: 0.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.dropdown-icon {
+    margin-left: 0.5rem;
+}
+
+.dropdown-list {
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.dropdown-list li {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #f3f2f2;
+}
+.product-table-container {
+    max-height: none;
+    height: auto;
+    overflow-y: visible;
+    padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .product-table-container {
+        width: auto;
+        max-height: none;
+        height: auto;
+        overflow-y: visible;
+    }
+}
+/* .status-oos {
+    color: red;
+    font-weight: bold;
+}
+
+.status-distributed {
+    background-color: #e6f4ea;
+    border-radius: 50%;
+    padding: 4px;
+    --slds-c-icon-color-foreground-default: green;
+} */
+.selectable-row[aria-selected="true"] {
+    background-color: #bdddf173;
+    border-radius: 10px;
+}
+
+.selectable-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* ===== MODAL LAYOUT (match Order Page) ===== */
+.modal-flex {
+    display: flex;
+    flex-direction: column;
+    height: 94dvh;
+    max-height: 94dvh;
+    max-width: 60rem;
+    width: 90%;
+}
+
+/* Override SLDS modal content height constraints */
+.custom-modal .slds-modal__content {
+    max-height: none;
+    height: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .modal-flex {
+        height: 96dvh;
+        max-height: 96dvh;
+        width: 96%;
+        max-width: 96%;
+    }
+}
+
+/* Mobile / iPad portrait */
+@media (max-width: 768px) {
+    .modal-flex {
+        height: 98dvh;
+        max-height: 98dvh;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.modal-header,
+.modal-footer {
+    flex-shrink: 0;
+}
+
+.modal-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0.75rem;
+}
+
+.product-list-wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 0;
+}
+
+c-cg-cloud-multiselect-picklist {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}

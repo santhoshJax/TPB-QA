@@ -1,0 +1,62 @@
+<template>
+  <lightning-card title="Order Products" if:true={recordId}>
+    <!-- spinner has overlay and centralized based on the container component-->
+    <lightning-spinner
+      alternative-text="Loading"
+      size="medium"
+      if:true={loading}
+    ></lightning-spinner>
+
+    <div
+      class="slds-grid slds-grid_align-end slds-grid_vertical-align-center"
+      slot="actions"
+    >
+      <fieldset class="slds-form-element slds-form-element_compound">
+        <legend class="slds-form-element__legend slds-form-element__label">
+          Scan
+        </legend>
+        <div class="slds-form-element__control">
+          <c-tpb-barcode-scan-button
+            onscan={handleScanProduct}
+            disabled={isOrderNotDraft}
+            style="margin-right: 0.5rem"
+          ></c-tpb-barcode-scan-button>
+        </div>
+      </fieldset>
+
+      <c-tpb-order-item-type-selector
+        style="margin-right: 0.5rem"
+      ></c-tpb-order-item-type-selector>
+
+      <fieldset class="slds-form-element slds-form-element_compound">
+        <legend class="slds-form-element__legend slds-form-element__label">
+          Add
+        </legend>
+        <div class="slds-form-element__control">
+          <lightning-button
+            label="Add"
+            onclick={handleAddProduct}
+            disabled={isOrderNotDraft}
+          ></lightning-button>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="slds-m-around_medium slds-scrollable_x">
+      <template if:true={datatableOrderItems}>
+        <lightning-datatable
+          key-field="id"
+          data={datatableOrderItems}
+          columns={columnsData}
+          oncancel={handleCancel}
+          onsave={handleSave}
+          draft-values={draftValues}
+          oncellchange={handleCellChange}
+          onrowaction={handleRowAction}
+          hide-checkbox-column
+        >
+        </lightning-datatable>
+      </template>
+    </div>
+  </lightning-card>
+</template>

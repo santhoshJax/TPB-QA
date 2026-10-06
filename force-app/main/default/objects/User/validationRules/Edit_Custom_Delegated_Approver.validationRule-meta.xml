@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Custom_Delegated_Approver</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(Custom_Delegated_Approver__c),
+    NOT($Permission.Edit_Custom_Delegated_Approver)
+)</errorConditionFormula>
+    <errorMessage>You do not have permission to edit the Custom Delegated Approver field.</errorMessage>
+</ValidationRule>

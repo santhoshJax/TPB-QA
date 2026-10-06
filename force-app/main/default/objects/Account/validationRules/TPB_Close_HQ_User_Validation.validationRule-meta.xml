@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Close_HQ_User_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED( Status__c ),
+OR(ISPICKVAL(Status__c ,&apos;Closed Permanently&apos;),
+ISPICKVAL(Status__c , &apos;Closed Temporarily&apos;)),
+RecordType.Name == &apos;Headquarter&apos;,
+$User.Id != Owner.Id ,
+$Profile.Name != &apos;System Administrator&apos;)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Only AM and Admin can close headquarter accounts.</errorMessage>
+</ValidationRule>

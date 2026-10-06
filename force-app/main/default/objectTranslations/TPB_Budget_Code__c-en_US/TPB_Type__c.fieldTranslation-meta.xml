@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>TPB_Type__c</name>
+    <picklistValues>
+        <masterLabel>BD (Buy Down)</masterLabel>
+        <translation><!-- BD (Buy Down) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gratis</masterLabel>
+        <translation><!-- Gratis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISTO (In-Store Trial Offer)</masterLabel>
+        <translation><!-- ISTO (In-Store Trial Offer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placement</masterLabel>
+        <translation><!-- Placement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPR (Temporary Price Reduction)</masterLabel>
+        <translation><!-- TPR (Temporary Price Reduction) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

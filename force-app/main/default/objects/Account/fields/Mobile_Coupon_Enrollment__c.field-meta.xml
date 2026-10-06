@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Coupon_Enrollment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box if this location has enrolled in TPBi&apos;s Mobile Coupon Program</inlineHelpText>
+    <label>TPBi Mobile Coupon Enrollment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

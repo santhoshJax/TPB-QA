@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_for_New_Clearing_House_Participant</fullName>
+        <description>Email for New Clearing House Participant</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>chill@tpbi.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Clearing_House_Participant</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>cgcloud__Set_ExternalId_to_Id</fullName>
+        <description>Sets the external id to the id</description>
+        <field>cgcloud__ExternalId__c</field>
+        <formula>Id</formula>
+        <name>Set ExternalId to Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>cgcloud__SetExternalId</fullName>
+        <actions>
+            <name>cgcloud__Set_ExternalId_to_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Sets the external Id to the Id if no external id is given</description>
+        <formula>ISBLANK(cgcloud__ExternalId__c)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

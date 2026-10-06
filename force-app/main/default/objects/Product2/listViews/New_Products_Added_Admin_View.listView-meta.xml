@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Products_Added_Admin_View</fullName>
+    <columns>SF_Product_ID__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Cycle_Group__c</columns>
+    <columns>Metric_Report_Group__c</columns>
+    <columns>Metric_Group_Method__c</columns>
+    <columns>cgcloud__Product_Level__c</columns>
+    <columns>cgcloud__Criterion_1_Product__c</columns>
+    <columns>cgcloud__Criterion_2_Product__c</columns>
+    <columns>cgcloud__Criterion_3_Product__c</columns>
+    <columns>cgcloud__Criterion_4_Product__c</columns>
+    <columns>cgcloud__Criterion_5_Product__c</columns>
+    <columns>PRODUCT2.CREATED_DATE</columns>
+    <columns>PRODUCT2.ACTIVE</columns>
+    <columns>cgcloud__State__c</columns>
+    <columns>PRODUCT2.RECORD_TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:14</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.RECORD_TYPE</field>
+        <operation>equals</operation>
+        <value>Product2.cgcloud__Product,Product2.cgcloud__Product_Group</value>
+    </filters>
+    <label>New Products Added (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

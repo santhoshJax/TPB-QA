@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visits</fullName>
+    <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Status</columns>
+    <columns>TPB_InProgress__c</columns>
+    <columns>ActualVisitStartTime</columns>
+    <columns>ActualVisitEndTime</columns>
+    <columns>Last_Call__c</columns>
+    <columns>Base_Call__c</columns>
+    <columns>Quarterly_Base_Call__c</columns>
+    <columns>Call_Type__c</columns>
+    <columns>TPB_Distribution_Captured__c</columns>
+    <columns>cgcloud__OOS_Issues__c</columns>
+    <columns>Owner</columns>
+    <columns>TPB_TSM_Territory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ActualVisitEndTime</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <filters>
+        <field>PlannedVisitStartTime</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:30</value>
+    </filters>
+    <filters>
+        <field>Owner</field>
+        <operation>contains</operation>
+        <value>tbutl</value>
+    </filters>
+    <label>1205 Visits (Last 30 Days)</label>
+    <sharedTo>
+        <role>Region_1205_NSM</role>
+    </sharedTo>
+</ListView>

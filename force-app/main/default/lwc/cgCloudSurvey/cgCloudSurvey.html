@@ -1,0 +1,93 @@
+<template>
+    <template if:true={isSuverySpinner}>
+        <div class="spinner-container">
+            <lightning-spinner alternative-text="Loading" class="spinner-class" data-id="spinner"
+                message="Loading data..." size="medium" variant="base"></lightning-spinner>
+        </div>
+    </template>
+    <div class="slds-grid slds-grid_align-left slds-p-bottom_small">
+        <div>
+            <button class="slds-button backButton" onclick={navigateToStoreCockpit}>
+                <lightning-icon icon-name="utility:back" alternative-text="back" size="xx-small" title="large size"
+                    variant="inverse" class="slds-p-right_x-small utility-icon"></lightning-icon>
+                <span> back </span>
+            </button>
+        </div>
+    </div>
+    <lightning-card>
+        <template if:true={issurveyQuestions}>
+            <div class="table-container">
+                <template for:each={surveyQuestions} for:item="group">
+                    <div key={group.activityName} class="group-section">
+                        <div class="group-header slds-p-around_xx-small slds-theme_shade slds-text-title_bold">
+                            {group.activityName}
+                        </div>
+            
+                        <template for:each={group.items} for:item="item">
+                            <div key={item.rowKey} class="row">
+                                <lightning-layout vertical-align="center" multiple-rows>
+                                    <lightning-layout-item flexibility="grow" size="12" small-device-size="12"
+                                        medium-device-size="7" large-device-size="7">
+                                            <div class="slds-grid slds-grid_vertical-align-center question-left">
+                                                <input type="checkbox" class="question-check" checked={item.isSelected}
+                                                    aria-label={item.questionName} disabled />
+                                                <p class="slds-text-title_bold question-text">{item.questionName}</p>
+                                            </div>
+                                        </lightning-layout-item>
+            
+                                    <lightning-layout-item flexibility="grow" size="12" small-device-size="12"
+                                        medium-device-size="5" large-device-size="5">
+            
+                                        <template if:true={item.isPicklist}>
+                                            <lightning-combobox name={item.questionId} label="" class="no-highlight-border"
+                                                value={item.visitJobAnswer} options={item.options} onchange={handleInputChange}>
+                                            </lightning-combobox>
+                                        </template>
+            
+                                        <template if:true={item.isNumber}>
+                                            <div class="number-response">
+                                                <template if:true={item.showUpload}>
+                                                    <div class="upload-control">
+                                                        <div class="upload-actions">
+                                                            <button type="button" class="upload-btn" onclick={handleUploadClick}>Add Photo</button>
+                                                        </div>
+                                                        <template if:true={item.fileName}>
+                                                            <span class="file-name" title={item.fileName}>{item.fileName}</span>
+                                                        </template>
+                                                        <input type="file" accept="image/*" name={item.questionId}
+                                                            class="hidden-file-input" onchange={handleFileUpload} />
+                                                    </div>
+                                                </template>
+                                                <template if:false={item.showUpload}>
+                                                    <div class="upload-control upload-placeholder" aria-hidden="true"></div>
+                                                </template>
+                                                <div class="number-input-wrap">
+                                                    <lightning-input type="number" step="any" label="Quantity" variant="label-hidden"
+                                                        class="no-highlight-border compact-number-input"
+                                                        name={item.questionId} value={item.visitJobAnswer}
+                                                        onblur={handleInputChange}>
+                                                    </lightning-input>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template if:true={item.isString}>
+                                            <lightning-input type="text" class="no-highlight-border" name={item.questionId}
+                                                value={item.visitJobAnswer} onblur={handleInputChange}>
+                                            </lightning-input>
+                                        </template>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            
+            </div>
+        </template>
+        <template if:false={issurveyQuestions}>
+            <p class="slds-text-color_weak"><span><strong>No Survey Questions </strong></span>
+            </p>
+        </template>
+        
+    </lightning-card>
+</template>

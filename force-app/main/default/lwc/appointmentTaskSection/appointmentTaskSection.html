@@ -1,0 +1,53 @@
+<template>
+    <lightning-card title="Tasks" icon-name="standard:task" class="slds-m-top_medium">
+        <lightning-accordion active-section-name="open" allow-multiple-sections-open>
+            <template if:true={tasks.open}>
+                <lightning-accordion-section label="Open Tasks" name="open">
+                    <template for:each={tasks.open} for:item="open" for:index="openIndex">
+                        <lightning-accordion-section key={open.Id} label={open.Subject}>
+                            <lightning-layout class="rows" multiple-rows>
+                                <template if:true={open.ActivityDate}>
+                                    <lightning-layout-item size="12" small-device-size="4" medium-device-size="4" large-device-size="2" padding="around-small">
+                                        <lightning-input type="date" value={open.ActivityDate} label="Due Date" read-only></lightning-input>
+                                    </lightning-layout-item>
+                                </template>
+                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+                                    <lightning-textarea name="description" label="Comments" value={open.Description} onchange={updateTask} data-index={openIndex}>
+                                    </lightning-textarea>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="12" small-device-size="2" medium-device-size="2" large-device-size="2" padding="around-small" class="slds-m-top_large">
+                                    <lightning-button variant="success" label="Complete" onclick={completeTask} data-index={openIndex}></lightning-button>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-accordion-section>
+                    </template>
+                </lightning-accordion-section>
+            </template>
+            <template if:true={tasks.completed}>
+                <lightning-accordion-section label="Completed Tasks" name="completed">
+                    <template for:each={tasks.completed} for:item="completed" for:index="completedIndex">
+                        <lightning-accordion-section key={completed.Id} label={completed.Subject}>
+                            <lightning-layout class="rows" multiple-rows>
+                                <lightning-layout-item size="12" small-device-size="4" medium-device-size="4" large-device-size="2" padding="around-small">
+                                    <lightning-input type="date" value={completed.CompletedDateTime} label="Completion Date" read-only></lightning-input>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="4" padding="around-small">
+                                    <lightning-textarea name="description" label="Comments" value={completed.Description} read-only>
+                                    </lightning-textarea>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-accordion-section>
+                    </template>
+                </lightning-accordion-section>
+            </template>
+        </lightning-accordion>
+    </lightning-card>
+    <template if:true={spinner}>
+        <div id="spinner" class="slds-spinner_container slds-is-fixed">
+            <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+</template>

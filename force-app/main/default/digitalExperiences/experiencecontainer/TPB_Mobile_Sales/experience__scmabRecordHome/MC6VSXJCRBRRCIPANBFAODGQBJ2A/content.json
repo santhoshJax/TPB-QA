@@ -1,0 +1,59 @@
+{
+  "type" : "experience__scmabRecordHome",
+  "title" : "Visit Record Home",
+  "contentBody" : {
+    "sfdc_cms:title" : "Visit Record Home",
+    "objectApiName" : "Visit",
+    "lightning:dataProviders" : [ ],
+    "sfdc_cms:block" : {
+      "type" : "block",
+      "definition" : "sfdc_cms/rootContentBlock",
+      "id" : "dd51be24-09a0-4e18-bc70-a17322f3de67",
+      "children" : [ {
+        "type" : "block",
+        "definition" : "experience/scmabRecordHomeFixedContainer",
+        "id" : "e77968cb-34ff-47db-b58f-4372cbf36252",
+        "children" : [ {
+          "type" : "block",
+          "definition" : "experience/scmabHighlights",
+          "id" : "ee3b5d4c-2905-48cf-8ea4-990fd0f8aeb6",
+          "attributes" : {
+            "linkUrl" : {
+              "url" : "/lightning/setup/ObjectManager/{0}/CompactLayouts/view",
+              "linkTitle" : "highlightLinkTitle",
+              "linkLabel" : "highlightLinkLabel"
+            }
+          }
+        }, {
+          "type" : "block",
+          "definition" : "experience/scmabActions",
+          "id" : "70a90e61-f335-4011-8da4-757e0570f1ae",
+          "attributes" : {
+            "linkUrl" : {
+              "url" : "https://help.salesforce.com/s/articleView?id=sales.customize_dynamic_activity_composer.htm&type=5",
+              "linkTitle" : "actionsLinkTitle",
+              "linkLabel" : "actionsLinkLabel"
+            }
+          }
+        }, {
+          "type" : "block",
+          "definition" : "experience/scmabStackedTabs",
+          "id" : "1e27664f-cafa-4c9f-a105-b49714c06dfd",
+          "attributes" : {
+            "linkUrl" : {
+              "url" : "/lightning/setup/FlexiPageList/home",
+              "linkTitle" : "stackedTabsLinkTitle",
+              "linkLabel" : "stackedTabsLinkLabel"
+            }
+          }
+        } ]
+      }, {
+        "type" : "block",
+        "definition" : "experience/scmabRecordHomeContainer",
+        "id" : "cee22a58-45a6-4bb8-8411-c813e7c08c01",
+        "children" : [ ]
+      } ]
+    }
+  },
+  "urlName" : "visit-record-home"
+}

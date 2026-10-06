@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-family: -webkit-standard; font-size: medium;">This is a reminder that Task {!Task.Subject} is due on {!Task.ActivityDate}.</span><div><br><span style="font-family: -webkit-standard; font-size: medium;">Comments: {!Task.Description}</span><br><span style="font-family: -webkit-standard; font-size: medium;">Status: {!Task.Status}</span><br><span style="font-family: -webkit-standard; font-size: medium;">Priority: {!Task.Priority}</span><br><span style="font-family: -webkit-standard; font-size: medium;">Task Link: {!Task.Link}</span></div>]]></td>
+</tr>
+</table>

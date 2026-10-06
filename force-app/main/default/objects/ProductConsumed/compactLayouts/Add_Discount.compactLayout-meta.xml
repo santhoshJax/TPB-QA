@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Discount</fullName>
+    <fields>ProductConsumedNumber</fields>
+    <fields>Discount__c</fields>
+    <fields>WorkOrderId</fields>
+    <fields>Product2Id</fields>
+    <fields>QuantityConsumed</fields>
+    <fields>UnitPrice</fields>
+    <label>Add Discount</label>
+</CompactLayout>

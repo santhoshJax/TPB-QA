@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Zone --></label>
+    <name>Zone__c</name>
+    <picklistValues>
+        <masterLabel>EXECUTIVE</masterLabel>
+        <translation><!-- EXECUTIVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSO</masterLabel>
+        <translation><!-- FSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HQ</masterLabel>
+        <translation><!-- HQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NATL ACCTS</masterLabel>
+        <translation><!-- NATL ACCTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WHL ACCTS</masterLabel>
+        <translation><!-- WHL ACCTS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

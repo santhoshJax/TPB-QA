@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TPB_VisitType__c = &apos;Retailer&apos;, TEXT(TPB_Visit_Type__c), IF(TPB_VisitType__c = &apos;Wholesaler&apos;, TEXT(TPB_WholesaleVisitType__c), TEXT(TPB_HQ_Visit_Type__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

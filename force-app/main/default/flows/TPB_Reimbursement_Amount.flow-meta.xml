@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Adjusted for discount promo type</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>IF promo type = Discount, reimbursement amt = (pricing_info_1 - value) 
+IF promo type = TPR, reimbursement amt = abs(value) 
+IF promo type = Product Purchase, reimbursement amt = special_price_receipt*quantity 
+IF promo type = ISTO, reimbursement amt = value 
+IF promo type = Gratis AND order_item_type.name = free item, reimbursement amt = pricing_info_1</description>
+        <name>Get_Reimbursement_Amount</name>
+        <dataType>Number</dataType>
+        <expression>IF(ISPICKVAL({!$Record.cgcloud__Promotion__r.TPB_Promotion_Type__c}, &apos;Discount&apos;),({!$Record.cgcloud__Pricing_Info_1__c}-{!$Record.cgcloud__Value__c}),
+IF(ISPICKVAL({!$Record.cgcloud__Promotion__r.TPB_Promotion_Type__c}, &apos;TPR&apos;),ABS({!$Record.cgcloud__Value__c}),
+IF(ISPICKVAL({!$Record.cgcloud__Promotion__r.TPB_Promotion_Type__c}, &apos;Product Purchase&apos;),{!$Record.cgcloud__Special_Price_Receipt__c}*{!$Record.cgcloud__Quantity__c},
+IF(ISPICKVAL({!$Record.cgcloud__Promotion__r.TPB_Promotion_Type__c}, &apos;ISTO&apos;), {!$Record.cgcloud__Value__c}, 
+IF(AND(ISPICKVAL({!$Record.cgcloud__Promotion__r.TPB_Promotion_Type__c}, &apos;Gratis&apos;),{!$Record.cgcloud__Order_Item_Template__r.Name} = &apos;Free Item&apos;), {!$Record.cgcloud__Pricing_Info_1__c}, null)
+)
+)
+)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>TPB Reimbursement Amount {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TPB Reimbursement Amount</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>update_field</name>
+        <label>update field</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Reimbursable_Amt__c</field>
+            <value>
+                <elementReference>Get_Reimbursement_Amount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>update_field</targetReference>
+        </connector>
+        <object>cgcloud__Order_Item__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

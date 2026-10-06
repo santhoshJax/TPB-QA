@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When you left the store, where were the Stokers Tubs merchandised? --></help>
+    <label><!-- 8. Where are Stokers Tubs merchandised? --></label>
+    <name>A8Where_are_Stokers_Tubs_merchandised__c</name>
+    <picklistValues>
+        <masterLabel>Cigarette Fixture</masterLabel>
+        <translation><!-- Cigarette Fixture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MST Fixture</masterLabel>
+        <translation><!-- MST Fixture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Tubs in Stock</masterLabel>
+        <translation><!-- No Tubs in Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Visible (Backstock)</masterLabel>
+        <translation><!-- Non-Visible (Backstock) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other location</masterLabel>
+        <translation><!-- Other location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top of Wooden Cabinet</masterLabel>
+        <translation><!-- Top of Wooden Cabinet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window Ledge</masterLabel>
+        <translation><!-- Window Ledge --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

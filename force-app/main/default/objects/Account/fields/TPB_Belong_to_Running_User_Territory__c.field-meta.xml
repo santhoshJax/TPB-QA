@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_Belong_to_Running_User_Territory__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+    TPB_TSM_Territory__c = $User.TPB_Territory__c,
+    TPB_Account_Parent_Territory__c = $User.TPB_Territory__c,
+
+    AND(
+        $User.Title = &quot;NSD&quot;,
+        LEFT($User.Territory_Id__c, 2) = LEFT(TPB_TSM_Territory__c, 2)
+    ),
+
+    $Profile.Name = &quot;System Administrator&quot;,
+    $UserRole.Name = &quot;Executive&quot;
+),
+1,
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Returns 1 if the record falls within the running user&apos;s territory scope (own territory, parent/NSM territory, or matching Director region) or if the user has elevated access (System Administrator or Executive role). Otherwise returns 0. Used for reporting and filtering.</inlineHelpText>
+    <label>Belong to Running User Territory</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

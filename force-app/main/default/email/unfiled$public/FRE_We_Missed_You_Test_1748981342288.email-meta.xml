@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FRE &quot;We Missed You&quot;</name>
+    <pageDevName>FRE_We_Missed_You_Test</pageDevName>
+    <relatedEntityType>Lead</relatedEntityType>
+    <style>none</style>
+    <subject>Sorry we missed you!</subject>
+    <textOnly>&lt; https://www.tpbmarketplace.com/collections/fre &gt; 
+
+Hi {{{Recipient.FirstName}}},
+
+I hope this message finds you well. One of our reps recently stopped by your store to introduce you to FRE— our premium line of zero-tobacco, spit-free nicotine pouches — but unfortunately, we weren’t able to connect in person.
+
+We’d love the opportunity to show how FRE can bring something fresh to your customers and help drive incremental sales in the oral nicotine category. Our lineup features bold flavors, competitive pricing, and strong retail margins.
+
+You can browse our full selection here: https://www.tpbmarketplace.com/collections/fre &lt; https://www.tpbmarketplace.com/collections/fre &gt; 
+
+If you’re interested in samples, pricing, or placing an order, simply reply to this email or let us know a good time to connect.
+
+Looking forward to hearing from you!
+
+Best,
+
+{{{Sender.Name}}}
+
+{{{Sender.Division}}} 
+
+{{{Sender.CompanyName}}} 
+
+{{{Sender.Address}}} 
+
+{{{Sender.Phone}}} 
+
+{{{Sender.Email}}} &lt; mailto:{{{Sender.Email}}}  &gt; 
+
+tpbmarketplace.com &lt; https://www.tpbmarketplace.com/ &gt; 
+
+[Image alt text: Turning Point Brands]
+
+ &lt; https://www.tpbmarketplace.com/ &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

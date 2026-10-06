@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Class_of_Trade__c</fullName>
+    <label>Sub Class of Trade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Class_of_Trade__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conventional</fullName>
+                <default>false</default>
+                <label>CONVENTIONAL</label>
+            </value>
+            <value>
+                <fullName>Superette</fullName>
+                <default>false</default>
+                <label>SUPERETTE</label>
+            </value>
+            <value>
+                <fullName>Cigar/Pipe/Tob</fullName>
+                <default>false</default>
+                <label>CIGAR/PIPE/TOBACCO</label>
+            </value>
+            <value>
+                <fullName>Gas Station/Kiosk</fullName>
+                <default>false</default>
+                <label>GAS STATION/KIOSK</label>
+            </value>
+            <value>
+                <fullName>Lifestyle Shop</fullName>
+                <default>false</default>
+                <label>LIFESTYLE SHOP</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>MILITARY</label>
+            </value>
+            <value>
+                <fullName>RX ONLY/SMALL INDEPENDENTS</fullName>
+                <default>false</default>
+                <label>RX ONLY/SMALL INDEPENDENTS</label>
+            </value>
+            <value>
+                <fullName>Limited Assort</fullName>
+                <default>false</default>
+                <label>LIMITED ASSORTMENT</label>
+            </value>
+            <value>
+                <fullName>Gourmet Foods</fullName>
+                <default>false</default>
+                <label>NATURAL/GOURMET FOODS</label>
+            </value>
+            <value>
+                <fullName>Supercenter</fullName>
+                <default>false</default>
+                <label>SUPERCENTER</label>
+            </value>
+            <value>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+                <label>SUPERMARKET</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>WAREHOUSE</label>
+            </value>
+            <value>
+                <fullName>Beer Specialty</fullName>
+                <default>false</default>
+                <label>BEER SPECIALTY</label>
+            </value>
+            <value>
+                <fullName>Super Store</fullName>
+                <default>false</default>
+                <label>SUPER STORE</label>
+            </value>
+            <value>
+                <fullName>Wine Specialty</fullName>
+                <default>false</default>
+                <label>WINE SPECIALTY</label>
+            </value>
+            <value>
+                <fullName>Dollar Store</fullName>
+                <default>false</default>
+                <label>DOLLAR STORE</label>
+            </value>
+            <value>
+                <fullName>General Merch</fullName>
+                <default>false</default>
+                <label>GENERAL MERCHANDISE</label>
+            </value>
+            <value>
+                <fullName>Military Exchan</fullName>
+                <default>false</default>
+                <label>MILITARY EXCHANGE</label>
+            </value>
+            <value>
+                <fullName>Bodega</fullName>
+                <default>false</default>
+                <label>BODEGA</label>
+            </value>
+            <value>
+                <fullName>Dispensary</fullName>
+                <default>false</default>
+                <label>DISPENSARY</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>Distributor/Sub-Jobber</fullName>
+                <default>false</default>
+                <label>DISTRIBUTOR/SUB-JOBBER</label>
+            </value>
+            <value>
+                <fullName>CULTIVATOR/PROCESSOR</fullName>
+                <default>false</default>
+                <label>CULTIVATOR/PROCESSOR</label>
+            </value>
+            <value>
+                <fullName>HEAD SHOP</fullName>
+                <default>false</default>
+                <label>HEAD SHOP</label>
+            </value>
+            <value>
+                <fullName>VAPE STORE</fullName>
+                <default>false</default>
+                <label>VAPE STORE</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Convenience Store</controllingFieldValue>
+            <controllingFieldValue>Liquor</controllingFieldValue>
+            <controllingFieldValue>MASS MERCHANDISER</controllingFieldValue>
+            <controllingFieldValue>Cigarette Outlet</controllingFieldValue>
+            <controllingFieldValue>DRUG</controllingFieldValue>
+            <controllingFieldValue>Wholesale Club</controllingFieldValue>
+            <valueName>Conventional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Store</controllingFieldValue>
+            <valueName>Gas Station/Kiosk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Convenience Store</controllingFieldValue>
+            <controllingFieldValue>Liquor</controllingFieldValue>
+            <valueName>Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor</controllingFieldValue>
+            <valueName>Beer Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor</controllingFieldValue>
+            <valueName>Super Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquor</controllingFieldValue>
+            <valueName>Wine Specialty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Lifestyle Shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Bodega</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Dispensary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>CULTIVATOR/PROCESSOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>HEAD SHOP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MASS MERCHANDISER</controllingFieldValue>
+            <valueName>Dollar Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MASS MERCHANDISER</controllingFieldValue>
+            <valueName>General Merch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MASS MERCHANDISER</controllingFieldValue>
+            <valueName>Military Exchan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Superette</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Limited Assort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Gourmet Foods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Supercenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Supermarket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grocery</controllingFieldValue>
+            <valueName>Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extended Master</controllingFieldValue>
+            <valueName>Cigar/Pipe/Tob</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRUG</controllingFieldValue>
+            <valueName>RX ONLY/SMALL INDEPENDENTS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

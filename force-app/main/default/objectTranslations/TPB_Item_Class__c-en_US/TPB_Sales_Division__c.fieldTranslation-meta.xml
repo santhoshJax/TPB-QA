@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Division --></label>
+    <name>TPB_Sales_Division__c</name>
+    <picklistValues>
+        <masterLabel>Alt</masterLabel>
+        <translation><!-- Alt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada</masterLabel>
+        <translation><!-- Canada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Field Sales</masterLabel>
+        <translation><!-- US Field Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vapor</masterLabel>
+        <translation><!-- Vapor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

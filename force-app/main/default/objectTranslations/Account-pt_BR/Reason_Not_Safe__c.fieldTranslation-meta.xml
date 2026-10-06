@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason Not Safe --></label>
+    <name>Reason_Not_Safe__c</name>
+    <picklistValues>
+        <masterLabel>Bad Area</masterLabel>
+        <translation><!-- Bad Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Previous Issues</masterLabel>
+        <translation><!-- Previous Issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

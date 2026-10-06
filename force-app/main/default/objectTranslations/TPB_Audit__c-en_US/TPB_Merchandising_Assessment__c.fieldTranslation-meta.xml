@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Merchandising Assessment --></label>
+    <name>TPB_Merchandising_Assessment__c</name>
+    <picklistValues>
+        <masterLabel>Does Not Meet</masterLabel>
+        <translation><!-- Does Not Meet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exceeds</masterLabel>
+        <translation><!-- Exceeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meets</masterLabel>
+        <translation><!-- Meets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Category_Sort_Order</fullName>
+    <columns>SF_Product_ID__c</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>cgcloud__Product_Level__c</columns>
+    <columns>cgcloud__Criterion_4_Product__c</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>PRODUCT2.ACTIVE</columns>
+    <columns>Sort_Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cgcloud__Product_Level__c</field>
+        <operation>equals</operation>
+        <value>Product</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>cgcloud__Criterion_4_Product__c</field>
+        <operation>contains</operation>
+        <value>STOKERS PROUD CANS PROMO</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.RECORD_TYPE</field>
+        <operation>equals</operation>
+        <value>Product2.cgcloud__Product</value>
+    </filters>
+    <label>Check Category Sort Order (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+    </sharedTo>
+</ListView>

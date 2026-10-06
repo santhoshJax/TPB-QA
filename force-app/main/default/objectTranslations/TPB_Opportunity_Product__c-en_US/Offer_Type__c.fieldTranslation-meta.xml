@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Offer Type --></label>
+    <name>Offer_Type__c</name>
+    <picklistValues>
+        <masterLabel>Case Rate</masterLabel>
+        <translation><!-- Case Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Display Allowance</masterLabel>
+        <translation><!-- Display Allowance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feature/Ad Support</masterLabel>
+        <translation><!-- Feature/Ad Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flat Rate</masterLabel>
+        <translation><!-- Flat Rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Off-Invoice Bill-Back</masterLabel>
+        <translation><!-- Off-Invoice Bill-Back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per Unit</masterLabel>
+        <translation><!-- Per Unit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Percent Off</masterLabel>
+        <translation><!-- Percent Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scan-Back Allowance</masterLabel>
+        <translation><!-- Scan-Back Allowance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slotting Fee</masterLabel>
+        <translation><!-- Slotting Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tiered Volume Incentive</masterLabel>
+        <translation><!-- Tiered Volume Incentive --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

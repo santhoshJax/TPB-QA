@@ -1,0 +1,121 @@
+.addVisitcls{
+    width: 100%;
+    background-color: lightgray;
+    padding: 2px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.currentDatecls{
+    /* width: 100%; */
+    background-color: lightgray;
+    padding: 2px 12px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.Visitcls{
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px 5px;
+    color: #0050d9;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.row:hover {
+    background-color: #f3f3f3;
+}
+.borderLine{
+    border-bottom: 1px solid #ddd;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px; */
+}
+.circle{
+    border-radius: 50%;
+    background-color: #f10e0e;
+    padding: 6px;
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.phone {
+    font-size: 12px;
+    color: #555;
+}
+.slds-modal__content{
+    overflow: visible;
+}
+.userName::first-letter {
+    text-transform: uppercase;
+  }
+.circle-default,
+.circle-completed,
+.circle-inprogress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.circle-default {
+    background-color: #f93030cf;
+}
+
+.circle-inprogress {
+    background-color: #f6cf34d6;
+}
+
+.circle-completed {
+    background-color: #008000ab;
+   
+}
+.completed{
+ pointer-events: none !important;
+}
+.user_Icon{
+    --sds-c-icon-color-foreground-default: #f3f8f3;
+}
+
+.link-text {
+    color: inherit;           /* inherit from parent text color */
+    text-decoration: none;    /* remove underline */
+}
+
+.link-text:hover {
+    text-decoration: underline; /* optional: underline on hover */
+}
+.custom-card {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+.custom-card-header {
+    background-color: #f3f6f9;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #d8dde6;
+}
+.custom-card-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}

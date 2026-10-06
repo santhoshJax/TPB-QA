@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definitionCreationType>Custom</definitionCreationType>
+    <lookupFieldName>MSA_SKU_MASTER__dlm.rel_1756382901436_end__c</lookupFieldName>
+    <masterLabel>MSA_SKU_MASTER_sku_code_map_NTC_VOL_sku_code_1756382901436</masterLabel>
+    <owner>DataCloud</owner>
+    <relationshipCardinality>OneToOne</relationshipCardinality>
+    <sourceFieldName>MSA_SKU_MASTER__dlm.sku_code__c</sourceFieldName>
+    <targetEntity xsi:nil="true"/>
+    <targetFieldName>NTC_VOL__dlm.sku_code__c</targetFieldName>
+</FieldSrcTrgtRelationship>

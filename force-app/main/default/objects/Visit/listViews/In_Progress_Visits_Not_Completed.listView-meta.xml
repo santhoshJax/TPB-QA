@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Progress_Visits_Not_Completed</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Status</columns>
+    <columns>TPB_InProgress__c</columns>
+    <columns>ActualVisitStartTime</columns>
+    <columns>ActualVisitEndTime</columns>
+    <columns>PlannedVisitStartTime</columns>
+    <columns>PlannedVisitEndTime</columns>
+    <columns>Last_Call__c</columns>
+    <columns>Base_Call__c</columns>
+    <columns>Quarterly_Base_Call__c</columns>
+    <columns>TPB_VisitType__c</columns>
+    <columns>Call_Type__c</columns>
+    <columns>Owner</columns>
+    <columns>LastModifiedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TPB_InProgress__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Status</field>
+        <operation>notEqual</operation>
+        <value>2,3</value>
+    </filters>
+    <filters>
+        <field>TPB_VisitType__c</field>
+        <operation>equals</operation>
+        <value>Retailer</value>
+    </filters>
+    <label>In Progress Visits, Not Completed</label>
+    <sharedTo>
+        <group>Admins_and_BA_s</group>
+    </sharedTo>
+</ListView>

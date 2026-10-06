@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake</dataSource>
+    <dataSourceObject>V_Dollarizing_Summary</dataSourceObject>
+    <masterLabel>V_Dollarizing_Summary</masterLabel>
+    <mktDataTranFields>
+        <fullName>dollarizing_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Category</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Category</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>dollarizing_volume_usage</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Dollarizing Volume Usage</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Dollarizing Volume Usage</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_category</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>RETAIL_CATEGORY</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>RETAIL_CATEGORY</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>retail_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>RETAIL NUMBER</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>RETAIL NUMBER</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>volume</fullName>
+        <creationType>Custom</creationType>
+        <datatype>N</datatype>
+        <externalName>VOLUME</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>VOLUME</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Related</objectCategory>
+</MktDataTranObject>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acct_Opps_Admin_View</fullName>
+    <columns>TPB_Account_ID__c</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>TPB_Opportunity_Name__c</columns>
+    <columns>TPB_Opportunity__c</columns>
+    <columns>TPB_Opportunity_Rank__c</columns>
+    <columns>Opp_Status_Metrics__c</columns>
+    <columns>TPB_Status__c</columns>
+    <columns>Store_Visited__c</columns>
+    <columns>Last_Call_Date__c</columns>
+    <columns>TPB_Territory__c</columns>
+    <columns>TPB_Current_Sales_Cycle__c</columns>
+    <columns>TPB_Priority_Flag__c</columns>
+    <columns>Required_SKUs__c</columns>
+    <columns>Available_SKUs__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Acct Opps (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

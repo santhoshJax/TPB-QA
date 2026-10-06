@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Teams_TOF_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Territory__c</columns>
+    <columns>cgcloud__Accountable__c</columns>
+    <columns>cgcloud__Annotation__c</columns>
+    <columns>cgcloud__Date__c</columns>
+    <columns>TPB_Activity_Type__c</columns>
+    <columns>cgcloud__Phase__c</columns>
+    <columns>cgcloud__Total_Working_Duration_Min__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Belongs_to_Running_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Teams TOF Requests</label>
+    <sharedTo>
+        <group>Region_NSM_Group</group>
+    </sharedTo>
+</ListView>

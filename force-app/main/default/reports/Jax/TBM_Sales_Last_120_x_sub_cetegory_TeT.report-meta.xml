@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>cgcloud__Order__c.cgcloud__Order_Items__r$Gross_Sale__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>cgcloud__Order__c$cgcloud__Order_Date__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>cgcloud__Order__c$TPB_Owners_Territory__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c$Owner</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c$Name</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$Name</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c$cgcloud__Order_Account__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c$Account_Shipping_State__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Promoted__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Product__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Order_Item_Template__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__UoM__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Quantity__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$FInal_Unit_Price__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$Reimbursable_Amt__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$Reimbursed_Amt_Paid__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$Gross_Sale__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>cgcloud__Order__c$cgcloud__Order_Account__c.Store_Count__c</field>
+    </columns>
+    <columns>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Product__c.Eaches_per_Carton__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(
+    cgcloud__Order_Item__c.cgcloud__Order_Item_Template__c.Name = &apos;Cash Sale&apos; 
+    &amp;&amp; TEXT(cgcloud__Order_Item__c.cgcloud__UoM__c) = &apos;SalesUnit&apos;, 
+    cgcloud__Order_Item__c.cgcloud__Quantity__c,
+
+    IF(
+        cgcloud__Order_Item__c.cgcloud__Order_Item_Template__c.Name = &apos;Cash Sale&apos; 
+        &amp;&amp; TEXT(cgcloud__Order_Item__c.cgcloud__UoM__c) = &apos;ConsumerUnit&apos;, 
+        cgcloud__Order_Item__c.cgcloud__Quantity__c / cgcloud__Order_Item__c.cgcloud__Product__c.Eaches_per_Carton__c,
+
+        IF(
+            cgcloud__Order_Item__c.cgcloud__Order_Item_Template__c.Name = &apos;Return&apos; 
+            &amp;&amp; TEXT(cgcloud__Order_Item__c.cgcloud__UoM__c) = &apos;SalesUnit&apos;, 
+            cgcloud__Order_Item__c.cgcloud__Quantity__c * -1,
+
+            IF(
+                cgcloud__Order_Item__c.cgcloud__Order_Item_Template__c.Name = &apos;Return&apos; 
+                &amp;&amp; TEXT(cgcloud__Order_Item__c.cgcloud__UoM__c) = &apos;ConsumerUnit&apos;, 
+                cgcloud__Order_Item__c.cgcloud__Quantity__c * -1 / cgcloud__Order_Item__c.cgcloud__Product__c.Eaches_per_Carton__c,
+                
+                NULL
+            )
+        )
+    )
+)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Converted Qty (Net Returns)</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>cgcloud__Order__c$cgcloud__Phase__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Released</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>cgcloud__Order__c$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>MCTEST</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>cgcloud__Order__c$cgcloud__Order_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Order__c$Order_Owner_Region__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>cgcloud__Order__c.cgcloud__Order_Items__r$cgcloud__Product__c.cgcloud__Criterion_2_Product__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TBM Sales Last 120 x sub cetegory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Advanced_Orders_Advanced_Order_Items__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>CDF1</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>cgcloud__Order__c$cgcloud__Order_Date__c</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

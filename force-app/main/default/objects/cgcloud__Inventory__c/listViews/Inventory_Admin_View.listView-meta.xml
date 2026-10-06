@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inventory_Admin_View</fullName>
+    <columns>NAME</columns>
+    <columns>cgcloud__User__c</columns>
+    <columns>Active_User__c</columns>
+    <columns>cgcloud__Product__c</columns>
+    <columns>cgcloud__Tour__c</columns>
+    <columns>cgcloud__Balance__c</columns>
+    <columns>TPB_AvgPrice__c</columns>
+    <columns>Extended_Cost__c</columns>
+    <columns>TPB_Tour_State__c</columns>
+    <columns>TPB_PricingCategory__c</columns>
+    <columns>Last_Purchase_Date__c</columns>
+    <columns>Retail_Sales_without_WHL_Receiving__c</columns>
+    <columns>WHL_Gap_Severity__c</columns>
+    <columns>WHL_Gap_Reason__c</columns>
+    <columns>Inventory_On_Van__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>cgcloud__User__c</field>
+        <operation>contains</operation>
+        <value>alice</value>
+    </filters>
+    <label>Inventory (Admin View)</label>
+    <sharedTo>
+        <role>Admin</role>
+        <role>TPB_Business_Analyst</role>
+    </sharedTo>
+</ListView>

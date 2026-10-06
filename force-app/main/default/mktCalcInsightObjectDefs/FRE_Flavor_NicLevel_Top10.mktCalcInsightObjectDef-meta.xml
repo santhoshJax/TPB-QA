@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktCalcInsightObjectDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <creationType>Custom</creationType>
+    <expression>SELECT
+  Ranked.AccountId__c AS AccountId__c,
+  Ranked.PostalCode__c AS PostalCode__c,
+  Ranked.Flavor__c AS Flavor__c,
+  Ranked.NicotineLevel__c AS NicotineLevel__c,
+  Ranked.FlavorRank__c AS FlavorRank__c,
+  SUM(Ranked.FRE_EQ_Volume__c) AS FRE_EQ_Volume__c
+FROM (
+  SELECT
+    ssot__Account__dlm.ssot__Id__c AS AccountId__c,
+    ssot__Account__dlm.Postal_Code__c AS PostalCode__c,
+    Final_FRE_ZYN__dlm.flavor__c AS Flavor__c,
+    Final_FRE_ZYN__dlm.nicotine_level__c AS NicotineLevel__c,
+    SUM(Final_FRE_ZYN__dlm.eq_vol__c) AS FRE_EQ_Volume__c,
+    ROW_NUMBER() OVER (
+      PARTITION BY ssot__Account__dlm.Postal_Code__c
+      ORDER BY SUM(Final_FRE_ZYN__dlm.eq_vol__c) DESC
+    ) AS FlavorRank__c
+  FROM Final_FRE_ZYN__dlm
+  JOIN ssot__Account__dlm
+    ON Final_FRE_ZYN__dlm.KQ_retail_number11__c = ssot__Account__dlm.ssot__Id__c
+  GROUP BY
+    ssot__Account__dlm.ssot__Id__c,
+    ssot__Account__dlm.Postal_Code__c,
+    Final_FRE_ZYN__dlm.flavor__c,
+    Final_FRE_ZYN__dlm.nicotine_level__c
+  HAVING
+    SUM(CASE WHEN Final_FRE_ZYN__dlm.brand_family__c = &apos;FRE (OST)&apos; THEN Final_FRE_ZYN__dlm.eq_vol__c ELSE 0 END) &lt;
+    SUM(CASE WHEN Final_FRE_ZYN__dlm.brand_family__c = &apos;ZYN (OST)&apos; THEN Final_FRE_ZYN__dlm.eq_vol__c ELSE 0 END)
+) AS Ranked
+WHERE Ranked.FlavorRank__c &lt;= 10
+GROUP BY
+  Ranked.AccountId__c,
+  Ranked.PostalCode__c,
+  Ranked.Flavor__c,
+  Ranked.NicotineLevel__c,
+  Ranked.FlavorRank__c</expression>
+    <masterLabel>FRE_Flavor_NicLevel_Top10</masterLabel>
+</MktCalcInsightObjectDef>

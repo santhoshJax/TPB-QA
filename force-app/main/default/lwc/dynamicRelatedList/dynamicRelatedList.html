@@ -1,0 +1,80 @@
+<template>
+    <lightning-card title={componentTitle} icon-name={iconName}>
+        <!-- Title with Record Count -->
+        <div class="slds-card__header-title slds-truncate" slot="title">
+            <span>{componentTitle}</span>
+            <span class="slds-text-body_small slds-text-color_weak"> ({recordCount})</span>
+        </div>
+        
+        <!-- Action Buttons in Header -->
+        <div slot="actions">
+            <lightning-button-group>
+                <!-- Refresh Button -->
+                <lightning-button-icon
+                    icon-name="utility:refresh"
+                    alternative-text="Refresh"
+                    title="Refresh"
+                    onclick={handleRefresh}
+                ></lightning-button-icon>
+                
+                <!-- New Button -->
+                <lightning-button
+                    label="New"
+                    title="New"
+                    onclick={handleNew}
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+            </lightning-button-group>
+        </div>
+        
+        <div class="slds-card__body slds-card__body_inner">
+            <!-- Loading Spinner -->
+            <template if:true={isLoading}>
+                <div class="slds-is-relative slds-m-around_medium">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+            
+            <!-- Error State -->
+            <template if:true={hasError}>
+                <div class="slds-box slds-theme_error slds-m-around_medium">
+                    <p class="slds-text-heading_small">Configuration Error</p>
+                    <p class="slds-m-top_small">
+                        Please check that the configuration "{configName}" exists and is properly set up.
+                    </p>
+                </div>
+            </template>
+            
+            <!-- Data Table -->
+            <template if:true={hasRecords}>
+                <template if:false={hasError}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={data}
+                        columns={columns}
+                        draft-values={draftValues}
+                        onsave={handleSave}
+                        oncancel={handleCancel}
+                        hide-checkbox-column
+                        show-row-number-column
+                    >
+                    </lightning-datatable>
+                </template>
+            </template>
+            
+            <!-- Empty State -->
+            <template if:false={hasRecords}>
+                <template if:false={isLoading}>
+                    <template if:false={hasError}>
+                        <div class="slds-illustration slds-illustration_small">
+                            <div class="slds-text-align_center slds-text-color_weak slds-p-around_medium">
+                                <p class="slds-text-heading_small">No records found</p>
+                                <p class="slds-m-top_small">There are no records to display.</p>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

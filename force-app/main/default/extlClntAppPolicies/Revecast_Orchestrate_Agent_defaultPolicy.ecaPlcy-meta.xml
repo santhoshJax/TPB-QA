@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppConfigurablePolicies xmlns="http://soap.sforce.com/2006/04/metadata">
+    <externalClientApplication>Revecast__Revecast_Orchestrate_Agent</externalClientApplication>
+    <isEnabled>true</isEnabled>
+    <isOauthPluginEnabled>true</isOauthPluginEnabled>
+    <label>Revecast_Orchestrate_Agent_defaultPolicy</label>
+    <startPage>None</startPage>
+</ExtlClntAppConfigurablePolicies>

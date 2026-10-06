@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Independent_Accounts</fullName>
+    <columns>Ownership__c</columns>
+    <columns>Account_Number_old__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>Last_Completed_Call_Date_Time__c</columns>
+    <columns>TPB_Owner_Name__c</columns>
+    <columns>TPB_TSM_Territory__c</columns>
+    <columns>TPB_Account_Territory__c</columns>
+    <columns>Coverage_Store__c</columns>
+    <columns>Status__c</columns>
+    <columns>Closure_Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Retailer</value>
+    </filters>
+    <filters>
+        <field>Ownership__c</field>
+        <operation>equals</operation>
+        <value>Independent</value>
+    </filters>
+    <label>All Independent Accounts*</label>
+    <sharedTo>
+        <role>ALT_Account_Manager</role>
+        <role>Key_Account_Manager</role>
+        <role>US_National_Account_Director_20</role>
+        <role>US_Wholesale_Account_Director</role>
+    </sharedTo>
+</ListView>

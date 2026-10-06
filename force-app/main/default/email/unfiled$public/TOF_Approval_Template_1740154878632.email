@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Your TOF Request&nbsp;<a href="https://tpbi.lightning.force.com/lightning/r/cgcloud__User_Document__c/{{{cgcloud__User_Document__c.Id}}}/view">{{{cgcloud__User_Document__c.Name}}}</a> has been approved by&nbsp;{{{cgcloud__User_Document__c.TPB_RSM__c}}}<br />
+<br />
+{{{cgcloud__User_Document__c.cgcloud__Annotation__c}}}<br />
+{{{cgcloud__User_Document__c.Todays_Date__c}}}<br />
+&nbsp;</body>
+</html>

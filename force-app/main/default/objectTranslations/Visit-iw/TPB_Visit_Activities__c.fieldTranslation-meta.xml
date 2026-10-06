@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Visit Activities --></label>
+    <name>TPB_Visit_Activities__c</name>
+    <picklistValues>
+        <masterLabel>Meeting with Buyer</masterLabel>
+        <translation><!-- Meeting with Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restock Van</masterLabel>
+        <translation><!-- Restock Van --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returns</masterLabel>
+        <translation><!-- Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Routine Maintenance</masterLabel>
+        <translation><!-- Routine Maintenance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

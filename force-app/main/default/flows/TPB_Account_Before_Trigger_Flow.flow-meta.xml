@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Customer_Template</name>
+        <label>Assign Customer Template</label>
+        <locationX>831</locationX>
+        <locationY>2027</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.cgcloud__Account_Template__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Template.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <customErrors>
+        <name>Block_Above_Role</name>
+        <label>Block Above Role</label>
+        <locationX>50</locationX>
+        <locationY>1343</locationY>
+        <customErrorMessages>
+            <errorMessage>You can&apos;t set this headquarter as the parent because it is owned by someone in a role above yours. Ask that owner or a system administrator to make this change.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Block_Cross_Division</name>
+        <label>Block Cross Division</label>
+        <locationX>578</locationX>
+        <locationY>1343</locationY>
+        <customErrorMessages>
+            <errorMessage>This store and the selected headquarter are in different divisions. Only a system administrator can link accounts across divisions.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Block_Cross_Region</name>
+        <label>Block Cross Region</label>
+        <locationX>314</locationX>
+        <locationY>1343</locationY>
+        <customErrorMessages>
+            <errorMessage>You can&apos;t link this store to a headquarter in a different region. Only the Zone Director over both regions (or a system administrator) can make this change.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Custom_Error_Message_4</name>
+        <label>Custom Error Message 4</label>
+        <locationX>831</locationX>
+        <locationY>395</locationY>
+        <connector>
+            <targetReference>Evaluate_Entry</targetReference>
+        </connector>
+        <customErrorMessages>
+            <errorMessage>Only System Administrators can transfer Retail account ownership</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Evaluate_Entry</name>
+        <label>Is Retailer Link Change?</label>
+        <locationX>963</locationX>
+        <locationY>587</locationY>
+        <defaultConnector>
+            <targetReference>Template_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not a Link Change</defaultConnectorLabel>
+        <rules>
+            <name>Link_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ParentId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ParentId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.ParentId</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Retailer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Parent</targetReference>
+            </connector>
+            <label>Link Change</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Link</name>
+        <label>Evaluate Link Authorization</label>
+        <locationX>446</locationX>
+        <locationY>1235</locationY>
+        <defaultConnector>
+            <targetReference>Template_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Allow</defaultConnectorLabel>
+        <rules>
+            <name>Block_Seniority</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forT_SeniorityDecision</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BLOCK_SENIORITY</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Block_Above_Role</targetReference>
+            </connector>
+            <label>Block Seniority</label>
+        </rules>
+        <rules>
+            <name>Block_Region</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forT_LinkDecision</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BLOCK_REGION</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Block_Cross_Region</targetReference>
+            </connector>
+            <label>Block Region</label>
+        </rules>
+        <rules>
+            <name>Block_Division</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>forT_LinkDecision</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>BLOCK_DIVISION</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Block_Cross_Division</targetReference>
+            </connector>
+            <label>Block Division</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>this node checks if the owner is changed</description>
+        <name>Is_Owner_Changed</name>
+        <label>Is Owner Changed</label>
+        <locationX>963</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Entry</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Retailer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Custom_Error_Message_4</targetReference>
+            </connector>
+            <label>Yes, Admin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Parent_Is_HQ</name>
+        <label>Parent Is Headquarter?</label>
+        <locationX>732</locationX>
+        <locationY>803</locationY>
+        <defaultConnector>
+            <targetReference>Template_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not a Headquarter</defaultConnectorLabel>
+        <rules>
+            <name>Is_Headquarter</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Parent.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Headquarter</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Store_Owner</targetReference>
+            </connector>
+            <label>Is Headquarter</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Template_Blank</name>
+        <label>Account Template Blank?</label>
+        <locationX>963</locationX>
+        <locationY>1811</locationY>
+        <defaultConnectorLabel>Template Present</defaultConnectorLabel>
+        <rules>
+            <name>Template_Is_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.cgcloud__Account_Template__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Template</targetReference>
+            </connector>
+            <label>Template Is Blank</label>
+        </rules>
+    </decisions>
+    <description>Before Create and Update. Stamps the Customer account template when blank, and enforces store-to-headquarter parent link authorization: (1) seniority - you cannot set as parent a headquarter owned by someone in a role tier above yours (field &lt; Zone Director &lt; National Director; admins exempt); (2) cross-region links within one division require the shared Zone Director (or admin); (3) cross-division links require an admin. Update 2026-09: added ParentId link governance and seniority block; template-stamp behavior unchanged (guarded behind Template Blank decision).</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>forT_LinkDecision</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  /* 1. KAM running user OR System Admin — always allowed at any level */
+  OR(
+    {!Get_Running_User.UserRole.DeveloperName} = &quot;Key_Account_Manager&quot;,
+    OR(
+      {!Get_Running_User.Profile.Name} = &quot;System Administrator&quot;,
+      {!Get_Running_User.Profile.Name} = &quot;Junior System Administrator&quot;
+    )
+  ),
+  &quot;ALLOW&quot;,
+  IF(
+    /* 2. HQ is KAM-owned — KAM chain maintenance rights */
+    {!Get_HQ_Owner.UserRole.DeveloperName} = &quot;Key_Account_Manager&quot;,
+    &quot;ALLOW&quot;,
+    IF(
+      /* 3. Region-zone logic only when BOTH owners follow the Region_XXXX pattern */
+      AND(
+        BEGINS({!Get_Store_Owner.UserRole.DeveloperName}, &quot;Region_&quot;),
+        BEGINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;Region_&quot;)
+      ),
+      IF(
+        /* 3a. Same region — self-serve */
+        MID({!Get_Store_Owner.UserRole.DeveloperName}, 8, 4) = MID({!Get_HQ_Owner.UserRole.DeveloperName}, 8, 4),
+        &quot;ALLOW&quot;,
+        IF(
+          /* 3b. Same zone — Director can uplevel */
+          MID({!Get_Store_Owner.UserRole.DeveloperName}, 8, 2) = MID({!Get_HQ_Owner.UserRole.DeveloperName}, 8, 2),
+          IF(
+            OR(
+              OR(
+                {!Get_Running_User.Profile.Name} = &quot;System Administrator&quot;,
+                {!Get_Running_User.Profile.Name} = &quot;Junior System Administrator&quot;
+              ),
+              AND(
+                NOT(BEGINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Region_&quot;)),
+                CONTAINS({!Get_Running_User.UserRole.DeveloperName}, MID({!Get_Store_Owner.UserRole.DeveloperName}, 8, 2))
+              )
+            ),
+            &quot;ALLOW&quot;,
+            &quot;BLOCK_REGION&quot;
+          ),
+          /* 3c. Different zones — admin only */
+          IF(
+            OR(
+              {!Get_Running_User.Profile.Name} = &quot;System Administrator&quot;,
+              {!Get_Running_User.Profile.Name} = &quot;Junior System Administrator&quot;
+            ),
+            &quot;ALLOW&quot;,
+            &quot;BLOCK_DIVISION&quot;
+          )
+        )
+      ),
+      /* 4. Store or HQ owner is non-Region_ (Director, National, etc.)
+            MID zone extraction doesn&apos;t apply — require admin to be safe */
+      IF(
+        OR(
+          {!Get_Running_User.Profile.Name} = &quot;System Administrator&quot;,
+          {!Get_Running_User.Profile.Name} = &quot;Junior System Administrator&quot;
+        ),
+        &quot;ALLOW&quot;,
+        &quot;BLOCK_DIVISION&quot;
+      )
+    )
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Returns BLOCK_SENIORITY when the headquarter owner&apos;s role tier is strictly above the acting user&apos;s tier, otherwise OK. Tier ladder derived from role DeveloperName: field (Region_*) = 1; Zone/other Director (Zone|Director|Direcotr|FSD, not Region_) = 2; National Director (name contains National) = 3. System Administrator / Junior System Administrator are exempt (always OK). Fails open (OK) unless the acting user&apos;s tier is a known ladder tier (&gt;=1), so users outside the field/zone/national ladder are never blocked by this rule.</description>
+        <name>forT_SeniorityDecision</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  OR(
+    {!Get_Running_User.Profile.Name} = &quot;System Administrator&quot;,
+    {!Get_Running_User.Profile.Name} = &quot;Junior System Administrator&quot;,
+    {!Get_Running_User.UserRole.DeveloperName} = &quot;Key_Account_Manager&quot;
+  ),
+  &quot;OK&quot;,
+  IF(
+    AND(
+      IF(CONTAINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;National&quot;), 3,
+       IF(OR(
+            CONTAINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;Zone&quot;),
+            CONTAINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;Director&quot;),
+            CONTAINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;Direcotr&quot;),
+            CONTAINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;FSD&quot;)
+          ), 2,
+        IF(BEGINS({!Get_HQ_Owner.UserRole.DeveloperName}, &quot;Region_&quot;), 1, 0)))
+      &gt;
+      IF(CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;National&quot;), 3,
+       IF(OR(
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Zone&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Director&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Direcotr&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;FSD&quot;)
+          ), 2,
+        IF(BEGINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Region_&quot;), 1, 0))),
+      IF(CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;National&quot;), 3,
+       IF(OR(
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Zone&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Director&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Direcotr&quot;),
+            CONTAINS({!Get_Running_User.UserRole.DeveloperName}, &quot;FSD&quot;)
+          ), 2,
+        IF(BEGINS({!Get_Running_User.UserRole.DeveloperName}, &quot;Region_&quot;), 1, 0)))
+      &gt;= 1
+    ),
+    &quot;BLOCK_SENIORITY&quot;,
+    &quot;OK&quot;
+  )
+)</expression>
+    </formulas>
+    <interviewLabel>Account Before Trigger Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Before Trigger Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_HQ_Owner</name>
+        <label>Get HQ Owner</label>
+        <locationX>446</locationX>
+        <locationY>1127</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Evaluate_Link</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Parent.OwnerId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Parent</name>
+        <label>Get Parent</label>
+        <locationX>732</locationX>
+        <locationY>695</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Parent_Is_HQ</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Running_User</name>
+        <label>Get Running User</label>
+        <locationX>446</locationX>
+        <locationY>1019</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_HQ_Owner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Store_Owner</name>
+        <label>Get Store Owner</label>
+        <locationX>446</locationX>
+        <locationY>911</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Running_User</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Template</name>
+        <label>Get Template</label>
+        <locationX>831</locationX>
+        <locationY>1919</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Customer_Template</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>cgcloud__Account_Template__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>837</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Owner_Changed</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

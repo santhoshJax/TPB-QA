@@ -1,0 +1,2737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cgcloud__Product</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>cgcloud__Product_Compact_Layout</compactLayoutAssignment>
+    <description>This record type is for creating CGCloud Products</description>
+    <label>Product</label>
+    <picklistValues>
+        <picklist>Cycle_Group__c</picklist>
+        <values>
+            <fullName>ALP POUCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MOCHA 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MOCHA 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - ORIGINAL 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - ORIGINAL 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - ORIGINAL 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - ORIGINAL 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - ORIGINAL 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WATERMELON 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WATERMELON 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WATERMELON 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WATERMELON 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WATERMELON 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 3 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE MEGA PACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - BLUE DREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - GEORGIA FIELDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - ISLAND VIBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - MELLOW HAZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - OG PURP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - SOUR SQUEEZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEMP WRAPS - SUMMER SLICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI HEMP WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - SIGNATURE BLEND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - SOUTHERN PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - STRAIGHT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - STRAWBERRY RUSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - SWEET COGNAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS - WHITE RUSSIAN RESERVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 1 1%2F4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 1 1%2F4 HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 1 1%2F4 UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 70MM HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 70MM ULTRA THIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 70MM UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 98s ULTRA THIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - 98s UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - KING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - KING HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - KING SLIM UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - KING ULTRA THIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPER CONES - KING UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - 1 1%2F2 BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - 1 1%2F4 BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - 1 1%2F4 ULTRA THIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - 1 1%2F4 UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - FRENCH ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - KING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - KING SLIM HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - KING UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - KUTCORNERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS - WHITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAPERS -1 1%2F4 HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREMIUM LOOSE LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS  -BLACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - BLACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - DIAMOND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - GOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - GREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - PINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - PURPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - SILVER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RILLO WRAPS - SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEE PRODUCT PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - FCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - FCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - LCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - LCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - LCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN - LCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - FCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - FCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - LCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - LCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - LCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWER - LCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS LOOSE LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS PROUD - LCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS PROUD - LCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - FCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - FCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - LCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - LCN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - LCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB - LCW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TENZ CIGARILLOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOODS CIGARS - CREME ROYALE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOODS CIGARS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOODS CIGARS - SILK %26 BERRIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOODS CIGARS - SWEET AROMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WOODS CIGARS - VELVET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - CHERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - DRAGONBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - MELON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - PINEAPPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - RILLO SIZE BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WRAPS - VANILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGAR CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - DRAGONBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - GREEN GARUDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - GREEN KARMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - GREEN KB90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - GREEN SWEETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - MARACUJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - SWEETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - TANGELO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - WHITE GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARS WOODS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ DISCOUNT PAPERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ NATURAL LEAF WRAPS - BERRY BASH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ NATURAL LEAF WRAPS - PALMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ NATURAL LEAF WRAPS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ NATURAL LEAF WRAPS - SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ NATURAL LEAF WRAPS - VANILLA CREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS - BANANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS - VANILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS - DIAMOND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS - GOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS - SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ ROSE CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ ROUGH CUT CIGARS - HONEY BERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ ROUGH CUT CIGARS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ ROUGH CUT CIGARS - RUSSIAN CREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ ROUGH CUT CIGARS - SWEET AROMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ SUPER BUNDLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ TERP CONES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Default_Zone__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Display_Group__c</picklist>
+        <values>
+            <fullName>ACCESSORIES%2FMERCHANDISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BADLANDS_CIGARS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEECH-NUT%2FTRO%2FDUR%2FHB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - ACCESSORIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - CP11 BLISTER PACKS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - CP11 LIMITED TIME OFFERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - CP11 PERMANENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - CP22 MICRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - DISPLAYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - DISTRIBUTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - JET FLAME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - MINITUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPETITIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE POUCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE POUCHES %28LEGACY%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INACTIVE ITEMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KARMA HEMP WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU-X CBD DISPOSABLE PENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU-X CBD EDIBLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU-X CBD ORAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU-X NUTRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIMAL - CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCT PICK-UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RIPTIDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLACE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WILD HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIND RIVER LOOSE LEAF%2FTWIST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - 2 PK NPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - 2 PK PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARILLOS - 3 PK PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARS - ROUGH CUT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ HEMP WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PALM ROLLS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PAPER CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PAPERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ WRAPS - NATURAL LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ WRAPS - RILLO SIZE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flavor__c</picklist>
+        <values>
+            <fullName>Apple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cherry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wintergreen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group__c</picklist>
+        <values>
+            <fullName>APPALACHIA 16 OZ CHEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APPALACHIA 6 OZ CHEW - B2G1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEECHNUT 3OZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEECHNUT 3OZ PROMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIG MOUNTAIN 16 OZ CHEW - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIG MOUNTAIN 16 OZ CHEW - FULL FLAVOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIG MOUNTAIN 6 OZ CHEW - FULL FLAVOR B2G1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLACK MOUNTAIN 16OZ CHEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM BERRIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM CHERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM CHOCOLATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM FRENCH VANILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM KIWI STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM KUSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM WATERMELON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 2 PK PLATINUM ZERO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 4 PK PLATINUM KIWI STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 4 PK PLATINUM KUSH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 4 PK PLATINUM SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLUNT WRAP - 4 PK PLATINUM ZERO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 133ML FLUID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 138ML BUTANE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 16ML BUTANE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 300ML BUTANE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 300ML ISOBUTANE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 3PK FLINT SYSTEM 12CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER - 9PK FLINT BLISTER 24CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER CP11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER CP22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER JET FLAME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER LIGHTERS 4 TIER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER LIGHTERS ZZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIPPER MINITUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COTTONMOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURANGO LOOSE LEAF - ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - LUSH 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - MINT 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - SWEET 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 12 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 15 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 6 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE - WINTERGREEN 9 MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAVANA BLOSSOM LOOSE LEAF - ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI BLU BERRY DIESEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI DIAMOND SUPREME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI HAZY GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI JOOZE MELON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI NECTAR PUNCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI PLATINUM GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI SUPA GREENZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI SUPA SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KARMA BLAZIN BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KARMA ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KARMA PURPLE CHILL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KARMA TROPIC TRIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MISC OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUR PRIDE 8 OZ CHEW - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUR PRIDE 8 OZ CHEW - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUR PRIDE 8 OZ CHEW - SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEE PRODUCT PARTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNAKE RIVER LEAF - FIRE CURED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNAKE RIVER TWIST - AIR CURED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNAKE RIVER TWIST - FIRE CURED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - 24C CLASSIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - 24C PROMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - 24M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - BLACK WILD CHERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - BUTTERNUT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - FREDS CHOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - L50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - RED SUPREME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - TEQUILA SUNRISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - TN CHEW BIG BAG PROMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - TN CHEW MOONSHINE BLEND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - TN CHEW ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 16 OZ CHEW - WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ CHEW - CLASSIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ CHEW - RED SUPREME BIG BAG PROMO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ CHEW - RED SUPREME BOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ CHEW - RED SUPREME ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 3 OZ CHEW - TN CHEW ORIGINAL 3OZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - 24C CLASSIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - BLACK WILD CHERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - FREDS CHOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - L50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS 8 OZ CHEW - TN CHEW ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS - FINE CUT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS - LONG CUT MINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS - LONG CUT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS - LONG CUT STRAIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS - LONG CUT WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TOWER PROMOS - FC NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TOWER PROMOS - MINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TOWER PROMOS - STRAIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TOWER PROMOS - WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB PROMOS - FC NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB PROMOS - FC WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB PROMOS - LC MINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB PROMOS - LC STRAIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUB PROMOS - LC WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - FINE CUT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - FINE CUT WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - LONG CUT MINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - LONG CUT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - LONG CUT STRAIGHT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS - LONG CUT WINTERGREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TROPHY LOOSE LEAF - ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TROPHY LOOSE LEAF - ORIGINAL 2 POUCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - LARGE CLASSIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - LARGE ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - LARGE PAPER MIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - LARGE TIE DYE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - SMALL BLACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - SMALL HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - SMALL ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG ZAG ROLLING TRAYS - SMALL ORIGINAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - APPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - CHERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - DRAGONBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - ISLAND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - MELON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - PINEAPPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 2 PK HTL WRAPS - VANILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - GOLD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - GREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - PINK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - PURPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG 4 PK HTL WRAPS - SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK SWEETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 2 PK WHITE GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK DRAGONBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK GREEN GARUDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK GREEN KARMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK GREEN KB90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK GREEN SWEETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK MANGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK MARACUJA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK PEACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK STRAWBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK SWEETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK TANGELO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARILLOS - 3 PK WHITE GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARS - ROUGH CUT HONEY BERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARS - ROUGH CUT NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARS - ROUGH CUT RUSSIAN CREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CIGARS - ROUGH CUT SWEET AROMATIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CONES - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CONES - DRAGONBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CONES - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CONES - PINEAPPLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG CONES - STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - BLUE DREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - GEORGIA FIELDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - ISLAND VIBES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - MELLOW HAZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - OG PURP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - SOUR SQUEEZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG HEMP WRAPS - SUMMER SLICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG NL WRAPS - 2 PK BERRY BASH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG NL WRAPS - 2 PK PALMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG NL WRAPS - 2 PK STRAIGHT UP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG NL WRAPS - 2 PK SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG NL WRAPS - 2 PK VANILLA CREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM KING ROLLS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM MINI ROLLS - BANANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM MINI ROLLS - BLUEBERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM MINI ROLLS - GRAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM MINI ROLLS - NATURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PALM MINI ROLLS - VANILLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - 1 1%2F4 CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - 1 1%2F4 UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - KING CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - KING UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - ULTRA THIN 70MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPER CONES - UNBLEACHED 70MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F2 BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F4 BLUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F4 FRENCH ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F4 HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F4 ULTRA THIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - 1 1%2F4 UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - COMBO BOOKLET - FRENCH ORANGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - COMBO BOOKLET - HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - COMBO BOOKLET - UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - KING SIZE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - KING SLIM HEMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - KING SLIM UNBLEACHED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - KUTCORNERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG PAPERS - WHITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG ROSE CONES - 70MM 5 PK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG ROSE CONES - KING SIZE 1 PK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG ROSE CONES - KING SIZE 3 PK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK ATL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK CHI-RACKS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK DARK BROAD LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK HABANO LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK HARD RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY BERRY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK HONEY DRIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK ISLAND RUM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK RUSSIAN CREAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TENZ CIGARILLOS - 2 PK SWEET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TERP CONES - 2 PK CLEMENTINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TERP CONES - 2 PK GRAND DADDY PURP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TERP CONES - 2 PK LIMONCELLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZIG-ZAG TERP CONES - 2PK SHORTCAKE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Menthol_Non_Menthol__c</picklist>
+        <values>
+            <fullName>Menthol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Menthol</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Metric_Report_Group__c</picklist>
+        <values>
+            <fullName>ALP POUCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRE MEGA PACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI-FI HEMP WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOOSE LEAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATURAL LEAF FLAT WRAPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO REPORT GROUP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CAN TOWERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS CANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS PROUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STOKERS TUBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ CIGARS WOODS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PAPERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ POD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM CIGARILLOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ PREMIUM PAPERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ SUPER BUNDLE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NTC_Item_Classification__c</picklist>
+        <values>
+            <fullName>Competitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchandise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Straight Stock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>Competetive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPBi Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TPB_Category__c</picklist>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EAir Filter%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EApparel%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EApparel%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EAuto%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EBaby%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2ECleaning Solution%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EConfectionary%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2ECooking%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EFood%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EGifts%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EGum%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EHome%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EInflatables%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EKitchen%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EOdor Solutions%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EOffice Supply%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EOther%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EOther%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EPersonal Care%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EScales%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EStorage%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2ETerpene Vape%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2EToys%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2EGeneral Merch%2ETrade Mktg%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2E510 Batteries%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EBong%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EButane%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EConcentrate Vape%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EDab Rig%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EDry Herb Vaporizer%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EE-Rig%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EGeneral Accessories%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EGrinder%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EHand Pipe%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EHumidity Solution%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EInfuser%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2ELighters %26 Torches%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2ELighters %26 Torches%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EOne Hitter%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EPaper Cones%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EPapers%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2ERolling Machines%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2ERolling Tray%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2ETips%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EVape Accessories%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Tobacco%2ESmokeless%2EWraps%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmokeless%2E %2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmokeless%2E %2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmokeless%2E %2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmokeless%2E %2ERBJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmoking%2E %2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmoking%2E %2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmoking%2E %2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Material%2ESmoking%2E %2ERBJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmokeless%2E %2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmokeless%2E %2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmokeless%2E %2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmokeless%2E %2ERBJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmoking%2E %2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmoking%2E %2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmoking%2E %2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raw Tobacco%2ESmoking%2E %2ERBJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2ECans%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2ECotton Mouth%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2EDiscount Other%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2EDiscount%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2EFre%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2ENic Vape%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2EPremium%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2EStokers%2ENTC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmokeless%2ETubs%2ERBJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EAccessories%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EApparel%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EBlunt Wrap%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2ECanadian Paper Cones%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2ECanadian Papers%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EChoice Leaf%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EChoice Leaf%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EHMP Accessories%2EDVW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EHMP Accessories%2EREC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EKarma%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EKarma%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2ELighters%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EMarley%2EINT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EOther Accessories%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EOther Cigars%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EOther Cigars%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EOther%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EUS Paper Cones%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EUS Papers%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EWild Hemp%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag HTL Cigars%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag HTL Cigars%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag HTL Wraps%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag HTL Wraps%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Natural Leaf Cigars%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Natural Leaf Cigars%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Natural Leaf Wraps%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Non-Tobacco%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Non-Tobacco%2ENAWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tobacco%2ESmoking%2EZigZag Tubes%2ENAOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vape%2ENewGen%2E %2ETPB Beast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>h</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TPB_Sales_Division__c</picklist>
+        <values>
+            <fullName>Alt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Field Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vapor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Category__c</picklist>
+        <values>
+            <fullName>LL Chew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smoking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vapor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Type__c</picklist>
+        <values>
+            <fullName>Flat Rate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percent</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Category__c</picklist>
+        <values>
+            <fullName>Beverages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detergent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frozen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hygiene</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snacks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Container_Size_Unit__c</picklist>
+        <values>
+            <fullName>gal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>l</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>m%C2%B3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ml</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>oz</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Container_Type__c</picklist>
+        <values>
+            <fullName>Bottle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plastic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Pack_Size_Unit__c</picklist>
+        <values>
+            <fullName>box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Product_Form__c</picklist>
+        <values>
+            <fullName>Liquid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Product_Level__c</picklist>
+        <values>
+            <fullName>Brand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flavor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>SubCategory</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Product_Type__c</picklist>
+        <values>
+            <fullName>Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AssetType</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commodity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Empty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__State__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>cgcloud__Tax_Classification__c</picklist>
+        <values>
+            <fullName>f</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>r</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

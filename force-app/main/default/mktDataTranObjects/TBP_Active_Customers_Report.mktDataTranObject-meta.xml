@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MktDataTranObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connector>Snowflake</connector>
+    <creationType>Custom</creationType>
+    <dataSource>Snowflake</dataSource>
+    <dataSourceObject>TBP_Active_Customers_Report</dataSourceObject>
+    <masterLabel>TBP_Active_Customers_Report</masterLabel>
+    <mktDataTranFields>
+        <fullName>account_description</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Account Description</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Account Description</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>4</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>account_status</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Account Status</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Account Status</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>5</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>customer_account_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Customer Account Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Customer Account Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>3</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>customer_class</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Customer Class</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Customer Class</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>6</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>customer_organization_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Customer Organization Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Customer Organization Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>2</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>email_address</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Email Address</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Email Address</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>20</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>fax_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Fax Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Fax Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>19</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>party_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Party Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Party Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>1</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>primary_contact_name</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Primary Contact Name</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Primary Contact Name</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>17</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>primary_site</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Primary Site</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Primary Site</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>9</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>sales_rep</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Sales Rep</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Sales Rep</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>23</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>site_address_line_3</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Site Address Line 3</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Site Address Line 3</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>13</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>site_city</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Site City</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Site City</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>14</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>site_number</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Site Number</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Site Number</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>8</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>site_purpose</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Site Purpose</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Site Purpose</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>10</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>source_system</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Source System</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Source System</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>0</sequence>
+    </mktDataTranFields>
+    <mktDataTranFields>
+        <fullName>split_allowed</fullName>
+        <creationType>Custom</creationType>
+        <datatype>S</datatype>
+        <externalName>Split Allowed</externalName>
+        <isDataRequired>false</isDataRequired>
+        <length>0</length>
+        <masterLabel>Split Allowed</masterLabel>
+        <precision>0</precision>
+        <primaryIndexOrder>0</primaryIndexOrder>
+        <scale>0</scale>
+        <sequence>21</sequence>
+    </mktDataTranFields>
+    <objectCategory>Salesforce_SFDCReferenceModel_0_93.Related</objectCategory>
+</MktDataTranObject>

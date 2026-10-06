@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$SF_Account_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$Account_Number_old__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Ideal_Kits__r$Product__c.cgcloud__Criterion_2_Product__c</field>
+    </columns>
+    <columns>
+        <field>Account.Ideal_Kits__r$Product__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Ideal_Kits__r$Quantity__c</field>
+    </columns>
+    <columns>
+        <field>Account.Ideal_Kits__r$Product__c.Cycle_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account.Ideal_Kits__r$Product__c.Metric_Report_Group__c</field>
+    </columns>
+    <columns>
+        <field>Account.Ideal_Kits__r$Product__c.Metric_Group_Method__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>Account.Ideal_Kits__r$Product__c.cgcloud__Criterion_2_Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>STOKERS CANS PROMO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Ideal_Kits__r$Product__c.cgcloud__Criterion_2_Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TPB PREMIUM LOOSE LEAF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Ideal_Kits__r$Product__c.cgcloud__Criterion_2_Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>STOKERS TUBS PROMO</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Promos Planned Qtys by Store (ADMIN)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accts_Ideal_Set_Product__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$SF_Account_ID__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

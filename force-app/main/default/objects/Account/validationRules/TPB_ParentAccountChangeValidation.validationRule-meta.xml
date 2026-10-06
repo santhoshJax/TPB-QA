@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPB_ParentAccountChangeValidation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED( ParentId ) &amp;&amp; PRIORVALUE( TPB_Parent_Account_Name__c ) != &apos;HQ - Unassigned Chain Retailers&apos; &amp;&amp;  Parent.Name != &apos;HQ - Unassigned Chain Retailers&apos; &amp;&amp; ( Ownership__c = &apos;NAM Chain&apos; &amp;&amp;  !ISBLANK( ParentId ) ) &amp;&amp; NOT( Parent_Owner__c )</errorConditionFormula>
+    <errorMessage>Sorry, you can only assign to HQ - Unassigned Chain Retailers for current stage</errorMessage>
+</ValidationRule>

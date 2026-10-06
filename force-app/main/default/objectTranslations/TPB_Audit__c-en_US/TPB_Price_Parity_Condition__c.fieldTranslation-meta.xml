@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Price Parity Condition --></label>
+    <name>TPB_Price_Parity_Condition__c</name>
+    <picklistValues>
+        <masterLabel>MST pricing not in line with competitive pricing</masterLabel>
+        <translation><!-- MST pricing not in line with competitive pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTC products not in line with competitive pricing</masterLabel>
+        <translation><!-- NTC products not in line with competitive pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Papers pricing not in line with competitive pricing</masterLabel>
+        <translation><!-- Papers pricing not in line with competitive pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Products are in Line with competition</masterLabel>
+        <translation><!-- Products are in Line with competition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

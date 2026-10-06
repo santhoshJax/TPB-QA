@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Store Type --></label>
+    <name>Store_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cultivator/Processor</masterLabel>
+        <translation><!-- Cultivator/Processor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispensary</masterLabel>
+        <translation><!-- Dispensary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NYC</masterLabel>
+        <translation><!-- NYC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Account_Notes_Update</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED(Account_Notes__c) &amp;&amp;  $User.Id  &lt;&gt;  OwnerId</errorConditionFormula>
+    <errorDisplayField>Account_Notes__c</errorDisplayField>
+    <errorMessage>Account Notes can only be edited by Owner of Account</errorMessage>
+</ValidationRule>
