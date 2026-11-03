@@ -42,32 +42,36 @@
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
 ### Engagement state — 2026-11-03
-**Status:** waiting — D01 CGC 264 Post-Install Review completed; 4 decision items pending
+**Status:** at risk — D01 review complete; DSD/Van Sales unused but 4 decisions pending before upgrade can proceed
 
 **Done this session**
-- Reviewed post-install configuration in tpbi--qa org
-- Marked mobile app translations as Not applicable
-- Documented findings in D01 review report
+- Confirmed org uses TPB custom van inventory (65K records, 1.67M transactions), not standard DSD/Van Sales
+- Identified 15 inactive package flows: DSD and Van Sales ones can stay off; order flows unused
+- Mapped TPB Apex dependencies: van-inventory batch, user-balance batch, mobile cash-sale flow need QA testing
 
 **Open items**
 - Decide on 3 missing System Settings records (EnableClickToDial, Promotion_Reco_Pricing_Templates, Account_Operating_Hour_Enabled)
 - Decide on Default Location sharing — manual share vs sharing rule
 - Decide on metadata refresh — compare package copy with deployed version
-- Decide on 15 inactive package flows — activate for features in use
+- Decide on 15 inactive package flows — activate only those for features in use
+- Add DSD/Van Sales usage findings to D01 report if going to delivery lead
+- Plan QA test runs: TPB inventory batches and mobile cash-sale flow on 264
 
 **Decisions**
 - Mobile app translations marked Not applicable; steps retained for future language support
-- Jira comment SAL-463 not posted; review held in session pending approval
+- DSD and Van Sales package flows can remain inactive — org doesn't use those features
+- Jira comment SAL-463 not posted; review held pending approval
 
 **Blockers**
 - None
 
 **Next**
-- Review D01 CGC 264 Post-Install Review report
-- Decide on each of 4 pending items and communicate choices
-- Provide exact changes for confirmation before any org modifications
+- Decide on 4 pending items (System Settings, Location sharing, metadata refresh, flow activation)
+- Confirm whether to add DSD/Van Sales usage section to D01 report
+- Provide exact changes for each decision; will set out changes for confirmation before org modifications
+- Plan QA test schedule for TPB inventory and mobile flows on 264
 
-**Checked live on 2026-11-03:** nothing — the status above is as recorded, not re-checked
+**Checked live on 2026-11-03:** the Salesforce org
 ### Last session — 2026-11-03
 | | |
 |---|---|
@@ -77,20 +81,16 @@
 | Name | TPB-CGC-Upgrade |
 | Session | `08cb0396-aa88-47e6-9a05-7c2cccfc2419` |
 **In its own words (excerpt):**
-I've recorded both answers. I didn't post to SAL-463 and didn't change anything in the org.
+The org doesn't use standard Direct Store Delivery (DSD) or Van Sales. It does run its own TPB version of van stock: sales reps carry inventory and record cash sales against it. The package's DSD inventory engine underneath is in heavy daily use. I made no changes to the org.
 
-- **Jira comment:** not posted. The review stays in this session until you want it on the ticket.
-- **Mobile app translations:** now marked **Not applicable** in the report, since mobile users work in English only. The report still lists the steps in case another language is added later.
+**Not used**
+- **Van Sales and Delivery orders:** the org has 9 Van Sales and 6 Delivery/Return order templates, and most are active. But all 310,629 orders (June 2023 to 30 Oct 2026) use the **Standard** template. No order uses a Van Sales or Delivery template.
+- **Vehicles and routes:** there are 0 Vehicle, 0 Vehicle Warehouse and 0 Route records.
+- **Driver access:** no active user has the CGC Retail Tour Driver permission set.
+- **Tours:** 49 exist, all on the "Standard Tour" template and all still in "Initial" status. Each one is named for a US state ("Tour NY", "Tour AZ"…) and paired with a state warehouse. None has a driver or truck, and none has been started. They act as state groupings rather than real delivery runs.
 
-That leaves 4 items pending your decision:
-1. **3 missing System Settings records:** `EnableClickToDial`, `Promotion_Reco_Pricing_Templates` and `Account_Operating_Hour_Enabled`.
-2. **Default Location sharing:** it uses a manual share rather than a sharing rule, so it would be lost if the record owner changes.
-3. **Additional metadata:** I haven't compared the package's refreshed copy with what's deployed, so it may need redeploying.
-4. **15 inactive package flows:** activate them only for features you use.
-
-The updated **D01 — CGC 264 Post-Install Review** is attached to this session. When you decide on any of these, tell me what to apply and I'll set out the exact changes for you to confirm before anything is touched.
-
-Sources: engagement context (none relied on) · checked live: tpbi--qa org (earlier thi
+**Used: TPB's version of van inventory**
+- **User inventory:** 65,499 inventory records across 377 users. Almost all are on the custom "TPB Control Template", which holds stock per user
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
