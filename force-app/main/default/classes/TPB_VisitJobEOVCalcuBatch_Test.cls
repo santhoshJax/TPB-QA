@@ -274,4 +274,32 @@ private class TPB_VisitJobEOVCalcuBatch_Test {
             'SAL-281b: no Offline Manual when every offline line was scanned'
         );
     }
+
+    @isTest
+    static void testVisitWithNoDataIsNotMarkedDone() {
+        // Reproduces an offline visit caught mid-sync: the Visit record exists and is
+        // Completed, but its Visit Jobs (and any order-derived distribution) haven't
+        // landed in Salesforce yet. The batch must leave TPB_EOV_Done__c = false so a
+        // later run can pick it up once the real data actually arrives - marking it
+        // done here would permanently skip it, since this batch's own query only looks
+        // at TPB_EOV_Done__c = false visits.
+        Account accObj2 = TPB_TestFactory.createAccount();
+        Visit emptyVisit = TPB_TestFactory.createVisit(accObj2);
+        emptyVisit.ActualVisitStartTime = System.now().addDays(-1).addHours(-1);
+        emptyVisit.ActualVisitEndTime = System.now().addDays(-1);
+        emptyVisit.Status = 'Completed';
+        update emptyVisit;
+        // Deliberately no Visit Job and no Order/Order Item created for this visit.
+
+        System.Test.startTest();
+        Database.executeBatch(new TPB_VisitJobEOVCalcuBatch());
+        System.Test.stopTest();
+
+        Visit reQueried = [SELECT Id, TPB_EOV_Done__c FROM Visit WHERE Id = :emptyVisit.Id];
+        System.assertEquals(
+            false,
+            reQueried.TPB_EOV_Done__c,
+            'A visit with no Visit Jobs and no cash-sale-derived data must stay unprocessed so a later run can retry it'
+        );
+    }
 }

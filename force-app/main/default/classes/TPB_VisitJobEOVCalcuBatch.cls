@@ -362,8 +362,19 @@ public class TPB_VisitJobEOVCalcuBatch implements Database.Batchable<sObject> {
       //add setProductIdForDuplicate set
       setProductIdForDuplicate.add(stringVisitId + stringProductId);
     }
+    // Only mark a visit as EOV-processed if we actually found or created Visit Job
+    // data for it. A visit with zero Visit Jobs at the moment this batch runs is
+    // often an offline visit still mid-sync (its Visit record can land in Salesforce
+    // well before its Visit Jobs do) - marking it done anyway would permanently skip
+    // it once the real data finally arrives, since TPB_EOV_Done__c = false is this
+    // batch's own re-entry condition. Leaving it false lets tomorrow's run (within
+    // the existing 30-day window) pick it up once there's something to process.
+    Set<Id> processedVisitIds = new Set<Id>(mapVisitToVisitJob.keySet());
+    for (cgcloud__Visit_Job__c newJob : insertVisitJob) {
+      processedVisitIds.add(newJob.cgcloud__Visit__c);
+    }
     //updateVisitByVisitId
-    updateVisitByVisitId(setVisitId, visitList);
+    updateVisitByVisitId(processedVisitIds, visitList);
     //update TPB_EOV__c on visit jobs
     update updateVisitJobs.values();
     //insert new visit jobs
