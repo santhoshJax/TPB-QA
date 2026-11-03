@@ -42,36 +42,39 @@
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
 ### Engagement state — 2026-11-03
-**Status:** at risk — D01 review complete; DSD/Van Sales unused but 4 decisions pending before upgrade can proceed
+**Status:** at risk — D01 review complete; 4 decisions pending + Penny Perfect Pricing discovery; ready to add DSD/Van Sales section to D01
 
 **Done this session**
-- Confirmed org uses TPB custom van inventory (65K records, 1.67M transactions), not standard DSD/Van Sales
-- Identified 15 inactive package flows: DSD and Van Sales ones can stay off; order flows unused
-- Mapped TPB Apex dependencies: van-inventory batch, user-balance batch, mobile cash-sale flow need QA testing
+- Validated org van-sales findings against meeting transcript (Bryan Rowe, 1 Jun 2026)
+- Confirmed TPB does van sales via custom setup, not package Van Sales feature
+- Identified Penny Perfect Pricing as business-critical but unchecked in org
 
 **Open items**
 - Decide on 3 missing System Settings records (EnableClickToDial, Promotion_Reco_Pricing_Templates, Account_Operating_Hour_Enabled)
 - Decide on Default Location sharing — manual share vs sharing rule
 - Decide on metadata refresh — compare package copy with deployed version
 - Decide on 15 inactive package flows — activate only those for features in use
-- Add DSD/Van Sales usage findings to D01 report if going to delivery lead
-- Plan QA test runs: TPB inventory batches and mobile cash-sale flow on 264
+- Check Penny Perfect Pricing in org (license assignments, setup)
+- Add DSD/Van Sales usage section to D01 report citing meeting evidence
+- Plan QA test schedule: TPB inventory batches, mobile cash-sale flow, Penny Perfect Pricing on 264
 
 **Decisions**
 - Mobile app translations marked Not applicable; steps retained for future language support
 - DSD and Van Sales package flows can remain inactive — org doesn't use those features
+- Wording for D01: TPB does van sales through custom setup, not package Van Sales
 - Jira comment SAL-463 not posted; review held pending approval
 
 **Blockers**
 - None
 
 **Next**
-- Decide on 4 pending items (System Settings, Location sharing, metadata refresh, flow activation)
-- Confirm whether to add DSD/Van Sales usage section to D01 report
-- Provide exact changes for each decision; will set out changes for confirmation before org modifications
-- Plan QA test schedule for TPB inventory and mobile flows on 264
+- Check Penny Perfect Pricing setup and license assignments in org (read-only)
+- Resolve 4 pending System Settings, Location sharing, metadata refresh, flow activation decisions
+- Draft DSD/Van Sales usage section for D01 with meeting citation
+- Confirm QA test scope includes Penny Perfect Pricing validation
+- Provide exact changes for each decision; set out for confirmation before org modifications
 
-**Checked live on 2026-11-03:** the Salesforce org
+**Checked live on 2026-11-03:** meeting transcripts
 ### Last session — 2026-11-03
 | | |
 |---|---|
@@ -81,16 +84,18 @@
 | Name | TPB-CGC-Upgrade |
 | Session | `08cb0396-aa88-47e6-9a05-7c2cccfc2419` |
 **In its own words (excerpt):**
-The org doesn't use standard Direct Store Delivery (DSD) or Van Sales. It does run its own TPB version of van stock: sales reps carry inventory and record cash sales against it. The package's DSD inventory engine underneath is in heavy daily use. I made no changes to the org.
+The meeting supports what I found in the org, with one change to how it should be worded. TPB does van sales as a business. It runs them through its own TPB van-inventory and cash-sale setup, not the package's standard Van Sales feature. Neither the meeting nor the org shows TPB running standard Direct Store Delivery with its own trucks.
 
-**Not used**
-- **Van Sales and Delivery orders:** the org has 9 Van Sales and 6 Delivery/Return order templates, and most are active. But all 310,629 orders (June 2023 to 30 Oct 2026) use the **Standard** template. No order uses a Van Sales or Delivery template.
-- **Vehicles and routes:** there are 0 Vehicle, 0 Vehicle Warehouse and 0 Route records.
-- **Driver access:** no active user has the CGC Retail Tour Driver permission set.
-- **Tours:** 49 exist, all on the "Standard Tour" template and all still in "Initial" status. Each one is named for a US state ("Tour NY", "Tour AZ"…) and paired with a state warehouse. None has a driver or truck, and none has been started. They act as state groupings rather than real delivery runs.
+**What the meeting says** (Internal | TPB Standup, 1 Jun 2026, Bryan Rowe answering Santhosh):
+- **Van sales: yes, but not often.** Only for "certain stores only, certain chains". Reps carry real stock in their vans and sell it to stores directly.
+- **Usual path: wholesaler orders.** "Mostly they set up orders from the wholesaler where they act as the middleman and then the store gets a direct delivery from the wholesaler."
+- **Direct-to-store selling falls under van sales.** Bryan put it this way: "they do sell out of their vans to the store, but that'd be under the van delivery." There's no separate delivery run of TPB's own.
 
-**Used: TPB's version of van inventory**
-- **User inventory:** 65,499 inventory records across 377 users. Almost all are on the custom "TPB Control Template", which holds stock per user
+**How that matches the org**
+
+| Meeting | Org (checked earlier this session) | Match |
+|---|---|---|
+| Reps sell from van stock, now and then | 65,499 user inventory records on the "TPB Control Template". 1.67M inventory m
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
