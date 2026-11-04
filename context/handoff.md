@@ -41,41 +41,43 @@
 <!-- orchestrate:session-state:start -->
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
-### Engagement state — 2026-11-03
-**Status:** at risk — D01 review complete; 4 decisions pending + Penny Perfect Pricing discovery; ready to add DSD/Van Sales section to D01
+### Engagement state — 2026-11-04
+**Status:** at risk — D02 cleanup report complete; 4 System Settings + Location sharing + metadata decisions still pending; ready for approval before org changes
 
 **Done this session**
-- Validated org van-sales findings against meeting transcript (Bryan Rowe, 1 Jun 2026)
-- Confirmed TPB does van sales via custom setup, not package Van Sales feature
-- Identified Penny Perfect Pricing as business-critical but unchecked in org
+- Completed D02 DSD/Van Sales usage and cleanup analysis with full evidence and cleanup order
+- Confirmed 15 inactive flows are not DSD/Van Sales; belong to other package features
+- Clarified package 264 has no DSD/Route Sales data changes after 258 — no 264-specific cleanup needed
+- Identified 4 custom permission sets (1 assigned to admin, 3 unassigned) for removal consideration
 
 **Open items**
 - Decide on 3 missing System Settings records (EnableClickToDial, Promotion_Reco_Pricing_Templates, Account_Operating_Hour_Enabled)
 - Decide on Default Location sharing — manual share vs sharing rule
 - Decide on metadata refresh — compare package copy with deployed version
-- Decide on 15 inactive package flows — activate only those for features in use
 - Check Penny Perfect Pricing in org (license assignments, setup)
-- Add DSD/Van Sales usage section to D01 report citing meeting evidence
+- Approve D02 cleanup groups before applying exact record changes to org
 - Plan QA test schedule: TPB inventory batches, mobile cash-sale flow, Penny Perfect Pricing on 264
+- Confirm cleanup scope for production org (same usage checks required)
 
 **Decisions**
 - Mobile app translations marked Not applicable; steps retained for future language support
 - DSD and Van Sales package flows can remain inactive — org doesn't use those features
 - Wording for D01: TPB does van sales through custom setup, not package Van Sales
 - Jira comment SAL-463 not posted; review held pending approval
+- 15 inactive package flows are not DSD/Van Sales; belong to other features — no action needed on these
 
 **Blockers**
 - None
 
 **Next**
+- Review and approve D02 cleanup groups (personas, templates, tours, routes, permission sets)
+- Resolve 4 pending System Settings, Location sharing, metadata refresh decisions
+- Provide exact record changes for each approved cleanup group; set out for confirmation before org modifications
 - Check Penny Perfect Pricing setup and license assignments in org (read-only)
-- Resolve 4 pending System Settings, Location sharing, metadata refresh, flow activation decisions
-- Draft DSD/Van Sales usage section for D01 with meeting citation
-- Confirm QA test scope includes Penny Perfect Pricing validation
-- Provide exact changes for each decision; set out for confirmation before org modifications
+- Confirm QA test scope includes Penny Perfect Pricing validation on 264
 
-**Checked live on 2026-11-03:** meeting transcripts
-### Last session — 2026-11-03
+**Checked live on 2026-11-04:** nothing — the status above is as recorded, not re-checked
+### Last session — 2026-11-04
 | | |
 |---|---|
 | Type | REVIEW |
@@ -84,18 +86,15 @@
 | Name | TPB-CGC-Upgrade |
 | Session | `08cb0396-aa88-47e6-9a05-7c2cccfc2419` |
 **In its own words (excerpt):**
-The meeting supports what I found in the org, with one change to how it should be worded. TPB does van sales as a business. It runs them through its own TPB van-inventory and cash-sale setup, not the package's standard Van Sales feature. Neither the meeting nor the org shows TPB running standard Direct Store Delivery with its own trucks.
+TPB does not use the package's Direct Store Delivery (DSD) or Van Sales features. It does do van sales, but through its own setup: TPB inventory templates, TPB Apex and cash-sale transactions, all running on the standard mobile setup. That means your cleanup question applies. The 264 update question doesn't: the package ships no DSD or Route Sales data changes after release 258, so 264 has nothing DSD-specific to apply. I changed nothing in the org.
 
-**What the meeting says** (Internal | TPB Standup, 1 Jun 2026, Bryan Rowe answering Santhosh):
-- **Van sales: yes, but not often.** Only for "certain stores only, certain chains". Reps carry real stock in their vans and sell it to stores directly.
-- **Usual path: wholesaler orders.** "Mostly they set up orders from the wholesaler where they act as the middleman and then the store gets a direct delivery from the wholesaler."
-- **Direct-to-store selling falls under van sales.** Bryan put it this way: "they do sell out of their vans to the store, but that'd be under the van delivery." There's no separate delivery run of TPB's own.
+**Why I'm confident**
+- **The meeting:** Bryan said reps sell from their vans only to "certain stores only, certain chains". Most orders go through the wholesaler, and TPB runs no delivery runs of its own.
+- **Mobile app:** all 539 installs use the standard mobile persona (the app setup a user group syncs with, called `TquilaONE`). None uses the DSD, Hybrid or Route Sales persona.
+- **Orders and tours:** all 310,631 orders use the Standard template. There are no vehicles or routes, and all 49 tours are "Standard Tour" and still at "Initial" status.
 
-**How that matches the org**
-
-| Meeting | Org (checked earlier this session) | Match |
-|---|---|---|
-| Reps sell from van stock, now and then | 65,499 user inventory records on the "TPB Control Template". 1.67M inventory m
+**Must stay, because TPB's van setup depends on it**
+- **Package objects:** Tour, Warehouse, Inventory, Inventory Transaction, Order Payment and Vehicle. About 20 TPB Apex classes use them,
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
