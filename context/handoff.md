@@ -41,60 +41,62 @@
 <!-- orchestrate:session-state:start -->
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
-### Engagement state — 2026-11-04
-**Status:** at risk — D02 cleanup report complete; 4 System Settings + Location sharing + metadata decisions still pending; ready for approval before org changes
+### Engagement state — 2026-11-06
+**Status:** at risk — 3 test failures investigated: 2 real defects found (customer set criteria, Activity Product batch logic), 1 false alarm. Ready for Build se…
 
 **Done this session**
-- Completed D02 DSD/Van Sales usage and cleanup analysis with full evidence and cleanup order
-- Confirmed 15 inactive flows are not DSD/Van Sales; belong to other package features
-- Clarified package 264 has no DSD/Route Sales data changes after 258 — no 264-specific cleanup needed
-- Identified 4 custom permission sets (1 assigned to admin, 3 unassigned) for removal consideration
+- Confirmed customer set AS-00000154 criteria is invalid SOQL — blocks all new Retailer account creation
+- Confirmed Activity Product batch counts each row not each product — deletes OOS products prematurely on multi-row visits
+- Confirmed Sync ID Mapping check is false alarm — rows are short-lived by design
 
 **Open items**
 - Decide on 3 missing System Settings records (EnableClickToDial, Promotion_Reco_Pricing_Templates, Account_Operating_Hour_Enabled)
 - Decide on Default Location sharing — manual share vs sharing rule
 - Decide on metadata refresh — compare package copy with deployed version
-- Check Penny Perfect Pricing in org (license assignments, setup)
-- Approve D02 cleanup groups before applying exact record changes to org
-- Plan QA test schedule: TPB inventory batches, mobile cash-sale flow, Penny Perfect Pricing on 264
-- Confirm cleanup scope for production org (same usage checks required)
+- Fix customer set AS-00000154 criteria (now or in Build session)
+- Plan Build session: batch logic to count products once per visit, investigate second Distribution row creation
+- Confirm Activity Product deletion rule still intended after 3 out-of-stock visits
+- Check Penny Perfect Pricing setup and license assignments in org
+- Approve D02 cleanup groups before applying record changes to org
 
 **Decisions**
 - Mobile app translations marked Not applicable; steps retained for future language support
 - DSD and Van Sales package flows can remain inactive — org doesn't use those features
 - Wording for D01: TPB does van sales through custom setup, not package Van Sales
 - Jira comment SAL-463 not posted; review held pending approval
-- 15 inactive package flows are not DSD/Van Sales; belong to other features — no action needed on these
+- 15 inactive package flows are not DSD/Van Sales; belong to other features — no action needed
+- Sync ID Mapping check should run soon after sync or be removed — current check timing is invalid
 
 **Blockers**
-- None
+- Customer set AS-00000154 invalid criteria blocks all new Retailer account creation in org
 
 **Next**
-- Review and approve D02 cleanup groups (personas, templates, tours, routes, permission sets)
-- Resolve 4 pending System Settings, Location sharing, metadata refresh decisions
-- Provide exact record changes for each approved cleanup group; set out for confirmation before org modifications
-- Check Penny Perfect Pricing setup and license assignments in org (read-only)
-- Confirm QA test scope includes Penny Perfect Pricing validation on 264
+- Provide valid SOQL criteria for customer set AS-00000154 or confirm it should be cleared
+- Schedule Build session to fix Activity Product batch logic and investigate multi-row visit creation
+- Confirm with Connie that 3-strike out-of-stock deletion rule is still intended
+- Resume D02 cleanup approval and System Settings/Location sharing/metadata decisions
 
-**Checked live on 2026-11-04:** nothing — the status above is as recorded, not re-checked
-### Last session — 2026-11-04
+**Checked live on 2026-11-06:** the Salesforce org, Google Workspace, the repository
+### Last session — 2026-11-06
 | | |
 |---|---|
 | Type | REVIEW |
 | Outcome | COMPLETED |
 | Branch | `tpb-qa-orchestrate` |
-| Name | TPB-CGC-Upgrade |
-| Session | `08cb0396-aa88-47e6-9a05-7c2cccfc2419` |
+| Name | TPB Daily Sync Issues |
+| Session | `d76d032d-dd82-4054-af77-3be397e8db87` |
 **In its own words (excerpt):**
-TPB does not use the package's Direct Store Delivery (DSD) or Van Sales features. It does do van sales, but through its own setup: TPB inventory templates, TPB Apex and cash-sale transactions, all running on the standard mobile setup. That means your cleanup question applies. The 264 update question doesn't: the package ships no DSD or Route Sales data changes after release 258, so 264 has nothing DSD-specific to apply. I changed nothing in the org.
+I checked the org for all three failed rows on the sheet. Each one traces back to Alice Mctest's testing on 4 Nov. Two are real problems with clear causes. The third isn't a defect: the check itself reads the data wrong. I changed nothing in the org.
 
-**Why I'm confident**
-- **The meeting:** Bryan said reps sell from their vans only to "certain stores only, certain chains". Most orders go through the wholesaler, and TPB runs no delivery runs of its own.
-- **Mobile app:** all 539 installs use the standard mobile persona (the app setup a user group syncs with, called `TquilaONE`). None uses the DSD, Hybrid or Route Sales persona.
-- **Orders and tours:** all 310,631 orders use the Standard template. There are no vehicles or routes, and all 49 tours are "Standard Tour" and still at "Initial" status.
+## 1. New store "Retail test store cosmo" never reached Salesforce (A9 / S4) — confirmed
 
-**Must stay, because TPB's van setup depends on it**
-- **Package objects:** Tour, Warehouse, Inventory, Inventory Transaction, Order Payment and Vehicle. About 20 TPB Apex classes use them,
+**Cause:** a customer set's filter contains plain words instead of a valid query condition.
+
+- **The record:** customer set **AS-00000154** ("Testing Offline App Group"). Christa Wiley created it on 3 Nov at 20:03 UTC. Its criteria field holds just `Test stores`.
+- **What breaks:** when a Retailer account is created, the customer set code on the Account trigger builds a query from each set's criteria. With this set it becomes `SELECT Id FROM Account WHERE ( Test stores ) AND Id IN ...`, which fails with "unexpected token: 'Test stores'".
+- **Proof:** Alice's app log at 14:58:49 UTC on 4 Nov shows that exact error and stack trace for the cosmo account. The store's Account Manager and Account Extension then failed with it.
+  - One second later, the app removed all three from the upload queue, so the store is gone from her device too.
+  - The sync r
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
