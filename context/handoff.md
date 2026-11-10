@@ -41,62 +41,63 @@
 <!-- orchestrate:session-state:start -->
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
-### Engagement state — 2026-11-06
-**Status:** at risk — 3 test failures investigated: 2 real defects found (customer set criteria, Activity Product batch logic), 1 false alarm. Ready for Build se…
+### Engagement state — 2026-11-10
+**Status:** blocked — I checked this without changing anything.
 
 **Done this session**
-- Confirmed customer set AS-00000154 criteria is invalid SOQL — blocks all new Retailer account creation
-- Confirmed Activity Product batch counts each row not each product — deletes OOS products prematurely on multi-row visits
-- Confirmed Sync ID Mapping check is false alarm — rows are short-lived by design
+- I checked this without changing anything. There are two separate problems in that sync log. The store-creation one has since been fixed in QA. The "insufficient access" one is still open. ## 1. "Qwerty" store insert failed (`unexpected tok…
 
 **Open items**
-- Decide on 3 missing System Settings records (EnableClickToDial, Promotion_Reco_Pricing_Templates, Account_Operating_Hour_Enabled)
-- Decide on Default Location sharing — manual share vs sharing rule
-- Decide on metadata refresh — compare package copy with deployed version
-- Fix customer set AS-00000154 criteria (now or in Build session)
-- Plan Build session: batch logic to count products once per visit, investigate second Distribution row creation
-- Confirm Activity Product deletion rule still intended after 3 out-of-stock visits
-- Check Penny Perfect Pricing setup and license assignments in org
-- Approve D02 cleanup groups before applying record changes to org
+- Confirm SAL-20 'Roadmapping' label default handling (ignore when paired with Operations)
+- Confirm SAL-504 'Documentation' label handling (cannot-judge when alone, or map to Operations)
+- Decide multi-label ticket behaviour: flag-and-ask per ticket, or apply generic mismatch rule
+- Clarify Bryan Rowe's Orchestrate and login entries (3–5 Nov): meeting time or ticket work
+- Team to fix 14 mismatched time entries per correction messages (Santhosh 4, Shalem 3, Bryan 3, Karan 4)
+- Add Jira label to SAL-472 or confirm Operations assignment; clarify SAL-503 for Karan's 4–5 Nov entries
+- Paste or attach Salesforce email to SAL-499; add acceptance criteria and definition of done
+- Confirm which components use CGCloud_Services certificate; plan renewal before 2027-03-24
 
 **Decisions**
-- Mobile app translations marked Not applicable; steps retained for future language support
-- DSD and Van Sales package flows can remain inactive — org doesn't use those features
-- Wording for D01: TPB does van sales through custom setup, not package Van Sales
-- Jira comment SAL-463 not posted; review held pending approval
-- 15 inactive package flows are not DSD/Van Sales; belong to other features — no action needed
-- Sync ID Mapping check should run soon after sync or be removed — current check timing is invalid
+- SA Approved entries only; per-ticket multi-label override for SAL-458, 459, 484 (OfflineApp)
+- Unlabelled tickets treated as Operations and judged
+- Entries with no ticket ID classified as Operations (mismatches if workstream mismatch)
+- Run instructions default to previous Monday–Sunday week (America/Los_Angeles timezone)
+- Orchestrate/login entries flagged as judgement call; count as match when all tickets are Operations
 
 **Blockers**
-- Customer set AS-00000154 invalid criteria blocks all new Retailer account creation in org
+- SAL-20 and SAL-504 label rules unconfirmed; blocks run instructions finalization
+- SAL-472 has no Jira label; cannot classify until labelled
+- SAL-499 missing Salesforce email; cannot determine which certificate change or required actions
+- Offline app Activity Product discrepancy source unidentified; need app count and sample product details to proceed
 
 **Next**
-- Provide valid SOQL criteria for customer set AS-00000154 or confirm it should be cleared
-- Schedule Build session to fix Activity Product batch logic and investigate multi-row visit creation
-- Confirm with Connie that 3-strike out-of-stock deletion rule is still intended
-- Resume D02 cleanup approval and System Settings/Location sharing/metadata decisions
+- Provide offline app Activity Product count for 001Ox00001hz1nXIAQ and 3–5 sample product names or IDs
+- Team submits corrected time entries per messages (Bryan Rowe 3 entries, Karan Munjal 2 entries)
+- Add Jira label to SAL-472; clarify whether Karan's 4–5 Nov entries belong to SAL-503 or Operations
+- Confirm SAL-20 Roadmapping and SAL-504 Documentation label handling rules before next run
+- Attach Salesforce email to SAL-499 and add acceptance criteria; identify certificate dependencies
 
-**Checked live on 2026-11-06:** the Salesforce org, Google Workspace, the repository
-### Last session — 2026-11-06
+**Checked live on 2026-11-10:** nothing — the status above is as recorded, not re-checked
+### Last session — 2026-11-10
 | | |
 |---|---|
-| Type | REVIEW |
+| Type | BUILD |
 | Outcome | COMPLETED |
 | Branch | `tpb-qa-orchestrate` |
-| Name | TPB Daily Sync Issues |
-| Session | `d76d032d-dd82-4054-af77-3be397e8db87` |
+| Name | Offline App Sync Isssue |
+| Session | `98f31af7-e5e5-41f5-b614-15f046703691` |
 **In its own words (excerpt):**
-I checked the org for all three failed rows on the sheet. Each one traces back to Alice Mctest's testing on 4 Nov. Two are real problems with clear causes. The third isn't a defect: the check itself reads the data wrong. I changed nothing in the org.
+I checked this without changing anything. There are two separate problems in that sync log. The store-creation one has since been fixed in QA. The "insufficient access" one is still open.
 
-## 1. New store "Retail test store cosmo" never reached Salesforce (A9 / S4) — confirmed
+## 1. "Qwerty" store insert failed (`unexpected token: 'Test stores'`) — fixed since
 
-**Cause:** a customer set's filter contains plain words instead of a valid query condition.
+**Cause:** When a Retailer account is inserted, `TPB_AccountCustomerSetHandler` goes through every Customer Set that has a Sales Org. It pastes each set's `TPB_CustomerSetCriteria__c` text straight into a query (`SELECT Id FROM Account WHERE ( <criteria> ) AND Id IN :setAccountId`, line 61). Customer Set **AS-00000154** had plain text ("Test stores") in that field instead of a valid filter. The query failed and rolled back the whole Account insert.
 
-- **The record:** customer set **AS-00000154** ("Testing Offline App Group"). Christa Wiley created it on 3 Nov at 20:03 UTC. Its criteria field holds just `Test stores`.
-- **What breaks:** when a Retailer account is created, the customer set code on the Account trigger builds a query from each set's criteria. With this set it becomes `SELECT Id FROM Account WHERE ( Test stores ) AND Id IN ...`, which fails with "unexpected token: 'Test stores'".
-- **Proof:** Alice's app log at 14:58:49 UTC on 4 Nov shows that exact error and stack trace for the cosmo account. The store's Account Manager and Account Extension then failed with it.
-  - One second later, the app removed all three from the upload queue, so the store is gone from her device too.
-  - The sync r
+The three other errors (`cgcloud__Account_Manager__c`, `cgcloud__Account_Extension__c`, `Visit`) are knock-on failures. They were children of the failed local Account, so they failed with it.
+
+**Current state:**
+- At 17:04 UTC today, Santhosh Kumar changed AS-00000154's criteria to `Name LIKE '%Test%'`, which is a valid filter.
+- One minute later (17:05 UTC), "Qwerty" synced: it now exists as account `001Ox00001jVJKBIA4`, created by Shalem's test user, with its Visit
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
