@@ -42,10 +42,12 @@
 <!-- Written by Orchestrate at the end of each session. Edits inside this block are
      replaced next session; anything OUTSIDE it is yours and is never touched. -->
 ### Engagement state — 2026-11-10
-**Status:** blocked — I checked this without changing anything.
+**Status:** at risk — Offline app sync issue root cause identified; store-creation fix confirmed in QA; insufficient-access problem still open
 
 **Done this session**
-- I checked this without changing anything. There are two separate problems in that sync log. The store-creation one has since been fixed in QA. The "insufficient access" one is still open. ## 1. "Qwerty" store insert failed (`unexpected tok…
+- Confirmed TPB_AccountCustomerSetHandler root cause: invalid criteria in AS-00000154 caused store insert to fail
+- Verified fix applied 2026-11-10 17:04 UTC: criteria changed to valid filter, store now syncs
+- Identified two systemic weaknesses: single bad rule blocks all new stores; 59 queries per save risks hitting limit
 
 **Open items**
 - Confirm SAL-20 'Roadmapping' label default handling (ignore when paired with Operations)
@@ -68,14 +70,15 @@
 - SAL-20 and SAL-504 label rules unconfirmed; blocks run instructions finalization
 - SAL-472 has no Jira label; cannot classify until labelled
 - SAL-499 missing Salesforce email; cannot determine which certificate change or required actions
-- Offline app Activity Product discrepancy source unidentified; need app count and sample product details to proceed
+- Offline app Activity Product discrepancy source unidentified; need app count and sample product details
+- Insufficient-access error in sync log unresolved; root cause and impact unknown
 
 **Next**
+- Plan fix for TPB_AccountCustomerSetHandler: validate criteria safely, skip bad rules, add validation rule to prevent broken criteria
+- Investigate insufficient-access error in sync log to determine scope and required remediation
 - Provide offline app Activity Product count for 001Ox00001hz1nXIAQ and 3–5 sample product names or IDs
 - Team submits corrected time entries per messages (Bryan Rowe 3 entries, Karan Munjal 2 entries)
-- Add Jira label to SAL-472; clarify whether Karan's 4–5 Nov entries belong to SAL-503 or Operations
 - Confirm SAL-20 Roadmapping and SAL-504 Documentation label handling rules before next run
-- Attach Salesforce email to SAL-499 and add acceptance criteria; identify certificate dependencies
 
 **Checked live on 2026-11-10:** nothing — the status above is as recorded, not re-checked
 ### Last session — 2026-11-10
@@ -87,17 +90,21 @@
 | Name | Offline App Sync Isssue |
 | Session | `98f31af7-e5e5-41f5-b614-15f046703691` |
 **In its own words (excerpt):**
-I checked this without changing anything. There are two separate problems in that sync log. The store-creation one has since been fixed in QA. The "insufficient access" one is still open.
+I pulled the class from QA again and read it. Nothing was changed.
 
-## 1. "Qwerty" store insert failed (`unexpected token: 'Test stores'`) — fixed since
+## What it does
 
-**Cause:** When a Retailer account is inserted, `TPB_AccountCustomerSetHandler` goes through every Customer Set that has a Sales Org. It pastes each set's `TPB_CustomerSetCriteria__c` text straight into a query (`SELECT Id FROM Account WHERE ( <criteria> ) AND Id IN :setAccountId`, line 61). Customer Set **AS-00000154** had plain text ("Test stores") in that field instead of a valid filter. The query failed and rolled back the whole Account insert.
+When a new store is created, this class works out which **Customer Sets** the store belongs to and adds it to them straight away. Customer Sets are the Consumer Goods Cloud groups of stores that promotions and other features are aimed at. Without this class, a new store would only join its sets later, when the sets are next rebuilt.
 
-The three other errors (`cgcloud__Account_Manager__c`, `cgcloud__Account_Extension__c`, `Visit`) are knock-on failures. They were children of the failed local Account, so they failed with it.
+The header comment says it was written in September 2023 to "Update Customer Anchor Set in Real Time".
 
-**Current state:**
-- At 17:04 UTC today, Santhosh Kumar changed AS-00000154's criteria to `Name LIKE '%Test%'`, which is a valid filter.
-- One minute later (17:05 UTC), "Qwerty" synced: it now exists as account `001Ox00001jVJKBIA4`, created by Shalem's test user, with its Visit
+## Step by step
+
+1. **When it runs:** right after Account records are inserted, but only for accounts with the **Retailer** record type. Other account types are skipped. It does nothing when an account is edited.
+2. **It loads the Customer Sets:** every Customer Set that has a Sales Org (58 today).
+3. **It tests the new store against each set.** Each Customer Set has a rule in `TPB_CustomerSetCriteria__c`, written as a query filter, for example `Name LIKE '%Test%'`. For each set, the class builds a query like this:
+   *"Find Accounts matching this set's rule, and only among the stores that were just created."*
+   If the new store comes back in the results, it belongs
 
 _[summary truncated — see the session record for the full text]_
 <!-- orchestrate:session-state:end -->
